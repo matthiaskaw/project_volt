@@ -18,12 +18,6 @@ public interface IDevice{
 
     
 }
-
-public class AnswerReadyArgs : EventArgs{
-
-    public AnswerReadyArgs(string answer) => Answer = answer;
-    public string Answer {get; set;}    
-}
 }
 
 

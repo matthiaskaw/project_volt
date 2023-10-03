@@ -1,0 +1,26 @@
+@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Measurement Base";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Measurement Page</h1>
+    <h2>Choose one Measurement Type... Currently only SMPS scans are possible.</h2>
+
+    <label for="Measurement Type">Choose a measurement:</label>
+
+    <select name="Measurement Type" id="measurementtype">
+        <option value="SMPS">SMPS</option>
+        <option value="Tandem">TANDEM (disabled)</option>
+        <option value="Temperature">Temperature (disbled)</option>
+    </select>
+
+    <a asp-page="./SMPSMeasurement">Start</a>
+
+
+
+
+    
+ 
+</div>

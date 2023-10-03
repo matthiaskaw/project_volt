@@ -7,7 +7,9 @@ public class DeviceController{
 
     private static DeviceController _instance;
 
-    private DeviceController(){}
+    private DeviceController(){
+        MeasurementType = EMeasurementType.Default;
+    }
 
     public static DeviceController Instance{
 
@@ -15,25 +17,32 @@ public class DeviceController{
 
             if(_instance == null){
                 _instance = new DeviceController();
-                Logger.WriteToLog("DeviceController instantiated!");
             }
-            Logger.WriteToLog("DeviceController returned");
             return _instance;
         }
     }
 
-    public EMeasurementType MeasurementType {get; set;}
+    public EMeasurementType MeasurementType { get; set;} 
 
-    private List<IDevice> _devices;
+    private List<IDevice> _devices = new List<IDevice>();
 
-    void InitializeDevices(EMeasurementType type){
+    public void InitializeDevices(){
 
 
-        switch(type){
+
+        switch(MeasurementType){
+
+            case EMeasurementType.Default:
+                //Throw exception "No Measurement Type"
+                Logger.WriteToLog("Device Controller: No Measurement Type set!");
+                break;
 
             case EMeasurementType.SMPS:
                 Logger.WriteToLog("DeviceController: Initialize SMPS");
-                _devices[0] = new ParticleCounter();
+                
+                var particlecounter = new ParticleCounter(100,100,10.5f,1000);
+                
+                _devices.Add(particlecounter);
                 
                 break;
 
@@ -44,6 +53,7 @@ public class DeviceController{
             case EMeasurementType.Temperature:
                 Logger.WriteToLog("DeviceController: Initialize Temperature");
                 break;
+
         }
 
         foreach(IDevice dev in _devices){
