@@ -24,8 +24,12 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[e:/Software/Git/project_volt/volt/Pages/NewFolder/Index2.cshtml]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTmV3Rm9sZGVyXEluZGV4Mi5jc2h0bWw=
+[e:/Software/Git/project_volt/volt/Pages/Measurement/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTWVhc3VyZW1lbnRcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[e:/Software/Git/project_volt/volt/Pages/Measurement/SMPSMeasurement.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTWVhc3VyZW1lbnRcU01QU01lYXN1cmVtZW50LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [e:/Software/Git/project_volt/volt/Pages/Privacy.cshtml]

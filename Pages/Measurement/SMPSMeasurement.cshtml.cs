@@ -1,28 +1,35 @@
-﻿using Measurement;
+using Measurement;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 
-namespace volt.Pages;
+namespace volt.Pages.Measurement;
 
-public class IndexModel : PageModel
+public class SMPSMeasurement : PageModel
 {
     private readonly ILogger<IndexModel> _logger;
 
-    public IndexModel(ILogger<IndexModel> logger)
+    public SMPSMeasurement(ILogger<IndexModel> logger)
     {
         _logger = logger;
     }
 
     public void OnGet()
     {
+        Console.WriteLine("HELLO WORLD !!!!!!!!!!!!!!!!!!!!!!!!!!!!!****************!!!!!!!!!!!!!!!!!!!!!!!!!!!!!");
+    }
 
+    public void OnPost(){
+
+        Console.WriteLine("HELLO WORLD !!!!!!!!!!!!!!!!!!!!!!!!!!!!!****************!!!!!!!!!!!!!!!!!!!!!!!!!!!!!");
     }
 
     public void OnPostStart(){
 
         Console.WriteLine("Starting SMPS Measurement!");
         DeviceController devicecontroller = DeviceController.Instance;
+        
         devicecontroller.MeasurementType = EMeasurementType.SMPS;
         devicecontroller.InitializeDevices();
     }
+
 }

@@ -1,0 +1,1212 @@
+DeviceController instantiated!
+DeviceController returned
+Device Controller: No Measurement Type set!
+DeviceController instantiated!
+DeviceController returned
+DeviceController: Initialize SMPS
+DeviceController instantiated!
+DeviceController returned
+DeviceController: Initialize SMPS
+DeviceController instantiated!
+DeviceController returned
+DeviceController: Initialize SMPS
+DeviceController instantiated!
+DeviceController returned
+DeviceController: Initialize SMPS
+DeviceController instantiated!
+DeviceController returned
+DeviceController: Initialize SMPS
+DeviceController instantiated!
+DeviceController returned
+DeviceController: Initialize SMPS
+Particle Counter: Initializing
+DeviceController instantiated!
+DeviceController returned
+DeviceController: Initialize SMPS
+Particle Counter: Initializing
+DeviceController: Initialize SMPS
+Particle Counter: Initializing
+Particle Counter: Setting ReadTimeOut to 1000 ...
+Particle Counter: Trying to verify Particle Counter...
+Particle Counter: Verifying on Port COM1
+Particle Counter: Starting verification. Requesting serial number 123456789
+DeviceController: Initialize SMPS
+Particle Counter: Initializing
+Particle Counter: Setting ReadTimeOut to 1000 ...
+Particle Counter: Trying to verify Particle Counter...
+Particle Counter: Verifying on Port COM1
+Particle Counter: Starting verification. Requesting serial number 123456789
+DeviceController: Initialize SMPS
+Particle Counter: Initializing
+Particle Counter: Setting ReadTimeOut to 1000 ...
+Particle Counter: Trying to verify Particle Counter...
+Particle Counter: Verifying on Port COM1
+Particle Counter: Starting verification. Requesting serial number 123456789
+DeviceController: Initialize SMPS
+Particle Counter: Initializing
+Particle Counter: Setting ReadTimeOut to 1000 ...
+Particle Counter: Trying to verify Particle Counter...
+Particle Counter: Verifying on Port COM1
+DeviceController: Initialize SMPS
+Particle Counter: Initializing
+Particle Counter: Setting ReadTimeOut to 1000 ...
+Particle Counter: Trying to verify Particle Counter...
+Particle Counter: Verifying on Port COM1
+Particle Counter: Starting verification. Requesting serial number 123456789
+DeviceController: Initialize SMPS
+Particle Counter: Initializing
+Particle Counter: Setting ReadTimeOut to 1000 ...
+Particle Counter: Trying to verify Particle Counter...
+Particle Counter: Verifying on Port COM1
+Particle Counter: Starting verification. Requesting serial number 123456789
+ParticleCounter: New timer
+Particle Counter: Verification answer from device is 
+Particle Counter: Serialnumber  not correct. Failed to verify
+Particle Counter: Verification answer from device is 
+Particle Counter: Serialnumber  not correct. Failed to verify
+DeviceController: Initialize SMPS
+Particle Counter: Initializing
+Particle Counter: Setting ReadTimeOut to 1000 ...
+Particle Counter: Trying to verify Particle Counter...
+Particle Counter: Verifying on Port COM1
+Particle Counter: Starting verification. Requesting serial number 123456789
+Particle Counter: Verification answer from device is 
+Particle Counter: Serialnumber  not correct. Failed to verify
+Particle Counter: Verification answer from device is 
+Particle Counter: Serialnumber  not correct. Failed to verify
+Particle Counter: Verification answer from device is 
+Particle Counter: Serialnumber  not correct. Failed to verify
+Particle Counter: Verification answer from device is 
+Particle Counter: Serialnumber  not correct. Failed to verify
+Particle Counter: Verification answer from device is 
+Particle Counter: Serialnumber  not correct. Failed to verify
+Particle Counter: Verification answer from device is 
+Particle Counter: Serialnumber  not correct. Failed to verify
+Particle Counter: Verification answer from device is 
+Particle Counter: Serialnumber  not correct. Failed to verify
+Particle Counter: Verification answer from device is 
+Particle Counter: Serialnumber  not correct. Failed to verify
+Particle Counter: Verification answer from device is 
+Particle Counter: Serialnumber  not correct. Failed to verify
+Particle Counter: Verification answer from device is 
+Particle Counter: Serialnumber  not correct. Failed to verify
+Particle Counter: Verification answer from device is 
+Particle Counter: Serialnumber  not correct. Failed to verify
+Particle Counter: Verification answer from device is 
+Particle Counter: Serialnumber  not correct. Failed to verify
+Particle Counter: Verification answer from device is 
+Particle Counter: Serialnumber  not correct. Failed to verify
+Particle Counter: Verification answer from device is 
+Particle Counter: Serialnumber  not correct. Failed to verify
+Particle Counter: Verification answer from device is 
+Particle Counter: Serialnumber  not correct. Failed to verify
+Particle Counter: Verification answer from device is 
+Particle Counter: Serialnumber  not correct. Failed to verify
+Particle Counter: Verification answer from device is 
+Particle Counter: Serialnumber  not correct. Failed to verify
+Particle Counter: Verification answer from device is 
+Particle Counter: Serialnumber  not correct. Failed to verify
+Particle Counter: Verification answer from device is 
+Particle Counter: Serialnumber  not correct. Failed to verify
+Particle Counter: Verification answer from device is 
+Particle Counter: Serialnumber  not correct. Failed to verify
+Particle Counter: Verification answer from device is 
+Particle Counter: Serialnumber  not correct. Failed to verify
+Particle Counter: Verification answer from device is 
+Particle Counter: Serialnumber  not correct. Failed to verify
+Particle Counter: Verification answer from device is 
+Particle Counter: Serialnumber  not correct. Failed to verify
+Particle Counter: Verification answer from device is 
+Particle Counter: Serialnumber  not correct. Failed to verify
+Particle Counter: Verification answer from device is 
+Particle Counter: Serialnumber  not correct. Failed to verify
+Particle Counter: Verification answer from device is 
+Particle Counter: Serialnumber  not correct. Failed to verify
+Particle Counter: Verification answer from device is 
+Particle Counter: Serialnumber  not correct. Failed to verify
+Particle Counter: Verification answer from device is 
+Particle Counter: Serialnumber  not correct. Failed to verify
+Particle Counter: Verification answer from device is 
+Particle Counter: Serialnumber  not correct. Failed to verify
+Particle Counter: Verification answer from device is 
+Particle Counter: Serialnumber  not correct. Failed to verify
+Particle Counter: Verification answer from device is 
+Particle Counter: Serialnumber  not correct. Failed to verify
+Particle Counter: Verification answer from device is 
+Particle Counter: Serialnumber  not correct. Failed to verify
+Particle Counter: Verification answer from device is 
+Particle Counter: Serialnumber  not correct. Failed to verify
+Particle Counter: Verification answer from device is 
+Particle Counter: Serialnumber  not correct. Failed to verify
+Particle Counter: Verification answer from device is 
+Particle Counter: Serialnumber  not correct. Failed to verify
+Particle Counter: Verification answer from device is 
+Particle Counter: Serialnumber  not correct. Failed to verify
+Particle Counter: Verification answer from device is 
+Particle Counter: Serialnumber  not correct. Failed to verify
+Particle Counter: Verification answer from device is 
+Particle Counter: Serialnumber  not correct. Failed to verify
+Particle Counter: Verification answer from device is 
+Particle Counter: Serialnumber  not correct. Failed to verify
+Particle Counter: Verification answer from device is 
+Particle Counter: Serialnumber  not correct. Failed to verify
+Particle Counter: Verification answer from device is 
+Particle Counter: Serialnumber  not correct. Failed to verify
+Particle Counter: Verification answer from device is 
+Particle Counter: Serialnumber  not correct. Failed to verify
+Particle Counter: Verification answer from device is 
+Particle Counter: Serialnumber  not correct. Failed to verify
+Particle Counter: Verification answer from device is 
+Particle Counter: Serialnumber  not correct. Failed to verify
+Particle Counter: Verification answer from device is 
+Particle Counter: Serialnumber  not correct. Failed to verify
+Particle Counter: Verification answer from device is 
+Particle Counter: Serialnumber  not correct. Failed to verify
+Particle Counter: Verification answer from device is 
+Particle Counter: Serialnumber  not correct. Failed to verify
+Particle Counter: Verification answer from device is 
+Particle Counter: Serialnumber  not correct. Failed to verify
+Particle Counter: Verification answer from device is 
+Particle Counter: Serialnumber  not correct. Failed to verify
+Particle Counter: Verification answer from device is 
+Particle Counter: Serialnumber  not correct. Failed to verify
+Particle Counter: Verification answer from device is 
+Particle Counter: Serialnumber  not correct. Failed to verify
+Particle Counter: Verification answer from device is 
+Particle Counter: Serialnumber  not correct. Failed to verify
+Particle Counter: Verification answer from device is 
+Particle Counter: Serialnumber  not correct. Failed to verify
+Particle Counter: Verification answer from device is 
+Particle Counter: Serialnumber  not correct. Failed to verify
+Particle Counter: Verification answer from device is 
+Particle Counter: Serialnumber  not correct. Failed to verify
+Particle Counter: Verification answer from device is 
+Particle Counter: Serialnumber  not correct. Failed to verify
+Particle Counter: Verification answer from device is 
+Particle Counter: Serialnumber  not correct. Failed to verify
+Particle Counter: Verification answer from device is 
+Particle Counter: Serialnumber  not correct. Failed to verify
+Particle Counter: Verification answer from device is 
+Particle Counter: Serialnumber  not correct. Failed to verify
+Particle Counter: Verification answer from device is 
+Particle Counter: Serialnumber  not correct. Failed to verify
+Particle Counter: Verification answer from device is 
+Particle Counter: Serialnumber  not correct. Failed to verify
+Particle Counter: Verification answer from device is 
+Particle Counter: Serialnumber  not correct. Failed to verify
+Particle Counter: Verification answer from device is 
+Particle Counter: Serialnumber  not correct. Failed to verify
+Particle Counter: Verification answer from device is 
+Particle Counter: Serialnumber  not correct. Failed to verify
+Particle Counter: Verification answer from device is 
+Particle Counter: Serialnumber  not correct. Failed to verify
+Particle Counter: Verification answer from device is 
+Particle Counter: Serialnumber  not correct. Failed to verify
+Particle Counter: Verification answer from device is 
+Particle Counter: Serialnumber  not correct. Failed to verify
+Particle Counter: Verification answer from device is 
+Particle Counter: Serialnumber  not correct. Failed to verify
+Particle Counter: Verification answer from device is 
+Particle Counter: Serialnumber  not correct. Failed to verify
+Particle Counter: Verification answer from device is 
+Particle Counter: Serialnumber  not correct. Failed to verify
+Particle Counter: Verification answer from device is 
+Particle Counter: Serialnumber  not correct. Failed to verify
+Particle Counter: Verification answer from device is 
+Particle Counter: Serialnumber  not correct. Failed to verify
+Particle Counter: Verification answer from device is 
+Particle Counter: Serialnumber  not correct. Failed to verify
+Particle Counter: Verification answer from device is 
+Particle Counter: Serialnumber  not correct. Failed to verify
+Particle Counter: Verification answer from device is 
+Particle Counter: Serialnumber  not correct. Failed to verify
+Particle Counter: Verification answer from device is 
+Particle Counter: Serialnumber  not correct. Failed to verify
+Particle Counter: Verification answer from device is 
+Particle Counter: Serialnumber  not correct. Failed to verify
+Particle Counter: Verification answer from device is 
+Particle Counter: Serialnumber  not correct. Failed to verify
+Particle Counter: Verification answer from device is 
+Particle Counter: Serialnumber  not correct. Failed to verify
+Particle Counter: Verification answer from device is 
+Particle Counter: Serialnumber  not correct. Failed to verify
+Particle Counter: Verification answer from device is 
+Particle Counter: Serialnumber  not correct. Failed to verify
+Particle Counter: Verification answer from device is 
+Particle Counter: Serialnumber  not correct. Failed to verify
+Particle Counter: Verification answer from device is 
+Particle Counter: Serialnumber  not correct. Failed to verify
+Particle Counter: Verification answer from device is 
+Particle Counter: Serialnumber  not correct. Failed to verify
+Particle Counter: Verification answer from device is 
+Particle Counter: Serialnumber  not correct. Failed to verify
+Particle Counter: Verification answer from device is 
+Particle Counter: Serialnumber  not correct. Failed to verify
+Particle Counter: Verification answer from device is 
+Particle Counter: Serialnumber  not correct. Failed to verify
+Particle Counter: Verification answer from device is 
+Particle Counter: Serialnumber  not correct. Failed to verify
+Particle Counter: Verification answer from device is 
+Particle Counter: Serialnumber  not correct. Failed to verify
+Particle Counter: Verification answer from device is 
+Particle Counter: Serialnumber  not correct. Failed to verify
+Particle Counter: Verification answer from device is 
+Particle Counter: Serialnumber  not correct. Failed to verify
+Particle Counter: Verification answer from device is 
+Particle Counter: Serialnumber  not correct. Failed to verify
+Particle Counter: Verification answer from device is 
+Particle Counter: Serialnumber  not correct. Failed to verify
+Particle Counter: Verification answer from device is 
+Particle Counter: Serialnumber  not correct. Failed to verify
+Particle Counter: Verification answer from device is 
+Particle Counter: Serialnumber  not correct. Failed to verify
+Particle Counter: Verification answer from device is 
+Particle Counter: Serialnumber  not correct. Failed to verify
+Particle Counter: Verification answer from device is 
+Particle Counter: Serialnumber  not correct. Failed to verify
+Particle Counter: Verification answer from device is 
+Particle Counter: Serialnumber  not correct. Failed to verify
+Particle Counter: Verification answer from device is 
+Particle Counter: Serialnumber  not correct. Failed to verify
+Particle Counter: Verification answer from device is 
+Particle Counter: Serialnumber  not correct. Failed to verify
+Particle Counter: Verification answer from device is 
+Particle Counter: Serialnumber  not correct. Failed to verify
+Particle Counter: Verification answer from device is 
+Particle Counter: Serialnumber  not correct. Failed to verify
+Particle Counter: Verification answer from device is 
+Particle Counter: Serialnumber  not correct. Failed to verify
+Particle Counter: Verification answer from device is 
+Particle Counter: Serialnumber  not correct. Failed to verify
+Particle Counter: Verification answer from device is 
+Particle Counter: Serialnumber  not correct. Failed to verify
+Particle Counter: Verification answer from device is 
+Particle Counter: Serialnumber  not correct. Failed to verify
+Particle Counter: Verification answer from device is 
+Particle Counter: Serialnumber  not correct. Failed to verify
+Particle Counter: Verification answer from device is 
+Particle Counter: Serialnumber  not correct. Failed to verify
+Particle Counter: Verification answer from device is 
+Particle Counter: Serialnumber  not correct. Failed to verify
+Particle Counter: Verification answer from device is 
+Particle Counter: Serialnumber  not correct. Failed to verify
+Particle Counter: Verification answer from device is 
+Particle Counter: Serialnumber  not correct. Failed to verify
+Particle Counter: Verification answer from device is 
+Particle Counter: Serialnumber  not correct. Failed to verify
+Particle Counter: Verification answer from device is 
+Particle Counter: Serialnumber  not correct. Failed to verify
+Particle Counter: Verification answer from device is 
+Particle Counter: Serialnumber  not correct. Failed to verify
+Particle Counter: Verification answer from device is 
+Particle Counter: Serialnumber  not correct. Failed to verify
+Particle Counter: Verification answer from device is 
+Particle Counter: Serialnumber  not correct. Failed to verify
+Particle Counter: Verification answer from device is 
+Particle Counter: Serialnumber  not correct. Failed to verify
+Particle Counter: Verification answer from device is 
+Particle Counter: Serialnumber  not correct. Failed to verify
+Particle Counter: Verification answer from device is 
+Particle Counter: Serialnumber  not correct. Failed to verify
+Particle Counter: Verification answer from device is 
+Particle Counter: Serialnumber  not correct. Failed to verify
+Particle Counter: Verification answer from device is 
+Particle Counter: Serialnumber  not correct. Failed to verify
+Particle Counter: Verification answer from device is 
+Particle Counter: Serialnumber  not correct. Failed to verify
+Particle Counter: Verification answer from device is 
+Particle Counter: Serialnumber  not correct. Failed to verify
+Particle Counter: Verification answer from device is 
+Particle Counter: Serialnumber  not correct. Failed to verify
+Particle Counter: Verification answer from device is 
+Particle Counter: Serialnumber  not correct. Failed to verify
+Particle Counter: Verification answer from device is 
+Particle Counter: Serialnumber  not correct. Failed to verify
+Particle Counter: Verification answer from device is 
+Particle Counter: Serialnumber  not correct. Failed to verify
+Particle Counter: Verification answer from device is 
+Particle Counter: Serialnumber  not correct. Failed to verify
+Particle Counter: Verification answer from device is 
+Particle Counter: Serialnumber  not correct. Failed to verify
+Particle Counter: Verification answer from device is 
+Particle Counter: Serialnumber  not correct. Failed to verify
+Particle Counter: Verification answer from device is 
+Particle Counter: Serialnumber  not correct. Failed to verify
+Particle Counter: Verification answer from device is 
+Particle Counter: Serialnumber  not correct. Failed to verify
+Particle Counter: Verification answer from device is 
+Particle Counter: Serialnumber  not correct. Failed to verify
+Particle Counter: Verification answer from device is 
+Particle Counter: Serialnumber  not correct. Failed to verify
+Particle Counter: Verification answer from device is 
+Particle Counter: Serialnumber  not correct. Failed to verify
+Particle Counter: Verification answer from device is 
+Particle Counter: Serialnumber  not correct. Failed to verify
+Particle Counter: Verification answer from device is 
+Particle Counter: Serialnumber  not correct. Failed to verify
+Particle Counter: Verification answer from device is 
+Particle Counter: Serialnumber  not correct. Failed to verify
+Particle Counter: Verification answer from device is 
+Particle Counter: Serialnumber  not correct. Failed to verify
+Particle Counter: Verification answer from device is 
+Particle Counter: Serialnumber  not correct. Failed to verify
+Particle Counter: Verification answer from device is 
+Particle Counter: Serialnumber  not correct. Failed to verify
+Particle Counter: Verification answer from device is 
+Particle Counter: Serialnumber  not correct. Failed to verify
+Particle Counter: Verification answer from device is 
+Particle Counter: Serialnumber  not correct. Failed to verify
+Particle Counter: Verification answer from device is 
+Particle Counter: Serialnumber  not correct. Failed to verify
+Particle Counter: Verification answer from device is 
+Particle Counter: Serialnumber  not correct. Failed to verify
+Particle Counter: Verification answer from device is 
+Particle Counter: Serialnumber  not correct. Failed to verify
+Particle Counter: Verification answer from device is 
+Particle Counter: Serialnumber  not correct. Failed to verify
+Particle Counter: Verification answer from device is 
+Particle Counter: Serialnumber  not correct. Failed to verify
+Particle Counter: Verification answer from device is 
+Particle Counter: Serialnumber  not correct. Failed to verify
+Particle Counter: Verification answer from device is 
+Particle Counter: Serialnumber  not correct. Failed to verify
+Particle Counter: Verification answer from device is 
+Particle Counter: Serialnumber  not correct. Failed to verify
+Particle Counter: Verification answer from device is 
+Particle Counter: Serialnumber  not correct. Failed to verify
+Particle Counter: Verification answer from device is 
+Particle Counter: Serialnumber  not correct. Failed to verify
+Particle Counter: Verification answer from device is 
+Particle Counter: Serialnumber  not correct. Failed to verify
+Particle Counter: Verification answer from device is 
+Particle Counter: Serialnumber  not correct. Failed to verify
+Particle Counter: Verification answer from device is 
+Particle Counter: Serialnumber  not correct. Failed to verify
+Particle Counter: Verification answer from device is 
+Particle Counter: Serialnumber  not correct. Failed to verify
+Particle Counter: Verification answer from device is 
+Particle Counter: Serialnumber  not correct. Failed to verify
+Particle Counter: Verification answer from device is 
+Particle Counter: Serialnumber  not correct. Failed to verify
+Particle Counter: Verification answer from device is 
+Particle Counter: Serialnumber  not correct. Failed to verify
+Particle Counter: Verification answer from device is 
+Particle Counter: Serialnumber  not correct. Failed to verify
+Particle Counter: Verification answer from device is 
+Particle Counter: Serialnumber  not correct. Failed to verify
+Particle Counter: Verification answer from device is 
+Particle Counter: Serialnumber  not correct. Failed to verify
+Particle Counter: Verification answer from device is 
+Particle Counter: Serialnumber  not correct. Failed to verify
+Particle Counter: Verification answer from device is 
+Particle Counter: Serialnumber  not correct. Failed to verify
+Particle Counter: Verification answer from device is 
+Particle Counter: Serialnumber  not correct. Failed to verify
+Particle Counter: Verification answer from device is 
+Particle Counter: Serialnumber  not correct. Failed to verify
+Particle Counter: Verification answer from device is 
+Particle Counter: Serialnumber  not correct. Failed to verify
+Particle Counter: Verification answer from device is 
+Particle Counter: Serialnumber  not correct. Failed to verify
+Particle Counter: Verification answer from device is 
+Particle Counter: Serialnumber  not correct. Failed to verify
+Particle Counter: Verification answer from device is 
+Particle Counter: Serialnumber  not correct. Failed to verify
+Particle Counter: Verification answer from device is 
+Particle Counter: Serialnumber  not correct. Failed to verify
+Particle Counter: Verification answer from device is 
+Particle Counter: Serialnumber  not correct. Failed to verify
+Particle Counter: Verification answer from device is 
+Particle Counter: Serialnumber  not correct. Failed to verify
+Particle Counter: Verification answer from device is 
+Particle Counter: Serialnumber  not correct. Failed to verify
+Particle Counter: Verification answer from device is 
+Particle Counter: Serialnumber  not correct. Failed to verify
+Particle Counter: Verification answer from device is 
+Particle Counter: Serialnumber  not correct. Failed to verify
+Particle Counter: Verification answer from device is 
+Particle Counter: Serialnumber  not correct. Failed to verify
+Particle Counter: Verification answer from device is 
+Particle Counter: Serialnumber  not correct. Failed to verify
+DeviceController: Initialize SMPS
+Particle Counter: Initializing
+Particle Counter: Setting ReadTimeOut to 1000 ...
+Particle Counter: Trying to verify Particle Counter...
+Particle Counter: Verifying on Port COM1
+Particle Counter: Starting verification. Requesting serial number 123456789
+DeviceController: Initialize SMPS
+Particle Counter: Initializing
+Particle Counter: Setting ReadTimeOut to 1000 ...
+Particle Counter: Trying to verify Particle Counter...
+Particle Counter: Verifying on Port COM1
+Particle Counter: Starting verification. Requesting serial number 123456789
+DeviceController: Initialize SMPS
+Particle Counter: Initializing
+Particle Counter: Setting ReadTimeOut to 1000 ...
+Particle Counter: Trying to verify Particle Counter...
+Particle Counter: Verifying on Port COM1
+Particle Counter: Starting verification. Requesting serial number 123456789
+DeviceController: Initialize SMPS
+Particle Counter: Initializing
+Particle Counter: Setting ReadTimeOut to 1000 ...
+Particle Counter: Trying to verify Particle Counter...
+Particle Counter: Verifying on Port COM1
+Particle Counter: Starting verification. Requesting serial number 123456789
+Particle Counter: Verification answer from device is 
+Particle Counter: Serialnumber  not correct. Failed to verify
+Particle Counter: Verification answer from device is 
+Particle Counter: Serialnumber  not correct. Failed to verify
+Particle Counter: Verification answer from device is 
+Particle Counter: Serialnumber  not correct. Failed to verify
+Particle Counter: Verification answer from device is 
+Particle Counter: Serialnumber  not correct. Failed to verify
+Particle Counter: Verification answer from device is 
+Particle Counter: Serialnumber  not correct. Failed to verify
+Particle Counter: Verification answer from device is 
+Particle Counter: Serialnumber  not correct. Failed to verify
+Particle Counter: Verification answer from device is 
+Particle Counter: Serialnumber  not correct. Failed to verify
+Particle Counter: Verification answer from device is 
+Particle Counter: Serialnumber  not correct. Failed to verify
+Particle Counter: Verification answer from device is 
+Particle Counter: Serialnumber  not correct. Failed to verify
+Particle Counter: Verification answer from device is 
+Particle Counter: Serialnumber  not correct. Failed to verify
+Particle Counter: Verification answer from device is 
+Particle Counter: Serialnumber  not correct. Failed to verify
+Particle Counter: Verification answer from device is 
+Particle Counter: Serialnumber  not correct. Failed to verify
+Particle Counter: Verification answer from device is 
+Particle Counter: Serialnumber  not correct. Failed to verify
+Particle Counter: Verification answer from device is 
+Particle Counter: Serialnumber  not correct. Failed to verify
+Particle Counter: Verification answer from device is 
+Particle Counter: Serialnumber  not correct. Failed to verify
+Particle Counter: Verification answer from device is 
+Particle Counter: Serialnumber  not correct. Failed to verify
+Particle Counter: Verification answer from device is 
+Particle Counter: Serialnumber  not correct. Failed to verify
+Particle Counter: Verification answer from device is 
+Particle Counter: Serialnumber  not correct. Failed to verify
+Particle Counter: Verification answer from device is 
+Particle Counter: Serialnumber  not correct. Failed to verify
+Particle Counter: Verification answer from device is 
+Particle Counter: Serialnumber  not correct. Failed to verify
+Particle Counter: Verification answer from device is 
+Particle Counter: Serialnumber  not correct. Failed to verify
+Particle Counter: Verification answer from device is 
+Particle Counter: Serialnumber  not correct. Failed to verify
+Particle Counter: Verification answer from device is 
+Particle Counter: Serialnumber  not correct. Failed to verify
+Particle Counter: Verification answer from device is 
+Particle Counter: Serialnumber  not correct. Failed to verify
+Particle Counter: Verification answer from device is 
+Particle Counter: Serialnumber  not correct. Failed to verify
+Particle Counter: Verification answer from device is 
+Particle Counter: Serialnumber  not correct. Failed to verify
+Particle Counter: Verification answer from device is 
+Particle Counter: Serialnumber  not correct. Failed to verify
+Particle Counter: Verification answer from device is 
+Particle Counter: Serialnumber  not correct. Failed to verify
+Particle Counter: Verification answer from device is 
+Particle Counter: Serialnumber  not correct. Failed to verify
+Particle Counter: Verification answer from device is 
+Particle Counter: Serialnumber  not correct. Failed to verify
+Particle Counter: Verification answer from device is 
+Particle Counter: Serialnumber  not correct. Failed to verify
+Particle Counter: Verification answer from device is 
+Particle Counter: Serialnumber  not correct. Failed to verify
+Particle Counter: Verification answer from device is 
+Particle Counter: Serialnumber  not correct. Failed to verify
+Particle Counter: Verification answer from device is 
+Particle Counter: Serialnumber  not correct. Failed to verify
+Particle Counter: Verification answer from device is 
+Particle Counter: Serialnumber  not correct. Failed to verify
+Particle Counter: Verification answer from device is 
+Particle Counter: Serialnumber  not correct. Failed to verify
+Particle Counter: Verification answer from device is 
+Particle Counter: Serialnumber  not correct. Failed to verify
+Particle Counter: Verification answer from device is 
+Particle Counter: Serialnumber  not correct. Failed to verify
+Particle Counter: Verification answer from device is 
+Particle Counter: Serialnumber  not correct. Failed to verify
+Particle Counter: Verification answer from device is 
+Particle Counter: Serialnumber  not correct. Failed to verify
+Particle Counter: Verification answer from device is 
+Particle Counter: Serialnumber  not correct. Failed to verify
+Particle Counter: Verification answer from device is 
+Particle Counter: Serialnumber  not correct. Failed to verify
+Particle Counter: Verification answer from device is 
+Particle Counter: Serialnumber  not correct. Failed to verify
+Particle Counter: Verification answer from device is 
+Particle Counter: Serialnumber  not correct. Failed to verify
+Particle Counter: Verification answer from device is 
+Particle Counter: Serialnumber  not correct. Failed to verify
+Particle Counter: Verification answer from device is 
+Particle Counter: Serialnumber  not correct. Failed to verify
+Particle Counter: Verification answer from device is 
+Particle Counter: Serialnumber  not correct. Failed to verify
+Particle Counter: Verification answer from device is 
+Particle Counter: Serialnumber  not correct. Failed to verify
+Particle Counter: Verification answer from device is 
+Particle Counter: Serialnumber  not correct. Failed to verify
+Particle Counter: Verification answer from device is 
+Particle Counter: Serialnumber  not correct. Failed to verify
+Particle Counter: Verification answer from device is 
+Particle Counter: Serialnumber  not correct. Failed to verify
+Particle Counter: Verification answer from device is 
+Particle Counter: Serialnumber  not correct. Failed to verify
+Particle Counter: Verification answer from device is 
+Particle Counter: Serialnumber  not correct. Failed to verify
+Particle Counter: Verification answer from device is 
+Particle Counter: Serialnumber  not correct. Failed to verify
+Particle Counter: Verification answer from device is 
+Particle Counter: Serialnumber  not correct. Failed to verify
+Particle Counter: Verification answer from device is 
+Particle Counter: Serialnumber  not correct. Failed to verify
+Particle Counter: Verification answer from device is 
+Particle Counter: Serialnumber  not correct. Failed to verify
+Particle Counter: Verification answer from device is 
+Particle Counter: Serialnumber  not correct. Failed to verify
+Particle Counter: Verification answer from device is 
+Particle Counter: Serialnumber  not correct. Failed to verify
+Particle Counter: Verification answer from device is 
+Particle Counter: Serialnumber  not correct. Failed to verify
+Particle Counter: Verification answer from device is 
+Particle Counter: Serialnumber  not correct. Failed to verify
+Particle Counter: Verification answer from device is 
+Particle Counter: Serialnumber  not correct. Failed to verify
+Particle Counter: Verification answer from device is 
+Particle Counter: Serialnumber  not correct. Failed to verify
+Particle Counter: Verification answer from device is 
+Particle Counter: Serialnumber  not correct. Failed to verify
+Particle Counter: Verification answer from device is 
+Particle Counter: Serialnumber  not correct. Failed to verify
+Particle Counter: Verification answer from device is 
+Particle Counter: Serialnumber  not correct. Failed to verify
+Particle Counter: Verification answer from device is 
+Particle Counter: Serialnumber  not correct. Failed to verify
+Particle Counter: Verification answer from device is 
+Particle Counter: Serialnumber  not correct. Failed to verify
+Particle Counter: Verification answer from device is 
+Particle Counter: Serialnumber  not correct. Failed to verify
+Particle Counter: Verification answer from device is 
+Particle Counter: Serialnumber  not correct. Failed to verify
+Particle Counter: Verification answer from device is 
+Particle Counter: Serialnumber  not correct. Failed to verify
+Particle Counter: Verification answer from device is 
+Particle Counter: Serialnumber  not correct. Failed to verify
+Particle Counter: Verification answer from device is 
+Particle Counter: Serialnumber  not correct. Failed to verify
+Particle Counter: Verification answer from device is 
+Particle Counter: Serialnumber  not correct. Failed to verify
+Particle Counter: Verification answer from device is 
+Particle Counter: Serialnumber  not correct. Failed to verify
+Particle Counter: Verification answer from device is 
+Particle Counter: Serialnumber  not correct. Failed to verify
+Particle Counter: Verification answer from device is 
+Particle Counter: Serialnumber  not correct. Failed to verify
+Particle Counter: Verification answer from device is 
+Particle Counter: Serialnumber  not correct. Failed to verify
+Particle Counter: Verification answer from device is 
+Particle Counter: Serialnumber  not correct. Failed to verify
+Particle Counter: Verification answer from device is 
+Particle Counter: Serialnumber  not correct. Failed to verify
+Particle Counter: Verification answer from device is 
+Particle Counter: Serialnumber  not correct. Failed to verify
+Particle Counter: Verification answer from device is 
+Particle Counter: Serialnumber  not correct. Failed to verify
+Particle Counter: Verification answer from device is 
+Particle Counter: Serialnumber  not correct. Failed to verify
+Particle Counter: Verification answer from device is 
+Particle Counter: Serialnumber  not correct. Failed to verify
+Particle Counter: Verification answer from device is 
+Particle Counter: Serialnumber  not correct. Failed to verify
+Particle Counter: Verification answer from device is 
+Particle Counter: Serialnumber  not correct. Failed to verify
+Particle Counter: Verification answer from device is 
+Particle Counter: Serialnumber  not correct. Failed to verify
+Particle Counter: Verification answer from device is 
+Particle Counter: Serialnumber  not correct. Failed to verify
+Particle Counter: Verification answer from device is 
+Particle Counter: Serialnumber  not correct. Failed to verify
+Particle Counter: Verification answer from device is 
+Particle Counter: Serialnumber  not correct. Failed to verify
+Particle Counter: Verification answer from device is 
+Particle Counter: Serialnumber  not correct. Failed to verify
+Particle Counter: Verification answer from device is 
+Particle Counter: Serialnumber  not correct. Failed to verify
+Particle Counter: Verification answer from device is 
+Particle Counter: Serialnumber  not correct. Failed to verify
+Particle Counter: Verification answer from device is 
+Particle Counter: Serialnumber  not correct. Failed to verify
+Particle Counter: Verification answer from device is 
+Particle Counter: Serialnumber  not correct. Failed to verify
+Particle Counter: Verification answer from device is 
+Particle Counter: Serialnumber  not correct. Failed to verify
+Particle Counter: Verification answer from device is 
+Particle Counter: Serialnumber  not correct. Failed to verify
+Particle Counter: Verification answer from device is 
+Particle Counter: Serialnumber  not correct. Failed to verify
+Particle Counter: Verification answer from device is 
+Particle Counter: Serialnumber  not correct. Failed to verify
+Particle Counter: Verification answer from device is 
+Particle Counter: Serialnumber  not correct. Failed to verify
+Particle Counter: Verification answer from device is 
+Particle Counter: Serialnumber  not correct. Failed to verify
+Particle Counter: Verification answer from device is 
+Particle Counter: Serialnumber  not correct. Failed to verify
+Particle Counter: Verification answer from device is 
+Particle Counter: Serialnumber  not correct. Failed to verify
+Particle Counter: Verification answer from device is 
+Particle Counter: Serialnumber  not correct. Failed to verify
+Particle Counter: Verification answer from device is 
+Particle Counter: Serialnumber  not correct. Failed to verify
+Particle Counter: Verification answer from device is 
+Particle Counter: Serialnumber  not correct. Failed to verify
+Particle Counter: Verification answer from device is 
+Particle Counter: Serialnumber  not correct. Failed to verify
+Particle Counter: Verification answer from device is 
+Particle Counter: Serialnumber  not correct. Failed to verify
+Particle Counter: Verification answer from device is 
+Particle Counter: Serialnumber  not correct. Failed to verify
+Particle Counter: Verification answer from device is 
+Particle Counter: Serialnumber  not correct. Failed to verify
+Particle Counter: Verification answer from device is 
+Particle Counter: Serialnumber  not correct. Failed to verify
+Particle Counter: Verification answer from device is 
+Particle Counter: Serialnumber  not correct. Failed to verify
+Particle Counter: Verification answer from device is 
+Particle Counter: Serialnumber  not correct. Failed to verify
+Particle Counter: Verification answer from device is 
+Particle Counter: Serialnumber  not correct. Failed to verify
+Particle Counter: Verification answer from device is 
+Particle Counter: Serialnumber  not correct. Failed to verify
+Particle Counter: Verification answer from device is 
+Particle Counter: Serialnumber  not correct. Failed to verify
+Particle Counter: Verification answer from device is 
+Particle Counter: Serialnumber  not correct. Failed to verify
+Particle Counter: Verification answer from device is 
+Particle Counter: Serialnumber  not correct. Failed to verify
+Particle Counter: Verification answer from device is 
+Particle Counter: Serialnumber  not correct. Failed to verify
+Particle Counter: Verification answer from device is 
+Particle Counter: Serialnumber  not correct. Failed to verify
+Particle Counter: Verification answer from device is 
+Particle Counter: Serialnumber  not correct. Failed to verify
+Particle Counter: Verification answer from device is 
+Particle Counter: Serialnumber  not correct. Failed to verify
+Particle Counter: Verification answer from device is 
+Particle Counter: Serialnumber  not correct. Failed to verify
+Particle Counter: Verification answer from device is 
+Particle Counter: Serialnumber  not correct. Failed to verify
+Particle Counter: Verification answer from device is 
+Particle Counter: Serialnumber  not correct. Failed to verify
+Particle Counter: Verification answer from device is 
+Particle Counter: Serialnumber  not correct. Failed to verify
+Particle Counter: Verification answer from device is 
+Particle Counter: Serialnumber  not correct. Failed to verify
+Particle Counter: Verification answer from device is 
+Particle Counter: Serialnumber  not correct. Failed to verify
+Particle Counter: Verification answer from device is 
+Particle Counter: Serialnumber  not correct. Failed to verify
+Particle Counter: Verification answer from device is 
+Particle Counter: Serialnumber  not correct. Failed to verify
+Particle Counter: Verification answer from device is 
+Particle Counter: Serialnumber  not correct. Failed to verify
+Particle Counter: Verification answer from device is 
+Particle Counter: Serialnumber  not correct. Failed to verify
+Particle Counter: Verification answer from device is 
+Particle Counter: Serialnumber  not correct. Failed to verify
+Particle Counter: Verification answer from device is 
+Particle Counter: Serialnumber  not correct. Failed to verify
+Particle Counter: Verification answer from device is 
+Particle Counter: Serialnumber  not correct. Failed to verify
+Particle Counter: Verification answer from device is 
+Particle Counter: Serialnumber  not correct. Failed to verify
+Particle Counter: Verification answer from device is 
+Particle Counter: Serialnumber  not correct. Failed to verify
+Particle Counter: Verification answer from device is 
+Particle Counter: Serialnumber  not correct. Failed to verify
+Particle Counter: Verification answer from device is 
+Particle Counter: Serialnumber  not correct. Failed to verify
+Particle Counter: Verification answer from device is 
+Particle Counter: Serialnumber  not correct. Failed to verify
+Particle Counter: Verification answer from device is 
+Particle Counter: Serialnumber  not correct. Failed to verify
+Particle Counter: Verification answer from device is 
+Particle Counter: Serialnumber  not correct. Failed to verify
+Particle Counter: Verification answer from device is 
+Particle Counter: Serialnumber  not correct. Failed to verify
+Particle Counter: Verification answer from device is 
+Particle Counter: Serialnumber  not correct. Failed to verify
+Particle Counter: Verification answer from device is 
+Particle Counter: Serialnumber  not correct. Failed to verify
+Particle Counter: Verification answer from device is 
+Particle Counter: Serialnumber  not correct. Failed to verify
+Particle Counter: Verification answer from device is 
+Particle Counter: Serialnumber  not correct. Failed to verify
+Particle Counter: Verification answer from device is 
+Particle Counter: Serialnumber  not correct. Failed to verify
+Particle Counter: Verification answer from device is 
+Particle Counter: Serialnumber  not correct. Failed to verify
+Particle Counter: Verification answer from device is 
+Particle Counter: Serialnumber  not correct. Failed to verify
+Particle Counter: Verification answer from device is 
+Particle Counter: Serialnumber  not correct. Failed to verify
+Particle Counter: Verification answer from device is 
+Particle Counter: Serialnumber  not correct. Failed to verify
+Particle Counter: Verification answer from device is 
+Particle Counter: Serialnumber  not correct. Failed to verify
+Particle Counter: Verification answer from device is 
+Particle Counter: Serialnumber  not correct. Failed to verify
+Particle Counter: Verification answer from device is 
+Particle Counter: Serialnumber  not correct. Failed to verify
+Particle Counter: Verification answer from device is 
+Particle Counter: Serialnumber  not correct. Failed to verify
+Particle Counter: Verification answer from device is 
+Particle Counter: Serialnumber  not correct. Failed to verify
+Particle Counter: Verification answer from device is 
+Particle Counter: Serialnumber  not correct. Failed to verify
+Particle Counter: Verification answer from device is 
+Particle Counter: Serialnumber  not correct. Failed to verify
+Particle Counter: Verification answer from device is 
+Particle Counter: Serialnumber  not correct. Failed to verify
+Particle Counter: Verification answer from device is 
+Particle Counter: Serialnumber  not correct. Failed to verify
+Particle Counter: Verification answer from device is 
+Particle Counter: Serialnumber  not correct. Failed to verify
+Particle Counter: Verification answer from device is 
+Particle Counter: Serialnumber  not correct. Failed to verify
+Particle Counter: Verification answer from device is 
+Particle Counter: Serialnumber  not correct. Failed to verify
+Particle Counter: Verification answer from device is 
+Particle Counter: Serialnumber  not correct. Failed to verify
+Particle Counter: Verification answer from device is 
+Particle Counter: Serialnumber  not correct. Failed to verify
+Particle Counter: Verification answer from device is 
+Particle Counter: Serialnumber  not correct. Failed to verify
+Particle Counter: Verification answer from device is 
+Particle Counter: Serialnumber  not correct. Failed to verify
+Particle Counter: Verification answer from device is 
+Particle Counter: Serialnumber  not correct. Failed to verify
+Particle Counter: Verification answer from device is 
+Particle Counter: Serialnumber  not correct. Failed to verify
+Particle Counter: Verification answer from device is 
+Particle Counter: Serialnumber  not correct. Failed to verify
+Particle Counter: Verification answer from device is 
+Particle Counter: Serialnumber  not correct. Failed to verify
+Particle Counter: Verification answer from device is 
+Particle Counter: Serialnumber  not correct. Failed to verify
+Particle Counter: Verification answer from device is 
+Particle Counter: Serialnumber  not correct. Failed to verify
+Particle Counter: Verification answer from device is 
+Particle Counter: Serialnumber  not correct. Failed to verify
+Particle Counter: Verification answer from device is 
+Particle Counter: Serialnumber  not correct. Failed to verify
+Particle Counter: Verification answer from device is 
+Particle Counter: Serialnumber  not correct. Failed to verify
+Particle Counter: Verification answer from device is 
+Particle Counter: Serialnumber  not correct. Failed to verify
+Particle Counter: Verification answer from device is 
+Particle Counter: Serialnumber  not correct. Failed to verify
+Particle Counter: Verification answer from device is 
+Particle Counter: Serialnumber  not correct. Failed to verify
+Particle Counter: Verification answer from device is 
+Particle Counter: Serialnumber  not correct. Failed to verify
+Particle Counter: Verification answer from device is 
+Particle Counter: Serialnumber  not correct. Failed to verify
+Particle Counter: Verification answer from device is 
+Particle Counter: Serialnumber  not correct. Failed to verify
+Particle Counter: Verification answer from device is 
+Particle Counter: Serialnumber  not correct. Failed to verify
+Particle Counter: Verification answer from device is 
+Particle Counter: Serialnumber  not correct. Failed to verify
+Particle Counter: Verification answer from device is 
+Particle Counter: Serialnumber  not correct. Failed to verify
+Particle Counter: Verification answer from device is 
+Particle Counter: Serialnumber  not correct. Failed to verify
+Particle Counter: Verification answer from device is 
+Particle Counter: Serialnumber  not correct. Failed to verify
+Particle Counter: Verification answer from device is 
+Particle Counter: Serialnumber  not correct. Failed to verify
+Particle Counter: Verification answer from device is 
+Particle Counter: Serialnumber  not correct. Failed to verify
+Particle Counter: Verification answer from device is 
+Particle Counter: Serialnumber  not correct. Failed to verify
+Particle Counter: Verification answer from device is 
+Particle Counter: Serialnumber  not correct. Failed to verify
+Particle Counter: Verification answer from device is 
+Particle Counter: Serialnumber  not correct. Failed to verify
+Particle Counter: Verification answer from device is 
+Particle Counter: Serialnumber  not correct. Failed to verify
+Particle Counter: Verification answer from device is 
+Particle Counter: Serialnumber  not correct. Failed to verify
+Particle Counter: Verification answer from device is 
+Particle Counter: Serialnumber  not correct. Failed to verify
+Particle Counter: Verification answer from device is 
+Particle Counter: Serialnumber  not correct. Failed to verify
+Particle Counter: Verification answer from device is 
+Particle Counter: Serialnumber  not correct. Failed to verify
+Particle Counter: Verification answer from device is 
+Particle Counter: Serialnumber  not correct. Failed to verify
+Particle Counter: Verification answer from device is 
+Particle Counter: Serialnumber  not correct. Failed to verify
+Particle Counter: Verification answer from device is 
+Particle Counter: Serialnumber  not correct. Failed to verify
+Particle Counter: Verification answer from device is 
+Particle Counter: Serialnumber  not correct. Failed to verify
+Particle Counter: Verification answer from device is 
+Particle Counter: Serialnumber  not correct. Failed to verify
+Particle Counter: Verification answer from device is 
+Particle Counter: Serialnumber  not correct. Failed to verify
+Particle Counter: Verification answer from device is 
+Particle Counter: Serialnumber  not correct. Failed to verify
+Particle Counter: Verification answer from device is 
+Particle Counter: Serialnumber  not correct. Failed to verify
+Particle Counter: Verification answer from device is 
+Particle Counter: Serialnumber  not correct. Failed to verify
+Particle Counter: Verification answer from device is 
+Particle Counter: Serialnumber  not correct. Failed to verify
+Particle Counter: Verification answer from device is 
+Particle Counter: Serialnumber  not correct. Failed to verify
+Particle Counter: Verification answer from device is 
+Particle Counter: Serialnumber  not correct. Failed to verify
+Particle Counter: Verification answer from device is 
+Particle Counter: Serialnumber  not correct. Failed to verify
+Particle Counter: Verification answer from device is 
+Particle Counter: Serialnumber  not correct. Failed to verify
+Particle Counter: Verification answer from device is 
+Particle Counter: Serialnumber  not correct. Failed to verify
+Particle Counter: Verification answer from device is 
+Particle Counter: Serialnumber  not correct. Failed to verify
+Particle Counter: Verification answer from device is 
+Particle Counter: Serialnumber  not correct. Failed to verify
+Particle Counter: Verification answer from device is 
+Particle Counter: Serialnumber  not correct. Failed to verify
+Particle Counter: Verification answer from device is 
+Particle Counter: Serialnumber  not correct. Failed to verify
+Particle Counter: Verification answer from device is 
+Particle Counter: Serialnumber  not correct. Failed to verify
+Particle Counter: Verification answer from device is 
+Particle Counter: Serialnumber  not correct. Failed to verify
+Particle Counter: Verification answer from device is 
+Particle Counter: Serialnumber  not correct. Failed to verify
+Particle Counter: Verification answer from device is 
+Particle Counter: Serialnumber  not correct. Failed to verify
+Particle Counter: Verification answer from device is 
+Particle Counter: Serialnumber  not correct. Failed to verify
+Particle Counter: Verification answer from device is 
+Particle Counter: Serialnumber  not correct. Failed to verify
+Particle Counter: Verification answer from device is 
+Particle Counter: Serialnumber  not correct. Failed to verify
+Particle Counter: Verification answer from device is 
+Particle Counter: Serialnumber  not correct. Failed to verify
+Particle Counter: Verification answer from device is 
+Particle Counter: Serialnumber  not correct. Failed to verify
+Particle Counter: Verification answer from device is 
+Particle Counter: Serialnumber  not correct. Failed to verify
+Particle Counter: Verification answer from device is 
+Particle Counter: Serialnumber  not correct. Failed to verify
+Particle Counter: Verification answer from device is 
+Particle Counter: Serialnumber  not correct. Failed to verify
+Particle Counter: Verification answer from device is 
+Particle Counter: Serialnumber  not correct. Failed to verify
+Particle Counter: Verification answer from device is 
+Particle Counter: Serialnumber  not correct. Failed to verify
+Particle Counter: Verification answer from device is 
+Particle Counter: Serialnumber  not correct. Failed to verify
+Particle Counter: Verification answer from device is 
+Particle Counter: Serialnumber  not correct. Failed to verify
+Particle Counter: Verification answer from device is 
+Particle Counter: Serialnumber  not correct. Failed to verify
+Particle Counter: Verification answer from device is 
+Particle Counter: Serialnumber  not correct. Failed to verify
+Particle Counter: Verification answer from device is 
+Particle Counter: Serialnumber  not correct. Failed to verify
+Particle Counter: Verification answer from device is 
+Particle Counter: Serialnumber  not correct. Failed to verify
+Particle Counter: Verification answer from device is 
+Particle Counter: Serialnumber  not correct. Failed to verify
+Particle Counter: Verification answer from device is 
+Particle Counter: Serialnumber  not correct. Failed to verify
+Particle Counter: Verification answer from device is 
+Particle Counter: Serialnumber  not correct. Failed to verify
+Particle Counter: Verification answer from device is 
+Particle Counter: Serialnumber  not correct. Failed to verify
+Particle Counter: Verification answer from device is 
+Particle Counter: Serialnumber  not correct. Failed to verify
+Particle Counter: Verification answer from device is 
+Particle Counter: Serialnumber  not correct. Failed to verify
+Particle Counter: Verification answer from device is 
+Particle Counter: Serialnumber  not correct. Failed to verify
+Particle Counter: Verification answer from device is 
+Particle Counter: Serialnumber  not correct. Failed to verify
+Particle Counter: Verification answer from device is 
+Particle Counter: Serialnumber  not correct. Failed to verify
+Particle Counter: Verification answer from device is 
+Particle Counter: Serialnumber  not correct. Failed to verify
+Particle Counter: Verification answer from device is 
+Particle Counter: Serialnumber  not correct. Failed to verify
+Particle Counter: Verification answer from device is 
+Particle Counter: Serialnumber  not correct. Failed to verify
+Particle Counter: Verification answer from device is 
+Particle Counter: Serialnumber  not correct. Failed to verify
+Particle Counter: Verification answer from device is 
+Particle Counter: Serialnumber  not correct. Failed to verify
+Particle Counter: Verification answer from device is 
+Particle Counter: Serialnumber  not correct. Failed to verify
+Particle Counter: Verification answer from device is 
+Particle Counter: Serialnumber  not correct. Failed to verify
+Particle Counter: Verification answer from device is 
+Particle Counter: Serialnumber  not correct. Failed to verify
+Particle Counter: Verification answer from device is 
+Particle Counter: Serialnumber  not correct. Failed to verify
+Particle Counter: Verification answer from device is 
+Particle Counter: Serialnumber  not correct. Failed to verify
+Particle Counter: Verification answer from device is 
+Particle Counter: Serialnumber  not correct. Failed to verify
+Particle Counter: Verification answer from device is 
+Particle Counter: Serialnumber  not correct. Failed to verify
+Particle Counter: Verification answer from device is 
+Particle Counter: Serialnumber  not correct. Failed to verify
+Particle Counter: Verification answer from device is 
+Particle Counter: Serialnumber  not correct. Failed to verify
+Particle Counter: Verification answer from device is 
+Particle Counter: Serialnumber  not correct. Failed to verify
+Particle Counter: Verification answer from device is 
+Particle Counter: Serialnumber  not correct. Failed to verify
+Particle Counter: Verification answer from device is 
+Particle Counter: Serialnumber  not correct. Failed to verify
+Particle Counter: Verification answer from device is 
+Particle Counter: Serialnumber  not correct. Failed to verify
+Particle Counter: Verification answer from device is 
+Particle Counter: Serialnumber  not correct. Failed to verify
+Particle Counter: Verification answer from device is 
+Particle Counter: Serialnumber  not correct. Failed to verify
+Particle Counter: Verification answer from device is 
+Particle Counter: Serialnumber  not correct. Failed to verify
+Particle Counter: Verification answer from device is 
+Particle Counter: Serialnumber  not correct. Failed to verify
+Particle Counter: Verification answer from device is 
+Particle Counter: Serialnumber  not correct. Failed to verify
+Particle Counter: Verification answer from device is 
+Particle Counter: Serialnumber  not correct. Failed to verify
+Particle Counter: Verification answer from device is 
+Particle Counter: Serialnumber  not correct. Failed to verify
+Particle Counter: Verification answer from device is 
+Particle Counter: Serialnumber  not correct. Failed to verify
+Particle Counter: Verification answer from device is 
+Particle Counter: Serialnumber  not correct. Failed to verify
+Particle Counter: Verification answer from device is 
+Particle Counter: Serialnumber  not correct. Failed to verify
+Particle Counter: Verification answer from device is 
+Particle Counter: Serialnumber  not correct. Failed to verify
+Particle Counter: Verification answer from device is 
+Particle Counter: Serialnumber  not correct. Failed to verify
+Particle Counter: Verification answer from device is 
+Particle Counter: Serialnumber  not correct. Failed to verify
+Particle Counter: Verification answer from device is 
+Particle Counter: Serialnumber  not correct. Failed to verify
+Particle Counter: Verification answer from device is 
+Particle Counter: Serialnumber  not correct. Failed to verify
+Particle Counter: Verification answer from device is 
+Particle Counter: Serialnumber  not correct. Failed to verify
+Particle Counter: Verification answer from device is 
+Particle Counter: Serialnumber  not correct. Failed to verify
+Particle Counter: Verification answer from device is 
+Particle Counter: Serialnumber  not correct. Failed to verify
+Particle Counter: Verification answer from device is 
+Particle Counter: Serialnumber  not correct. Failed to verify
+Particle Counter: Verification answer from device is 
+Particle Counter: Serialnumber  not correct. Failed to verify
+Particle Counter: Verification answer from device is 
+Particle Counter: Serialnumber  not correct. Failed to verify
+Particle Counter: Verification answer from device is 
+Particle Counter: Serialnumber  not correct. Failed to verify
+Particle Counter: Verification answer from device is 
+Particle Counter: Serialnumber  not correct. Failed to verify
+Particle Counter: Verification answer from device is 
+Particle Counter: Serialnumber  not correct. Failed to verify
+Particle Counter: Verification answer from device is 
+Particle Counter: Serialnumber  not correct. Failed to verify
+Particle Counter: Verification answer from device is 
+Particle Counter: Serialnumber  not correct. Failed to verify
+Particle Counter: Verification answer from device is 
+Particle Counter: Serialnumber  not correct. Failed to verify
+Particle Counter: Verification answer from device is 
+Particle Counter: Serialnumber  not correct. Failed to verify
+Particle Counter: Verification answer from device is 
+Particle Counter: Serialnumber  not correct. Failed to verify
+Particle Counter: Verification answer from device is 
+Particle Counter: Serialnumber  not correct. Failed to verify
+Particle Counter: Verification answer from device is 
+Particle Counter: Serialnumber  not correct. Failed to verify
+Particle Counter: Verification answer from device is 
+Particle Counter: Serialnumber  not correct. Failed to verify
+Particle Counter: Verification answer from device is 
+Particle Counter: Serialnumber  not correct. Failed to verify
+Particle Counter: Verification answer from device is 
+Particle Counter: Serialnumber  not correct. Failed to verify
+Particle Counter: Verification answer from device is 
+Particle Counter: Serialnumber  not correct. Failed to verify
+Particle Counter: Verification answer from device is 
+Particle Counter: Serialnumber  not correct. Failed to verify
+Particle Counter: Verification answer from device is 
+Particle Counter: Serialnumber  not correct. Failed to verify
+Particle Counter: Verification answer from device is 
+Particle Counter: Serialnumber  not correct. Failed to verify
+Particle Counter: Verification answer from device is 
+Particle Counter: Serialnumber  not correct. Failed to verify
+Particle Counter: Verification answer from device is 
+Particle Counter: Serialnumber  not correct. Failed to verify
+Particle Counter: Verification answer from device is 
+Particle Counter: Serialnumber  not correct. Failed to verify
+Particle Counter: Verification answer from device is 
+Particle Counter: Serialnumber  not correct. Failed to verify
+Particle Counter: Verification answer from device is 
+Particle Counter: Serialnumber  not correct. Failed to verify
+Particle Counter: Verification answer from device is 
+Particle Counter: Serialnumber  not correct. Failed to verify
+Particle Counter: Verification answer from device is 
+Particle Counter: Serialnumber  not correct. Failed to verify
+Particle Counter: Verification answer from device is 
+Particle Counter: Serialnumber  not correct. Failed to verify
+Particle Counter: Verification answer from device is 
+Particle Counter: Serialnumber  not correct. Failed to verify
+Particle Counter: Verification answer from device is 
+Particle Counter: Serialnumber  not correct. Failed to verify
+Particle Counter: Verification answer from device is 
+Particle Counter: Serialnumber  not correct. Failed to verify
+Particle Counter: Verification answer from device is 
+Particle Counter: Serialnumber  not correct. Failed to verify
+Particle Counter: Verification answer from device is 
+Particle Counter: Serialnumber  not correct. Failed to verify
+Particle Counter: Verification answer from device is 
+Particle Counter: Serialnumber  not correct. Failed to verify
+Particle Counter: Verification answer from device is 
+Particle Counter: Serialnumber  not correct. Failed to verify
+Particle Counter: Verification answer from device is 
+Particle Counter: Serialnumber  not correct. Failed to verify
+Particle Counter: Verification answer from device is 
+Particle Counter: Serialnumber  not correct. Failed to verify
+Particle Counter: Verification answer from device is 
+Particle Counter: Serialnumber  not correct. Failed to verify
+Particle Counter: Verification answer from device is 
+Particle Counter: Serialnumber  not correct. Failed to verify
+Particle Counter: Verification answer from device is 
+Particle Counter: Serialnumber  not correct. Failed to verify
+Particle Counter: Verification answer from device is 
+Particle Counter: Serialnumber  not correct. Failed to verify
+Particle Counter: Verification answer from device is 
+Particle Counter: Serialnumber  not correct. Failed to verify
+Particle Counter: Verification answer from device is 
+Particle Counter: Serialnumber  not correct. Failed to verify
+Particle Counter: Verification answer from device is 
+Particle Counter: Serialnumber  not correct. Failed to verify
+Particle Counter: Verification answer from device is 
+Particle Counter: Serialnumber  not correct. Failed to verify
+Particle Counter: Verification answer from device is 
+Particle Counter: Serialnumber  not correct. Failed to verify
+Particle Counter: Verification answer from device is 
+Particle Counter: Serialnumber  not correct. Failed to verify
+Particle Counter: Verification answer from device is 
+Particle Counter: Serialnumber  not correct. Failed to verify
+Particle Counter: Verification answer from device is 
+Particle Counter: Serialnumber  not correct. Failed to verify
+Particle Counter: Verification answer from device is 
+Particle Counter: Serialnumber  not correct. Failed to verify
+Particle Counter: Verification answer from device is 
+Particle Counter: Serialnumber  not correct. Failed to verify
+Particle Counter: Verification answer from device is 
+Particle Counter: Serialnumber  not correct. Failed to verify
+Particle Counter: Verification answer from device is 
+Particle Counter: Serialnumber  not correct. Failed to verify
+Particle Counter: Verification answer from device is 
+Particle Counter: Serialnumber  not correct. Failed to verify
+Particle Counter: Verification answer from device is 
+Particle Counter: Serialnumber  not correct. Failed to verify
+Particle Counter: Verification answer from device is 
+Particle Counter: Serialnumber  not correct. Failed to verify
+Particle Counter: Verification answer from device is 
+Particle Counter: Serialnumber  not correct. Failed to verify
+Particle Counter: Verification answer from device is 
+Particle Counter: Serialnumber  not correct. Failed to verify
+Particle Counter: Verification answer from device is 
+Particle Counter: Serialnumber  not correct. Failed to verify
+Particle Counter: Verification answer from device is 
+Particle Counter: Serialnumber  not correct. Failed to verify
+Particle Counter: Verification answer from device is 
+Particle Counter: Serialnumber  not correct. Failed to verify
+Particle Counter: Verification answer from device is 
+Particle Counter: Serialnumber  not correct. Failed to verify
+Particle Counter: Verification answer from device is 
+Particle Counter: Serialnumber  not correct. Failed to verify
+Particle Counter: Verification answer from device is 
+Particle Counter: Serialnumber  not correct. Failed to verify
+Particle Counter: Verification answer from device is 
+Particle Counter: Serialnumber  not correct. Failed to verify
+Particle Counter: Verification answer from device is 
+Particle Counter: Serialnumber  not correct. Failed to verify
+Particle Counter: Verification answer from device is 
+Particle Counter: Serialnumber  not correct. Failed to verify
+Particle Counter: Verification answer from device is 
+Particle Counter: Serialnumber  not correct. Failed to verify
+Particle Counter: Verification answer from device is 
+Particle Counter: Serialnumber  not correct. Failed to verify
+Particle Counter: Verification answer from device is 
+Particle Counter: Serialnumber  not correct. Failed to verify
+Particle Counter: Verification answer from device is 
+Particle Counter: Serialnumber  not correct. Failed to verify
+Particle Counter: Verification answer from device is 
+Particle Counter: Serialnumber  not correct. Failed to verify
+Particle Counter: Verification answer from device is 
+Particle Counter: Serialnumber  not correct. Failed to verify
+Particle Counter: Verification answer from device is 
+Particle Counter: Serialnumber  not correct. Failed to verify
+Particle Counter: Verification answer from device is 
+Particle Counter: Serialnumber  not correct. Failed to verify
+Particle Counter: Verification answer from device is 
+Particle Counter: Serialnumber  not correct. Failed to verify
+Particle Counter: Verification answer from device is 
+Particle Counter: Serialnumber  not correct. Failed to verify
+Particle Counter: Verification answer from device is 
+Particle Counter: Serialnumber  not correct. Failed to verify
+Particle Counter: Verification answer from device is 
+Particle Counter: Serialnumber  not correct. Failed to verify
+Particle Counter: Verification answer from device is 
+Particle Counter: Serialnumber  not correct. Failed to verify
+Particle Counter: Verification answer from device is 
+Particle Counter: Serialnumber  not correct. Failed to verify
+Particle Counter: Verification answer from device is 
+Particle Counter: Serialnumber  not correct. Failed to verify
+Particle Counter: Verification answer from device is 
+Particle Counter: Serialnumber  not correct. Failed to verify
+Particle Counter: Verification answer from device is 
+Particle Counter: Serialnumber  not correct. Failed to verify
+Particle Counter: Verification answer from device is 
+Particle Counter: Serialnumber  not correct. Failed to verify
+Particle Counter: Verification answer from device is 
+Particle Counter: Serialnumber  not correct. Failed to verify
+Particle Counter: Verification answer from device is 
+Particle Counter: Serialnumber  not correct. Failed to verify
+Particle Counter: Verification answer from device is 
+Particle Counter: Serialnumber  not correct. Failed to verify
+Particle Counter: Verification answer from device is 
+Particle Counter: Serialnumber  not correct. Failed to verify
+Particle Counter: Verification answer from device is 
+Particle Counter: Serialnumber  not correct. Failed to verify
+Particle Counter: Verification answer from device is 
+Particle Counter: Serialnumber  not correct. Failed to verify
+Particle Counter: Verification answer from device is 
+Particle Counter: Serialnumber  not correct. Failed to verify
+Particle Counter: Verification answer from device is 
+Particle Counter: Serialnumber  not correct. Failed to verify
+Particle Counter: Verification answer from device is 
+Particle Counter: Serialnumber  not correct. Failed to verify
+DeviceController: Initialize SMPS
+Particle Counter: Initializing
+Particle Counter: Trying to verify Particle Counter...
+Particle Counter: Verifying on Port COM1
+Particle Counter: Starting verification. Requesting serial number 123456789
+Particle Counter: Device on port COM1 verified. Initialization complete!
