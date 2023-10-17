@@ -85,6 +85,13 @@ public class ParticleCounter : IDevice
 
     }
 
+
+    public void Start(){
+
+        
+
+    }
+    public void Stop(){}
     
     public event EventHandler Initialized;
 

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "e:\\Software\\Git\\project_volt\\volt\\volt.csproj": {}
+    "E:\\Software\\Git\\project_volt\\volt\\volt.csproj": {}
   },
   "projects": {
-    "e:\\Software\\Git\\project_volt\\volt\\volt.csproj": {
+    "E:\\Software\\Git\\project_volt\\volt\\volt.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "e:\\Software\\Git\\project_volt\\volt\\volt.csproj",
+        "projectUniqueName": "E:\\Software\\Git\\project_volt\\volt\\volt.csproj",
         "projectName": "volt",
-        "projectPath": "e:\\Software\\Git\\project_volt\\volt\\volt.csproj",
+        "projectPath": "E:\\Software\\Git\\project_volt\\volt\\volt.csproj",
         "packagesPath": "C:\\Users\\matth\\.nuget\\packages\\",
-        "outputPath": "e:\\Software\\Git\\project_volt\\volt\\obj\\",
+        "outputPath": "E:\\Software\\Git\\project_volt\\volt\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\matth\\AppData\\Roaming\\NuGet\\NuGet.Config",

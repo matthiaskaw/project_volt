@@ -24,11 +24,37 @@ public class DeviceController{
 
     public EMeasurementType MeasurementType { get; set;} 
 
-    private List<IDevice> _devices = new List<IDevice>();
+    private List<IDevice> _toBeIntitializedDevices = new List<IDevice>();
+    private List<IDevice> _initializedDevices = new List<IDevice>();
+
+
+    private event EventHandler StartDevices;
+    private event EventHandler StopDevices;
+    private void SetupEvents(){
+
+        StartDevices += (sender, args) => {
+
+            foreach(IDevice dev in _initializedDevices){
+
+                    dev.Start();
+
+            }
+        };
+
+        StopDevices += (sender, args) => {
+
+            foreach(IDevice dev in _initializedDevices){
+
+                dev.Stop();
+            }
+        };
+    }
+
 
     public void InitializeDevices(){
 
-
+        _initializedDevices.Clear();
+        _toBeIntitializedDevices.Clear();
 
         switch(MeasurementType){
 
@@ -38,27 +64,38 @@ public class DeviceController{
                 break;
 
             case EMeasurementType.SMPS:
+
                 Logger.WriteToLog("DeviceController: Initialize SMPS");
-                
                 var particlecounter = new ParticleCounter(100,100,10.5f,1000);
-                
-                _devices.Add(particlecounter);
-                
+                _toBeIntitializedDevices.Add(particlecounter);
                 break;
 
             case EMeasurementType.TandemPyrolysis:
+            
                 Logger.WriteToLog("DeviceController: Initialize TandemPyrolysis");
                 break;
 
             case EMeasurementType.Temperature:
+            
                 Logger.WriteToLog("DeviceController: Initialize Temperature");
                 break;
 
         }
 
-        foreach(IDevice dev in _devices){
+        foreach(IDevice dev in _toBeIntitializedDevices){
 
             dev.Initialize();
+            dev.Initialized += (sender,args) => {
+
+                _initializedDevices.Add((IDevice)sender);
+
+                if(_toBeIntitializedDevices.Count == _initializedDevices.Count){
+                    
+                    StartDevices?.Invoke(this, new EventArgs());
+                }
+            };
+            
+
         }
     }
    

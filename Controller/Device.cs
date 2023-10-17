@@ -9,11 +9,13 @@ public interface IDevice{
     string ReceiveMessage();
     void VerifyDevice(string verificationstring);
     void VerifyMessage(string message); //Check received message if complete, for example is a delimiter like /n present
+    void Start();
+    void Stop();
 
 
     event EventHandler Initialized;
-    event EventHandler Ready;
-
+    event EventHandler Started;
+    event EventHandler Stopped;
     event EventHandler<string> AnswerReady;
 
     
