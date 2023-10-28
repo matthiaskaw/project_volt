@@ -1,8 +1,14 @@
 {
   "version": 2,
+<<<<<<< Updated upstream
   "dgSpecHash": "AJ8ZzbIQMzMsKfQq/Lm7j0wnDDAwUtA6V0qkPes9TKRzcrIkBp73Wk+1+a3F/FWMamQdQkP7WYzGOIFFhgskOg==",
   "success": true,
   "projectFilePath": "E:\\Software\\Git\\project_volt\\volt\\volt.csproj",
+=======
+  "dgSpecHash": "788QJeVgMBAC0BiwGM784o4Vk9nv62KA0sz+w0UQq62DxiV6gM5os6vtysRayQJwpHVr/lnYans8YFdi0Ncw1Q==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\matth\\Documents\\GitHub\\project_volt\\volt.csproj",
+>>>>>>> Stashed changes
   "expectedPackageFiles": [
     "C:\\Users\\matth\\.nuget\\packages\\runtime.linux-arm.runtime.native.system.io.ports\\7.0.0\\runtime.linux-arm.runtime.native.system.io.ports.7.0.0.nupkg.sha512",
     "C:\\Users\\matth\\.nuget\\packages\\runtime.linux-arm64.runtime.native.system.io.ports\\7.0.0\\runtime.linux-arm64.runtime.native.system.io.ports.7.0.0.nupkg.sha512",

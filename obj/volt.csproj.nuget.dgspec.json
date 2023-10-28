@@ -1,6 +1,7 @@
 {
   "format": 1,
   "restore": {
+<<<<<<< Updated upstream
     "E:\\Software\\Git\\project_volt\\volt\\volt.csproj": {}
   },
   "projects": {
@@ -12,9 +13,26 @@
         "projectPath": "E:\\Software\\Git\\project_volt\\volt\\volt.csproj",
         "packagesPath": "C:\\Users\\matth\\.nuget\\packages\\",
         "outputPath": "E:\\Software\\Git\\project_volt\\volt\\obj\\",
+=======
+    "C:\\Users\\matth\\Documents\\GitHub\\project_volt\\volt.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\matth\\Documents\\GitHub\\project_volt\\volt.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\matth\\Documents\\GitHub\\project_volt\\volt.csproj",
+        "projectName": "volt",
+        "projectPath": "C:\\Users\\matth\\Documents\\GitHub\\project_volt\\volt.csproj",
+        "packagesPath": "C:\\Users\\matth\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\matth\\Documents\\GitHub\\project_volt\\obj\\",
+>>>>>>> Stashed changes
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
           "C:\\Users\\matth\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -64,7 +82,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.401\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.400\\RuntimeIdentifierGraph.json"
         }
       }
     }
