@@ -3,21 +3,14 @@ using Device;
 
 namespace TandemAlgorithms{
 
-public abstract class AbstractMeasurementAlgorithm{
+public abstract class AbstractTandemMeasurementAlgorithm{
 
-    public AbstractMeasurementAlgorithm(IDevice clock, IDevice clockReceiver, List<float> valueList){
+    public AbstractTandemMeasurementAlgorithm(IDevice clock, IDevice clockReceiver, List<float> valueList){
 
 
         _clock = clock;
-        _clockReceiver = clock;
+        _clockReceiver = clockReceiver;
         _valueList = valueList;
-
-    }
-
-    public AbstractMeasurementAlgorithm(IDevice measurementDevice, List<float> valueList){
-
-        _clock = null;
-
 
     }
 
@@ -42,11 +35,32 @@ public abstract class AbstractMeasurementAlgorithm{
 
 }
 
-public class TandemDMAAlgorithm : AbstractMeasurementAlgorithm{
+public class TandemDMAAlgorithm : AbstractTandemMeasurementAlgorithm{
 
 
     public TandemDMAAlgorithm(IDevice clock, IDevice clockReceiver, List<float> valueList) : base(clock,clockReceiver, valueList){}
-    override protected void _setValue(float val){}
+    override protected void _setValue(float val){
+
+        ElectrostaticClassifier clock = _clock as ElectrostaticClassifier;
+
+        if(clock == null){
+
+            Logger.WriteToLog("TandemDMAAlgorithm: Invalid cast to ElectrostaticClassifier!");
+            return;
+        }
+
+        clock.Diameter = val;
+
+
+        ParticleCounter clockReceiver = _clockReceiver as ParticleCounter;
+
+        clockReceiver.MaxDiameter = val*1.2f;
+
+        
+
+
+
+    }
     override protected void _measure(){}
 }
 

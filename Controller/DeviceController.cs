@@ -26,11 +26,11 @@ public class DeviceController{
 
     private List<IDevice> _toBeIntitializedDevices = new List<IDevice>();
     private List<IDevice> _initializedDevices = new List<IDevice>();
-
+    
 
     private event EventHandler StartDevices;
     private event EventHandler StopDevices;
-    private void SetupEvents(){
+private void SetupEvents(){
 
         StartDevices += (sender, args) => {
 
@@ -49,7 +49,7 @@ public class DeviceController{
             }
         };
     }
-
+   
 
     public void InitializeDevices(){
 
@@ -94,9 +94,9 @@ public class DeviceController{
                     StartDevices?.Invoke(this, new EventArgs());
                 }
             };
-            
+
 
         }
     }
-   
+
 }

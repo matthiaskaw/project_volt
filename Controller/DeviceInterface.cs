@@ -8,7 +8,7 @@ public interface IDevice{
     void SendMessage(string message);
     string ReceiveMessage();
     void VerifyDevice(string verificationstring);
-    void VerifyMessage(string message); //Check received message if complete, for example is a delimiter like /n present
+    void UpdateSettings();
     void Start();
     void Stop();
 

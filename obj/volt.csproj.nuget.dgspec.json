@@ -1,24 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\matth\\Documents\\GitHub\\project_volt\\volt.csproj": {}
+    "E:\\Software\\Git\\project_volt\\volt\\volt.csproj": {}
   },
   "projects": {
-    "C:\\Users\\matth\\Documents\\GitHub\\project_volt\\volt.csproj": {
+    "E:\\Software\\Git\\project_volt\\volt\\volt.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\matth\\Documents\\GitHub\\project_volt\\volt.csproj",
+        "projectUniqueName": "E:\\Software\\Git\\project_volt\\volt\\volt.csproj",
         "projectName": "volt",
-        "projectPath": "C:\\Users\\matth\\Documents\\GitHub\\project_volt\\volt.csproj",
+        "projectPath": "E:\\Software\\Git\\project_volt\\volt\\volt.csproj",
         "packagesPath": "C:\\Users\\matth\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\matth\\Documents\\GitHub\\project_volt\\obj\\",
+        "outputPath": "E:\\Software\\Git\\project_volt\\volt\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
           "C:\\Users\\matth\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -68,7 +64,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.400\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.403\\RuntimeIdentifierGraph.json"
         }
       }
     }

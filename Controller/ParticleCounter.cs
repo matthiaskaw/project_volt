@@ -15,9 +15,10 @@ public class ParticleCounter : IDevice
 
         UpscanTime = upscanTime;
         DownscanTime = downscanTime;
-        MinVoltage = calculateVoltage(minDiameter);
-        MaxVoltage = calculateVoltage(maxDiameter);
+        _minVoltage = calculateVoltage(minDiameter);
+        _maxVoltage = calculateVoltage(maxDiameter);
         UpscanDirection = true;
+
 
         _serialport.DataReceived += HandleReceivedData;
     }
@@ -54,16 +55,17 @@ public class ParticleCounter : IDevice
    
     public int UpscanTime{get; set;}
     public int DownscanTime{get; set;}
-    public int MinVoltage{get; set;}
-    public int MaxVoltage{get; set;}
+    public float MinDiameter{get; set;}
+    public float MaxDiameter{get; set;}
     public bool UpscanDirection{get; set;}
 
+    private int _minVoltage = 0;
+    private int _maxVoltage = 10000;
 
     
 
     public void SendMessage(string message){}
     public string ReceiveMessage(){return "";}
-    public void VerifyMessage(string message){}
     public void VerifyDevice(string verificationstring){
             
         _serialport.Write("RSN\n");   
@@ -91,10 +93,16 @@ public class ParticleCounter : IDevice
         
 
     }
+    
     public void Stop(){}
     
-    public event EventHandler Initialized;
+    public void UpdateSettings(){}
 
+
+
+    public event EventHandler Initialized;
+    public event EventHandler Started;
+    public event EventHandler Stopped;
     public event EventHandler Ready;
     public event EventHandler<string> AnswerReady;
     public event EventHandler StartedMeasurement;
@@ -122,7 +130,7 @@ public class ParticleCounter : IDevice
     }
     private bool setVoltage(){
 
-        _serialport.Write($"ZV{MinVoltage},{MaxVoltage}");
+        _serialport.Write($"ZV{_minVoltage},{_maxVoltage}");
         _answer = _serialport.ReadLine();
         
 
@@ -154,6 +162,8 @@ public class ParticleCounter : IDevice
 
         return 0;
     }
+
+
     private  string _answer;
     private string _answerbuffer;
 
