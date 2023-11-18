@@ -1,6 +1,7 @@
 using System.Collections.Generic;
 using System.IO.Ports;
 using Device;
+using MeasurementAlgorithms;
 using Measurement;
 
 public class DeviceController{
@@ -24,6 +25,7 @@ public class DeviceController{
 
     public EMeasurementType MeasurementType { get; set;} 
 
+    private IMeasurementAlgorithm _measurementAlgorithm;
     private List<IDevice> _toBeIntitializedDevices = new List<IDevice>();
     private List<IDevice> _initializedDevices = new List<IDevice>();
     
@@ -32,15 +34,7 @@ public class DeviceController{
     private event EventHandler StopDevices;
 private void SetupEvents(){
 
-        StartDevices += (sender, args) => {
-
-            foreach(IDevice dev in _initializedDevices){
-
-                    dev.Start();
-
-            }
-        };
-
+        
         StopDevices += (sender, args) => {
 
             foreach(IDevice dev in _initializedDevices){
@@ -74,6 +68,7 @@ private void SetupEvents(){
             
                 Logger.WriteToLog("DeviceController: Initialize TandemPyrolysis");
                 break;
+                
 
             case EMeasurementType.Temperature:
             
@@ -91,12 +86,9 @@ private void SetupEvents(){
 
                 if(_toBeIntitializedDevices.Count == _initializedDevices.Count){
                     
-                    StartDevices?.Invoke(this, new EventArgs());
+                    
                 }
             };
-
-
         }
     }
-
 }
