@@ -4,12 +4,13 @@ using System.Reflection.Metadata;
 using System.Threading;
 using System.Reflection.Metadata.Ecma335;
 
-
 using Measurement;
 using Test;
+
+
 namespace Device{
 public class ParticleCounter : IDevice
-{
+{    
     public ParticleCounter(int upscanTime, int downscanTime, float minDiameter, float maxDiameter){
 
 
@@ -20,16 +21,21 @@ public class ParticleCounter : IDevice
         UpscanDirection = true;
 
 
-        _serialport.DataReceived += HandleReceivedData;
+        //_serialport.DataReceived += HandleReceivedData;
     }
-    public void Initialize(){
+
+
+  
+
+        public void Initialize(){
         
 
-        Logger.WriteToLog("Particle Counter: Initializing");
+            Logger.WriteToLog("Particle Counter: Initializing");
        
-        Logger.WriteToLog("Particle Counter: Trying to verify Particle Counter...");
-        
-        foreach(string portname in SerialPort.GetPortNames()){
+            Logger.WriteToLog("Particle Counter: Trying to verify Particle Counter...");
+
+     
+            foreach(string portname in SerialPort){
             
             
                 Logger.WriteToLog($"Particle Counter: Verifying on Port {portname}");
@@ -52,18 +58,8 @@ public class ParticleCounter : IDevice
         
     }
 
-   
-    public int UpscanTime{get; set;}
-    public int DownscanTime{get; set;}
-    public float MinDiameter{get; set;}
-    public float MaxDiameter{get; set;}
-    public bool UpscanDirection{get; set;}
-
-    private int _minVoltage = 0;
-    private int _maxVoltage = 10000;
 
     
-
     public void SendMessage(string message){}
     public string ReceiveMessage(){return "";}
     public void VerifyDevice(string verificationstring){
@@ -76,6 +72,7 @@ public class ParticleCounter : IDevice
 
         if(_answer == _verificationstring){
             
+            _isInitialized = true;
             Initialized?.Invoke(this, new EventArgs());
             
         }
@@ -98,8 +95,11 @@ public class ParticleCounter : IDevice
     
     public void UpdateSettings(){}
 
+    public void SetValues(Dictionary<EDeviceValues, object> values){
 
 
+
+    }
     public event EventHandler Initialized;
     public event EventHandler Started;
     public event EventHandler Stopped;
@@ -109,12 +109,9 @@ public class ParticleCounter : IDevice
     public event EventHandler EndedMeasurement;
     public event EventHandler CanceledMeasurement;
 
-    string SerialNumber {get; set;}
-    private SerialPortTest _serialport = new SerialPortTest();
 
-    public void HandleReceivedData(object sender, EventArgs e){
-
-    }
+    //PRIVATE METHODS
+   
     private bool setScanTime(){
 
         _serialport.Write($"ZT0,{UpscanTime},{DownscanTime}");
@@ -128,7 +125,7 @@ public class ParticleCounter : IDevice
             return false;
         }
     }
-    private bool setVoltage(){
+     private bool setVoltage(){
 
         _serialport.Write($"ZV{_minVoltage},{_maxVoltage}");
         _answer = _serialport.ReadLine();
@@ -156,20 +153,41 @@ public class ParticleCounter : IDevice
         else{
             return false;
         }       
-    } 
+    }
 
-    private int calculateVoltage(float diameter){
+   
+
+        private int calculateVoltage(float diameter)
+        {
 
         return 0;
+        
+       
     }
 
 
+    //properties
+   
+    public int UpscanTime{get; set;}
+    public int DownscanTime{get; set;}
+    public float MinDiameter{get; set;}
+    public float MaxDiameter{get; set;}
+    public bool UpscanDirection{get; set;}
+    string SerialNumber {get; set;}
+    public string DeviceID {get; set;}
+    public bool IsInitialized {get{return _isInitialized;}}
+
+
+
+        private int _minVoltage = 0;
+    private int _maxVoltage = 10000;
+    private SerialPortTest _serialport = new SerialPortTest();
     private  string _answer;
     private string _answerbuffer;
-
     private string _positiveAnswer = "OK\n";
     private string _negativeAnswer = "ERROR\n";
     private string _verificationstring = "123456789"; //serial number
+    private bool _isInitialized = false;
 
 }
 

@@ -24,22 +24,19 @@ public class DeviceController{
     }
 
     public EMeasurementType MeasurementType { get; set;} 
-
     private IMeasurementAlgorithm _measurementAlgorithm;
-    private List<IDevice> _toBeIntitializedDevices = new List<IDevice>();
-    private List<IDevice> _initializedDevices = new List<IDevice>();
-    
-
+    private Dictionary<EDeviceTypes, IDevice> _devices = new Dictionary<EDeviceTypes, IDevice>();
     private event EventHandler StartDevices;
     private event EventHandler StopDevices;
-private void SetupEvents(){
+
+    private void SetupEvents(){
 
         
         StopDevices += (sender, args) => {
 
-            foreach(IDevice dev in _initializedDevices){
+            foreach(var dev in _devices){
 
-                dev.Stop();
+                dev.Value.Stop();
             }
         };
     }
@@ -47,8 +44,7 @@ private void SetupEvents(){
 
     public void InitializeDevices(){
 
-        _initializedDevices.Clear();
-        _toBeIntitializedDevices.Clear();
+        _devices.Clear();
 
         switch(MeasurementType){
 
@@ -61,7 +57,7 @@ private void SetupEvents(){
 
                 Logger.WriteToLog("DeviceController: Initialize SMPS");
                 var particlecounter = new ParticleCounter(100,100,10.5f,1000);
-                _toBeIntitializedDevices.Add(particlecounter);
+                _devices.Add(EDeviceTypes.ParticleCounter, particlecounter);
                 break;
 
             case EMeasurementType.TandemPyrolysis:
@@ -76,19 +72,26 @@ private void SetupEvents(){
                 break;
 
         }
+        
+        bool allinitialized = false;
+        foreach(KeyValuePair<EDeviceTypes,IDevice> dev in _devices){
 
-        foreach(IDevice dev in _toBeIntitializedDevices){
+            dev.Value.Initialize();
+            dev.Value.Initialized += (sender,args) => {
+           
+                foreach(KeyValuePair<EDeviceTypes,IDevice> dev in _devices){
+                
+                    if(!dev.Value.IsInitialized){
 
-            dev.Initialize();
-            dev.Initialized += (sender,args) => {
-
-                _initializedDevices.Add((IDevice)sender);
-
-                if(_toBeIntitializedDevices.Count == _initializedDevices.Count){
-                    
-                    
+                        break;
+                    }
+                    else{
+                        
+                        break;
+                    }
                 }
-            };
-        }
+
+        };
     }
+}
 }
