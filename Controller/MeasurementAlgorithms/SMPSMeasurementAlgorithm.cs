@@ -1,4 +1,4 @@
-namespace MEasurementAlgorithms{}
+namespace MeasurementAlgorithms{
 
 public class SMPSMeasurementAlgorithm : IMeasurementAlgorithm {
 
@@ -12,4 +12,5 @@ public class SMPSMeasurementAlgorithm : IMeasurementAlgorithm {
     }
 
 
+}
 }

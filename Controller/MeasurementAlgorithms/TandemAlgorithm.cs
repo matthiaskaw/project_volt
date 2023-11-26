@@ -4,7 +4,7 @@ using Device;
 
 
 namespace MeasurementAlgorithms{
-
+/*
 public abstract class AbstractTandemMeasurementAlgorithm : IMeasurementAlgorithm{
 
     public AbstractTandemMeasurementAlgorithm(IDevice clock, IDevice clockReceiver, List<float> valueList){
@@ -55,5 +55,5 @@ public class TandemDMAAlgorithm : AbstractTandemMeasurementAlgorithm{
 
     }
     override protected void _measure(){}
-}
+}*/
 }

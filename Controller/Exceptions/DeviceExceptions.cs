@@ -2,8 +2,9 @@ using System;
 using System.Runtime.Serialization;
 
 namespace Device{
-
-    public class InitalizationFailedException : Exception{
+    
+    
+        public class InitalizationFailedException : Exception{
 
 
         public InitalizationFailedException() : base("Initialization of Device failed!"){}

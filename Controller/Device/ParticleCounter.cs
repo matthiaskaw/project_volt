@@ -4,6 +4,7 @@ using System.Reflection.Metadata;
 using System.Threading;
 using System.Reflection.Metadata.Ecma335;
 
+
 using Measurement;
 using Test;
 
@@ -13,7 +14,7 @@ public class ParticleCounter : IDevice
 {    
     public ParticleCounter(int upscanTime, int downscanTime, float minDiameter, float maxDiameter){
 
-
+        
         UpscanTime = upscanTime;
         DownscanTime = downscanTime;
         _minVoltage = calculateVoltage(minDiameter);
@@ -27,7 +28,7 @@ public class ParticleCounter : IDevice
 
   
 
-        public void Initialize(){
+    public void Initialize(){
         
 
             Logger.WriteToLog("Particle Counter: Initializing");
@@ -35,27 +36,41 @@ public class ParticleCounter : IDevice
             Logger.WriteToLog("Particle Counter: Trying to verify Particle Counter...");
 
      
-            foreach(string portname in SerialPort){
+            foreach(string portname in _serialport.GetPortNamesTest()){
             
             
                 Logger.WriteToLog($"Particle Counter: Verifying on Port {portname}");
                 _serialport.PortName = portname;
                 _serialport.Open(true);
 
-                if(!_serialport.IsOpen){
-                    Logger.WriteToLog($"Particle Counter: Could not open device on port {portname}. Trying next port");
-                    continue;
-                }
-                else{
-
-                    Logger.WriteToLog($"Particle Counter: Starting verification. Requesting serial number {_verificationstring}");
-                    VerifyDevice(_verificationstring);
-                }
-
+                
+                if(_serialport.IsOpen){
             
+                    Logger.WriteToLog($"Particle Counter: Starting verification. Requesting serial number {_verificationstring}");
+                    _serialport.Write("RSN\n");   
+                    _answer = _serialport.ReadLine();
+            
+                    if(_answer == _verificationstring){
+            
+                        _isInitialized = true;
+                        Initialized?.Invoke(this, new EventArgs());
+                        Logger.WriteToLog($"Particle Counter: Particle Counter verified on port {_serialport.PortName}");
+                        break;
+            
+                    }
+                    else{
+                        Logger.WriteToLog($"Particle Counter: Answer {_answer} =/= {_verificationstring}. Trying next port...");
+                    }
+                
+                }
+
+                
+                if(portname == _serialport.GetPortNamesTest().Last()){
+
+                    Logger.WriteToLog($"Particle Counter: Reached last element with no successfull verification");
+                    throw new InitalizationFailedException("Particle Counter");
+                }   
         }
-   
-        
     }
 
 
@@ -64,22 +79,7 @@ public class ParticleCounter : IDevice
     public string ReceiveMessage(){return "";}
     public void VerifyDevice(string verificationstring){
             
-        _serialport.Write("RSN\n");   
         
-      
-        _answer = _serialport.ReadLine();
-        
-
-        if(_answer == _verificationstring){
-            
-            _isInitialized = true;
-            Initialized?.Invoke(this, new EventArgs());
-            
-        }
-        else{
-            Logger.WriteToLog($"Particle Counter: Answer {_answer} =/= {_verificationstring}. Trying next port...");
-
-        }
 
 
     }

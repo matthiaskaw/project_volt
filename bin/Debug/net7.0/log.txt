@@ -1210,3 +1210,363 @@ Particle Counter: Trying to verify Particle Counter...
 Particle Counter: Verifying on Port COM1
 Particle Counter: Starting verification. Requesting serial number 123456789
 Particle Counter: Device on port COM1 verified. Initialization complete!
+DeviceController: Initialize SMPS
+Particle Counter: Initializing
+Particle Counter: Trying to verify Particle Counter...
+Particle Counter: Verifying on Port COM1
+Particle Counter: Starting verification. Requesting serial number 123456789
+Particle Counter: Device on port COM1 verified. Initialization complete!
+DeviceController: Initialize SMPS
+Particle Counter: Initializing
+Particle Counter: Trying to verify Particle Counter...
+Particle Counter: Verifying on Port COM1
+Particle Counter: Starting verification. Requesting serial number 123456789
+Particle Counter: Device on port COM1 verified. Initialization complete!
+Particle Counter: Initializing
+Particle Counter: Trying to verify Particle Counter...
+Particle Counter: Verifying on Port COM1
+Particle Counter: Starting verification. Requesting serial number 123456789
+Particle Counter: Device on port COM1 verified. Initialization complete!
+DeviceController: Initialize SMPS
+Particle Counter: Initializing
+Particle Counter: Trying to verify Particle Counter...
+Particle Counter: Verifying on Port COM1
+Particle Counter: Starting verification. Requesting serial number 123456789
+Particle Counter: Device on port COM1 verified. Initialization complete!
+DeviceController: Initialize SMPS
+Particle Counter: Initializing
+Particle Counter: Trying to verify Particle Counter...
+Particle Counter: Verifying on Port COM1
+Particle Counter: Verifying on Port COM2
+Particle Counter: Verifying on Port COM3
+Particle Counter: Reached last element with no successfull verification
+DeviceController: Initialize SMPS
+Particle Counter: Initializing
+Particle Counter: Trying to verify Particle Counter...
+Particle Counter: Verifying on Port COM1
+Particle Counter: Starting verification. Requesting serial number 123456789
+DeviceController: Initialize SMPS
+Particle Counter: Initializing
+Particle Counter: Trying to verify Particle Counter...
+Particle Counter: Verifying on Port COM1
+Particle Counter: Verifying on Port COM2
+Particle Counter: Verifying on Port COM3
+Particle Counter: Reached last element with no successfull verification
+Exception thrown at initialization phase from device Particle Counter
+DeviceController: Initialize SMPS
+Particle Counter: Initializing
+Particle Counter: Trying to verify Particle Counter...
+Particle Counter: Verifying on Port COM1
+Particle Counter: Verifying on Port COM2
+Particle Counter: Verifying on Port COM3
+Particle Counter: Reached last element with no successfull verification
+Exception thrown at initialization phase from device Particle Counter
+
+DeviceController: Initialize SMPS
+Particle Counter: Initializing
+Particle Counter: Trying to verify Particle Counter...
+Particle Counter: Verifying on Port COM1
+Particle Counter: Verifying on Port COM2
+Particle Counter: Verifying on Port COM3
+Particle Counter: Reached last element with no successfull verification
+Exception thrown at initialization phase from device Particle Counter
+
+DeviceController: Initialize SMPS
+Particle Counter: Initializing
+Particle Counter: Trying to verify Particle Counter...
+Particle Counter: Verifying on Port COM1
+Particle Counter: Verifying on Port COM2
+Particle Counter: Verifying on Port COM3
+Particle Counter: Reached last element with no successfull verification
+Exception thrown at initialization phase from device Particle Counter
+
+DeviceController: Initialize SMPS
+Particle Counter: Initializing
+Particle Counter: Trying to verify Particle Counter...
+Particle Counter: Verifying on Port COM1
+Particle Counter: Verifying on Port COM2
+Particle Counter: Verifying on Port COM3
+Particle Counter: Reached last element with no successfull verification
+Exception thrown at initialization phase from device Particle Counter
+
+DeviceController: Initialize SMPS
+Particle Counter: Initializing
+Particle Counter: Trying to verify Particle Counter...
+Particle Counter: Verifying on Port COM1
+Particle Counter: Verifying on Port COM2
+Particle Counter: Verifying on Port COM3
+Particle Counter: Reached last element with no successfull verification
+Exception thrown at initialization phase from device Particle Counter
+
+DeviceController: Initialize SMPS
+Particle Counter: Initializing
+Particle Counter: Trying to verify Particle Counter...
+Particle Counter: Verifying on Port COM1
+Particle Counter: Verifying on Port COM2
+Particle Counter: Verifying on Port COM3
+Particle Counter: Reached last element with no successfull verification
+Exception thrown at initialization phase from device Particle Counter
+
+DeviceController: Initialize SMPS
+Particle Counter: Initializing
+Particle Counter: Trying to verify Particle Counter...
+Particle Counter: Verifying on Port COM1
+Particle Counter: Verifying on Port COM2
+Particle Counter: Verifying on Port COM3
+Particle Counter: Reached last element with no successfull verification
+Exception thrown at initialization phase from device Particle Counter
+
+DeviceController: Initialize SMPS
+Particle Counter: Initializing
+Particle Counter: Trying to verify Particle Counter...
+Particle Counter: Verifying on Port COM1
+Particle Counter: Verifying on Port COM2
+Particle Counter: Verifying on Port COM3
+Particle Counter: Reached last element with no successfull verification
+Exception thrown at initialization phase from device Particle Counter
+
+DeviceController: Initialize SMPS
+Particle Counter: Initializing
+Particle Counter: Trying to verify Particle Counter...
+Particle Counter: Verifying on Port COM1
+Particle Counter: Verifying on Port COM2
+Particle Counter: Verifying on Port COM3
+Particle Counter: Reached last element with no successfull verification
+Exception thrown at initialization phase from device Particle Counter
+
+DeviceController: Initialize SMPS
+Particle Counter: Initializing
+Particle Counter: Trying to verify Particle Counter...
+Particle Counter: Verifying on Port COM1
+Particle Counter: Verifying on Port COM2
+Particle Counter: Verifying on Port COM3
+Particle Counter: Reached last element with no successfull verification
+Exception thrown at initialization phase from device Particle Counter
+
+DeviceController: Initialize SMPS
+Particle Counter: Initializing
+Particle Counter: Trying to verify Particle Counter...
+Particle Counter: Verifying on Port COM1
+Particle Counter: Verifying on Port COM2
+Particle Counter: Verifying on Port COM3
+Particle Counter: Reached last element with no successfull verification
+Exception thrown at initialization phase from device Particle Counter
+
+DeviceController: Initialize SMPS
+Particle Counter: Initializing
+Particle Counter: Trying to verify Particle Counter...
+Particle Counter: Verifying on Port COM1
+Particle Counter: Verifying on Port COM2
+Particle Counter: Verifying on Port COM3
+Particle Counter: Reached last element with no successfull verification
+Exception thrown at initialization phase from device Particle Counter
+
+DeviceController: Initialize SMPS
+Particle Counter: Initializing
+Particle Counter: Trying to verify Particle Counter...
+Particle Counter: Verifying on Port COM1
+Particle Counter: Verifying on Port COM2
+Particle Counter: Verifying on Port COM3
+Particle Counter: Reached last element with no successfull verification
+Exception thrown at initialization phase from device Particle Counter
+
+DeviceController: Initialize SMPS
+Particle Counter: Initializing
+Particle Counter: Trying to verify Particle Counter...
+Particle Counter: Verifying on Port COM1
+Particle Counter: Verifying on Port COM2
+Particle Counter: Verifying on Port COM3
+Particle Counter: Reached last element with no successfull verification
+Exception thrown at initialization phase from device Particle Counter
+
+DeviceController: Initialize SMPS
+Particle Counter: Initializing
+Particle Counter: Trying to verify Particle Counter...
+Particle Counter: Verifying on Port COM1
+Particle Counter: Verifying on Port COM2
+Particle Counter: Verifying on Port COM3
+Particle Counter: Reached last element with no successfull verification
+Exception thrown at initialization phase from device Particle Counter
+DeviceController: Initialize SMPS
+Particle Counter: Initializing
+Particle Counter: Trying to verify Particle Counter...
+Particle Counter: Verifying on Port COM1
+Particle Counter: Verifying on Port COM2
+Particle Counter: Verifying on Port COM3
+Particle Counter: Reached last element with no successfull verification
+Exception thrown at initialization phase from device Particle Counter
+DeviceController: Initialize SMPS
+Particle Counter: Initializing
+Particle Counter: Trying to verify Particle Counter...
+Particle Counter: Verifying on Port COM1
+Particle Counter: Verifying on Port COM2
+Particle Counter: Verifying on Port COM3
+Particle Counter: Reached last element with no successfull verification
+Exception thrown at initialization phase from device Particle Counter
+DeviceController: Initialize SMPS
+Particle Counter: Initializing
+Particle Counter: Trying to verify Particle Counter...
+Particle Counter: Verifying on Port COM1
+Particle Counter: Verifying on Port COM2
+Particle Counter: Verifying on Port COM3
+Particle Counter: Reached last element with no successfull verification
+Exception thrown at initialization phase from device Particle Counter
+DeviceController: Initialize SMPS
+Particle Counter: Initializing
+Particle Counter: Trying to verify Particle Counter...
+Particle Counter: Verifying on Port COM1
+Particle Counter: Verifying on Port COM2
+Particle Counter: Verifying on Port COM3
+Particle Counter: Reached last element with no successfull verification
+Exception thrown at initialization phase from device Particle Counter
+DeviceController: Initialize SMPS
+Particle Counter: Initializing
+Particle Counter: Trying to verify Particle Counter...
+Particle Counter: Verifying on Port COM1
+Particle Counter: Verifying on Port COM2
+Particle Counter: Verifying on Port COM3
+Particle Counter: Reached last element with no successfull verification
+Exception thrown at initialization phase from device Particle Counter
+DeviceController: Initialize SMPS
+Particle Counter: Initializing
+Particle Counter: Trying to verify Particle Counter...
+Particle Counter: Verifying on Port COM1
+Particle Counter: Verifying on Port COM2
+Particle Counter: Verifying on Port COM3
+Particle Counter: Reached last element with no successfull verification
+Exception thrown at initialization phase from device Particle Counter
+DeviceController: Initialize SMPS
+Particle Counter: Initializing
+Particle Counter: Trying to verify Particle Counter...
+Particle Counter: Verifying on Port COM1
+Particle Counter: Verifying on Port COM2
+Particle Counter: Verifying on Port COM3
+Particle Counter: Reached last element with no successfull verification
+Exception thrown at initialization phase from device Particle Counter
+DeviceController: Initialize SMPS
+Particle Counter: Initializing
+Particle Counter: Trying to verify Particle Counter...
+Particle Counter: Verifying on Port COM1
+Particle Counter: Verifying on Port COM2
+Particle Counter: Verifying on Port COM3
+Particle Counter: Reached last element with no successfull verification
+Exception thrown at initialization phase from device Particle Counter
+DeviceController: Initialize SMPS
+Particle Counter: Initializing
+Particle Counter: Trying to verify Particle Counter...
+Particle Counter: Verifying on Port COM1
+Particle Counter: Verifying on Port COM2
+Particle Counter: Verifying on Port COM3
+Particle Counter: Reached last element with no successfull verification
+Exception thrown at initialization phase from device Particle Counter
+DeviceController: Initialize SMPS
+Particle Counter: Initializing
+Particle Counter: Trying to verify Particle Counter...
+Particle Counter: Verifying on Port COM1
+Particle Counter: Verifying on Port COM2
+Particle Counter: Verifying on Port COM3
+Particle Counter: Reached last element with no successfull verification
+Exception thrown at initialization phase from device Particle Counter
+DeviceController: Initialize SMPS
+Particle Counter: Initializing
+Particle Counter: Trying to verify Particle Counter...
+Particle Counter: Verifying on Port COM1
+Particle Counter: Verifying on Port COM2
+Particle Counter: Verifying on Port COM3
+Particle Counter: Reached last element with no successfull verification
+Exception thrown at initialization phase from device Particle Counter
+DeviceController: Initialize SMPS
+Particle Counter: Initializing
+Particle Counter: Trying to verify Particle Counter...
+Particle Counter: Verifying on Port COM1
+Particle Counter: Verifying on Port COM2
+Particle Counter: Verifying on Port COM3
+Particle Counter: Reached last element with no successfull verification
+Exception thrown at initialization phase from device Particle Counter
+DeviceController: Initialize SMPS
+Particle Counter: Initializing
+Particle Counter: Trying to verify Particle Counter...
+Particle Counter: Verifying on Port COM1
+Particle Counter: Verifying on Port COM2
+Particle Counter: Verifying on Port COM3
+Particle Counter: Reached last element with no successfull verification
+Exception thrown at initialization phase from device Particle Counter
+DeviceController: Initialize SMPS
+Particle Counter: Initializing
+Particle Counter: Trying to verify Particle Counter...
+Particle Counter: Verifying on Port COM1
+Particle Counter: Verifying on Port COM2
+Particle Counter: Verifying on Port COM3
+Particle Counter: Reached last element with no successfull verification
+Exception thrown at initialization phase from device Particle Counter
+DeviceController: Initialize SMPS
+Particle Counter: Initializing
+Particle Counter: Trying to verify Particle Counter...
+Particle Counter: Verifying on Port COM1
+Particle Counter: Verifying on Port COM2
+Particle Counter: Verifying on Port COM3
+Particle Counter: Reached last element with no successfull verification
+Exception thrown at initialization phase from device Particle Counter
+DeviceController: Initialize TandemPyrolysis
+Particle Counter: Initializing
+Particle Counter: Trying to verify Particle Counter...
+Particle Counter: Verifying on Port COM1
+Particle Counter: Starting verification. Requesting serial number 123456789
+Particle Counter: Particle Counter verified on port COM1
+Exception thrown at initialization phase from device PowerSource
+DeviceController: Initialize TandemPyrolysis
+Particle Counter: Initializing
+Particle Counter: Trying to verify Particle Counter...
+Particle Counter: Verifying on Port COM1
+Particle Counter: Starting verification. Requesting serial number 123456789
+Particle Counter: Particle Counter verified on port COM1
+Exception thrown at initialization phase from device PowerSource
+DeviceController: Initialize TandemPyrolysis
+Particle Counter: Initializing
+Particle Counter: Trying to verify Particle Counter...
+Particle Counter: Verifying on Port COM1
+Particle Counter: Starting verification. Requesting serial number 123456789
+Particle Counter: Particle Counter verified on port COM1
+Exception thrown at initialization phase from device PowerSource
+DeviceController: Initialize TandemPyrolysis
+Particle Counter: Initializing
+Particle Counter: Trying to verify Particle Counter...
+Particle Counter: Verifying on Port COM1
+Particle Counter: Starting verification. Requesting serial number 123456789
+Particle Counter: Particle Counter verified on port COM1
+Exception thrown at initialization phase from device PowerSource
+DeviceController: Initialize TandemPyrolysis
+Particle Counter: Initializing
+Particle Counter: Trying to verify Particle Counter...
+Particle Counter: Verifying on Port COM1
+Particle Counter: Starting verification. Requesting serial number 123456789
+Particle Counter: Particle Counter verified on port COM1
+Exception thrown at initialization phase from device PowerSource
+DeviceController: Initialize TandemPyrolysis
+Particle Counter: Initializing
+Particle Counter: Trying to verify Particle Counter...
+Particle Counter: Verifying on Port COM1
+Particle Counter: Starting verification. Requesting serial number 123456789
+Particle Counter: Particle Counter verified on port COM1
+Exception thrown at initialization phase from device PowerSource
+DeviceController: Initialize TandemPyrolysis
+Particle Counter: Initializing
+Particle Counter: Trying to verify Particle Counter...
+Particle Counter: Verifying on Port COM1
+Particle Counter: Starting verification. Requesting serial number 123456789
+Particle Counter: Particle Counter verified on port COM1
+Exception thrown at initialization phase from device PowerSource
+DeviceController: Initialize TandemPyrolysis
+Particle Counter: Initializing
+Particle Counter: Trying to verify Particle Counter...
+Particle Counter: Verifying on Port COM1
+Particle Counter: Starting verification. Requesting serial number 123456789
+Particle Counter: Particle Counter verified on port COM1
+Exception thrown at initialization phase from device PowerSource
+DeviceController: Initialize TandemPyrolysis
+Particle Counter: Initializing
+Particle Counter: Trying to verify Particle Counter...
+Particle Counter: Verifying on Port COM1
+Particle Counter: Starting verification. Requesting serial number 123456789
+Particle Counter: Particle Counter verified on port COM1
+Exception thrown at initialization phase from device PowerSource

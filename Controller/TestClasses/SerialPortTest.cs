@@ -1,4 +1,6 @@
 using System.IO.Ports;
+using System;
+
 namespace Test{
 
 
@@ -83,7 +85,16 @@ namespace Test{
         private string _output;
       
 
+        public string[] GetPortNamesTest(){
+            string[] s = new string[3];
 
+            s[0] = "COM1";
+            s[1] = "COM2";
+            s[2] = "COM3"; 
+            return s;
+
+        }
 
     }
+
 }

@@ -22,7 +22,7 @@ public class IndexModel : PageModel
 
         Console.WriteLine("Starting SMPS Measurement!");
         DeviceController devicecontroller = DeviceController.Instance;
-        devicecontroller.MeasurementType = EMeasurementType.SMPS;
+        devicecontroller.MeasurementType = EMeasurementType.TandemPyrolysis;
         devicecontroller.InitializeDevices();
     }
 }

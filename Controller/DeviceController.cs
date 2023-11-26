@@ -45,7 +45,8 @@ public class DeviceController{
     public void InitializeDevices(){
 
         _devices.Clear();
-
+        IDevice particlecounter;
+        IDevice powersource;
         switch(MeasurementType){
 
             case EMeasurementType.Default:
@@ -56,13 +57,18 @@ public class DeviceController{
             case EMeasurementType.SMPS:
 
                 Logger.WriteToLog("DeviceController: Initialize SMPS");
-                var particlecounter = new ParticleCounter(100,100,10.5f,1000);
+                particlecounter = new ParticleCounter(100,100,10.5f,1000);
                 _devices.Add(EDeviceTypes.ParticleCounter, particlecounter);
                 break;
 
             case EMeasurementType.TandemPyrolysis:
             
                 Logger.WriteToLog("DeviceController: Initialize TandemPyrolysis");
+                particlecounter = new ParticleCounter(100,100,10.5f,1000);
+                powersource = new PowerSource();
+
+                _devices.Add(EDeviceTypes.ParticleCounter, particlecounter);
+                _devices.Add(EDeviceTypes.PowerSource, powersource);
                 break;
                 
 
@@ -76,22 +82,16 @@ public class DeviceController{
         bool allinitialized = false;
         foreach(KeyValuePair<EDeviceTypes,IDevice> dev in _devices){
 
-            dev.Value.Initialize();
-            dev.Value.Initialized += (sender,args) => {
-           
-                foreach(KeyValuePair<EDeviceTypes,IDevice> dev in _devices){
-                
-                    if(!dev.Value.IsInitialized){
+            try{
+                dev.Value.Initialize();
+            }
+            catch(InitalizationFailedException e){
 
-                        break;
-                    }
-                    else{
-                        
-                        break;
-                    }
-                }
+                Logger.WriteToLog($"Exception thrown at initialization phase from device {e.Message}");
+
+                //Leave loop without further execution display error message
+            }
 
         };
     }
-}
 }

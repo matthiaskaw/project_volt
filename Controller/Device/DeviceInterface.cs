@@ -20,7 +20,6 @@ public interface IDevice{
     void Initialize(); //Connect to device and verify by ID attribute (e.g.: serial number)
     void SendMessage(string message);
     string ReceiveMessage();
-    void VerifyDevice(string verificationstring);
     void UpdateSettings();
     void SetValues(Dictionary<EDeviceValues, object> values);
 

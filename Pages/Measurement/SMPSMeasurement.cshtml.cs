@@ -27,6 +27,8 @@ public class SMPSMeasurement : PageModel
 
         Console.WriteLine("Starting SMPS Measurement!");
         DeviceController devicecontroller = DeviceController.Instance;
+        var test = Request.Form["Measurement Type"];
+        Logger.WriteToLog($"{test}");
         
         devicecontroller.MeasurementType = EMeasurementType.SMPS;
         devicecontroller.InitializeDevices();
