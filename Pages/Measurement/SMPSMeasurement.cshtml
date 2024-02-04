@@ -1,12 +1,47 @@
 @page
-@model SMPSMeasurement
+@model SMPSMeasurementModel
 @{
     ViewData["Title"] = "SMPS Base";
+
 }
 
 <div class="text-center">
     <h1 class="display-4">SMPS Page</h1>
 
-    <form asp-page-handler="Start" method="post"><button class="btn btn-default">Click to post</button></form>
+    <form method="post">
     
+        <label asp-for="Name">Name:</label><input asp-for="Name">
+        <br>
+        <label asp-for="MeasurementSeries">Measurement Series:</label><input asp-for="MeasurementSeries">
+        <br>
+        <label asp-for="UpscanTime">Upscantime [s]:</label><input asp-for="UpscanTime">
+        <br>
+        <label asp-for="DownscanTime">Downscantime [s]:</label><input asp-for="DownscanTime">
+        <br>
+        <label for="SMPSMinDiameterDropDown">Min. diameter [nm]:</label>
+        <select id="SMPSMinDiameterDropDown" name="SMPSMinDiameterDropDown">
+            @{
+                foreach(string option in SMPSMeasurementModel.SMPSDiameterVector){
+                    <option value="@option">@option</option>
+                }
+
+            }
+        </select>
+        <br>
+        <label for="SMPSMaxDiameterDropDown">Max. diameter [nm]:</label>
+        <select id="SMPSMaxDiameterDropDown" name="SMPSMaxDiameterDropDown">
+            @{
+
+                foreach(string option in SMPSMeasurementModel.SMPSDiameterVector){
+
+                    <option value="@option">@option</option>
+                }
+            }
+
+        </select>
+        <br>
+        <label asp-for="SMPSDMAType">DMA Type:</label><input asp-for="SMPSDMAType">
+        <br>
+        <button type="submit">Start</button>
+    </form>
 </div>

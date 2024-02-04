@@ -3,6 +3,8 @@ using System.IO.Ports;
 using Device;
 using MeasurementAlgorithms;
 using Measurement;
+using Microsoft.AspNetCore.Mvc;
+
 
 public class DeviceController{
 
@@ -24,31 +26,37 @@ public class DeviceController{
     }
 
     public EMeasurementType MeasurementType { get; set;} 
+    public Dictionary<EDeviceTypes, IDevice> Devices {get;} = new Dictionary<EDeviceTypes, IDevice>();
+
     private IMeasurementAlgorithm _measurementAlgorithm;
-    private Dictionary<EDeviceTypes, IDevice> _devices = new Dictionary<EDeviceTypes, IDevice>();
+    
+
     private event EventHandler StartDevices;
     private event EventHandler StopDevices;
 
+
+    //PRIVATE VARIABLES
     private void SetupEvents(){
 
         
-        StopDevices += (sender, args) => {
-
-            foreach(var dev in _devices){
-
-                dev.Value.Stop();
-            }
-        };
+     
     }
    
 
     public void InitializeDevices(){
 
-        _devices.Clear();
-        IDevice particlecounter;
-        IDevice powersource;
-        switch(MeasurementType){
+        try{
+            Devices.Clear();
+        }
+        catch(Exception e){
 
+            Logger.WriteToLog($"Particle Counter: Excepton thrown after Device.Clear() {e} ");
+        }
+        ParticleCounter particleCounter;
+        PowerSource powerSource;
+        ElectrostaticClassifier electrostaticClassifier;
+        switch(MeasurementType){
+            
             case EMeasurementType.Default:
                 //Throw exception "No Measurement Type"
                 Logger.WriteToLog("Device Controller: No Measurement Type set!");
@@ -57,41 +65,41 @@ public class DeviceController{
             case EMeasurementType.SMPS:
 
                 Logger.WriteToLog("DeviceController: Initialize SMPS");
-                particlecounter = new ParticleCounter(100,100,10.5f,1000);
-                _devices.Add(EDeviceTypes.ParticleCounter, particlecounter);
+                particleCounter = new ParticleCounter();
+                Devices.Add(particleCounter.DeviceType, particleCounter);
                 break;
 
-            case EMeasurementType.TandemPyrolysis:
-            
-                Logger.WriteToLog("DeviceController: Initialize TandemPyrolysis");
-                particlecounter = new ParticleCounter(100,100,10.5f,1000);
-                powersource = new PowerSource();
+            case EMeasurementType.TandemDMA:
+                particleCounter = new ParticleCounter();
+                electrostaticClassifier = new ElectrostaticClassifier();
 
-                _devices.Add(EDeviceTypes.ParticleCounter, particlecounter);
-                _devices.Add(EDeviceTypes.PowerSource, powersource);
+                Logger.WriteToLog("DeviceController: Initialize TandemPyrolysis");
+                Devices.Add(particleCounter.DeviceType, particleCounter);
+                Devices.Add(electrostaticClassifier.DeviceType, electrostaticClassifier);
+                
                 break;
                 
 
-            case EMeasurementType.Temperature:
-            
+            case EMeasurementType.TandemTemperature:
+                
                 Logger.WriteToLog("DeviceController: Initialize Temperature");
+                particleCounter = new ParticleCounter();
+                powerSource = new PowerSource();
+                Devices.Add(particleCounter.DeviceType, particleCounter);
+                Devices.Add(powerSource.DeviceType, powerSource);
+
                 break;
 
         }
-        
-        bool allinitialized = false;
-        foreach(KeyValuePair<EDeviceTypes,IDevice> dev in _devices){
 
-            try{
-                dev.Value.Initialize();
-            }
-            catch(InitalizationFailedException e){
+        foreach(KeyValuePair<EDeviceTypes, IDevice> entry in Devices){
 
-                Logger.WriteToLog($"Exception thrown at initialization phase from device {e.Message}");
+            //entry.Value.Initialize();
+            
 
-                //Leave loop without further execution display error message
-            }
 
-        };
+        }
+
+        MeasurementController.Instance.StartMeasurement(MeasurementType);
     }
 }

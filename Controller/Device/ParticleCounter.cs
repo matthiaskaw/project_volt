@@ -12,17 +12,23 @@ using Test;
 namespace Device{
 public class ParticleCounter : IDevice
 {    
-    public ParticleCounter(int upscanTime, int downscanTime, float minDiameter, float maxDiameter){
+    public ParticleCounter(string upscanTime, string downscanTime, string minVoltage, string maxVoltage){
 
         
         UpscanTime = upscanTime;
         DownscanTime = downscanTime;
-        _minVoltage = calculateVoltage(minDiameter);
-        _maxVoltage = calculateVoltage(maxDiameter);
+        MinVoltage = minVoltage;
+        MaxVoltage = maxVoltage; 
         UpscanDirection = true;
-
+        
+        DeviceType = EDeviceTypes.ParticleCounter;
 
         //_serialport.DataReceived += HandleReceivedData;
+    }
+
+    public ParticleCounter(){
+
+        DeviceType = EDeviceTypes.ParticleCounter;
     }
 
 
@@ -30,164 +36,266 @@ public class ParticleCounter : IDevice
 
     public void Initialize(){
         
-
+            DeviceID = "70701275";
             Logger.WriteToLog("Particle Counter: Initializing");
        
-            Logger.WriteToLog("Particle Counter: Trying to verify Particle Counter...");
+            Logger.WriteToLog($"Particle Counter: Trying to verify Particle Counter on ports: {SerialPort.GetPortNames().ToString()}.");
 
+            if(SerialPort.GetPortNames().Length == 0){
+
+                Logger.WriteToLog("PArticle Counter: No serial port available. Please check connection!");
+            }
      
-            foreach(string portname in _serialport.GetPortNamesTest()){
+            foreach(string portname in SerialPort.GetPortNames()){
             
-            
+                
+
                 Logger.WriteToLog($"Particle Counter: Verifying on Port {portname}");
                 _serialport.PortName = portname;
-                _serialport.Open(true);
+                
+                Logger.WriteToLog($"Particle Counter: Trying to open serial port on port {portname}");
+                try{
+                    _serialport.Open();
+                }
+                catch(UnauthorizedAccessException e){
 
+                    Logger.WriteToLog($"Particle Counter: Tried to open port {portname}. Access denied! Trying next port");
+                    continue;
+
+                }
                 
-                if(_serialport.IsOpen){
+                if(!_serialport.IsOpen){
+                    
+                    Logger.WriteToLog($"Particle Counter: Answer {_answer} =/= {DeviceID}. Trying next port...");
+                }
+                Logger.WriteToLog($"Particle Counter: Starting verification. Requesting serial number {DeviceID}");
+                _serialport.Write("RSN\r");   
+                _serialport.ReadTimeout = 5000;
+                try{
+                    _answer = _serialport.ReadTo("\r");
+                }
+                catch(TimeoutException){
+                        
+                    Logger.WriteToLog($"Particle Counter: Initialize() read timed out answer = {_answer}");
+                    _serialport.Close();
+                    continue;
+                }
+
+                    
+                if(_answer.Contains(DeviceID)){
             
-                    Logger.WriteToLog($"Particle Counter: Starting verification. Requesting serial number {_verificationstring}");
-                    _serialport.Write("RSN\n");   
-                    _answer = _serialport.ReadLine();
-            
-                    if(_answer == _verificationstring){
-            
-                        _isInitialized = true;
-                        Initialized?.Invoke(this, new EventArgs());
-                        Logger.WriteToLog($"Particle Counter: Particle Counter verified on port {_serialport.PortName}");
-                        break;
-            
-                    }
-                    else{
-                        Logger.WriteToLog($"Particle Counter: Answer {_answer} =/= {_verificationstring}. Trying next port...");
-                    }
-                
+                    _serialport.ReadTimeout = -1;
+                    Initialized?.Invoke(this, new EventArgs());
+                    Logger.WriteToLog($"Particle Counter: Particle Counter verified on port {_serialport.PortName}");
+                    break;
                 }
 
                 
-                if(portname == _serialport.GetPortNamesTest().Last()){
+                if(portname == SerialPort.GetPortNames().Last()){
 
                     Logger.WriteToLog($"Particle Counter: Reached last element with no successfull verification");
                     throw new InitalizationFailedException("Particle Counter");
                 }   
         }
-    }
-
-
-    
-    public void SendMessage(string message){}
-    public string ReceiveMessage(){return "";}
-    public void VerifyDevice(string verificationstring){
-            
         
-
-
     }
 
-
-    public void Start(){
-
-        
-
-    }
-    
-    public void Stop(){}
-    
-    public void UpdateSettings(){}
-
-    public void SetValues(Dictionary<EDeviceValues, object> values){
-
-
-
-    }
     public event EventHandler Initialized;
-    public event EventHandler Started;
-    public event EventHandler Stopped;
-    public event EventHandler Ready;
-    public event EventHandler<string> AnswerReady;
-    public event EventHandler StartedMeasurement;
-    public event EventHandler EndedMeasurement;
-    public event EventHandler CanceledMeasurement;
-
-
+  
     //PRIVATE METHODS
    
-    private bool setScanTime(){
 
-        _serialport.Write($"ZT0,{UpscanTime},{DownscanTime}");
-        _answer = _serialport.ReadLine();
+    public bool SetScanMode(){
+
+        Logger.WriteToLog($"Particle Counter: SetScanMode...");
+
+        _serialport.Write("SCM,2\r");
+        System.Threading.Thread.Sleep(500);
+        _answer = _serialport.ReadTo("\r");
 
         if(_answer == _positiveAnswer){
 
+            Logger.WriteToLog($"Particle Counter: SetScanMode(): {_answer}: ScanMode set to SMPS!");        
             return true;
         }
         else{
+
+            Logger.WriteToLog($"Particle Counter: SetScanMode(): {_answer}: Scan mode not set to SMPS");
+            return false;
+        }
+
+    }
+    public bool SetScanTime(){
+        
+        Logger.WriteToLog($"Particle Counter: SetScanTime(): Setting Scan Time, Upscantime = {UpscanTime}, DownscanTime = {DownscanTime} ");
+
+        _serialport.Write($"ZT0,{UpscanTime},{DownscanTime}\r");
+        
+
+         _answer = _serialport.ReadTo("\r");
+
+        if(_answer == _positiveAnswer){
+
+            Logger.WriteToLog($"Particle Counter: SetScanTime(): {_answer}: Scantime set! ");        
+            return true;
+        }
+        else{
+
+            Logger.WriteToLog($"Particle Counter: SetScanTime(): {_answer}: Scantime not set! ");        
             return false;
         }
     }
-     private bool setVoltage(){
+     public bool SetVoltage(){
 
-        _serialport.Write($"ZV{_minVoltage},{_maxVoltage}");
-        _answer = _serialport.ReadLine();
+        Logger.WriteToLog($"Particle Counter: SetVoltage(): Setting Voltage, MinVoltage = {MinVoltage}, DownscanTime = {MaxVoltage} ");
+        _serialport.Write($"ZV{MinVoltage},{MaxVoltage}\r");
         
-
+        _answer = _serialport.ReadTo("\r");
+        
         if(_answer == _positiveAnswer){
 
+            Logger.WriteToLog($"Particle Counter: SetVoltage(): {_answer}: Voltage set! ");        
             return true;
         }
         else{
-
+            Logger.WriteToLog($"Particle Counter: SetVoltage(): {_answer}: Voltage not set! ");
             return false;
         }
     }
-    private bool setScanDirection(){
+    public bool SetScanDirection(){
         
-        _serialport.Write($"ZU\n");
 
-        _answer = _serialport.ReadLine();
+        Logger.WriteToLog($"Particle Counter: SetScanDirection(): Setting scan direction");
+        _serialport.Write($"ZU\r");
+
+        _answer = _serialport.ReadTo("\r");
 
         if(_answer == _positiveAnswer){
-
+            Logger.WriteToLog($"Particle Counter: SetScanDirection(): {_answer}: Direction set! ");
             return true;
         }
         else{
+            Logger.WriteToLog($"Particle Counter: SetVoltage(): {_answer}: Direction set! ");
             return false;
         }       
     }
 
-   
+    public bool Start(){
 
-        private int calculateVoltage(float diameter)
-        {
+        _serialport.Write("ZB\r");
 
-        return 0;
+        System.Threading.Thread.Sleep(500);
+
+        _answer = _serialport.ReadTo("\r");
         
-       
+        if(_answer == _positiveAnswer){
+
+            Logger.WriteToLog($"Particle Counter: Start: {_answer}: Starting SMPS");
+            _isMeasuring = true;
+            return true;
+            
+        }
+        else{
+
+            Logger.WriteToLog($"Particle Counter: Start: {_answer}: Cannot start SMPS");
+            return false;
+        }
+
+
+
+    }
+
+    public bool End(){
+
+        Logger.WriteToLog($"Particle Counter: End(): Ending Measurement");
+
+        _serialport.Write("ZE\r");
+        System.Threading.Thread.Sleep(500);
+        _answer = _serialport.ReadTo("\r");
+
+        if(_answer == _positiveAnswer){
+
+            Logger.WriteToLog($"Particle Counter: End(): Measurement ended!");
+            return true;
+        }
+        else{
+
+            Logger.WriteToLog($"Particle Counter: End(): Measurement not ended succesfully!");
+            return false;
+        }
+
+    }
+
+    public async Task<List<string>> CollectDataAsync(){
+
+        List<string> data = new List<string>();
+
+        while(_isMeasuring){
+
+            string line = _serialport.ReadTo("\r");
+            Logger.WriteToLog($"Particle Counter: CollectData: line = {line}");
+            data.Add(line);
+            if(line.Contains("-1")){
+
+                _isMeasuring  = false;
+
+            }
+        }
+        End();
+
+        return data;
+        
     }
 
 
+    public static string CalculateVoltage(string diameter){
+
+        double sheathflow = 15.0/60000;
+        double doublediameter = float.Parse(diameter);
+        doublediameter = doublediameter*1e-9;
+        double cunningham = Aerosol.CunninghamCorrection(doublediameter);
+
+
+        Logger.WriteToLog($"_calculateVoltage: Aerosol.AirViscosity() = {Aerosol.Airviscosity()}");
+        double voltage = doublediameter*3*Aerosol.Airviscosity()*sheathflow*Math.Log(1.905/0.937)/(2*1.6e-19*cunningham*0.04987);
+
+        Logger.WriteToLog($"SMPSMeasurementAlgorithm: _calculateVoltage: voltage = {voltage}");
+
+        int Ivoltage = (int)Math.Round((float)voltage);
+
+        Logger.WriteToLog($"SMPSMeasurementAlgorithm: _calculateVoltage: voltage as integer is = {Ivoltage}");
+
+        if(Ivoltage < 10){
+
+            Ivoltage = 10;
+        }
+        if(Ivoltage > 10000){
+
+            Ivoltage = 10000;
+        }
+
+        return Ivoltage.ToString();
+    }
+
+    
     //properties
    
-    public int UpscanTime{get; set;}
-    public int DownscanTime{get; set;}
-    public float MinDiameter{get; set;}
-    public float MaxDiameter{get; set;}
+    public string UpscanTime{get; set;}
+    public string DownscanTime{get; set;}
+    public string MinVoltage{get; set;}
+    public string MaxVoltage{get; set;}
     public bool UpscanDirection{get; set;}
-    string SerialNumber {get; set;}
-    public string DeviceID {get; set;}
-    public bool IsInitialized {get{return _isInitialized;}}
+    public string SerialNumber {get; set;}
+    public string DeviceID{get; set;}
+    public EDeviceTypes DeviceType {get;}
 
 
 
-        private int _minVoltage = 0;
-    private int _maxVoltage = 10000;
-    private SerialPortTest _serialport = new SerialPortTest();
-    private  string _answer;
-    private string _answerbuffer;
-    private string _positiveAnswer = "OK\n";
-    private string _negativeAnswer = "ERROR\n";
-    private string _verificationstring = "123456789"; //serial number
-    private bool _isInitialized = false;
+    private SerialPort _serialport = new SerialPort(){BaudRate = 115200, DataBits = 8, Parity = Parity.None, StopBits = StopBits.One};
+    private string _positiveAnswer = "OK";
+    private string _negativeAnswer = "ERROR";
+    private string _answer = "70701275"; //serial number
+    private bool _isMeasuring = false;
 
 }
 

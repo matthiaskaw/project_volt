@@ -1,16 +1,19 @@
 {
   "version": 2,
-  "dgSpecHash": "q5VfXCyWjhv5N2qTLhOJrJjCPBXYelT4UbHafcOW5Cd9pcEO+5BH1LiZ3NilUfq+5GnStq4aMp0eflV9QRN/Aw==",
+  "dgSpecHash": "L0RznHZTn/Wwy98QYjtdDFV1bac7mkFtzz8M4zXM+kfb7cnBASdc8/XaSCG8l0dUZr2auhGtf3MsGpmt6pR8lQ==",
   "success": true,
-  "projectFilePath": "e:\\Software\\Git\\project_volt\\volt\\volt.csproj",
+  "projectFilePath": "c:\\Users\\matth\\Documents\\GitHub\\project_volt\\volt.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\matth\\.nuget\\packages\\fluentmodbus\\5.0.3\\fluentmodbus.5.0.3.nupkg.sha512",
+    "C:\\Users\\matth\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\5.0.0\\microsoft.extensions.logging.abstractions.5.0.0.nupkg.sha512",
     "C:\\Users\\matth\\.nuget\\packages\\runtime.linux-arm.runtime.native.system.io.ports\\7.0.0\\runtime.linux-arm.runtime.native.system.io.ports.7.0.0.nupkg.sha512",
     "C:\\Users\\matth\\.nuget\\packages\\runtime.linux-arm64.runtime.native.system.io.ports\\7.0.0\\runtime.linux-arm64.runtime.native.system.io.ports.7.0.0.nupkg.sha512",
     "C:\\Users\\matth\\.nuget\\packages\\runtime.linux-x64.runtime.native.system.io.ports\\7.0.0\\runtime.linux-x64.runtime.native.system.io.ports.7.0.0.nupkg.sha512",
     "C:\\Users\\matth\\.nuget\\packages\\runtime.native.system.io.ports\\7.0.0\\runtime.native.system.io.ports.7.0.0.nupkg.sha512",
     "C:\\Users\\matth\\.nuget\\packages\\runtime.osx-arm64.runtime.native.system.io.ports\\7.0.0\\runtime.osx-arm64.runtime.native.system.io.ports.7.0.0.nupkg.sha512",
     "C:\\Users\\matth\\.nuget\\packages\\runtime.osx-x64.runtime.native.system.io.ports\\7.0.0\\runtime.osx-x64.runtime.native.system.io.ports.7.0.0.nupkg.sha512",
-    "C:\\Users\\matth\\.nuget\\packages\\system.io.ports\\7.0.0\\system.io.ports.7.0.0.nupkg.sha512"
+    "C:\\Users\\matth\\.nuget\\packages\\system.io.ports\\7.0.0\\system.io.ports.7.0.0.nupkg.sha512",
+    "C:\\Users\\matth\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\4.7.1\\system.runtime.compilerservices.unsafe.4.7.1.nupkg.sha512"
   ],
   "logs": []
 }

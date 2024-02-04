@@ -18,24 +18,15 @@ public interface IDevice{
 
 
     void Initialize(); //Connect to device and verify by ID attribute (e.g.: serial number)
-    void SendMessage(string message);
-    string ReceiveMessage();
-    void UpdateSettings();
-    void SetValues(Dictionary<EDeviceValues, object> values);
-
-
-    void Start();
-    void Stop();
+    bool End();
+  
 
 
     event EventHandler Initialized;
-    event EventHandler Started;
-    event EventHandler Stopped;
-    event EventHandler<string> AnswerReady;
-
+    
     
     public string DeviceID {get; set;}
-    public bool IsInitialized{get;}
+    public EDeviceTypes DeviceType {get;}
 }
 }
 

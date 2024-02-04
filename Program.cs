@@ -1,3 +1,6 @@
+using Services;
+
+SettingsService settings = SettingsService.Instance;
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
