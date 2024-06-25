@@ -7,7 +7,8 @@ namespace Measurement{
         Default = 0,
         SMPS = 1,
         TandemDMA = 2,
-        TandemTemperature = 3
+        TandemTemperature = 3,
+        CurrentMeasurement = 4
 
     }
 

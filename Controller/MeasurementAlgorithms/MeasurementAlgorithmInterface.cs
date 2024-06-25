@@ -1,11 +1,8 @@
 namespace MeasurementAlgorithms{
 
-public interface IMeasurementAlgorithm{
+    public interface IMeasurementAlgorithm{
 
-    Task<bool> RunMeasurement();
-
-
-}
-
+        Task<bool> RunMeasurement();
+    }
 
 }

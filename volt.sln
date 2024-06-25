@@ -5,12 +5,6 @@ VisualStudioVersion = 17.5.002.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "volt", "volt.csproj", "{1B3EA661-4377-4655-81F7-74B6B94D4CF5}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{61AD673F-75CF-4545-A81B-30198903CFE3}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestVolt", "test\TestVolt\TestVolt.csproj", "{A880775E-24E8-4CDC-BD60-CC53C7F216AF}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestVolt", "TestVolt\TestVolt.csproj", "{47FFB56E-3B2F-4A35-BA7D-803D7E1BB60B}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -35,8 +29,5 @@ Global
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {D96689FB-11DA-467C-B626-87C7F6E54BD7}
-	EndGlobalSection
-	GlobalSection(NestedProjects) = preSolution
-		{A880775E-24E8-4CDC-BD60-CC53C7F216AF} = {61AD673F-75CF-4545-A81B-30198903CFE3}
 	EndGlobalSection
 EndGlobal

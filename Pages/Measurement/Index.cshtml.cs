@@ -80,6 +80,10 @@ public class IndexModel : PageModel
             Console.WriteLine($"Index: OnPost: TandemDMA Measurement ({EMeasurementType.TandemDMA.ToString()})");
             return RedirectToPage("./TandemDMA");
         }
+        if(selectedValue.ToString() == EMeasurementType.CurrentMeasurement.ToString()){
+            Console.WriteLine($"Index: OnPost: TandemDMA Measurement ({EMeasurementType.CurrentMeasurement.ToString()})");
+            return RedirectToPage("./SensorMeasurement");
+        }
         // Redirect or return a different view as needed
         return RedirectToPage("Error");
     }

@@ -73,7 +73,7 @@ public class TandemTemperatureModel : PageModel
         SettingsService.Instance.MeasurementSetting.SetSettingByKey(EMeasurementSettings.TandemTemperatureMaxCurrent, TandemTemperatureMaxCurrent);
 
         DeviceController devicecontroller = DeviceController.Instance;
-        devicecontroller.MeasurementType = EMeasurementType.TandemTemperature;
+        MeasurementController.Instance.MeasurementType = EMeasurementType.TandemTemperature;
         devicecontroller.InitializeDevices();
     }
 

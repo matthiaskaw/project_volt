@@ -13,6 +13,7 @@ public enum EDeviceTypes{
     ParticleCounter = 0,
     Classifier = 1,
     PowerSource = 2,
+    ElectrospraySensor = 3
 }
 public interface IDevice{
 

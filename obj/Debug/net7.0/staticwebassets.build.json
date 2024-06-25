@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "/XXuUdXgYAyffPzlf857H4nT/b8fZkU4DxlApvP4bPI=",
+  "Hash": "Lo4MQyt+fzi83582w52z/XenwEqVyLuja9ukzXfxuAw=",
   "Source": "volt",
   "BasePath": "_content/volt",
   "Mode": "Default",
@@ -83,6 +83,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\favicon.ico"
+    },
+    {
+      "Identity": "c:\\Users\\matth\\Documents\\GitHub\\project_volt\\wwwroot\\js\\sensor.js",
+      "SourceId": "volt",
+      "SourceType": "Discovered",
+      "ContentRoot": "c:\\Users\\matth\\Documents\\GitHub\\project_volt\\wwwroot\\",
+      "BasePath": "_content/volt",
+      "RelativePath": "js/sensor.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\sensor.js"
     },
     {
       "Identity": "c:\\Users\\matth\\Documents\\GitHub\\project_volt\\wwwroot\\js\\site.js",

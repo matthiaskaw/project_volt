@@ -1,3 +1,3 @@
-In Pages/Measurement/SMPSMeasurement.cshtml(.cs):
-
--   change MinDiameter and Maxdiameter field to select (dropdown)
+- implement proper exception handling for devices
+- deserialize measurement settings and set values of devices
+- 

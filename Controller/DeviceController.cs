@@ -11,7 +11,6 @@ public class DeviceController{
     private static DeviceController _instance;
 
     private DeviceController(){
-        MeasurementType = EMeasurementType.Default;
     }
 
     public static DeviceController Instance{
@@ -25,26 +24,24 @@ public class DeviceController{
         }
     }
 
-    public EMeasurementType MeasurementType { get; set;} 
-    public Dictionary<EDeviceTypes, IDevice> Devices {get;} = new Dictionary<EDeviceTypes, IDevice>();
+    public Dictionary<EDeviceTypes, IDevice> Devices {get;} = new Dictionary<EDeviceTypes, IDevice>();    
 
-    private IMeasurementAlgorithm _measurementAlgorithm;
-    
-
+    protected void OnInitialized(){
+        Initialized.Invoke(this, new EventArgs());
+    }
     private event EventHandler StartDevices;
     private event EventHandler StopDevices;
 
+    public event EventHandler Initialized;
 
     //PRIVATE VARIABLES
     private void SetupEvents(){
-
-        
-     
+  
     }
    
-
     public void InitializeDevices(){
 
+        
         try{
             Devices.Clear();
         }
@@ -52,10 +49,13 @@ public class DeviceController{
 
             Logger.WriteToLog($"Particle Counter: Excepton thrown after Device.Clear() {e} ");
         }
+        
         ParticleCounter particleCounter;
         PowerSource powerSource;
         ElectrostaticClassifier electrostaticClassifier;
-        switch(MeasurementType){
+        ElectrospraySensor electrospraySensor;
+        
+        switch(MeasurementController.Instance.MeasurementType){
             
             case EMeasurementType.Default:
                 //Throw exception "No Measurement Type"
@@ -90,16 +90,26 @@ public class DeviceController{
 
                 break;
 
+            case EMeasurementType.CurrentMeasurement:
+                Logger.WriteToLog("DeviceController.cs: Initialize current sensors");
+                electrospraySensor = new ElectrospraySensor();
+                Devices.Add(electrospraySensor.DeviceType, electrospraySensor);
+                break;
+
+
+
         }
+
 
         foreach(KeyValuePair<EDeviceTypes, IDevice> entry in Devices){
-
-            //entry.Value.Initialize();
+        
+            entry.Value.Initialize();
             
-
-
         }
 
-        MeasurementController.Instance.StartMeasurement(MeasurementType);
+
+        OnInitialized();
+                //MeasurementController.Instance.StartMeasurement();
+    
     }
 }

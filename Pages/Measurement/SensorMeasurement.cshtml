@@ -1,0 +1,58 @@
+@page
+@model SensorMeasurementModel
+@{
+    ViewData["Title"] = "Sensor Base";
+
+}
+
+<div class="text-center">
+    <h1 class="display-4">Sensor Page</h1>
+        <form method="post">
+
+            <label for="MeasurementTimeVectorDropDown">Reading Time [ms]:</label>
+            <select id="MeasurementTimeVectorDropDown" name="MeasurementTimeVectorDropDown">
+                @{
+                foreach(string option in SensorMeasurementModel.MeasurementTimeVector){
+                    <option value="@option">@option</option>
+                    }
+                }
+        </select>
+        <br>
+        <label for="Sensor1">Sensor 1 Voltage [V]:</label>
+        <span id="Sensor1">@SensorMeasurementModel.SensorOne</span>
+        <br>
+        <label for="Sensor2">Sensor 2 Voltage [V]</label>
+        <span id="Sensor2">@SensorMeasurementModel.SensorTwo</span>
+        <br>
+        <button type="submit" asp-page-handler="Start">Start</button>
+        <button type="submit" asp-page-handler="AbortClicked">Abort</button>        
+
+        </form>
+
+        <div id="messages"> Waiting for data...</div>
+        @section Scripts {
+    <script>
+        let socket = new WebSocket("wss://" + window.location.host + "/ws");
+
+        socket.onmessage = function(event) {
+            let messagesDiv = document.getElementById("messages");
+            let message = document.createElement("div");
+            message.textContent = event.data;
+            messagesDiv.appendChild(message);
+        };
+
+        socket.onopen = function() {
+            console.log("WebSocket connection established");
+        };
+
+        socket.onclose = function() {
+            console.log("WebSocket connection closed");
+        };
+
+        socket.onerror = function(error) {
+            console.log("WebSocket error: " + error.message);
+        };
+    </script>
+}
+        
+</div>

@@ -60,6 +60,7 @@ namespace Device{
                 if(!receivedDeviceID.Contains(DeviceID)){
 
                     Logger.WriteToLog($"Power Source: Initialize(): Verification failed! Received DeviceID is {receivedDeviceID}. Saved Device ID is {DeviceID}");
+                    _serialPort.Close();
                     continue;
                 }
 

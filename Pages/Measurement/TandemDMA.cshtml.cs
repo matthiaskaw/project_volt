@@ -17,7 +17,6 @@ public class TandemDMA : PageModel
     {
         Console.WriteLine("OnGet(): TandemDMA Measurement!");
         DeviceController devicecontroller = DeviceController.Instance;
-        devicecontroller.MeasurementType = EMeasurementType.TandemDMA;
         devicecontroller.InitializeDevices();
     }
 
@@ -33,7 +32,7 @@ public class TandemDMA : PageModel
         var test = Request.Form["Measurement Type"];
         Logger.WriteToLog($"{test}");
         
-        devicecontroller.MeasurementType = EMeasurementType.TandemDMA;
+        MeasurementController.Instance.MeasurementType = EMeasurementType.TandemDMA;
         devicecontroller.InitializeDevices();
     }
 

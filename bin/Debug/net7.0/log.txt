@@ -647,3 +647,1621 @@ MeasurementSettingsService.cs: GetSettingByKey(): key (TandemTemperatureVector).
 MeasurementSettingsService.cs: GetSettingByKey(): key (TandemTemperatureMinCurrent).
 MeasurementSettingsService.cs: GetSettingByKey(): key (TandemTemperatureMaxCurrent).
 TandemAlgorithm.cs: TandemTemperatureAlgorithm(): CurrentVector = System.String[]
+SettingsService: Setting up measurement service...
+SettingsService: applicationPath = C:\Users\matth\Documents\GitHub\project_volt\bin\Debug\net7.0\
+SettingsService: Settings path = C:\Users\matth\Documents\GitHub\project_volt\bin\Debug\net7.0\settings
+MeasurementSettingsService: key = SheathFlow; value = 15
+MeasurementSettingsService: key = ScanTimeConstant; value = 17
+MeasurementSettingsService: key = UpscanTime; value = 120
+MeasurementSettingsService: key = DownscanTime; value = 15
+MeasurementSettingsService: key = SMPSMinDiameter; value = 2.4
+MeasurementSettingsService: key = SMPSMaxDiameter; value = 68.6
+MeasurementSettingsService: key = TandemTemperatureMinCurrent; value = 0
+MeasurementSettingsService: key = TandemTemperatureMaxCurrent; value = 30
+MeasurementSettingsService: key = SMPSDMAType; value = 3085
+MeasurementSettingsService: key = TandemTemperatureVector; value = 0;1;2;3;4;5;6;7;8;9;10;11;12;13;14;15;16;17;18;19;20;21;22;23;24;25;26;27;28;29;30
+MeasurementSettingsService: key = TandemDMAVector; value = 
+MeasurementSettingsService: key = TandemDMADMAType; value = 3085
+MeasurementSettingsService: key = SMPSDiameterVector; value = 2.4;68.6
+SettingsService: Setting up measurement service...
+SettingsService: applicationPath = C:\Users\matth\Documents\GitHub\project_volt\bin\Debug\net7.0\
+SettingsService: Settings path = C:\Users\matth\Documents\GitHub\project_volt\bin\Debug\net7.0\settings
+MeasurementSettingsService: key = SheathFlow; value = 15
+MeasurementSettingsService: key = ScanTimeConstant; value = 17
+MeasurementSettingsService: key = UpscanTime; value = 120
+MeasurementSettingsService: key = DownscanTime; value = 15
+MeasurementSettingsService: key = SMPSMinDiameter; value = 2.4
+MeasurementSettingsService: key = SMPSMaxDiameter; value = 68.6
+MeasurementSettingsService: key = TandemTemperatureMinCurrent; value = 0
+MeasurementSettingsService: key = TandemTemperatureMaxCurrent; value = 30
+MeasurementSettingsService: key = SMPSDMAType; value = 3085
+MeasurementSettingsService: key = TandemTemperatureVector; value = 0;1;2;3;4;5;6;7;8;9;10;11;12;13;14;15;16;17;18;19;20;21;22;23;24;25;26;27;28;29;30
+MeasurementSettingsService: key = TandemDMAVector; value = 
+MeasurementSettingsService: key = TandemDMADMAType; value = 3085
+MeasurementSettingsService: key = SMPSDiameterVector; value = 2.4;68.6
+SettingsService: Setting up measurement service...
+SettingsService: applicationPath = C:\Users\matth\Documents\GitHub\project_volt\bin\Debug\net7.0\
+SettingsService: Settings path = C:\Users\matth\Documents\GitHub\project_volt\bin\Debug\net7.0\settings
+MeasurementSettingsService: key = SheathFlow; value = 15
+MeasurementSettingsService: key = ScanTimeConstant; value = 17
+MeasurementSettingsService: key = UpscanTime; value = 120
+MeasurementSettingsService: key = DownscanTime; value = 15
+MeasurementSettingsService: key = SMPSMinDiameter; value = 2.4
+MeasurementSettingsService: key = SMPSMaxDiameter; value = 68.6
+MeasurementSettingsService: key = TandemTemperatureMinCurrent; value = 0
+MeasurementSettingsService: key = TandemTemperatureMaxCurrent; value = 30
+MeasurementSettingsService: key = SMPSDMAType; value = 3085
+MeasurementSettingsService: key = TandemTemperatureVector; value = 0;1;2;3;4;5;6;7;8;9;10;11;12;13;14;15;16;17;18;19;20;21;22;23;24;25;26;27;28;29;30
+MeasurementSettingsService: key = TandemDMAVector; value = 
+MeasurementSettingsService: key = TandemDMADMAType; value = 3085
+MeasurementSettingsService: key = SMPSDiameterVector; value = 2.4;68.6
+SettingsService: Setting up measurement service...
+SettingsService: applicationPath = C:\Users\matth\Documents\GitHub\project_volt\bin\Debug\net7.0\
+SettingsService: Settings path = C:\Users\matth\Documents\GitHub\project_volt\bin\Debug\net7.0\settings
+MeasurementSettingsService: key = SheathFlow; value = 15
+MeasurementSettingsService: key = ScanTimeConstant; value = 17
+MeasurementSettingsService: key = UpscanTime; value = 120
+MeasurementSettingsService: key = DownscanTime; value = 15
+MeasurementSettingsService: key = SMPSMinDiameter; value = 2.4
+MeasurementSettingsService: key = SMPSMaxDiameter; value = 68.6
+MeasurementSettingsService: key = TandemTemperatureMinCurrent; value = 0
+MeasurementSettingsService: key = TandemTemperatureMaxCurrent; value = 30
+MeasurementSettingsService: key = SMPSDMAType; value = 3085
+MeasurementSettingsService: key = TandemTemperatureVector; value = 0;1;2;3;4;5;6;7;8;9;10;11;12;13;14;15;16;17;18;19;20;21;22;23;24;25;26;27;28;29;30
+MeasurementSettingsService: key = TandemDMAVector; value = 
+MeasurementSettingsService: key = TandemDMADMAType; value = 3085
+MeasurementSettingsService: key = SMPSDiameterVector; value = 2.4;68.6
+SettingsService: Setting up measurement service...
+SettingsService: applicationPath = C:\Users\matth\Documents\GitHub\project_volt\bin\Debug\net7.0\
+SettingsService: Settings path = C:\Users\matth\Documents\GitHub\project_volt\bin\Debug\net7.0\settings
+MeasurementSettingsService: key = SheathFlow; value = 15
+MeasurementSettingsService: key = ScanTimeConstant; value = 17
+MeasurementSettingsService: key = UpscanTime; value = 120
+MeasurementSettingsService: key = DownscanTime; value = 15
+MeasurementSettingsService: key = SMPSMinDiameter; value = 2.4
+MeasurementSettingsService: key = SMPSMaxDiameter; value = 68.6
+MeasurementSettingsService: key = TandemTemperatureMinCurrent; value = 0
+MeasurementSettingsService: key = TandemTemperatureMaxCurrent; value = 30
+MeasurementSettingsService: key = SMPSDMAType; value = 3085
+MeasurementSettingsService: key = TandemTemperatureVector; value = 0;1;2;3;4;5;6;7;8;9;10;11;12;13;14;15;16;17;18;19;20;21;22;23;24;25;26;27;28;29;30
+MeasurementSettingsService: key = TandemDMAVector; value = 
+MeasurementSettingsService: key = TandemDMADMAType; value = 3085
+MeasurementSettingsService: key = SMPSDiameterVector; value = 2.4;68.6
+SMPSMeasurement.cshtml.cs: OnPost(): SMPSMeasurement
+DeviceController.cs: Initialize current sensors
+ElectrospraySensor: Initializeing Electrospray Sensor
+ElectrospraySensor: Trying to open serial port on port COM6
+ElectrospraySensor.cs: Starting verification. Requesting serial number ElectrospraySensor
+SettingsService: Setting up measurement service...
+SettingsService: applicationPath = C:\Users\matth\Documents\GitHub\project_volt\bin\Debug\net7.0\
+SettingsService: Settings path = C:\Users\matth\Documents\GitHub\project_volt\bin\Debug\net7.0\settings
+MeasurementSettingsService: key = SheathFlow; value = 15
+MeasurementSettingsService: key = ScanTimeConstant; value = 17
+MeasurementSettingsService: key = UpscanTime; value = 120
+MeasurementSettingsService: key = DownscanTime; value = 15
+MeasurementSettingsService: key = SMPSMinDiameter; value = 2.4
+MeasurementSettingsService: key = SMPSMaxDiameter; value = 68.6
+MeasurementSettingsService: key = TandemTemperatureMinCurrent; value = 0
+MeasurementSettingsService: key = TandemTemperatureMaxCurrent; value = 30
+MeasurementSettingsService: key = SMPSDMAType; value = 3085
+MeasurementSettingsService: key = TandemTemperatureVector; value = 0;1;2;3;4;5;6;7;8;9;10;11;12;13;14;15;16;17;18;19;20;21;22;23;24;25;26;27;28;29;30
+MeasurementSettingsService: key = TandemDMAVector; value = 
+MeasurementSettingsService: key = TandemDMADMAType; value = 3085
+MeasurementSettingsService: key = SMPSDiameterVector; value = 2.4;68.6
+SMPSMeasurement.cshtml.cs: OnPost(): SMPSMeasurement
+DeviceController.cs: Initialize current sensors
+ElectrospraySensor: Initializeing Electrospray Sensor
+ElectrospraySensor: Trying to open serial port on port COM6
+ElectrospraySensor.cs: Starting verification. Requesting serial number ElectrospraySensor
+SettingsService: Setting up measurement service...
+SettingsService: applicationPath = C:\Users\matth\Documents\GitHub\project_volt\bin\Debug\net7.0\
+SettingsService: Settings path = C:\Users\matth\Documents\GitHub\project_volt\bin\Debug\net7.0\settings
+MeasurementSettingsService: key = SheathFlow; value = 15
+MeasurementSettingsService: key = ScanTimeConstant; value = 17
+MeasurementSettingsService: key = UpscanTime; value = 120
+MeasurementSettingsService: key = DownscanTime; value = 15
+MeasurementSettingsService: key = SMPSMinDiameter; value = 2.4
+MeasurementSettingsService: key = SMPSMaxDiameter; value = 68.6
+MeasurementSettingsService: key = TandemTemperatureMinCurrent; value = 0
+MeasurementSettingsService: key = TandemTemperatureMaxCurrent; value = 30
+MeasurementSettingsService: key = SMPSDMAType; value = 3085
+MeasurementSettingsService: key = TandemTemperatureVector; value = 0;1;2;3;4;5;6;7;8;9;10;11;12;13;14;15;16;17;18;19;20;21;22;23;24;25;26;27;28;29;30
+MeasurementSettingsService: key = TandemDMAVector; value = 
+MeasurementSettingsService: key = TandemDMADMAType; value = 3085
+MeasurementSettingsService: key = SMPSDiameterVector; value = 2.4;68.6
+SMPSMeasurement.cshtml.cs: OnPost(): SMPSMeasurement
+DeviceController.cs: Initialize current sensors
+ElectrospraySensor: Initializeing Electrospray Sensor
+ElectrospraySensor: Trying to open serial port on port COM6
+ElectrospraySensor.cs: Starting verification. Requesting serial number ElectrospraySensor
+SettingsService: Setting up measurement service...
+SettingsService: applicationPath = C:\Users\matth\Documents\GitHub\project_volt\bin\Debug\net7.0\
+SettingsService: Settings path = C:\Users\matth\Documents\GitHub\project_volt\bin\Debug\net7.0\settings
+MeasurementSettingsService: key = SheathFlow; value = 15
+MeasurementSettingsService: key = ScanTimeConstant; value = 17
+MeasurementSettingsService: key = UpscanTime; value = 120
+MeasurementSettingsService: key = DownscanTime; value = 15
+MeasurementSettingsService: key = SMPSMinDiameter; value = 2.4
+MeasurementSettingsService: key = SMPSMaxDiameter; value = 68.6
+MeasurementSettingsService: key = TandemTemperatureMinCurrent; value = 0
+MeasurementSettingsService: key = TandemTemperatureMaxCurrent; value = 30
+MeasurementSettingsService: key = SMPSDMAType; value = 3085
+MeasurementSettingsService: key = TandemTemperatureVector; value = 0;1;2;3;4;5;6;7;8;9;10;11;12;13;14;15;16;17;18;19;20;21;22;23;24;25;26;27;28;29;30
+MeasurementSettingsService: key = TandemDMAVector; value = 
+MeasurementSettingsService: key = TandemDMADMAType; value = 3085
+MeasurementSettingsService: key = SMPSDiameterVector; value = 2.4;68.6
+SMPSMeasurement.cshtml.cs: OnPost(): SMPSMeasurement
+DeviceController.cs: Initialize current sensors
+ElectrospraySensor: Initializeing Electrospray Sensor
+ElectrospraySensor: Trying to open serial port on port COM6
+ElectrospraySensor.cs: Starting verification. Requesting serial number ElectrospraySensor
+SettingsService: Setting up measurement service...
+SettingsService: applicationPath = C:\Users\matth\Documents\GitHub\project_volt\bin\Debug\net7.0\
+SettingsService: Settings path = C:\Users\matth\Documents\GitHub\project_volt\bin\Debug\net7.0\settings
+MeasurementSettingsService: key = SheathFlow; value = 15
+MeasurementSettingsService: key = ScanTimeConstant; value = 17
+MeasurementSettingsService: key = UpscanTime; value = 120
+MeasurementSettingsService: key = DownscanTime; value = 15
+MeasurementSettingsService: key = SMPSMinDiameter; value = 2.4
+MeasurementSettingsService: key = SMPSMaxDiameter; value = 68.6
+MeasurementSettingsService: key = TandemTemperatureMinCurrent; value = 0
+MeasurementSettingsService: key = TandemTemperatureMaxCurrent; value = 30
+MeasurementSettingsService: key = SMPSDMAType; value = 3085
+MeasurementSettingsService: key = TandemTemperatureVector; value = 0;1;2;3;4;5;6;7;8;9;10;11;12;13;14;15;16;17;18;19;20;21;22;23;24;25;26;27;28;29;30
+MeasurementSettingsService: key = TandemDMAVector; value = 
+MeasurementSettingsService: key = TandemDMADMAType; value = 3085
+MeasurementSettingsService: key = SMPSDiameterVector; value = 2.4;68.6
+SMPSMeasurement.cshtml.cs: OnPost(): SMPSMeasurement
+DeviceController.cs: Initialize current sensors
+ElectrospraySensor: Initializeing Electrospray Sensor
+ElectrospraySensor: Trying to open serial port on port COM6
+ElectrospraySensor.cs: Starting verification. Requesting serial number ElectrospraySensor
+ElectrospraySensor.cs: Writing timeout System.TimeoutException: The write timed out.
+   at System.IO.Ports.SerialStream.Write(Byte[] array, Int32 offset, Int32 count, Int32 timeout)
+   at System.IO.Ports.SerialPort.Write(String text)
+   at Device.ElectrospraySensor.Initialize() in c:\Users\matth\Documents\GitHub\project_volt\Controller\Device\ElectrospraySensor.cs:line 52! Trying next port...
+SettingsService: Setting up measurement service...
+SettingsService: applicationPath = C:\Users\matth\Documents\GitHub\project_volt\bin\Debug\net7.0\
+SettingsService: Settings path = C:\Users\matth\Documents\GitHub\project_volt\bin\Debug\net7.0\settings
+MeasurementSettingsService: key = SheathFlow; value = 15
+MeasurementSettingsService: key = ScanTimeConstant; value = 17
+MeasurementSettingsService: key = UpscanTime; value = 120
+MeasurementSettingsService: key = DownscanTime; value = 15
+MeasurementSettingsService: key = SMPSMinDiameter; value = 2.4
+MeasurementSettingsService: key = SMPSMaxDiameter; value = 68.6
+MeasurementSettingsService: key = TandemTemperatureMinCurrent; value = 0
+MeasurementSettingsService: key = TandemTemperatureMaxCurrent; value = 30
+MeasurementSettingsService: key = SMPSDMAType; value = 3085
+MeasurementSettingsService: key = TandemTemperatureVector; value = 0;1;2;3;4;5;6;7;8;9;10;11;12;13;14;15;16;17;18;19;20;21;22;23;24;25;26;27;28;29;30
+MeasurementSettingsService: key = TandemDMAVector; value = 
+MeasurementSettingsService: key = TandemDMADMAType; value = 3085
+MeasurementSettingsService: key = SMPSDiameterVector; value = 2.4;68.6
+SMPSMeasurement.cshtml.cs: OnPost(): SMPSMeasurement
+DeviceController.cs: Initialize current sensors
+ElectrospraySensor: Initializeing Electrospray Sensor
+ElectrospraySensor: Trying to open serial port on port COM6
+ElectrospraySensor.cs: Starting verification. Requesting serial number ElectrospraySensor
+ElectrospraySensor.cs: Writing timeout System.TimeoutException: The write timed out.
+   at System.IO.Ports.SerialStream.Write(Byte[] array, Int32 offset, Int32 count, Int32 timeout)
+   at System.IO.Ports.SerialPort.Write(String text)
+   at Device.ElectrospraySensor.Initialize() in c:\Users\matth\Documents\GitHub\project_volt\Controller\Device\ElectrospraySensor.cs:line 52! Trying next port...
+SettingsService: Setting up measurement service...
+SettingsService: applicationPath = C:\Users\matth\Documents\GitHub\project_volt\bin\Debug\net7.0\
+SettingsService: Settings path = C:\Users\matth\Documents\GitHub\project_volt\bin\Debug\net7.0\settings
+MeasurementSettingsService: key = SheathFlow; value = 15
+MeasurementSettingsService: key = ScanTimeConstant; value = 17
+MeasurementSettingsService: key = UpscanTime; value = 120
+MeasurementSettingsService: key = DownscanTime; value = 15
+MeasurementSettingsService: key = SMPSMinDiameter; value = 2.4
+MeasurementSettingsService: key = SMPSMaxDiameter; value = 68.6
+MeasurementSettingsService: key = TandemTemperatureMinCurrent; value = 0
+MeasurementSettingsService: key = TandemTemperatureMaxCurrent; value = 30
+MeasurementSettingsService: key = SMPSDMAType; value = 3085
+MeasurementSettingsService: key = TandemTemperatureVector; value = 0;1;2;3;4;5;6;7;8;9;10;11;12;13;14;15;16;17;18;19;20;21;22;23;24;25;26;27;28;29;30
+MeasurementSettingsService: key = TandemDMAVector; value = 
+MeasurementSettingsService: key = TandemDMADMAType; value = 3085
+MeasurementSettingsService: key = SMPSDiameterVector; value = 2.4;68.6
+SMPSMeasurement.cshtml.cs: OnPost(): SMPSMeasurement
+DeviceController.cs: Initialize current sensors
+ElectrospraySensor: Initializeing Electrospray Sensor
+ElectrospraySensor: Trying to open serial port on port COM6
+ElectrospraySensor.cs: Starting verification. Requesting serial number ElectrospraySensor
+ElectrospraySensor.cs: Writing timeout System.TimeoutException: The write timed out.
+   at System.IO.Ports.SerialStream.Write(Byte[] array, Int32 offset, Int32 count, Int32 timeout)
+   at System.IO.Ports.SerialPort.Write(String text)
+   at Device.ElectrospraySensor.Initialize() in c:\Users\matth\Documents\GitHub\project_volt\Controller\Device\ElectrospraySensor.cs:line 53! Trying next port...
+ElectrospraySensor: Trying to open serial port on port COM7
+SettingsService: Setting up measurement service...
+SettingsService: applicationPath = C:\Users\matth\Documents\GitHub\project_volt\bin\Debug\net7.0\
+SettingsService: Settings path = C:\Users\matth\Documents\GitHub\project_volt\bin\Debug\net7.0\settings
+MeasurementSettingsService: key = SheathFlow; value = 15
+MeasurementSettingsService: key = ScanTimeConstant; value = 17
+MeasurementSettingsService: key = UpscanTime; value = 120
+MeasurementSettingsService: key = DownscanTime; value = 15
+MeasurementSettingsService: key = SMPSMinDiameter; value = 2.4
+MeasurementSettingsService: key = SMPSMaxDiameter; value = 68.6
+MeasurementSettingsService: key = TandemTemperatureMinCurrent; value = 0
+MeasurementSettingsService: key = TandemTemperatureMaxCurrent; value = 30
+MeasurementSettingsService: key = SMPSDMAType; value = 3085
+MeasurementSettingsService: key = TandemTemperatureVector; value = 0;1;2;3;4;5;6;7;8;9;10;11;12;13;14;15;16;17;18;19;20;21;22;23;24;25;26;27;28;29;30
+MeasurementSettingsService: key = TandemDMAVector; value = 
+MeasurementSettingsService: key = TandemDMADMAType; value = 3085
+MeasurementSettingsService: key = SMPSDiameterVector; value = 2.4;68.6
+SMPSMeasurement.cshtml.cs: OnPost(): SMPSMeasurement
+DeviceController.cs: Initialize current sensors
+ElectrospraySensor: Initializeing Electrospray Sensor
+ElectrospraySensor.cs: Trying to open serial port on port COM6
+ElectrospraySensor.cs: Starting verification. Requesting serial number ElectrospraySensor
+ElectrospraySensor.cs: Writing timeout System.TimeoutException: The write timed out.
+   at System.IO.Ports.SerialStream.Write(Byte[] array, Int32 offset, Int32 count, Int32 timeout)
+   at System.IO.Ports.SerialPort.Write(String text)
+   at Device.ElectrospraySensor.Initialize() in c:\Users\matth\Documents\GitHub\project_volt\Controller\Device\ElectrospraySensor.cs:line 58! Trying next port...
+ElectrospraySensor.cs: Trying to open serial port on port COM7
+SettingsService: Setting up measurement service...
+SettingsService: applicationPath = C:\Users\matth\Documents\GitHub\project_volt\bin\Debug\net7.0\
+SettingsService: Settings path = C:\Users\matth\Documents\GitHub\project_volt\bin\Debug\net7.0\settings
+MeasurementSettingsService: key = SheathFlow; value = 15
+MeasurementSettingsService: key = ScanTimeConstant; value = 17
+MeasurementSettingsService: key = UpscanTime; value = 120
+MeasurementSettingsService: key = DownscanTime; value = 15
+MeasurementSettingsService: key = SMPSMinDiameter; value = 2.4
+MeasurementSettingsService: key = SMPSMaxDiameter; value = 68.6
+MeasurementSettingsService: key = TandemTemperatureMinCurrent; value = 0
+MeasurementSettingsService: key = TandemTemperatureMaxCurrent; value = 30
+MeasurementSettingsService: key = SMPSDMAType; value = 3085
+MeasurementSettingsService: key = TandemTemperatureVector; value = 0;1;2;3;4;5;6;7;8;9;10;11;12;13;14;15;16;17;18;19;20;21;22;23;24;25;26;27;28;29;30
+MeasurementSettingsService: key = TandemDMAVector; value = 
+MeasurementSettingsService: key = TandemDMADMAType; value = 3085
+MeasurementSettingsService: key = SMPSDiameterVector; value = 2.4;68.6
+SMPSMeasurement.cshtml.cs: OnPost(): SMPSMeasurement
+DeviceController.cs: Initialize current sensors
+ElectrospraySensor: Initializeing Electrospray Sensor
+ElectrospraySensor.cs: Trying to open serial port on port COM6
+ElectrospraySensor.cs: Starting verification. Requesting serial number ElectrospraySensor
+ElectrospraySensor.cs: Writing timeout System.TimeoutException: The write timed out.
+   at System.IO.Ports.SerialStream.Write(Byte[] array, Int32 offset, Int32 count, Int32 timeout)
+   at System.IO.Ports.SerialPort.Write(String text)
+   at Device.ElectrospraySensor.Initialize() in c:\Users\matth\Documents\GitHub\project_volt\Controller\Device\ElectrospraySensor.cs:line 58! Trying next port...
+ElectrospraySensor.cs: Trying to open serial port on port COM7
+ElectrospraySensor.cs: Tried to open port COM7. Access denied! Trying next port
+MeasurementController: StartMeasurement(): measurementAlgorithm is null!
+SMPSMeasurement.cshtml.cs: OnPost(): SMPSMeasurement
+DeviceController.cs: Initialize current sensors
+ElectrospraySensor: Initializeing Electrospray Sensor
+ElectrospraySensor.cs: Trying to open serial port on port COM6
+ElectrospraySensor.cs: Starting verification. Requesting serial number ElectrospraySensor
+ElectrospraySensor.cs: Writing timeout System.TimeoutException: The write timed out.
+   at System.IO.Ports.SerialStream.Write(Byte[] array, Int32 offset, Int32 count, Int32 timeout)
+   at System.IO.Ports.SerialPort.Write(String text)
+   at Device.ElectrospraySensor.Initialize() in c:\Users\matth\Documents\GitHub\project_volt\Controller\Device\ElectrospraySensor.cs:line 58! Trying next port...
+ElectrospraySensor.cs: Trying to open serial port on port COM7
+ElectrospraySensor.cs: Tried to open port COM7. Access denied! Trying next port
+MeasurementController: StartMeasurement(): measurementAlgorithm is null!
+SettingsService: Setting up measurement service...
+SettingsService: applicationPath = C:\Users\matth\Documents\GitHub\project_volt\bin\Debug\net7.0\
+SettingsService: Settings path = C:\Users\matth\Documents\GitHub\project_volt\bin\Debug\net7.0\settings
+MeasurementSettingsService: key = SheathFlow; value = 15
+MeasurementSettingsService: key = ScanTimeConstant; value = 17
+MeasurementSettingsService: key = UpscanTime; value = 120
+MeasurementSettingsService: key = DownscanTime; value = 15
+MeasurementSettingsService: key = SMPSMinDiameter; value = 2.4
+MeasurementSettingsService: key = SMPSMaxDiameter; value = 68.6
+MeasurementSettingsService: key = TandemTemperatureMinCurrent; value = 0
+MeasurementSettingsService: key = TandemTemperatureMaxCurrent; value = 30
+MeasurementSettingsService: key = SMPSDMAType; value = 3085
+MeasurementSettingsService: key = TandemTemperatureVector; value = 0;1;2;3;4;5;6;7;8;9;10;11;12;13;14;15;16;17;18;19;20;21;22;23;24;25;26;27;28;29;30
+MeasurementSettingsService: key = TandemDMAVector; value = 
+MeasurementSettingsService: key = TandemDMADMAType; value = 3085
+MeasurementSettingsService: key = SMPSDiameterVector; value = 2.4;68.6
+SMPSMeasurement.cshtml.cs: OnPost(): SMPSMeasurement
+Device Controller: No Measurement Type set!
+MeasurementController: StartMeasurement(): MeasurementType is CurrentMeasurement
+SensorMeasurementAlgorithm.cs: sensor object is null. Cannot continue
+SMPSMeasurement.cshtml.cs: OnPost(): SMPSMeasurement
+Device Controller: No Measurement Type set!
+MeasurementController: StartMeasurement(): MeasurementType is CurrentMeasurement
+SensorMeasurementAlgorithm.cs: sensor object is null. Cannot continue
+SettingsService: Setting up measurement service...
+SettingsService: applicationPath = C:\Users\matth\Documents\GitHub\project_volt\bin\Debug\net7.0\
+SettingsService: Settings path = C:\Users\matth\Documents\GitHub\project_volt\bin\Debug\net7.0\settings
+MeasurementSettingsService: key = SheathFlow; value = 15
+MeasurementSettingsService: key = ScanTimeConstant; value = 17
+MeasurementSettingsService: key = UpscanTime; value = 120
+MeasurementSettingsService: key = DownscanTime; value = 15
+MeasurementSettingsService: key = SMPSMinDiameter; value = 2.4
+MeasurementSettingsService: key = SMPSMaxDiameter; value = 68.6
+MeasurementSettingsService: key = TandemTemperatureMinCurrent; value = 0
+MeasurementSettingsService: key = TandemTemperatureMaxCurrent; value = 30
+MeasurementSettingsService: key = SMPSDMAType; value = 3085
+MeasurementSettingsService: key = TandemTemperatureVector; value = 0;1;2;3;4;5;6;7;8;9;10;11;12;13;14;15;16;17;18;19;20;21;22;23;24;25;26;27;28;29;30
+MeasurementSettingsService: key = TandemDMAVector; value = 
+MeasurementSettingsService: key = TandemDMADMAType; value = 3085
+MeasurementSettingsService: key = SMPSDiameterVector; value = 2.4;68.6
+SMPSMeasurement.cshtml.cs: OnPost(): SMPSMeasurement
+Device Controller: No Measurement Type set!
+MeasurementController: StartMeasurement(): MeasurementType is CurrentMeasurement
+SensorMeasurementAlgorithm.cs: sensor object is null. Cannot continue
+SettingsService: Setting up measurement service...
+SettingsService: applicationPath = C:\Users\matth\Documents\GitHub\project_volt\bin\Debug\net7.0\
+SettingsService: Settings path = C:\Users\matth\Documents\GitHub\project_volt\bin\Debug\net7.0\settings
+MeasurementSettingsService: key = SheathFlow; value = 15
+MeasurementSettingsService: key = ScanTimeConstant; value = 17
+MeasurementSettingsService: key = UpscanTime; value = 120
+MeasurementSettingsService: key = DownscanTime; value = 15
+MeasurementSettingsService: key = SMPSMinDiameter; value = 2.4
+MeasurementSettingsService: key = SMPSMaxDiameter; value = 68.6
+MeasurementSettingsService: key = TandemTemperatureMinCurrent; value = 0
+MeasurementSettingsService: key = TandemTemperatureMaxCurrent; value = 30
+MeasurementSettingsService: key = SMPSDMAType; value = 3085
+MeasurementSettingsService: key = TandemTemperatureVector; value = 0;1;2;3;4;5;6;7;8;9;10;11;12;13;14;15;16;17;18;19;20;21;22;23;24;25;26;27;28;29;30
+MeasurementSettingsService: key = TandemDMAVector; value = 
+MeasurementSettingsService: key = TandemDMADMAType; value = 3085
+MeasurementSettingsService: key = SMPSDiameterVector; value = 2.4;68.6
+SMPSMeasurement.cshtml.cs: OnPost(): SMPSMeasurement
+DeviceController.cs: Initialize current sensors
+ElectrospraySensor: Initializeing Electrospray Sensor
+ElectrospraySensor.cs: Trying to open serial port on port COM6
+ElectrospraySensor.cs: Starting verification. Requesting serial number ElectrospraySensor
+ElectrospraySensor.cs: Writing timeout System.TimeoutException: The write timed out.
+   at System.IO.Ports.SerialStream.Write(Byte[] array, Int32 offset, Int32 count, Int32 timeout)
+   at System.IO.Ports.SerialPort.Write(String text)
+   at Device.ElectrospraySensor.Initialize() in c:\Users\matth\Documents\GitHub\project_volt\Controller\Device\ElectrospraySensor.cs:line 58! Trying next port...
+ElectrospraySensor.cs: Trying to open serial port on port COM7
+ElectrospraySensor.cs: Tried to open port COM7. Access denied! Trying next port... System.IO.IOException: Das Zeitlimit für die Semaphore wurde erreicht. : 'COM7'
+   at System.IO.Ports.SerialStream..ctor(String portName, Int32 baudRate, Parity parity, Int32 dataBits, StopBits stopBits, Int32 readTimeout, Int32 writeTimeout, Handshake handshake, Boolean dtrEnable, Boolean rtsEnable, Boolean discardNull, Byte parityReplace)
+   at System.IO.Ports.SerialPort.Open()
+   at Device.ElectrospraySensor.Initialize() in c:\Users\matth\Documents\GitHub\project_volt\Controller\Device\ElectrospraySensor.cs:line 41
+ElectrospraySensor.cs: Trying to open serial port on port COM3
+ElectrospraySensor.cs: Starting verification. Requesting serial number ElectrospraySensor
+ElectrospraySensor.cs: Initialize() read timed out answer = 
+MeasurementController: StartMeasurement(): MeasurementType is CurrentMeasurement
+SMPSMeasurement.cshtml.cs: OnPost(): SMPSMeasurement
+DeviceController.cs: Initialize current sensors
+ElectrospraySensor: Initializeing Electrospray Sensor
+ElectrospraySensor.cs: Trying to open serial port on port COM6
+ElectrospraySensor.cs: Starting verification. Requesting serial number ElectrospraySensor
+ElectrospraySensor.cs: Writing timeout System.TimeoutException: The write timed out.
+   at System.IO.Ports.SerialStream.Write(Byte[] array, Int32 offset, Int32 count, Int32 timeout)
+   at System.IO.Ports.SerialPort.Write(String text)
+   at Device.ElectrospraySensor.Initialize() in c:\Users\matth\Documents\GitHub\project_volt\Controller\Device\ElectrospraySensor.cs:line 58! Trying next port...
+ElectrospraySensor.cs: Trying to open serial port on port COM7
+ElectrospraySensor.cs: Tried to open port COM7. Access denied! Trying next port... System.IO.IOException: Das Zeitlimit für die Semaphore wurde erreicht. : 'COM7'
+   at System.IO.Ports.SerialStream..ctor(String portName, Int32 baudRate, Parity parity, Int32 dataBits, StopBits stopBits, Int32 readTimeout, Int32 writeTimeout, Handshake handshake, Boolean dtrEnable, Boolean rtsEnable, Boolean discardNull, Byte parityReplace)
+   at System.IO.Ports.SerialPort.Open()
+   at Device.ElectrospraySensor.Initialize() in c:\Users\matth\Documents\GitHub\project_volt\Controller\Device\ElectrospraySensor.cs:line 41
+ElectrospraySensor.cs: Trying to open serial port on port COM3
+ElectrospraySensor.cs: Tried to open port COM3. Access denied! Trying next port... System.UnauthorizedAccessException: Access to the path 'COM3' is denied.
+   at System.IO.Ports.SerialStream..ctor(String portName, Int32 baudRate, Parity parity, Int32 dataBits, StopBits stopBits, Int32 readTimeout, Int32 writeTimeout, Handshake handshake, Boolean dtrEnable, Boolean rtsEnable, Boolean discardNull, Byte parityReplace)
+   at System.IO.Ports.SerialPort.Open()
+   at Device.ElectrospraySensor.Initialize() in c:\Users\matth\Documents\GitHub\project_volt\Controller\Device\ElectrospraySensor.cs:line 41
+MeasurementController: StartMeasurement(): MeasurementType is CurrentMeasurement
+SettingsService: Setting up measurement service...
+SettingsService: applicationPath = C:\Users\matth\Documents\GitHub\project_volt\bin\Debug\net7.0\
+SettingsService: Settings path = C:\Users\matth\Documents\GitHub\project_volt\bin\Debug\net7.0\settings
+MeasurementSettingsService: key = SheathFlow; value = 15
+MeasurementSettingsService: key = ScanTimeConstant; value = 17
+MeasurementSettingsService: key = UpscanTime; value = 120
+MeasurementSettingsService: key = DownscanTime; value = 15
+MeasurementSettingsService: key = SMPSMinDiameter; value = 2.4
+MeasurementSettingsService: key = SMPSMaxDiameter; value = 68.6
+MeasurementSettingsService: key = TandemTemperatureMinCurrent; value = 0
+MeasurementSettingsService: key = TandemTemperatureMaxCurrent; value = 30
+MeasurementSettingsService: key = SMPSDMAType; value = 3085
+MeasurementSettingsService: key = TandemTemperatureVector; value = 0;1;2;3;4;5;6;7;8;9;10;11;12;13;14;15;16;17;18;19;20;21;22;23;24;25;26;27;28;29;30
+MeasurementSettingsService: key = TandemDMAVector; value = 
+MeasurementSettingsService: key = TandemDMADMAType; value = 3085
+MeasurementSettingsService: key = SMPSDiameterVector; value = 2.4;68.6
+SMPSMeasurement.cshtml.cs: OnPost(): SMPSMeasurement
+DeviceController.cs: Initialize current sensors
+ElectrospraySensor: Initializeing Electrospray Sensor
+ElectrospraySensor.cs: Trying to open serial port on port COM6
+ElectrospraySensor.cs: Starting verification. Requesting serial number ElectrospraySensor
+ElectrospraySensor.cs: Writing timeout System.TimeoutException: The write timed out.
+   at System.IO.Ports.SerialStream.Write(Byte[] array, Int32 offset, Int32 count, Int32 timeout)
+   at System.IO.Ports.SerialPort.Write(String text)
+   at Device.ElectrospraySensor.Initialize() in c:\Users\matth\Documents\GitHub\project_volt\Controller\Device\ElectrospraySensor.cs:line 58! Trying next port...
+ElectrospraySensor.cs: Trying to open serial port on port COM7
+ElectrospraySensor.cs: Tried to open port COM7. Access denied! Trying next port... System.IO.IOException: Das Zeitlimit für die Semaphore wurde erreicht. : 'COM7'
+   at System.IO.Ports.SerialStream..ctor(String portName, Int32 baudRate, Parity parity, Int32 dataBits, StopBits stopBits, Int32 readTimeout, Int32 writeTimeout, Handshake handshake, Boolean dtrEnable, Boolean rtsEnable, Boolean discardNull, Byte parityReplace)
+   at System.IO.Ports.SerialPort.Open()
+   at Device.ElectrospraySensor.Initialize() in c:\Users\matth\Documents\GitHub\project_volt\Controller\Device\ElectrospraySensor.cs:line 41
+ElectrospraySensor.cs: Trying to open serial port on port COM3
+ElectrospraySensor.cs: Starting verification. Requesting serial number ElectrospraySensor
+ElectrospraySensor.cs: Initialize() read timed out answer = 
+MeasurementController: StartMeasurement(): MeasurementType is CurrentMeasurement
+SMPSMeasurement.cshtml.cs: OnPost(): SMPSMeasurement
+DeviceController.cs: Initialize current sensors
+ElectrospraySensor: Initializeing Electrospray Sensor
+ElectrospraySensor.cs: Trying to open serial port on port COM6
+ElectrospraySensor.cs: Starting verification. Requesting serial number ElectrospraySensor
+ElectrospraySensor.cs: Writing timeout System.TimeoutException: The write timed out.
+   at System.IO.Ports.SerialStream.Write(Byte[] array, Int32 offset, Int32 count, Int32 timeout)
+   at System.IO.Ports.SerialPort.Write(String text)
+   at Device.ElectrospraySensor.Initialize() in c:\Users\matth\Documents\GitHub\project_volt\Controller\Device\ElectrospraySensor.cs:line 58! Trying next port...
+ElectrospraySensor.cs: Trying to open serial port on port COM7
+ElectrospraySensor.cs: Tried to open port COM7. Access denied! Trying next port... System.IO.IOException: Das Zeitlimit für die Semaphore wurde erreicht. : 'COM7'
+   at System.IO.Ports.SerialStream..ctor(String portName, Int32 baudRate, Parity parity, Int32 dataBits, StopBits stopBits, Int32 readTimeout, Int32 writeTimeout, Handshake handshake, Boolean dtrEnable, Boolean rtsEnable, Boolean discardNull, Byte parityReplace)
+   at System.IO.Ports.SerialPort.Open()
+   at Device.ElectrospraySensor.Initialize() in c:\Users\matth\Documents\GitHub\project_volt\Controller\Device\ElectrospraySensor.cs:line 41
+ElectrospraySensor.cs: Trying to open serial port on port COM3
+ElectrospraySensor.cs: Starting verification. Requesting serial number ElectrospraySensor
+ElectrospraySensor.cs: Electrospray Sensor verified on port COM3
+MeasurementController: StartMeasurement(): MeasurementType is CurrentMeasurement
+SensorMeasurementAlgorithm.cs: Values received:
+SettingsService: Setting up measurement service...
+SettingsService: applicationPath = C:\Users\matth\Documents\GitHub\project_volt\bin\Debug\net7.0\
+SettingsService: Settings path = C:\Users\matth\Documents\GitHub\project_volt\bin\Debug\net7.0\settings
+MeasurementSettingsService: key = SheathFlow; value = 15
+MeasurementSettingsService: key = ScanTimeConstant; value = 17
+MeasurementSettingsService: key = UpscanTime; value = 120
+MeasurementSettingsService: key = DownscanTime; value = 15
+MeasurementSettingsService: key = SMPSMinDiameter; value = 2.4
+MeasurementSettingsService: key = SMPSMaxDiameter; value = 68.6
+MeasurementSettingsService: key = TandemTemperatureMinCurrent; value = 0
+MeasurementSettingsService: key = TandemTemperatureMaxCurrent; value = 30
+MeasurementSettingsService: key = SMPSDMAType; value = 3085
+MeasurementSettingsService: key = TandemTemperatureVector; value = 0;1;2;3;4;5;6;7;8;9;10;11;12;13;14;15;16;17;18;19;20;21;22;23;24;25;26;27;28;29;30
+MeasurementSettingsService: key = TandemDMAVector; value = 
+MeasurementSettingsService: key = TandemDMADMAType; value = 3085
+MeasurementSettingsService: key = SMPSDiameterVector; value = 2.4;68.6
+SMPSMeasurement.cshtml.cs: OnPost(): SMPSMeasurement
+DeviceController.cs: Initialize current sensors
+ElectrospraySensor: Initializeing Electrospray Sensor
+ElectrospraySensor.cs: Trying to open serial port on port COM6
+ElectrospraySensor.cs: Starting verification. Requesting serial number ElectrospraySensor
+ElectrospraySensor.cs: Writing timeout System.TimeoutException: The write timed out.
+   at System.IO.Ports.SerialStream.Write(Byte[] array, Int32 offset, Int32 count, Int32 timeout)
+   at System.IO.Ports.SerialPort.Write(String text)
+   at Device.ElectrospraySensor.Initialize() in c:\Users\matth\Documents\GitHub\project_volt\Controller\Device\ElectrospraySensor.cs:line 60! Trying next port...
+ElectrospraySensor.cs: Trying to open serial port on port COM7
+ElectrospraySensor.cs: Tried to open port COM7. Access denied! Trying next port... System.IO.IOException: Das Zeitlimit für die Semaphore wurde erreicht. : 'COM7'
+   at System.IO.Ports.SerialStream..ctor(String portName, Int32 baudRate, Parity parity, Int32 dataBits, StopBits stopBits, Int32 readTimeout, Int32 writeTimeout, Handshake handshake, Boolean dtrEnable, Boolean rtsEnable, Boolean discardNull, Byte parityReplace)
+   at System.IO.Ports.SerialPort.Open()
+   at Device.ElectrospraySensor.Initialize() in c:\Users\matth\Documents\GitHub\project_volt\Controller\Device\ElectrospraySensor.cs:line 43
+ElectrospraySensor.cs: Trying to open serial port on port COM3
+ElectrospraySensor.cs: Starting verification. Requesting serial number ElectrospraySensor
+ElectrospraySensor.cs: Electrospray Sensor verified on port COM3
+MeasurementController: StartMeasurement(): MeasurementType is CurrentMeasurement
+SensorMeasurementAlgorithm.cs: Values received:
+SMPSMeasurement.cshtml.cs: OnPost(): SMPSMeasurement
+DeviceController.cs: Initialize current sensors
+ElectrospraySensor: Initializeing Electrospray Sensor
+ElectrospraySensor.cs: Trying to open serial port on port COM6
+ElectrospraySensor.cs: Starting verification. Requesting serial number ElectrospraySensor
+ElectrospraySensor.cs: Writing timeout System.TimeoutException: The write timed out.
+   at System.IO.Ports.SerialStream.Write(Byte[] array, Int32 offset, Int32 count, Int32 timeout)
+   at System.IO.Ports.SerialPort.Write(String text)
+   at Device.ElectrospraySensor.Initialize() in c:\Users\matth\Documents\GitHub\project_volt\Controller\Device\ElectrospraySensor.cs:line 60! Trying next port...
+ElectrospraySensor.cs: Trying to open serial port on port COM7
+ElectrospraySensor.cs: Tried to open port COM7. Access denied! Trying next port... System.IO.IOException: Das Zeitlimit für die Semaphore wurde erreicht. : 'COM7'
+   at System.IO.Ports.SerialStream..ctor(String portName, Int32 baudRate, Parity parity, Int32 dataBits, StopBits stopBits, Int32 readTimeout, Int32 writeTimeout, Handshake handshake, Boolean dtrEnable, Boolean rtsEnable, Boolean discardNull, Byte parityReplace)
+   at System.IO.Ports.SerialPort.Open()
+   at Device.ElectrospraySensor.Initialize() in c:\Users\matth\Documents\GitHub\project_volt\Controller\Device\ElectrospraySensor.cs:line 43
+ElectrospraySensor.cs: Trying to open serial port on port COM3
+ElectrospraySensor.cs: Tried to open port COM3. Access denied! Trying next port... System.UnauthorizedAccessException: Access to the path 'COM3' is denied.
+   at System.IO.Ports.SerialStream..ctor(String portName, Int32 baudRate, Parity parity, Int32 dataBits, StopBits stopBits, Int32 readTimeout, Int32 writeTimeout, Handshake handshake, Boolean dtrEnable, Boolean rtsEnable, Boolean discardNull, Byte parityReplace)
+   at System.IO.Ports.SerialPort.Open()
+   at Device.ElectrospraySensor.Initialize() in c:\Users\matth\Documents\GitHub\project_volt\Controller\Device\ElectrospraySensor.cs:line 43
+MeasurementController: StartMeasurement(): MeasurementType is CurrentMeasurement
+SettingsService: Setting up measurement service...
+SettingsService: applicationPath = C:\Users\matth\Documents\GitHub\project_volt\bin\Debug\net7.0\
+SettingsService: Settings path = C:\Users\matth\Documents\GitHub\project_volt\bin\Debug\net7.0\settings
+MeasurementSettingsService: key = SheathFlow; value = 15
+MeasurementSettingsService: key = ScanTimeConstant; value = 17
+MeasurementSettingsService: key = UpscanTime; value = 120
+MeasurementSettingsService: key = DownscanTime; value = 15
+MeasurementSettingsService: key = SMPSMinDiameter; value = 2.4
+MeasurementSettingsService: key = SMPSMaxDiameter; value = 68.6
+MeasurementSettingsService: key = TandemTemperatureMinCurrent; value = 0
+MeasurementSettingsService: key = TandemTemperatureMaxCurrent; value = 30
+MeasurementSettingsService: key = SMPSDMAType; value = 3085
+MeasurementSettingsService: key = TandemTemperatureVector; value = 0;1;2;3;4;5;6;7;8;9;10;11;12;13;14;15;16;17;18;19;20;21;22;23;24;25;26;27;28;29;30
+MeasurementSettingsService: key = TandemDMAVector; value = 
+MeasurementSettingsService: key = TandemDMADMAType; value = 3085
+MeasurementSettingsService: key = SMPSDiameterVector; value = 2.4;68.6
+SMPSMeasurement.cshtml.cs: OnPost(): SMPSMeasurement
+DeviceController.cs: Initialize current sensors
+ElectrospraySensor: Initializeing Electrospray Sensor
+ElectrospraySensor.cs: Trying to open serial port on port COM6
+ElectrospraySensor.cs: Starting verification. Requesting serial number ElectrospraySensor
+ElectrospraySensor.cs: Writing timeout System.TimeoutException: The write timed out.
+   at System.IO.Ports.SerialStream.Write(Byte[] array, Int32 offset, Int32 count, Int32 timeout)
+   at System.IO.Ports.SerialPort.Write(String text)
+   at Device.ElectrospraySensor.Initialize() in c:\Users\matth\Documents\GitHub\project_volt\Controller\Device\ElectrospraySensor.cs:line 60! Trying next port...
+ElectrospraySensor.cs: Trying to open serial port on port COM7
+ElectrospraySensor.cs: Tried to open port COM7. Access denied! Trying next port... System.IO.IOException: Das Zeitlimit für die Semaphore wurde erreicht. : 'COM7'
+   at System.IO.Ports.SerialStream..ctor(String portName, Int32 baudRate, Parity parity, Int32 dataBits, StopBits stopBits, Int32 readTimeout, Int32 writeTimeout, Handshake handshake, Boolean dtrEnable, Boolean rtsEnable, Boolean discardNull, Byte parityReplace)
+   at System.IO.Ports.SerialPort.Open()
+   at Device.ElectrospraySensor.Initialize() in c:\Users\matth\Documents\GitHub\project_volt\Controller\Device\ElectrospraySensor.cs:line 43
+ElectrospraySensor.cs: Trying to open serial port on port COM3
+ElectrospraySensor.cs: Starting verification. Requesting serial number ElectrospraySensor
+ElectrospraySensor.cs: Electrospray Sensor verified on port COM3
+MeasurementController: StartMeasurement(): MeasurementType is CurrentMeasurement
+SensorMeasurementAlgorithm.cs: Values received:
+SettingsService: Setting up measurement service...
+SettingsService: applicationPath = C:\Users\matth\Documents\GitHub\project_volt\bin\Debug\net7.0\
+SettingsService: Settings path = C:\Users\matth\Documents\GitHub\project_volt\bin\Debug\net7.0\settings
+MeasurementSettingsService: key = SheathFlow; value = 15
+MeasurementSettingsService: key = ScanTimeConstant; value = 17
+MeasurementSettingsService: key = UpscanTime; value = 120
+MeasurementSettingsService: key = DownscanTime; value = 15
+MeasurementSettingsService: key = SMPSMinDiameter; value = 2.4
+MeasurementSettingsService: key = SMPSMaxDiameter; value = 68.6
+MeasurementSettingsService: key = TandemTemperatureMinCurrent; value = 0
+MeasurementSettingsService: key = TandemTemperatureMaxCurrent; value = 30
+MeasurementSettingsService: key = SMPSDMAType; value = 3085
+MeasurementSettingsService: key = TandemTemperatureVector; value = 0;1;2;3;4;5;6;7;8;9;10;11;12;13;14;15;16;17;18;19;20;21;22;23;24;25;26;27;28;29;30
+MeasurementSettingsService: key = TandemDMAVector; value = 
+MeasurementSettingsService: key = TandemDMADMAType; value = 3085
+MeasurementSettingsService: key = SMPSDiameterVector; value = 2.4;68.6
+SMPSMeasurement.cshtml.cs: OnPost(): SMPSMeasurement
+DeviceController.cs: Initialize current sensors
+ElectrospraySensor: Initializeing Electrospray Sensor
+ElectrospraySensor.cs: Trying to open serial port on port COM6
+ElectrospraySensor.cs: Starting verification. Requesting serial number ElectrospraySensor
+ElectrospraySensor.cs: Writing timeout System.TimeoutException: The write timed out.
+   at System.IO.Ports.SerialStream.Write(Byte[] array, Int32 offset, Int32 count, Int32 timeout)
+   at System.IO.Ports.SerialPort.Write(String text)
+   at Device.ElectrospraySensor.Initialize() in c:\Users\matth\Documents\GitHub\project_volt\Controller\Device\ElectrospraySensor.cs:line 60! Trying next port...
+ElectrospraySensor.cs: Trying to open serial port on port COM7
+ElectrospraySensor.cs: Tried to open port COM7. Access denied! Trying next port... System.IO.IOException: Das Zeitlimit für die Semaphore wurde erreicht. : 'COM7'
+   at System.IO.Ports.SerialStream..ctor(String portName, Int32 baudRate, Parity parity, Int32 dataBits, StopBits stopBits, Int32 readTimeout, Int32 writeTimeout, Handshake handshake, Boolean dtrEnable, Boolean rtsEnable, Boolean discardNull, Byte parityReplace)
+   at System.IO.Ports.SerialPort.Open()
+   at Device.ElectrospraySensor.Initialize() in c:\Users\matth\Documents\GitHub\project_volt\Controller\Device\ElectrospraySensor.cs:line 43
+ElectrospraySensor.cs: Trying to open serial port on port COM8
+ElectrospraySensor.cs: Starting verification. Requesting serial number ElectrospraySensor
+ElectrospraySensor.cs: Initialize() read timed out answer = 
+MeasurementController: StartMeasurement(): MeasurementType is CurrentMeasurement
+SettingsService: Setting up measurement service...
+SettingsService: applicationPath = C:\Users\matth\Documents\GitHub\project_volt\bin\Debug\net7.0\
+SettingsService: Settings path = C:\Users\matth\Documents\GitHub\project_volt\bin\Debug\net7.0\settings
+MeasurementSettingsService: key = SheathFlow; value = 15
+MeasurementSettingsService: key = ScanTimeConstant; value = 17
+MeasurementSettingsService: key = UpscanTime; value = 120
+MeasurementSettingsService: key = DownscanTime; value = 15
+MeasurementSettingsService: key = SMPSMinDiameter; value = 2.4
+MeasurementSettingsService: key = SMPSMaxDiameter; value = 68.6
+MeasurementSettingsService: key = TandemTemperatureMinCurrent; value = 0
+MeasurementSettingsService: key = TandemTemperatureMaxCurrent; value = 30
+MeasurementSettingsService: key = SMPSDMAType; value = 3085
+MeasurementSettingsService: key = TandemTemperatureVector; value = 0;1;2;3;4;5;6;7;8;9;10;11;12;13;14;15;16;17;18;19;20;21;22;23;24;25;26;27;28;29;30
+MeasurementSettingsService: key = TandemDMAVector; value = 
+MeasurementSettingsService: key = TandemDMADMAType; value = 3085
+MeasurementSettingsService: key = SMPSDiameterVector; value = 2.4;68.6
+SMPSMeasurement.cshtml.cs: OnPost(): SMPSMeasurement
+DeviceController.cs: Initialize current sensors
+ElectrospraySensor: Initializeing Electrospray Sensor
+ElectrospraySensor.cs: Trying to open serial port on port COM6
+ElectrospraySensor.cs: Starting verification. Requesting serial number ElectrospraySensor
+ElectrospraySensor.cs: Writing timeout System.TimeoutException: The write timed out.
+   at System.IO.Ports.SerialStream.Write(Byte[] array, Int32 offset, Int32 count, Int32 timeout)
+   at System.IO.Ports.SerialPort.Write(String text)
+   at Device.ElectrospraySensor.Initialize() in c:\Users\matth\Documents\GitHub\project_volt\Controller\Device\ElectrospraySensor.cs:line 60! Trying next port...
+ElectrospraySensor.cs: Trying to open serial port on port COM7
+ElectrospraySensor.cs: Tried to open port COM7. Access denied! Trying next port... System.IO.IOException: Das Zeitlimit für die Semaphore wurde erreicht. : 'COM7'
+   at System.IO.Ports.SerialStream..ctor(String portName, Int32 baudRate, Parity parity, Int32 dataBits, StopBits stopBits, Int32 readTimeout, Int32 writeTimeout, Handshake handshake, Boolean dtrEnable, Boolean rtsEnable, Boolean discardNull, Byte parityReplace)
+   at System.IO.Ports.SerialPort.Open()
+   at Device.ElectrospraySensor.Initialize() in c:\Users\matth\Documents\GitHub\project_volt\Controller\Device\ElectrospraySensor.cs:line 43
+ElectrospraySensor.cs: Trying to open serial port on port COM8
+ElectrospraySensor.cs: Starting verification. Requesting serial number ElectrospraySensor
+ElectrospraySensor.cs: Electrospray Sensor verified on port COM8
+MeasurementController: StartMeasurement(): MeasurementType is CurrentMeasurement
+SensorMeasurementAlgorithm.cs: Values received:
+SettingsService: Setting up measurement service...
+SettingsService: applicationPath = C:\Users\matth\Documents\GitHub\project_volt\bin\Debug\net7.0\
+SettingsService: Settings path = C:\Users\matth\Documents\GitHub\project_volt\bin\Debug\net7.0\settings
+MeasurementSettingsService: key = SheathFlow; value = 15
+MeasurementSettingsService: key = ScanTimeConstant; value = 17
+MeasurementSettingsService: key = UpscanTime; value = 120
+MeasurementSettingsService: key = DownscanTime; value = 15
+MeasurementSettingsService: key = SMPSMinDiameter; value = 2.4
+MeasurementSettingsService: key = SMPSMaxDiameter; value = 68.6
+MeasurementSettingsService: key = TandemTemperatureMinCurrent; value = 0
+MeasurementSettingsService: key = TandemTemperatureMaxCurrent; value = 30
+MeasurementSettingsService: key = SMPSDMAType; value = 3085
+MeasurementSettingsService: key = TandemTemperatureVector; value = 0;1;2;3;4;5;6;7;8;9;10;11;12;13;14;15;16;17;18;19;20;21;22;23;24;25;26;27;28;29;30
+MeasurementSettingsService: key = TandemDMAVector; value = 
+MeasurementSettingsService: key = TandemDMADMAType; value = 3085
+MeasurementSettingsService: key = SMPSDiameterVector; value = 2.4;68.6
+SMPSMeasurement.cshtml.cs: OnPost(): SMPSMeasurement
+DeviceController.cs: Initialize current sensors
+ElectrospraySensor: Initializeing Electrospray Sensor
+ElectrospraySensor.cs: Trying to open serial port on port COM6
+ElectrospraySensor.cs: Starting verification. Requesting serial number ElectrospraySensor
+ElectrospraySensor.cs: Writing timeout System.TimeoutException: The write timed out.
+   at System.IO.Ports.SerialStream.Write(Byte[] array, Int32 offset, Int32 count, Int32 timeout)
+   at System.IO.Ports.SerialPort.Write(String text)
+   at Device.ElectrospraySensor.Initialize() in c:\Users\matth\Documents\GitHub\project_volt\Controller\Device\ElectrospraySensor.cs:line 60! Trying next port...
+ElectrospraySensor.cs: Trying to open serial port on port COM7
+ElectrospraySensor.cs: Tried to open port COM7. Access denied! Trying next port... System.IO.IOException: Das Zeitlimit für die Semaphore wurde erreicht. : 'COM7'
+   at System.IO.Ports.SerialStream..ctor(String portName, Int32 baudRate, Parity parity, Int32 dataBits, StopBits stopBits, Int32 readTimeout, Int32 writeTimeout, Handshake handshake, Boolean dtrEnable, Boolean rtsEnable, Boolean discardNull, Byte parityReplace)
+   at System.IO.Ports.SerialPort.Open()
+   at Device.ElectrospraySensor.Initialize() in c:\Users\matth\Documents\GitHub\project_volt\Controller\Device\ElectrospraySensor.cs:line 43
+ElectrospraySensor.cs: Trying to open serial port on port COM8
+ElectrospraySensor.cs: Starting verification. Requesting serial number ElectrospraySensor
+ElectrospraySensor.cs: Electrospray Sensor verified on port COM8
+MeasurementController: StartMeasurement(): MeasurementType is CurrentMeasurement
+ElectrospraySensor.cs: RequestSensorValue(): Request answer is 
+SensorMeasurementAlgorithm.cs: Values received:
+SettingsService: Setting up measurement service...
+SettingsService: applicationPath = C:\Users\matth\Documents\GitHub\project_volt\bin\Debug\net7.0\
+SettingsService: Settings path = C:\Users\matth\Documents\GitHub\project_volt\bin\Debug\net7.0\settings
+MeasurementSettingsService: key = SheathFlow; value = 15
+MeasurementSettingsService: key = ScanTimeConstant; value = 17
+MeasurementSettingsService: key = UpscanTime; value = 120
+MeasurementSettingsService: key = DownscanTime; value = 15
+MeasurementSettingsService: key = SMPSMinDiameter; value = 2.4
+MeasurementSettingsService: key = SMPSMaxDiameter; value = 68.6
+MeasurementSettingsService: key = TandemTemperatureMinCurrent; value = 0
+MeasurementSettingsService: key = TandemTemperatureMaxCurrent; value = 30
+MeasurementSettingsService: key = SMPSDMAType; value = 3085
+MeasurementSettingsService: key = TandemTemperatureVector; value = 0;1;2;3;4;5;6;7;8;9;10;11;12;13;14;15;16;17;18;19;20;21;22;23;24;25;26;27;28;29;30
+MeasurementSettingsService: key = TandemDMAVector; value = 
+MeasurementSettingsService: key = TandemDMADMAType; value = 3085
+MeasurementSettingsService: key = SMPSDiameterVector; value = 2.4;68.6
+MeasurementSettingsService.cs: GetSettingByKey(): key (SheathFlow).
+MeasurementSettingsService.cs: GetSettingByKey(): key (SMPSDMAType).
+MeasurementSettingsService.cs: GetSettingByKey(): key (UpscanTime).
+MeasurementSettingsService.cs: GetSettingByKey(): key (DownscanTime).
+MeasurementSettingsService.cs: GetSettingByKey(): key (SMPSDiameterVector).
+MeasurementSettingsService.cs: GetSettingByKey(): key (TandemTemperatureVector).
+SMPSMeasurement.cshtml.cs: OnPost(): SMPSMeasurement
+DeviceController.cs: Initialize current sensors
+ElectrospraySensor: Initializeing Electrospray Sensor
+ElectrospraySensor.cs: Trying to open serial port on port COM6
+ElectrospraySensor.cs: Starting verification. Requesting serial number ElectrospraySensor
+ElectrospraySensor.cs: Writing timeout System.TimeoutException: The write timed out.
+   at System.IO.Ports.SerialStream.Write(Byte[] array, Int32 offset, Int32 count, Int32 timeout)
+   at System.IO.Ports.SerialPort.Write(String text)
+   at Device.ElectrospraySensor.Initialize() in c:\Users\matth\Documents\GitHub\project_volt\Controller\Device\ElectrospraySensor.cs:line 60! Trying next port...
+ElectrospraySensor.cs: Trying to open serial port on port COM7
+ElectrospraySensor.cs: Tried to open port COM7. Access denied! Trying next port... System.IO.IOException: Das Zeitlimit für die Semaphore wurde erreicht. : 'COM7'
+   at System.IO.Ports.SerialStream..ctor(String portName, Int32 baudRate, Parity parity, Int32 dataBits, StopBits stopBits, Int32 readTimeout, Int32 writeTimeout, Handshake handshake, Boolean dtrEnable, Boolean rtsEnable, Boolean discardNull, Byte parityReplace)
+   at System.IO.Ports.SerialPort.Open()
+   at Device.ElectrospraySensor.Initialize() in c:\Users\matth\Documents\GitHub\project_volt\Controller\Device\ElectrospraySensor.cs:line 43
+ElectrospraySensor.cs: Trying to open serial port on port COM8
+ElectrospraySensor.cs: Starting verification. Requesting serial number ElectrospraySensor
+ElectrospraySensor.cs: Electrospray Sensor verified on port COM8
+MeasurementController: StartMeasurement(): MeasurementType is CurrentMeasurement
+SettingsService: Setting up measurement service...
+SettingsService: applicationPath = C:\Users\matth\Documents\GitHub\project_volt\bin\Debug\net7.0\
+SettingsService: Settings path = C:\Users\matth\Documents\GitHub\project_volt\bin\Debug\net7.0\settings
+MeasurementSettingsService: key = SheathFlow; value = 15
+MeasurementSettingsService: key = ScanTimeConstant; value = 17
+MeasurementSettingsService: key = UpscanTime; value = 120
+MeasurementSettingsService: key = DownscanTime; value = 15
+MeasurementSettingsService: key = SMPSMinDiameter; value = 2.4
+MeasurementSettingsService: key = SMPSMaxDiameter; value = 68.6
+MeasurementSettingsService: key = TandemTemperatureMinCurrent; value = 0
+MeasurementSettingsService: key = TandemTemperatureMaxCurrent; value = 30
+MeasurementSettingsService: key = SMPSDMAType; value = 3085
+MeasurementSettingsService: key = TandemTemperatureVector; value = 0;1;2;3;4;5;6;7;8;9;10;11;12;13;14;15;16;17;18;19;20;21;22;23;24;25;26;27;28;29;30
+MeasurementSettingsService: key = TandemDMAVector; value = 
+MeasurementSettingsService: key = TandemDMADMAType; value = 3085
+MeasurementSettingsService: key = SMPSDiameterVector; value = 2.4;68.6
+SMPSMeasurement.cshtml.cs: OnPost(): SMPSMeasurement
+DeviceController.cs: Initialize current sensors
+ElectrospraySensor: Initializeing Electrospray Sensor
+ElectrospraySensor.cs: Trying to open serial port on port COM6
+ElectrospraySensor.cs: Starting verification. Requesting serial number ElectrospraySensor
+ElectrospraySensor.cs: Writing timeout System.TimeoutException: The write timed out.
+   at System.IO.Ports.SerialStream.Write(Byte[] array, Int32 offset, Int32 count, Int32 timeout)
+   at System.IO.Ports.SerialPort.Write(String text)
+   at Device.ElectrospraySensor.Initialize() in c:\Users\matth\Documents\GitHub\project_volt\Controller\Device\ElectrospraySensor.cs:line 60! Trying next port...
+ElectrospraySensor.cs: Trying to open serial port on port COM7
+ElectrospraySensor.cs: Tried to open port COM7. Access denied! Trying next port... System.IO.IOException: Das Zeitlimit für die Semaphore wurde erreicht. : 'COM7'
+   at System.IO.Ports.SerialStream..ctor(String portName, Int32 baudRate, Parity parity, Int32 dataBits, StopBits stopBits, Int32 readTimeout, Int32 writeTimeout, Handshake handshake, Boolean dtrEnable, Boolean rtsEnable, Boolean discardNull, Byte parityReplace)
+   at System.IO.Ports.SerialPort.Open()
+   at Device.ElectrospraySensor.Initialize() in c:\Users\matth\Documents\GitHub\project_volt\Controller\Device\ElectrospraySensor.cs:line 43
+ElectrospraySensor.cs: Trying to open serial port on port COM8
+ElectrospraySensor.cs: Starting verification. Requesting serial number ElectrospraySensor
+ElectrospraySensor.cs: Initialize() read timed out answer = 
+MeasurementController: StartMeasurement(): MeasurementType is CurrentMeasurement
+SettingsService: Setting up measurement service...
+SettingsService: applicationPath = C:\Users\matth\Documents\GitHub\project_volt\bin\Debug\net7.0\
+SettingsService: Settings path = C:\Users\matth\Documents\GitHub\project_volt\bin\Debug\net7.0\settings
+MeasurementSettingsService: key = SheathFlow; value = 15
+MeasurementSettingsService: key = ScanTimeConstant; value = 17
+MeasurementSettingsService: key = UpscanTime; value = 120
+MeasurementSettingsService: key = DownscanTime; value = 15
+MeasurementSettingsService: key = SMPSMinDiameter; value = 2.4
+MeasurementSettingsService: key = SMPSMaxDiameter; value = 68.6
+MeasurementSettingsService: key = TandemTemperatureMinCurrent; value = 0
+MeasurementSettingsService: key = TandemTemperatureMaxCurrent; value = 30
+MeasurementSettingsService: key = SMPSDMAType; value = 3085
+MeasurementSettingsService: key = TandemTemperatureVector; value = 0;1;2;3;4;5;6;7;8;9;10;11;12;13;14;15;16;17;18;19;20;21;22;23;24;25;26;27;28;29;30
+MeasurementSettingsService: key = TandemDMAVector; value = 
+MeasurementSettingsService: key = TandemDMADMAType; value = 3085
+MeasurementSettingsService: key = SMPSDiameterVector; value = 2.4;68.6
+SMPSMeasurement.cshtml.cs: OnPost(): SMPSMeasurement
+DeviceController.cs: Initialize current sensors
+ElectrospraySensor: Initializeing Electrospray Sensor
+ElectrospraySensor.cs: Trying to open serial port on port COM6
+ElectrospraySensor.cs: Starting verification. Requesting serial number ElectrospraySensor
+ElectrospraySensor.cs: Writing timeout System.TimeoutException: The write timed out.
+   at System.IO.Ports.SerialStream.Write(Byte[] array, Int32 offset, Int32 count, Int32 timeout)
+   at System.IO.Ports.SerialPort.Write(String text)
+   at Device.ElectrospraySensor.Initialize() in c:\Users\matth\Documents\GitHub\project_volt\Controller\Device\ElectrospraySensor.cs:line 60! Trying next port...
+ElectrospraySensor.cs: Trying to open serial port on port COM7
+ElectrospraySensor.cs: Tried to open port COM7. Access denied! Trying next port... System.IO.IOException: Das Zeitlimit für die Semaphore wurde erreicht. : 'COM7'
+   at System.IO.Ports.SerialStream..ctor(String portName, Int32 baudRate, Parity parity, Int32 dataBits, StopBits stopBits, Int32 readTimeout, Int32 writeTimeout, Handshake handshake, Boolean dtrEnable, Boolean rtsEnable, Boolean discardNull, Byte parityReplace)
+   at System.IO.Ports.SerialPort.Open()
+   at Device.ElectrospraySensor.Initialize() in c:\Users\matth\Documents\GitHub\project_volt\Controller\Device\ElectrospraySensor.cs:line 43
+ElectrospraySensor.cs: Trying to open serial port on port COM8
+ElectrospraySensor.cs: Starting verification. Requesting serial number ElectrospraySensor
+ElectrospraySensor.cs: Electrospray Sensor verified on port COM8
+MeasurementController: StartMeasurement(): MeasurementType is CurrentMeasurement
+SettingsService: Setting up measurement service...
+SettingsService: applicationPath = C:\Users\matth\Documents\GitHub\project_volt\bin\Debug\net7.0\
+SettingsService: Settings path = C:\Users\matth\Documents\GitHub\project_volt\bin\Debug\net7.0\settings
+MeasurementSettingsService: key = SheathFlow; value = 15
+MeasurementSettingsService: key = ScanTimeConstant; value = 17
+MeasurementSettingsService: key = UpscanTime; value = 120
+MeasurementSettingsService: key = DownscanTime; value = 15
+MeasurementSettingsService: key = SMPSMinDiameter; value = 2.4
+MeasurementSettingsService: key = SMPSMaxDiameter; value = 68.6
+MeasurementSettingsService: key = TandemTemperatureMinCurrent; value = 0
+MeasurementSettingsService: key = TandemTemperatureMaxCurrent; value = 30
+MeasurementSettingsService: key = SMPSDMAType; value = 3085
+MeasurementSettingsService: key = TandemTemperatureVector; value = 0;1;2;3;4;5;6;7;8;9;10;11;12;13;14;15;16;17;18;19;20;21;22;23;24;25;26;27;28;29;30
+MeasurementSettingsService: key = TandemDMAVector; value = 
+MeasurementSettingsService: key = TandemDMADMAType; value = 3085
+MeasurementSettingsService: key = SMPSDiameterVector; value = 2.4;68.6
+SMPSMeasurement.cshtml.cs: OnPost(): SMPSMeasurement
+DeviceController.cs: Initialize current sensors
+ElectrospraySensor: Initializeing Electrospray Sensor
+ElectrospraySensor.cs: Trying to open serial port on port COM6
+ElectrospraySensor.cs: Starting verification. Requesting serial number ElectrospraySensor
+ElectrospraySensor.cs: Writing timeout System.TimeoutException: The write timed out.
+   at System.IO.Ports.SerialStream.Write(Byte[] array, Int32 offset, Int32 count, Int32 timeout)
+   at System.IO.Ports.SerialPort.Write(String text)
+   at Device.ElectrospraySensor.Initialize() in c:\Users\matth\Documents\GitHub\project_volt\Controller\Device\ElectrospraySensor.cs:line 60! Trying next port...
+ElectrospraySensor.cs: Trying to open serial port on port COM7
+ElectrospraySensor.cs: Tried to open port COM7. Access denied! Trying next port... System.IO.IOException: Das Zeitlimit für die Semaphore wurde erreicht. : 'COM7'
+   at System.IO.Ports.SerialStream..ctor(String portName, Int32 baudRate, Parity parity, Int32 dataBits, StopBits stopBits, Int32 readTimeout, Int32 writeTimeout, Handshake handshake, Boolean dtrEnable, Boolean rtsEnable, Boolean discardNull, Byte parityReplace)
+   at System.IO.Ports.SerialPort.Open()
+   at Device.ElectrospraySensor.Initialize() in c:\Users\matth\Documents\GitHub\project_volt\Controller\Device\ElectrospraySensor.cs:line 43
+ElectrospraySensor.cs: Trying to open serial port on port COM8
+ElectrospraySensor.cs: Starting verification. Requesting serial number ElectrospraySensor
+ElectrospraySensor.cs: Reached last element with no successfull verification
+SettingsService: Setting up measurement service...
+SettingsService: applicationPath = C:\Users\matth\Documents\GitHub\project_volt\bin\Debug\net7.0\
+SettingsService: Settings path = C:\Users\matth\Documents\GitHub\project_volt\bin\Debug\net7.0\settings
+MeasurementSettingsService: key = SheathFlow; value = 15
+MeasurementSettingsService: key = ScanTimeConstant; value = 17
+MeasurementSettingsService: key = UpscanTime; value = 120
+MeasurementSettingsService: key = DownscanTime; value = 15
+MeasurementSettingsService: key = SMPSMinDiameter; value = 2.4
+MeasurementSettingsService: key = SMPSMaxDiameter; value = 68.6
+MeasurementSettingsService: key = TandemTemperatureMinCurrent; value = 0
+MeasurementSettingsService: key = TandemTemperatureMaxCurrent; value = 30
+MeasurementSettingsService: key = SMPSDMAType; value = 3085
+MeasurementSettingsService: key = TandemTemperatureVector; value = 0;1;2;3;4;5;6;7;8;9;10;11;12;13;14;15;16;17;18;19;20;21;22;23;24;25;26;27;28;29;30
+MeasurementSettingsService: key = TandemDMAVector; value = 
+MeasurementSettingsService: key = TandemDMADMAType; value = 3085
+MeasurementSettingsService: key = SMPSDiameterVector; value = 2.4;68.6
+SMPSMeasurement.cshtml.cs: OnPost(): SMPSMeasurement
+DeviceController.cs: Initialize current sensors
+ElectrospraySensor: Initializeing Electrospray Sensor
+ElectrospraySensor.cs: Trying to open serial port on port COM6
+ElectrospraySensor.cs: Starting verification. Requesting serial number ElectrospraySensor
+ElectrospraySensor.cs: Writing timeout System.TimeoutException: The write timed out.
+   at System.IO.Ports.SerialStream.Write(Byte[] array, Int32 offset, Int32 count, Int32 timeout)
+   at System.IO.Ports.SerialPort.Write(String text)
+   at Device.ElectrospraySensor.Initialize() in c:\Users\matth\Documents\GitHub\project_volt\Controller\Device\ElectrospraySensor.cs:line 60! Trying next port...
+ElectrospraySensor.cs: Trying to open serial port on port COM7
+ElectrospraySensor.cs: Tried to open port COM7. Access denied! Trying next port... System.IO.IOException: Das Zeitlimit für die Semaphore wurde erreicht. : 'COM7'
+   at System.IO.Ports.SerialStream..ctor(String portName, Int32 baudRate, Parity parity, Int32 dataBits, StopBits stopBits, Int32 readTimeout, Int32 writeTimeout, Handshake handshake, Boolean dtrEnable, Boolean rtsEnable, Boolean discardNull, Byte parityReplace)
+   at System.IO.Ports.SerialPort.Open()
+   at Device.ElectrospraySensor.Initialize() in c:\Users\matth\Documents\GitHub\project_volt\Controller\Device\ElectrospraySensor.cs:line 43
+ElectrospraySensor.cs: Trying to open serial port on port COM8
+ElectrospraySensor.cs: Starting verification. Requesting serial number ElectrospraySensor
+ElectrospraySensor.cs: Initialize(): answer = Received request = DeviceID 
+ElectrospraySensor.cs: Reached last element with no successfull verification
+SettingsService: Setting up measurement service...
+SettingsService: applicationPath = C:\Users\matth\Documents\GitHub\project_volt\bin\Debug\net7.0\
+SettingsService: Settings path = C:\Users\matth\Documents\GitHub\project_volt\bin\Debug\net7.0\settings
+MeasurementSettingsService: key = SheathFlow; value = 15
+MeasurementSettingsService: key = ScanTimeConstant; value = 17
+MeasurementSettingsService: key = UpscanTime; value = 120
+MeasurementSettingsService: key = DownscanTime; value = 15
+MeasurementSettingsService: key = SMPSMinDiameter; value = 2.4
+MeasurementSettingsService: key = SMPSMaxDiameter; value = 68.6
+MeasurementSettingsService: key = TandemTemperatureMinCurrent; value = 0
+MeasurementSettingsService: key = TandemTemperatureMaxCurrent; value = 30
+MeasurementSettingsService: key = SMPSDMAType; value = 3085
+MeasurementSettingsService: key = TandemTemperatureVector; value = 0;1;2;3;4;5;6;7;8;9;10;11;12;13;14;15;16;17;18;19;20;21;22;23;24;25;26;27;28;29;30
+MeasurementSettingsService: key = TandemDMAVector; value = 
+MeasurementSettingsService: key = TandemDMADMAType; value = 3085
+MeasurementSettingsService: key = SMPSDiameterVector; value = 2.4;68.6
+SettingsService: Setting up measurement service...
+SettingsService: applicationPath = C:\Users\matth\Documents\GitHub\project_volt\bin\Debug\net7.0\
+SettingsService: Settings path = C:\Users\matth\Documents\GitHub\project_volt\bin\Debug\net7.0\settings
+MeasurementSettingsService: key = SheathFlow; value = 15
+MeasurementSettingsService: key = ScanTimeConstant; value = 17
+MeasurementSettingsService: key = UpscanTime; value = 120
+MeasurementSettingsService: key = DownscanTime; value = 15
+MeasurementSettingsService: key = SMPSMinDiameter; value = 2.4
+MeasurementSettingsService: key = SMPSMaxDiameter; value = 68.6
+MeasurementSettingsService: key = TandemTemperatureMinCurrent; value = 0
+MeasurementSettingsService: key = TandemTemperatureMaxCurrent; value = 30
+MeasurementSettingsService: key = SMPSDMAType; value = 3085
+MeasurementSettingsService: key = TandemTemperatureVector; value = 0;1;2;3;4;5;6;7;8;9;10;11;12;13;14;15;16;17;18;19;20;21;22;23;24;25;26;27;28;29;30
+MeasurementSettingsService: key = TandemDMAVector; value = 
+MeasurementSettingsService: key = TandemDMADMAType; value = 3085
+MeasurementSettingsService: key = SMPSDiameterVector; value = 2.4;68.6
+MeasurementSettingsService.cs: GetSettingByKey(): key (CurrentReadingTime).
+SettingsService: Setting up measurement service...
+SettingsService: applicationPath = C:\Users\matth\Documents\GitHub\project_volt\bin\Debug\net7.0\
+SettingsService: Settings path = C:\Users\matth\Documents\GitHub\project_volt\bin\Debug\net7.0\settings
+MeasurementSettingsService: SaveSettings: line to save: SheathFlow	15
+MeasurementSettingsService: SaveSettings: line to save: ScanTimeConstant	17
+MeasurementSettingsService: SaveSettings: line to save: UpscanTime	120
+MeasurementSettingsService: SaveSettings: line to save: DownscanTime	15
+MeasurementSettingsService: SaveSettings: line to save: SMPSMinDiameter	2.4
+MeasurementSettingsService: SaveSettings: line to save: SMPSMaxDiameter	68.6
+MeasurementSettingsService: SaveSettings: line to save: TandemTemperatureMinCurrent	0
+MeasurementSettingsService: SaveSettings: line to save: TandemTemperatureMaxCurrent	30
+MeasurementSettingsService: SaveSettings: line to save: SMPSDMAType	3085
+MeasurementSettingsService: SaveSettings: line to save: TandemTemperatureVector	0;1;2;3;4;5;6;7;8;9;10;11;12;13;14;15;16;17;18;19;20;21;22;23;24;25;26;27;28;29;30
+MeasurementSettingsService: SaveSettings: line to save: TandemDMAVector	
+MeasurementSettingsService: SaveSettings: line to save: TandemDMADMAType	3085
+MeasurementSettingsService: SaveSettings: line to save: SMPSDiameterVector	2.4;68.6
+MeasurementSettingsService: SaveSettings: line to save: CurrentReadingTime	1;2;4;8;10;20;40;80;100;200;400;800;1000
+MeasurementSettingsService: key = SheathFlow; value = 15
+MeasurementSettingsService: key = ScanTimeConstant; value = 17
+MeasurementSettingsService: key = UpscanTime; value = 120
+MeasurementSettingsService: key = DownscanTime; value = 15
+MeasurementSettingsService: key = SMPSMinDiameter; value = 2.4
+MeasurementSettingsService: key = SMPSMaxDiameter; value = 68.6
+MeasurementSettingsService: key = TandemTemperatureMinCurrent; value = 0
+MeasurementSettingsService: key = TandemTemperatureMaxCurrent; value = 30
+MeasurementSettingsService: key = SMPSDMAType; value = 3085
+MeasurementSettingsService: key = TandemTemperatureVector; value = 0;1;2;3;4;5;6;7;8;9;10;11;12;13;14;15;16;17;18;19;20;21;22;23;24;25;26;27;28;29;30
+MeasurementSettingsService: key = TandemDMAVector; value = 
+MeasurementSettingsService: key = TandemDMADMAType; value = 3085
+MeasurementSettingsService: key = SMPSDiameterVector; value = 2.4;68.6
+MeasurementSettingsService: key = CurrentReadingTime; value = 1;2;4;8;10;20;40;80;100;200;400;800;1000
+MeasurementSettingsService.cs: GetSettingByKey(): key (CurrentReadingTime).
+SettingsService: Setting up measurement service...
+SettingsService: applicationPath = C:\Users\matth\Documents\GitHub\project_volt\bin\Debug\net7.0\
+SettingsService: Settings path = C:\Users\matth\Documents\GitHub\project_volt\bin\Debug\net7.0\settings
+MeasurementSettingsService: key = SheathFlow; value = 15
+MeasurementSettingsService: key = ScanTimeConstant; value = 17
+MeasurementSettingsService: key = UpscanTime; value = 120
+MeasurementSettingsService: key = DownscanTime; value = 15
+MeasurementSettingsService: key = SMPSMinDiameter; value = 2.4
+MeasurementSettingsService: key = SMPSMaxDiameter; value = 68.6
+MeasurementSettingsService: key = TandemTemperatureMinCurrent; value = 0
+MeasurementSettingsService: key = TandemTemperatureMaxCurrent; value = 30
+MeasurementSettingsService: key = SMPSDMAType; value = 3085
+MeasurementSettingsService: key = TandemTemperatureVector; value = 0;1;2;3;4;5;6;7;8;9;10;11;12;13;14;15;16;17;18;19;20;21;22;23;24;25;26;27;28;29;30
+MeasurementSettingsService: key = TandemDMAVector; value = 
+MeasurementSettingsService: key = TandemDMADMAType; value = 3085
+MeasurementSettingsService: key = SMPSDiameterVector; value = 2.4;68.6
+MeasurementSettingsService: key = CurrentReadingTime; value = 1;2;4;8;10;20;40;80;100;200;400;800;1000
+MeasurementSettingsService.cs: GetSettingByKey(): key (CurrentReadingTime).
+SettingsService: Setting up measurement service...
+SettingsService: applicationPath = C:\Users\matth\Documents\GitHub\project_volt\bin\Debug\net7.0\
+SettingsService: Settings path = C:\Users\matth\Documents\GitHub\project_volt\bin\Debug\net7.0\settings
+MeasurementSettingsService: key = SheathFlow; value = 15
+MeasurementSettingsService: key = ScanTimeConstant; value = 17
+MeasurementSettingsService: key = UpscanTime; value = 120
+MeasurementSettingsService: key = DownscanTime; value = 15
+MeasurementSettingsService: key = SMPSMinDiameter; value = 2.4
+MeasurementSettingsService: key = SMPSMaxDiameter; value = 68.6
+MeasurementSettingsService: key = TandemTemperatureMinCurrent; value = 0
+MeasurementSettingsService: key = TandemTemperatureMaxCurrent; value = 30
+MeasurementSettingsService: key = SMPSDMAType; value = 3085
+MeasurementSettingsService: key = TandemTemperatureVector; value = 0;1;2;3;4;5;6;7;8;9;10;11;12;13;14;15;16;17;18;19;20;21;22;23;24;25;26;27;28;29;30
+MeasurementSettingsService: key = TandemDMAVector; value = 
+MeasurementSettingsService: key = TandemDMADMAType; value = 3085
+MeasurementSettingsService: key = SMPSDiameterVector; value = 2.4;68.6
+MeasurementSettingsService: key = CurrentReadingTime; value = 1;2;4;8;10;20;40;80;100;200;400;800;1000
+MeasurementSettingsService.cs: GetSettingByKey(): key (CurrentReadingTime).
+MeasurementSettingsService.cs: GetSettingByKey(): key (CurrentReadingTime).
+SensorMeasurement.cshtml.cs: OnPost(): SensorMeasurement
+DeviceController.cs: Initialize current sensors
+ElectrospraySensor: Initializeing Electrospray Sensor
+ElectrospraySensor.cs: Trying to open serial port on port COM6
+ElectrospraySensor.cs: Starting verification. Requesting serial number ElectrospraySensor
+ElectrospraySensor.cs: Writing timeout System.TimeoutException: The write timed out.
+   at System.IO.Ports.SerialStream.Write(Byte[] array, Int32 offset, Int32 count, Int32 timeout)
+   at System.IO.Ports.SerialPort.Write(String text)
+   at Device.ElectrospraySensor.Initialize() in c:\Users\matth\Documents\GitHub\project_volt\Controller\Device\ElectrospraySensor.cs:line 60! Trying next port...
+ElectrospraySensor.cs: Trying to open serial port on port COM7
+ElectrospraySensor.cs: Tried to open port COM7. Access denied! Trying next port... System.IO.IOException: Das Zeitlimit für die Semaphore wurde erreicht. : 'COM7'
+   at System.IO.Ports.SerialStream..ctor(String portName, Int32 baudRate, Parity parity, Int32 dataBits, StopBits stopBits, Int32 readTimeout, Int32 writeTimeout, Handshake handshake, Boolean dtrEnable, Boolean rtsEnable, Boolean discardNull, Byte parityReplace)
+   at System.IO.Ports.SerialPort.Open()
+   at Device.ElectrospraySensor.Initialize() in c:\Users\matth\Documents\GitHub\project_volt\Controller\Device\ElectrospraySensor.cs:line 43
+MeasurementController: StartMeasurement(): MeasurementType is CurrentMeasurement
+SettingsService: Setting up measurement service...
+SettingsService: applicationPath = C:\Users\matth\Documents\GitHub\project_volt\bin\Debug\net7.0\
+SettingsService: Settings path = C:\Users\matth\Documents\GitHub\project_volt\bin\Debug\net7.0\settings
+MeasurementSettingsService: key = SheathFlow; value = 15
+MeasurementSettingsService: key = ScanTimeConstant; value = 17
+MeasurementSettingsService: key = UpscanTime; value = 120
+MeasurementSettingsService: key = DownscanTime; value = 15
+MeasurementSettingsService: key = SMPSMinDiameter; value = 2.4
+MeasurementSettingsService: key = SMPSMaxDiameter; value = 68.6
+MeasurementSettingsService: key = TandemTemperatureMinCurrent; value = 0
+MeasurementSettingsService: key = TandemTemperatureMaxCurrent; value = 30
+MeasurementSettingsService: key = SMPSDMAType; value = 3085
+MeasurementSettingsService: key = TandemTemperatureVector; value = 0;1;2;3;4;5;6;7;8;9;10;11;12;13;14;15;16;17;18;19;20;21;22;23;24;25;26;27;28;29;30
+MeasurementSettingsService: key = TandemDMAVector; value = 
+MeasurementSettingsService: key = TandemDMADMAType; value = 3085
+MeasurementSettingsService: key = SMPSDiameterVector; value = 2.4;68.6
+MeasurementSettingsService: key = CurrentReadingTime; value = 1;2;4;8;10;20;40;80;100;200;400;800;1000
+MeasurementSettingsService.cs: GetSettingByKey(): key (CurrentReadingTime).
+SettingsService: Setting up measurement service...
+SettingsService: applicationPath = C:\Users\matth\Documents\GitHub\project_volt\bin\Debug\net7.0\
+SettingsService: Settings path = C:\Users\matth\Documents\GitHub\project_volt\bin\Debug\net7.0\settings
+MeasurementSettingsService: key = SheathFlow; value = 15
+MeasurementSettingsService: key = ScanTimeConstant; value = 17
+MeasurementSettingsService: key = UpscanTime; value = 120
+MeasurementSettingsService: key = DownscanTime; value = 15
+MeasurementSettingsService: key = SMPSMinDiameter; value = 2.4
+MeasurementSettingsService: key = SMPSMaxDiameter; value = 68.6
+MeasurementSettingsService: key = TandemTemperatureMinCurrent; value = 0
+MeasurementSettingsService: key = TandemTemperatureMaxCurrent; value = 30
+MeasurementSettingsService: key = SMPSDMAType; value = 3085
+MeasurementSettingsService: key = TandemTemperatureVector; value = 0;1;2;3;4;5;6;7;8;9;10;11;12;13;14;15;16;17;18;19;20;21;22;23;24;25;26;27;28;29;30
+MeasurementSettingsService: key = TandemDMAVector; value = 
+MeasurementSettingsService: key = TandemDMADMAType; value = 3085
+MeasurementSettingsService: key = SMPSDiameterVector; value = 2.4;68.6
+MeasurementSettingsService: key = CurrentReadingTime; value = 1;2;4;8;10;20;40;80;100;200;400;800;1000
+MeasurementSettingsService.cs: GetSettingByKey(): key (CurrentReadingTime).
+SettingsService: Setting up measurement service...
+SettingsService: applicationPath = C:\Users\matth\Documents\GitHub\project_volt\bin\Debug\net7.0\
+SettingsService: Settings path = C:\Users\matth\Documents\GitHub\project_volt\bin\Debug\net7.0\settings
+MeasurementSettingsService: key = SheathFlow; value = 15
+MeasurementSettingsService: key = ScanTimeConstant; value = 17
+MeasurementSettingsService: key = UpscanTime; value = 120
+MeasurementSettingsService: key = DownscanTime; value = 15
+MeasurementSettingsService: key = SMPSMinDiameter; value = 2.4
+MeasurementSettingsService: key = SMPSMaxDiameter; value = 68.6
+MeasurementSettingsService: key = TandemTemperatureMinCurrent; value = 0
+MeasurementSettingsService: key = TandemTemperatureMaxCurrent; value = 30
+MeasurementSettingsService: key = SMPSDMAType; value = 3085
+MeasurementSettingsService: key = TandemTemperatureVector; value = 0;1;2;3;4;5;6;7;8;9;10;11;12;13;14;15;16;17;18;19;20;21;22;23;24;25;26;27;28;29;30
+MeasurementSettingsService: key = TandemDMAVector; value = 
+MeasurementSettingsService: key = TandemDMADMAType; value = 3085
+MeasurementSettingsService: key = SMPSDiameterVector; value = 2.4;68.6
+MeasurementSettingsService: key = CurrentReadingTime; value = 1;2;4;8;10;20;40;80;100;200;400;800;1000
+MeasurementSettingsService.cs: GetSettingByKey(): key (CurrentReadingTime).
+MeasurementSettingsService.cs: GetSettingByKey(): key (CurrentReadingTime).
+SensorMeasurement.cshtml.cs: OnPost(): SensorMeasurement
+DeviceController.cs: Initialize current sensors
+MeasurementController: StartMeasurement(): MeasurementType is CurrentMeasurement
+SensorMeasurementAlgorithm.cs: Values received:5.0;5.0
+SensorMeasurementAlgorithm.cs: Values received:5.0;5.0
+SensorMeasurementAlgorithm.cs: Values received:5.0;5.0
+SensorMeasurementAlgorithm.cs: Values received:5.0;5.0
+SensorMeasurementAlgorithm.cs: Values received:5.0;5.0
+SensorMeasurementAlgorithm.cs: Values received:5.0;5.0
+SensorMeasurementAlgorithm.cs: Values received:5.0;5.0
+SensorMeasurementAlgorithm.cs: Values received:5.0;5.0
+SensorMeasurementAlgorithm.cs: Values received:5.0;5.0
+SensorMeasurementAlgorithm.cs: Values received:5.0;5.0
+SensorMeasurementAlgorithm.cs: Values received:5.0;5.0
+SensorMeasurementAlgorithm.cs: Values received:5.0;5.0
+SensorMeasurementAlgorithm.cs: Values received:5.0;5.0
+SensorMeasurementAlgorithm.cs: Values received:5.0;5.0
+SensorMeasurementAlgorithm.cs: Values received:5.0;5.0
+SensorMeasurementAlgorithm.cs: Values received:5.0;5.0
+SensorMeasurementAlgorithm.cs: Values received:5.0;5.0
+SensorMeasurementAlgorithm.cs: Values received:5.0;5.0
+SensorMeasurementAlgorithm.cs: Values received:5.0;5.0
+SensorMeasurementAlgorithm.cs: Values received:5.0;5.0
+SensorMeasurementAlgorithm.cs: Values received:5.0;5.0
+SensorMeasurementAlgorithm.cs: Values received:5.0;5.0
+SensorMeasurementAlgorithm.cs: Values received:5.0;5.0
+SensorMeasurementAlgorithm.cs: Values received:5.0;5.0
+SensorMeasurementAlgorithm.cs: Values received:5.0;5.0
+SensorMeasurementAlgorithm.cs: Values received:5.0;5.0
+SettingsService: Setting up measurement service...
+SettingsService: applicationPath = C:\Users\matth\Documents\GitHub\project_volt\bin\Debug\net7.0\
+SettingsService: Settings path = C:\Users\matth\Documents\GitHub\project_volt\bin\Debug\net7.0\settings
+MeasurementSettingsService: key = SheathFlow; value = 15
+MeasurementSettingsService: key = ScanTimeConstant; value = 17
+MeasurementSettingsService: key = UpscanTime; value = 120
+MeasurementSettingsService: key = DownscanTime; value = 15
+MeasurementSettingsService: key = SMPSMinDiameter; value = 2.4
+MeasurementSettingsService: key = SMPSMaxDiameter; value = 68.6
+MeasurementSettingsService: key = TandemTemperatureMinCurrent; value = 0
+MeasurementSettingsService: key = TandemTemperatureMaxCurrent; value = 30
+MeasurementSettingsService: key = SMPSDMAType; value = 3085
+MeasurementSettingsService: key = TandemTemperatureVector; value = 0;1;2;3;4;5;6;7;8;9;10;11;12;13;14;15;16;17;18;19;20;21;22;23;24;25;26;27;28;29;30
+MeasurementSettingsService: key = TandemDMAVector; value = 
+MeasurementSettingsService: key = TandemDMADMAType; value = 3085
+MeasurementSettingsService: key = SMPSDiameterVector; value = 2.4;68.6
+MeasurementSettingsService: key = CurrentReadingTime; value = 1;2;4;8;10;20;40;80;100;200;400;800;1000
+MeasurementSettingsService.cs: GetSettingByKey(): key (CurrentReadingTime).
+MeasurementSettingsService.cs: GetSettingByKey(): key (CurrentReadingTime).
+SensorMeasurement.cshtml.cs: OnPost(): SensorMeasurement
+DeviceController.cs: Initialize current sensors
+MeasurementController: StartMeasurement(): MeasurementType is CurrentMeasurement
+SensorMeasurementAlgorithm.cs: Values received:5.0;5.0
+SensorMeasurementAlgorithm.cs: Values received:5.0;5.0
+SensorMeasurementAlgorithm.cs: Values received:5.0;5.0
+SensorMeasurementAlgorithm.cs: Values received:5.0;5.0
+SensorMeasurementAlgorithm.cs: Values received:5.0;5.0
+SensorMeasurementAlgorithm.cs: Values received:5.0;5.0
+SensorMeasurementAlgorithm.cs: Values received:5.0;5.0
+SensorMeasurementAlgorithm.cs: Values received:5.0;5.0
+SensorMeasurementAlgorithm.cs: Values received:5.0;5.0
+SensorMeasurementAlgorithm.cs: Values received:5.0;5.0
+SensorMeasurementAlgorithm.cs: Values received:5.0;5.0
+SensorMeasurementAlgorithm.cs: Values received:5.0;5.0
+SensorMeasurementAlgorithm.cs: Values received:5.0;5.0
+SensorMeasurementAlgorithm.cs: Values received:5.0;5.0
+SensorMeasurementAlgorithm.cs: Values received:5.0;5.0
+SettingsService: Setting up measurement service...
+SettingsService: applicationPath = C:\Users\matth\Documents\GitHub\project_volt\bin\Debug\net7.0\
+SettingsService: Settings path = C:\Users\matth\Documents\GitHub\project_volt\bin\Debug\net7.0\settings
+MeasurementSettingsService: key = SheathFlow; value = 15
+MeasurementSettingsService: key = ScanTimeConstant; value = 17
+MeasurementSettingsService: key = UpscanTime; value = 120
+MeasurementSettingsService: key = DownscanTime; value = 15
+MeasurementSettingsService: key = SMPSMinDiameter; value = 2.4
+MeasurementSettingsService: key = SMPSMaxDiameter; value = 68.6
+MeasurementSettingsService: key = TandemTemperatureMinCurrent; value = 0
+MeasurementSettingsService: key = TandemTemperatureMaxCurrent; value = 30
+MeasurementSettingsService: key = SMPSDMAType; value = 3085
+MeasurementSettingsService: key = TandemTemperatureVector; value = 0;1;2;3;4;5;6;7;8;9;10;11;12;13;14;15;16;17;18;19;20;21;22;23;24;25;26;27;28;29;30
+MeasurementSettingsService: key = TandemDMAVector; value = 
+MeasurementSettingsService: key = TandemDMADMAType; value = 3085
+MeasurementSettingsService: key = SMPSDiameterVector; value = 2.4;68.6
+MeasurementSettingsService: key = CurrentReadingTime; value = 1;2;4;8;10;20;40;80;100;200;400;800;1000
+MeasurementSettingsService.cs: GetSettingByKey(): key (CurrentReadingTime).
+MeasurementSettingsService.cs: GetSettingByKey(): key (CurrentReadingTime).
+SensorMeasurement.cshtml.cs: OnPost(): SensorMeasurement
+DeviceController.cs: Initialize current sensors
+MeasurementController: StartMeasurement(): MeasurementType is CurrentMeasurement
+SensorMeasurementAlgorithm.cs: Values received:5.0;5.0
+SensorMeasurementAlgorithm.cs: Values received:5.0;5.0
+SensorMeasurementAlgorithm.cs: Values received:5.0;5.0
+SensorMeasurementAlgorithm.cs: Values received:5.0;5.0
+SensorMeasurementAlgorithm.cs: Values received:5.0;5.0
+SensorMeasurementAlgorithm.cs: Values received:5.0;5.0
+SensorMeasurementAlgorithm.cs: Values received:5.0;5.0
+SensorMeasurementAlgorithm.cs: Values received:5.0;5.0
+SensorMeasurementAlgorithm.cs: Values received:5.0;5.0
+SensorMeasurementAlgorithm.cs: Values received:5.0;5.0
+SensorMeasurementAlgorithm.cs: Values received:5.0;5.0
+SensorMeasurementAlgorithm.cs: Values received:5.0;5.0
+SensorMeasurementAlgorithm.cs: Values received:5.0;5.0
+SensorMeasurementAlgorithm.cs: Values received:5.0;5.0
+SensorMeasurementAlgorithm.cs: Values received:5.0;5.0
+SensorMeasurementAlgorithm.cs: Values received:5.0;5.0
+SensorMeasurementAlgorithm.cs: Values received:5.0;5.0
+SensorMeasurementAlgorithm.cs: Values received:5.0;5.0
+SensorMeasurementAlgorithm.cs: Values received:5.0;5.0
+SensorMeasurementAlgorithm.cs: Values received:5.0;5.0
+SensorMeasurementAlgorithm.cs: Values received:5.0;5.0
+SensorMeasurementAlgorithm.cs: Values received:5.0;5.0
+SensorMeasurementAlgorithm.cs: Values received:5.0;5.0
+SensorMeasurementAlgorithm.cs: Values received:5.0;5.0
+SensorMeasurementAlgorithm.cs: Values received:5.0;5.0
+SensorMeasurementAlgorithm.cs: Values received:5.0;5.0
+SensorMeasurementAlgorithm.cs: Values received:5.0;5.0
+SensorMeasurementAlgorithm.cs: Values received:5.0;5.0
+SensorMeasurementAlgorithm.cs: Values received:5.0;5.0
+SensorMeasurementAlgorithm.cs: Values received:5.0;5.0
+SettingsService: Setting up measurement service...
+SettingsService: applicationPath = C:\Users\matth\Documents\GitHub\project_volt\bin\Debug\net7.0\
+SettingsService: Settings path = C:\Users\matth\Documents\GitHub\project_volt\bin\Debug\net7.0\settings
+MeasurementSettingsService: key = SheathFlow; value = 15
+MeasurementSettingsService: key = ScanTimeConstant; value = 17
+MeasurementSettingsService: key = UpscanTime; value = 120
+MeasurementSettingsService: key = DownscanTime; value = 15
+MeasurementSettingsService: key = SMPSMinDiameter; value = 2.4
+MeasurementSettingsService: key = SMPSMaxDiameter; value = 68.6
+MeasurementSettingsService: key = TandemTemperatureMinCurrent; value = 0
+MeasurementSettingsService: key = TandemTemperatureMaxCurrent; value = 30
+MeasurementSettingsService: key = SMPSDMAType; value = 3085
+MeasurementSettingsService: key = TandemTemperatureVector; value = 0;1;2;3;4;5;6;7;8;9;10;11;12;13;14;15;16;17;18;19;20;21;22;23;24;25;26;27;28;29;30
+MeasurementSettingsService: key = TandemDMAVector; value = 
+MeasurementSettingsService: key = TandemDMADMAType; value = 3085
+MeasurementSettingsService: key = SMPSDiameterVector; value = 2.4;68.6
+MeasurementSettingsService: key = CurrentReadingTime; value = 1;2;4;8;10;20;40;80;100;200;400;800;1000
+MeasurementSettingsService.cs: GetSettingByKey(): key (CurrentReadingTime).
+MeasurementSettingsService.cs: GetSettingByKey(): key (CurrentReadingTime).
+SensorMeasurement.cshtml.cs: OnPost(): SensorMeasurement
+DeviceController.cs: Initialize current sensors
+MeasurementController: StartMeasurement(): MeasurementType is CurrentMeasurement
+SensorMeasurementAlgorithm.cs: Values received:5.0;5.0
+SensorMeasurementAlgorithm.cs: Values received:5.0;5.0
+SensorMeasurementAlgorithm.cs: Values received:5.0;5.0
+SensorMeasurementAlgorithm.cs: Values received:5.0;5.0
+SensorMeasurementAlgorithm.cs: Values received:5.0;5.0
+SensorMeasurementAlgorithm.cs: Values received:5.0;5.0
+SensorMeasurementAlgorithm.cs: Values received:5.0;5.0
+SensorMeasurementAlgorithm.cs: Values received:5.0;5.0
+SensorMeasurementAlgorithm.cs: Values received:5.0;5.0
+SensorMeasurementAlgorithm.cs: Values received:5.0;5.0
+SensorMeasurementAlgorithm.cs: Values received:5.0;5.0
+SensorMeasurementAlgorithm.cs: Values received:5.0;5.0
+SensorMeasurementAlgorithm.cs: Values received:5.0;5.0
+SensorMeasurementAlgorithm.cs: Values received:5.0;5.0
+SensorMeasurementAlgorithm.cs: Values received:5.0;5.0
+SensorMeasurementAlgorithm.cs: Values received:5.0;5.0
+SensorMeasurementAlgorithm.cs: Values received:5.0;5.0
+SensorMeasurementAlgorithm.cs: Values received:5.0;5.0
+SensorMeasurementAlgorithm.cs: Values received:5.0;5.0
+SensorMeasurementAlgorithm.cs: Values received:5.0;5.0
+SensorMeasurementAlgorithm.cs: Values received:5.0;5.0
+SensorMeasurementAlgorithm.cs: Values received:5.0;5.0
+SensorMeasurementAlgorithm.cs: Values received:5.0;5.0
+SensorMeasurementAlgorithm.cs: Values received:5.0;5.0
+SensorMeasurementAlgorithm.cs: Values received:5.0;5.0
+SensorMeasurementAlgorithm.cs: Values received:5.0;5.0
+SensorMeasurementAlgorithm.cs: Values received:5.0;5.0
+SensorMeasurementAlgorithm.cs: Values received:5.0;5.0
+SensorMeasurementAlgorithm.cs: Values received:5.0;5.0
+SensorMeasurementAlgorithm.cs: Values received:5.0;5.0
+SensorMeasurementAlgorithm.cs: Values received:5.0;5.0
+SensorMeasurementAlgorithm.cs: Values received:5.0;5.0
+SensorMeasurementAlgorithm.cs: Values received:5.0;5.0
+SensorMeasurementAlgorithm.cs: Values received:5.0;5.0
+SensorMeasurementAlgorithm.cs: Values received:5.0;5.0
+SensorMeasurementAlgorithm.cs: Values received:5.0;5.0
+SensorMeasurementAlgorithm.cs: Values received:5.0;5.0
+SensorMeasurementAlgorithm.cs: Values received:5.0;5.0
+SensorMeasurementAlgorithm.cs: Values received:5.0;5.0
+SensorMeasurementAlgorithm.cs: Values received:5.0;5.0
+SensorMeasurementAlgorithm.cs: Values received:5.0;5.0
+SensorMeasurementAlgorithm.cs: Values received:5.0;5.0
+SensorMeasurementAlgorithm.cs: Values received:5.0;5.0
+SensorMeasurementAlgorithm.cs: Values received:5.0;5.0
+SensorMeasurementAlgorithm.cs: Values received:5.0;5.0
+SensorMeasurementAlgorithm.cs: Values received:5.0;5.0
+SettingsService: Setting up measurement service...
+SettingsService: applicationPath = C:\Users\matth\Documents\GitHub\project_volt\bin\Debug\net7.0\
+SettingsService: Settings path = C:\Users\matth\Documents\GitHub\project_volt\bin\Debug\net7.0\settings
+MeasurementSettingsService: key = SheathFlow; value = 15
+MeasurementSettingsService: key = ScanTimeConstant; value = 17
+MeasurementSettingsService: key = UpscanTime; value = 120
+MeasurementSettingsService: key = DownscanTime; value = 15
+MeasurementSettingsService: key = SMPSMinDiameter; value = 2.4
+MeasurementSettingsService: key = SMPSMaxDiameter; value = 68.6
+MeasurementSettingsService: key = TandemTemperatureMinCurrent; value = 0
+MeasurementSettingsService: key = TandemTemperatureMaxCurrent; value = 30
+MeasurementSettingsService: key = SMPSDMAType; value = 3085
+MeasurementSettingsService: key = TandemTemperatureVector; value = 0;1;2;3;4;5;6;7;8;9;10;11;12;13;14;15;16;17;18;19;20;21;22;23;24;25;26;27;28;29;30
+MeasurementSettingsService: key = TandemDMAVector; value = 
+MeasurementSettingsService: key = TandemDMADMAType; value = 3085
+MeasurementSettingsService: key = SMPSDiameterVector; value = 2.4;68.6
+MeasurementSettingsService: key = CurrentReadingTime; value = 1;2;4;8;10;20;40;80;100;200;400;800;1000
+MeasurementSettingsService.cs: GetSettingByKey(): key (CurrentReadingTime).
+MeasurementSettingsService.cs: GetSettingByKey(): key (CurrentReadingTime).
+SensorMeasurement.cshtml.cs: OnPost(): SensorMeasurement
+DeviceController.cs: Initialize current sensors
+MeasurementController: StartMeasurement(): MeasurementType is CurrentMeasurement
+SensorMeasurementAlgorithm.cs: Values received:5.0;5.0
+SensorMeasurementAlgorithm.cs: Values received:5.0;5.0
+SensorMeasurementAlgorithm.cs: Values received:5.0;5.0
+SensorMeasurementAlgorithm.cs: Values received:5.0;5.0
+SensorMeasurementAlgorithm.cs: Values received:5.0;5.0
+SensorMeasurementAlgorithm.cs: Values received:5.0;5.0
+SensorMeasurementAlgorithm.cs: Values received:5.0;5.0
+SensorMeasurementAlgorithm.cs: Values received:5.0;5.0
+SensorMeasurementAlgorithm.cs: Values received:5.0;5.0
+SensorMeasurementAlgorithm.cs: Values received:5.0;5.0
+SensorMeasurementAlgorithm.cs: Values received:5.0;5.0
+SensorMeasurementAlgorithm.cs: Values received:5.0;5.0
+SensorMeasurementAlgorithm.cs: Values received:5.0;5.0
+SensorMeasurementAlgorithm.cs: Values received:5.0;5.0
+SensorMeasurementAlgorithm.cs: Values received:5.0;5.0
+SettingsService: Setting up measurement service...
+SettingsService: applicationPath = C:\Users\matth\Documents\GitHub\project_volt\bin\Debug\net7.0\
+SettingsService: Settings path = C:\Users\matth\Documents\GitHub\project_volt\bin\Debug\net7.0\settings
+MeasurementSettingsService: key = SheathFlow; value = 15
+MeasurementSettingsService: key = ScanTimeConstant; value = 17
+MeasurementSettingsService: key = UpscanTime; value = 120
+MeasurementSettingsService: key = DownscanTime; value = 15
+MeasurementSettingsService: key = SMPSMinDiameter; value = 2.4
+MeasurementSettingsService: key = SMPSMaxDiameter; value = 68.6
+MeasurementSettingsService: key = TandemTemperatureMinCurrent; value = 0
+MeasurementSettingsService: key = TandemTemperatureMaxCurrent; value = 30
+MeasurementSettingsService: key = SMPSDMAType; value = 3085
+MeasurementSettingsService: key = TandemTemperatureVector; value = 0;1;2;3;4;5;6;7;8;9;10;11;12;13;14;15;16;17;18;19;20;21;22;23;24;25;26;27;28;29;30
+MeasurementSettingsService: key = TandemDMAVector; value = 
+MeasurementSettingsService: key = TandemDMADMAType; value = 3085
+MeasurementSettingsService: key = SMPSDiameterVector; value = 2.4;68.6
+MeasurementSettingsService: key = CurrentReadingTime; value = 1;2;4;8;10;20;40;80;100;200;400;800;1000
+MeasurementSettingsService.cs: GetSettingByKey(): key (CurrentReadingTime).
+SettingsService: Setting up measurement service...
+SettingsService: applicationPath = C:\Users\matth\Documents\GitHub\project_volt\bin\Debug\net7.0\
+SettingsService: Settings path = C:\Users\matth\Documents\GitHub\project_volt\bin\Debug\net7.0\settings
+MeasurementSettingsService: key = SheathFlow; value = 15
+MeasurementSettingsService: key = ScanTimeConstant; value = 17
+MeasurementSettingsService: key = UpscanTime; value = 120
+MeasurementSettingsService: key = DownscanTime; value = 15
+MeasurementSettingsService: key = SMPSMinDiameter; value = 2.4
+MeasurementSettingsService: key = SMPSMaxDiameter; value = 68.6
+MeasurementSettingsService: key = TandemTemperatureMinCurrent; value = 0
+MeasurementSettingsService: key = TandemTemperatureMaxCurrent; value = 30
+MeasurementSettingsService: key = SMPSDMAType; value = 3085
+MeasurementSettingsService: key = TandemTemperatureVector; value = 0;1;2;3;4;5;6;7;8;9;10;11;12;13;14;15;16;17;18;19;20;21;22;23;24;25;26;27;28;29;30
+MeasurementSettingsService: key = TandemDMAVector; value = 
+MeasurementSettingsService: key = TandemDMADMAType; value = 3085
+MeasurementSettingsService: key = SMPSDiameterVector; value = 2.4;68.6
+MeasurementSettingsService: key = CurrentReadingTime; value = 1;2;4;8;10;20;40;80;100;200;400;800;1000
+MeasurementSettingsService.cs: GetSettingByKey(): key (CurrentReadingTime).
+MeasurementSettingsService.cs: GetSettingByKey(): key (CurrentReadingTime).
+Aborting Current measurement
+SettingsService: Setting up measurement service...
+SettingsService: applicationPath = C:\Users\matth\Documents\GitHub\project_volt\bin\Debug\net7.0\
+SettingsService: Settings path = C:\Users\matth\Documents\GitHub\project_volt\bin\Debug\net7.0\settings
+MeasurementSettingsService: key = SheathFlow; value = 15
+MeasurementSettingsService: key = ScanTimeConstant; value = 17
+MeasurementSettingsService: key = UpscanTime; value = 120
+MeasurementSettingsService: key = DownscanTime; value = 15
+MeasurementSettingsService: key = SMPSMinDiameter; value = 2.4
+MeasurementSettingsService: key = SMPSMaxDiameter; value = 68.6
+MeasurementSettingsService: key = TandemTemperatureMinCurrent; value = 0
+MeasurementSettingsService: key = TandemTemperatureMaxCurrent; value = 30
+MeasurementSettingsService: key = SMPSDMAType; value = 3085
+MeasurementSettingsService: key = TandemTemperatureVector; value = 0;1;2;3;4;5;6;7;8;9;10;11;12;13;14;15;16;17;18;19;20;21;22;23;24;25;26;27;28;29;30
+MeasurementSettingsService: key = TandemDMAVector; value = 
+MeasurementSettingsService: key = TandemDMADMAType; value = 3085
+MeasurementSettingsService: key = SMPSDiameterVector; value = 2.4;68.6
+MeasurementSettingsService: key = CurrentReadingTime; value = 1;2;4;8;10;20;40;80;100;200;400;800;1000
+MeasurementSettingsService.cs: GetSettingByKey(): key (CurrentReadingTime).
+SettingsService: Setting up measurement service...
+SettingsService: applicationPath = C:\Users\matth\Documents\GitHub\project_volt\bin\Debug\net7.0\
+SettingsService: Settings path = C:\Users\matth\Documents\GitHub\project_volt\bin\Debug\net7.0\settings
+MeasurementSettingsService: key = SheathFlow; value = 15
+MeasurementSettingsService: key = ScanTimeConstant; value = 17
+MeasurementSettingsService: key = UpscanTime; value = 120
+MeasurementSettingsService: key = DownscanTime; value = 15
+MeasurementSettingsService: key = SMPSMinDiameter; value = 2.4
+MeasurementSettingsService: key = SMPSMaxDiameter; value = 68.6
+MeasurementSettingsService: key = TandemTemperatureMinCurrent; value = 0
+MeasurementSettingsService: key = TandemTemperatureMaxCurrent; value = 30
+MeasurementSettingsService: key = SMPSDMAType; value = 3085
+MeasurementSettingsService: key = TandemTemperatureVector; value = 0;1;2;3;4;5;6;7;8;9;10;11;12;13;14;15;16;17;18;19;20;21;22;23;24;25;26;27;28;29;30
+MeasurementSettingsService: key = TandemDMAVector; value = 
+MeasurementSettingsService: key = TandemDMADMAType; value = 3085
+MeasurementSettingsService: key = SMPSDiameterVector; value = 2.4;68.6
+MeasurementSettingsService: key = CurrentReadingTime; value = 1;2;4;8;10;20;40;80;100;200;400;800;1000
+SettingsService: Setting up measurement service...
+SettingsService: applicationPath = C:\Users\matth\Documents\GitHub\project_volt\bin\Debug\net7.0\
+SettingsService: Settings path = C:\Users\matth\Documents\GitHub\project_volt\bin\Debug\net7.0\settings
+MeasurementSettingsService: key = SheathFlow; value = 15
+MeasurementSettingsService: key = ScanTimeConstant; value = 17
+MeasurementSettingsService: key = UpscanTime; value = 120
+MeasurementSettingsService: key = DownscanTime; value = 15
+MeasurementSettingsService: key = SMPSMinDiameter; value = 2.4
+MeasurementSettingsService: key = SMPSMaxDiameter; value = 68.6
+MeasurementSettingsService: key = TandemTemperatureMinCurrent; value = 0
+MeasurementSettingsService: key = TandemTemperatureMaxCurrent; value = 30
+MeasurementSettingsService: key = SMPSDMAType; value = 3085
+MeasurementSettingsService: key = TandemTemperatureVector; value = 0;1;2;3;4;5;6;7;8;9;10;11;12;13;14;15;16;17;18;19;20;21;22;23;24;25;26;27;28;29;30
+MeasurementSettingsService: key = TandemDMAVector; value = 
+MeasurementSettingsService: key = TandemDMADMAType; value = 3085
+MeasurementSettingsService: key = SMPSDiameterVector; value = 2.4;68.6
+MeasurementSettingsService: key = CurrentReadingTime; value = 1;2;4;8;10;20;40;80;100;200;400;800;1000
+SettingsService: Setting up measurement service...
+SettingsService: applicationPath = C:\Users\matth\Documents\GitHub\project_volt\bin\Debug\net7.0\
+SettingsService: Settings path = C:\Users\matth\Documents\GitHub\project_volt\bin\Debug\net7.0\settings
+MeasurementSettingsService: key = SheathFlow; value = 15
+MeasurementSettingsService: key = ScanTimeConstant; value = 17
+MeasurementSettingsService: key = UpscanTime; value = 120
+MeasurementSettingsService: key = DownscanTime; value = 15
+MeasurementSettingsService: key = SMPSMinDiameter; value = 2.4
+MeasurementSettingsService: key = SMPSMaxDiameter; value = 68.6
+MeasurementSettingsService: key = TandemTemperatureMinCurrent; value = 0
+MeasurementSettingsService: key = TandemTemperatureMaxCurrent; value = 30
+MeasurementSettingsService: key = SMPSDMAType; value = 3085
+MeasurementSettingsService: key = TandemTemperatureVector; value = 0;1;2;3;4;5;6;7;8;9;10;11;12;13;14;15;16;17;18;19;20;21;22;23;24;25;26;27;28;29;30
+MeasurementSettingsService: key = TandemDMAVector; value = 
+MeasurementSettingsService: key = TandemDMADMAType; value = 3085
+MeasurementSettingsService: key = SMPSDiameterVector; value = 2.4;68.6
+MeasurementSettingsService: key = CurrentReadingTime; value = 1;2;4;8;10;20;40;80;100;200;400;800;1000
+MeasurementSettingsService.cs: GetSettingByKey(): key (CurrentReadingTime).
+MeasurementSettingsService.cs: GetSettingByKey(): key (CurrentReadingTime).
+SensorMeasurement.cshtml.cs: OnPost(): SensorMeasurement
+DeviceController.cs: Initialize current sensors
+MeasurementController: StartMeasurement(): MeasurementType is CurrentMeasurement
+SensorMeasurementAlgorithm.cs: Values received:3,831399792460105;0,7470115694230778
+SensorMeasurementAlgorithm.cs: Values received:4,060065615407791;0,47096554709348193
+SensorMeasurementAlgorithm.cs: Values received:3,283134769561085;0,7949208252419371
+SensorMeasurementAlgorithm.cs: Values received:4,214553396257529;0,35419509810205463
+SensorMeasurementAlgorithm.cs: Values received:2,99000168049915;0,5339653863997159
+SensorMeasurementAlgorithm.cs: Values received:2,8577097014543025;0,7421263080878605
+SensorMeasurementAlgorithm.cs: Values received:4,0711501104396595;0,16531695132218893
+SensorMeasurementAlgorithm.cs: Values received:1,170894861195657;0,7057152570968535
+SensorMeasurementAlgorithm.cs: Values received:0,7175245731206364;0,8978446186031546
+SensorMeasurementAlgorithm.cs: Values received:2,346541487499001;0,37416607113284506
+SensorMeasurementAlgorithm.cs: Values received:2,3646844907088327;0,6551750184864801
+SensorMeasurementAlgorithm.cs: Values received:0,14828841119442715;0,09529924175133231
+SensorMeasurementAlgorithm.cs: Values received:0,9643284550269282;0,5110982421417274
+SensorMeasurementAlgorithm.cs: Values received:4,5222917469559585;0,8120520262288036
+SensorMeasurementAlgorithm.cs: Values received:1,5013184325885636;0,22060574734417504
+SensorMeasurementAlgorithm.cs: Values received:4,726623584665331;0,4970709897433242
+SensorMeasurementAlgorithm.cs: Values received:2,001650730162694;0,5791433343590665
+SensorMeasurementAlgorithm.cs: Values received:2,8521504304995453;0,4594938385271874
+SensorMeasurementAlgorithm.cs: Values received:3,277445298188548;0,25646063049893597
+SensorMeasurementAlgorithm.cs: Values received:1,477114215004156;0,1447356178891197
+SensorMeasurementAlgorithm.cs: Values received:2,286477969700708;0,08865356261197976
+SensorMeasurementAlgorithm.cs: Values received:1,3236664111822305;0,32069191786132867
+SensorMeasurementAlgorithm.cs: Values received:3,90813902830169;0,40900671930791765
+SensorMeasurementAlgorithm.cs: Values received:0,8863830210294527;0,32260936779561344
+SensorMeasurementAlgorithm.cs: Values received:1,2864576248919346;0,20493897298493668
+SensorMeasurementAlgorithm.cs: Values received:3,122671514130623;0,5725528264147018
+SensorMeasurementAlgorithm.cs: Values received:0,12040695887214625;0,4638898347547866
+SensorMeasurementAlgorithm.cs: Values received:2,9597372137135842;0,031972019376901084
+SensorMeasurementAlgorithm.cs: Values received:3,3494433414173193;0,47139297932209767
+SensorMeasurementAlgorithm.cs: Values received:3,4208932912047842;0,7509249808285081
+SensorMeasurementAlgorithm.cs: Values received:0,37436902737676025;0,09769338171326791
+SensorMeasurementAlgorithm.cs: Values received:0,40764681408224035;0,8315880558966992
+SensorMeasurementAlgorithm.cs: Values received:4,035732895530354;0,18240424775022068
+SensorMeasurementAlgorithm.cs: Values received:3,4824533478332222;0,6241658709948081
+SensorMeasurementAlgorithm.cs: Values received:0,6531938038498175;0,3862909802009644
+SensorMeasurementAlgorithm.cs: Values received:0,30872823184553755;0,1543472731844101
+SensorMeasurementAlgorithm.cs: Values received:2,8517421622214445;0,7804386799193177
+SensorMeasurementAlgorithm.cs: Values received:2,943093183707426;0,7701886521762251
+SensorMeasurementAlgorithm.cs: Values received:3,0197898672221495;0,1602167152105216
+SensorMeasurementAlgorithm.cs: Values received:1,3051043408649927;0,579926795687642
+SensorMeasurementAlgorithm.cs: Values received:0,5369384570541896;0,7808909989634911
+SensorMeasurementAlgorithm.cs: Values received:2,69200869121489;0,02905521900264829
+SensorMeasurementAlgorithm.cs: Values received:1,2532758246345965;0,9345653401734532
+SensorMeasurementAlgorithm.cs: Values received:3,166543095167034;0,02636668197534353
+SensorMeasurementAlgorithm.cs: Values received:2,926688212233459;0,2152028354864023
+SensorMeasurementAlgorithm.cs: Values received:2,7753486127194034;0,23797118724492927
+SensorMeasurementAlgorithm.cs: Values received:4,494819165975191;0,3407264100614491
+SensorMeasurementAlgorithm.cs: Values received:1,4910147255882973;0,8825595505627127
+SensorMeasurementAlgorithm.cs: Values received:0,6268195611541999;0,18250237497024413
+SensorMeasurementAlgorithm.cs: Values received:4,3001478712348105;0,9699916777748449
+SensorMeasurementAlgorithm.cs: Values received:3,3223911909963144;0,21867120103309956
+SensorMeasurementAlgorithm.cs: Values received:0,5731820878342653;0,09565514218923943
+SensorMeasurementAlgorithm.cs: Values received:3,505887390848378;0,9823979281725598
+SensorMeasurementAlgorithm.cs: Values received:3,9580681884871547;0,018768398778461926
+SensorMeasurementAlgorithm.cs: Values received:3,2373048884300526;0,6345634623886413
+SensorMeasurementAlgorithm.cs: Values received:2,035735827128569;0,25410096418275185
+SensorMeasurementAlgorithm.cs: Values received:4,183927599483436;0,07425973702761812
+SensorMeasurementAlgorithm.cs: Values received:4,243729581124186;0,9088433898980496
+SensorMeasurementAlgorithm.cs: Values received:2,456459893682428;0,9247156952707396
+SensorMeasurementAlgorithm.cs: Values received:3,04812306255134;0,7253637787526612
+SensorMeasurementAlgorithm.cs: Values received:2,779357974959022;0,7169103893120936
+SensorMeasurementAlgorithm.cs: Values received:3,7030284017981234;0,4309234044535546
+SensorMeasurementAlgorithm.cs: Values received:4,933538806813221;0,33054101126909485
+SensorMeasurementAlgorithm.cs: Values received:2,7820059690937295;0,772170698752313
+SensorMeasurementAlgorithm.cs: Values received:0,9003033450683079;0,745982729119894
+SensorMeasurementAlgorithm.cs: Values received:4,439817720248665;0,37172530320683583
+SensorMeasurementAlgorithm.cs: Values received:3,5656243834246033;0,05659403353986836
+SensorMeasurementAlgorithm.cs: Values received:3,754398524193949;0,5201381225648353
+SensorMeasurementAlgorithm.cs: Values received:0,03251589593527171;0,4291831336381875
+SensorMeasurementAlgorithm.cs: Values received:3,814272541630185;0,37173251358462167
+SensorMeasurementAlgorithm.cs: Values received:4,814911889175082;0,13260573116149688
+SensorMeasurementAlgorithm.cs: Values received:3,539845946715812;0,5067047630645177
+SensorMeasurementAlgorithm.cs: Values received:0,4957311460538816;0,2750837634723172
+SensorMeasurementAlgorithm.cs: Values received:1,0320968163942712;0,29667579541808253
+SensorMeasurementAlgorithm.cs: Values received:2,4580112649987718;0,06302493657572306
+SensorMeasurementAlgorithm.cs: Values received:2,0071457177004675;0,25749326773105885
+SensorMeasurementAlgorithm.cs: Values received:3,8357215651173138;0,5467059851228346
+SensorMeasurementAlgorithm.cs: Values received:1,1813981264315436;0,4190280834366429
+SensorMeasurementAlgorithm.cs: Values received:3,679703717016041;0,06316321848165696
+SensorMeasurementAlgorithm.cs: Values received:2,5514410765527433;0,24722034833436335
+SensorMeasurementAlgorithm.cs: Values received:0,006575620495498091;0,4464521967441163
+SensorMeasurementAlgorithm.cs: Values received:1,7336249744572574;0,9931174721160192
+SensorMeasurementAlgorithm.cs: Values received:4,824867913707498;0,24437217644019527
+SensorMeasurementAlgorithm.cs: Values received:2,8988470651337317;0,23762431510262472
+SensorMeasurementAlgorithm.cs: Values received:2,712110804075179;0,0781528858863012
+SensorMeasurementAlgorithm.cs: Values received:0,7398928244987452;0,4176881872494178
+SensorMeasurementAlgorithm.cs: Values received:2,7946145654107384;0,5380234078801601
+SensorMeasurementAlgorithm.cs: Values received:1,516041379075418;0,7382589016012145
+SensorMeasurementAlgorithm.cs: Values received:0,657358258555284;0,34720475353670377
+SensorMeasurementAlgorithm.cs: Values received:0,1529895982819207;0,3709965850363137
+SensorMeasurementAlgorithm.cs: Values received:1,704064037180123;0,2982356755573019
+SensorMeasurementAlgorithm.cs: Values received:2,0824185734971;0,7416862131124183
+SensorMeasurementAlgorithm.cs: Values received:4,933925196300658;0,2949500611199889
+SensorMeasurementAlgorithm.cs: Values received:1,0549981220422977;0,9357172356833819
+SensorMeasurementAlgorithm.cs: Values received:3,7481008811498167;0,5618635697932295
+SensorMeasurementAlgorithm.cs: Values received:2,3810530453901575;0,8706786081705472
+SensorMeasurementAlgorithm.cs: Values received:4,334925559824551;0,07501607329257387
+SensorMeasurementAlgorithm.cs: Values received:1,2910281950847002;0,9574952031655136
+SensorMeasurementAlgorithm.cs: Values received:4,634391170772619;0,9018037649055862
+SensorMeasurementAlgorithm.cs: Values received:4,042562201669233;0,15168554656001676
+SensorMeasurementAlgorithm.cs: Values received:4,2511413212025575;0,837630743521884
+SensorMeasurementAlgorithm.cs: Values received:4,389609213278824;0,7349617554990692
+SensorMeasurementAlgorithm.cs: Values received:3,1399879827505823;0,008202196657094984
+SensorMeasurementAlgorithm.cs: Values received:0,27417443952811704;0,49189654711617126
+SensorMeasurementAlgorithm.cs: Values received:4,427832691961045;0,11840535395482643
+SensorMeasurementAlgorithm.cs: Values received:3,449277825613236;0,9877914599707066
+SensorMeasurementAlgorithm.cs: Values received:4,743451829973814;0,27226550016471596
+SensorMeasurementAlgorithm.cs: Values received:0,9204461511429235;0,4511543204572124
+SensorMeasurementAlgorithm.cs: Values received:2,163032056071646;0,30420706115940577
+SensorMeasurementAlgorithm.cs: Values received:1,325939822114122;0,5744074684788134
+SensorMeasurementAlgorithm.cs: Values received:3,755916887912129;0,7947073019501245
+SensorMeasurementAlgorithm.cs: Values received:3,969607045618556;0,5080942742798795
+SensorMeasurementAlgorithm.cs: Values received:0,30176684318853897;0,1927093040782245
+SensorMeasurementAlgorithm.cs: Values received:1,5631103092280774;0,3177700552260426
+SensorMeasurementAlgorithm.cs: Values received:4,456547378418186;0,6391022163804433
+SensorMeasurementAlgorithm.cs: Values received:3,9355860965325467;0,8741849057173698
+SensorMeasurementAlgorithm.cs: Values received:1,2280478739104432;0,4247395010997562
+SensorMeasurementAlgorithm.cs: Values received:0,40835493855831295;0,816941993095216
+SensorMeasurementAlgorithm.cs: Values received:2,927196076020434;0,3917436775622144
+SensorMeasurementAlgorithm.cs: Values received:1,5869009384857402;0,08331955324306983
+SensorMeasurementAlgorithm.cs: Values received:4,102321175965798;0,5799891659849801
+SensorMeasurementAlgorithm.cs: Values received:0,7354361794110192;0,07377793966801172
+SensorMeasurementAlgorithm.cs: Values received:2,407246233904792;0,6620902677826604
+SensorMeasurementAlgorithm.cs: Values received:2,8108136924315055;0,6480419075645466
+SensorMeasurementAlgorithm.cs: Values received:4,538246057954197;0,01081740022960942
+SensorMeasurementAlgorithm.cs: Values received:1,5554347339183154;0,6243297996618444
+SensorMeasurementAlgorithm.cs: Values received:2,0437768593543475;0,810242245942515
+SensorMeasurementAlgorithm.cs: Values received:4,685926470131428;0,5790856832313399
+SensorMeasurementAlgorithm.cs: Values received:0,3973030376108161;0,29199142132823874
+SensorMeasurementAlgorithm.cs: Values received:2,757333768371289;0,29619228477458104
+SensorMeasurementAlgorithm.cs: Values received:0,03605697642212413;0,4472285357007896
+SensorMeasurementAlgorithm.cs: Values received:3,957336920619966;0,37996432439370875
+SensorMeasurementAlgorithm.cs: Values received:1,0092908142464196;0,3759850073323242
+SensorMeasurementAlgorithm.cs: Values received:4,510842285430279;0,23125486363933578
+SensorMeasurementAlgorithm.cs: Values received:4,784987836816982;0,293913908932533
+SensorMeasurementAlgorithm.cs: Values received:1,3475799031990598;0,27936405900915107
+SensorMeasurementAlgorithm.cs: Values received:2,041350001231788;0,5606310117389303
+SensorMeasurementAlgorithm.cs: Values received:4,8360320321153445;0,6066067947583347
+SensorMeasurementAlgorithm.cs: Values received:1,505437061637176;0,8246593543384915
+SensorMeasurementAlgorithm.cs: Values received:3,741416677591714;0,7359581274496869
+SensorMeasurementAlgorithm.cs: Values received:4,4268546310369326;0,44656601866925116
+SensorMeasurementAlgorithm.cs: Values received:2,322350054920754;0,9175102760671252
+SensorMeasurementAlgorithm.cs: Values received:3,0483843953278438;0,9391120466837528
+SensorMeasurementAlgorithm.cs: Values received:0,5943325739839622;0,8710243727747603
+SensorMeasurementAlgorithm.cs: Values received:0,4449647181588523;0,8975415548695374
+SensorMeasurementAlgorithm.cs: Values received:1,3556298975413879;0,5451262687492179
+SensorMeasurementAlgorithm.cs: Values received:3,682646607265651;0,5607734596435524
+SensorMeasurementAlgorithm.cs: Values received:2,127546301577015;0,26355141220290834
+SensorMeasurementAlgorithm.cs: Values received:0,296091644257071;0,64258094055563
+SensorMeasurementAlgorithm.cs: Values received:4,076445962048035;0,02259527254597138
+SensorMeasurementAlgorithm.cs: Values received:0,8863314224440916;0,12809487811050346
+SensorMeasurementAlgorithm.cs: Values received:0,7289819350259946;0,44537341673118414
+SensorMeasurementAlgorithm.cs: Values received:3,2582179281202794;0,6335390406871043
+SensorMeasurementAlgorithm.cs: Values received:2,597839329142781;0,2709729896649776
+SensorMeasurementAlgorithm.cs: Values received:1,5246156609571404;0,897484094713841
+SensorMeasurementAlgorithm.cs: Values received:1,4454147779793547;0,004356938714361269
+SensorMeasurementAlgorithm.cs: Values received:0,000453533746816448;0,45597705256801635
+SensorMeasurementAlgorithm.cs: Values received:2,711317786926808;0,13154555620709696
+SensorMeasurementAlgorithm.cs: Values received:4,857711268402274;0,8453806830629474
+SensorMeasurementAlgorithm.cs: Values received:2,339195355086672;0,7260459709428522
+SensorMeasurementAlgorithm.cs: Values received:1,6347140452923492;0,9246494955046629
+SensorMeasurementAlgorithm.cs: Values received:1,9860123195995545;0,7426510257855564
+SensorMeasurementAlgorithm.cs: Values received:2,64965835358653;0,21229510402758378
+SensorMeasurementAlgorithm.cs: Values received:4,8478580685810515;0,438014152554588
+SensorMeasurementAlgorithm.cs: Values received:2,604744700137296;0,4913024919163014
+SensorMeasurementAlgorithm.cs: Values received:4,92940447019839;0,3912014070663362
+SensorMeasurementAlgorithm.cs: Values received:3,3475253246416408;0,3656083054482643
+SensorMeasurementAlgorithm.cs: Values received:2,3063476365312736;0,7016822716063957
+SensorMeasurementAlgorithm.cs: Values received:2,789078375218244;0,037649621243789344
+SensorMeasurementAlgorithm.cs: Values received:1,2128478359105617;0,32879156583660396
+SensorMeasurementAlgorithm.cs: Values received:2,0208246745290195;0,8975239854830709
+SensorMeasurementAlgorithm.cs: Values received:3,602216723511158;0,7341391849917868
+SensorMeasurementAlgorithm.cs: Values received:1,2343444580079792;0,5358584517312341
+SensorMeasurementAlgorithm.cs: Values received:4,958109757454564;0,2274308528547001
+SensorMeasurementAlgorithm.cs: Values received:2,462771059028794;0,9859235171088871
+SensorMeasurementAlgorithm.cs: Values received:3,528501590274173;0,2353755813484486
+SensorMeasurementAlgorithm.cs: Values received:1,998205496459859;0,5798139653797476
+SensorMeasurementAlgorithm.cs: Values received:4,77351073215259;0,06546250434161904
+SensorMeasurementAlgorithm.cs: Values received:4,246911912198526;0,1991716909156258
+SensorMeasurementAlgorithm.cs: Values received:4,747569908423469;0,07096848912674514
+SensorMeasurementAlgorithm.cs: Values received:4,877123998818601;0,6677381591962234
+SensorMeasurementAlgorithm.cs: Values received:4,727689945879002;0,1670868049119475
+SensorMeasurementAlgorithm.cs: Values received:2,666614631477633;0,9310497461409075
+SensorMeasurementAlgorithm.cs: Values received:4,78866382680324;0,46811691754612683
+SensorMeasurementAlgorithm.cs: Values received:4,544450726233391;0,2883158698503986
+SensorMeasurementAlgorithm.cs: Values received:2,68704517948622;0,8960108833892653
+SensorMeasurementAlgorithm.cs: Values received:3,5267426780857236;0,13397175680928264
+SettingsService: Setting up measurement service...
+SettingsService: applicationPath = C:\Users\matth\Documents\GitHub\project_volt\bin\Debug\net7.0\
+SettingsService: Settings path = C:\Users\matth\Documents\GitHub\project_volt\bin\Debug\net7.0\settings
+MeasurementSettingsService: key = SheathFlow; value = 15
+MeasurementSettingsService: key = ScanTimeConstant; value = 17
+MeasurementSettingsService: key = UpscanTime; value = 120
+MeasurementSettingsService: key = DownscanTime; value = 15
+MeasurementSettingsService: key = SMPSMinDiameter; value = 2.4
+MeasurementSettingsService: key = SMPSMaxDiameter; value = 68.6
+MeasurementSettingsService: key = TandemTemperatureMinCurrent; value = 0
+MeasurementSettingsService: key = TandemTemperatureMaxCurrent; value = 30
+MeasurementSettingsService: key = SMPSDMAType; value = 3085
+MeasurementSettingsService: key = TandemTemperatureVector; value = 0;1;2;3;4;5;6;7;8;9;10;11;12;13;14;15;16;17;18;19;20;21;22;23;24;25;26;27;28;29;30
+MeasurementSettingsService: key = TandemDMAVector; value = 
+MeasurementSettingsService: key = TandemDMADMAType; value = 3085
+MeasurementSettingsService: key = SMPSDiameterVector; value = 2.4;68.6
+MeasurementSettingsService: key = CurrentReadingTime; value = 1;2;4;8;10;20;40;80;100;200;400;800;1000
+SettingsService: Setting up measurement service...
+SettingsService: applicationPath = C:\Users\matth\Documents\GitHub\project_volt\bin\Debug\net7.0\
+SettingsService: Settings path = C:\Users\matth\Documents\GitHub\project_volt\bin\Debug\net7.0\settings
+MeasurementSettingsService: key = SheathFlow; value = 15
+MeasurementSettingsService: key = ScanTimeConstant; value = 17
+MeasurementSettingsService: key = UpscanTime; value = 120
+MeasurementSettingsService: key = DownscanTime; value = 15
+MeasurementSettingsService: key = SMPSMinDiameter; value = 2.4
+MeasurementSettingsService: key = SMPSMaxDiameter; value = 68.6
+MeasurementSettingsService: key = TandemTemperatureMinCurrent; value = 0
+MeasurementSettingsService: key = TandemTemperatureMaxCurrent; value = 30
+MeasurementSettingsService: key = SMPSDMAType; value = 3085
+MeasurementSettingsService: key = TandemTemperatureVector; value = 0;1;2;3;4;5;6;7;8;9;10;11;12;13;14;15;16;17;18;19;20;21;22;23;24;25;26;27;28;29;30
+MeasurementSettingsService: key = TandemDMAVector; value = 
+MeasurementSettingsService: key = TandemDMADMAType; value = 3085
+MeasurementSettingsService: key = SMPSDiameterVector; value = 2.4;68.6
+MeasurementSettingsService: key = CurrentReadingTime; value = 1;2;4;8;10;20;40;80;100;200;400;800;1000
+MeasurementSettingsService.cs: GetSettingByKey(): key (CurrentReadingTime).
+MeasurementSettingsService.cs: GetSettingByKey(): key (CurrentReadingTime).
+SensorMeasurement.cshtml.cs: OnPost(): SensorMeasurement
+DeviceController.cs: Initialize current sensors
+MeasurementController: StartMeasurement(): MeasurementType is CurrentMeasurement
+SensorMeasurementAlgorithm.cs: Values received:3,005192397519491;0,029587587351320832
+SensorMeasurementAlgorithm.cs: Values received:3,7694130664705923;0,7283952672033883
+SensorMeasurementAlgorithm.cs: Values received:4,612757361731465;0,1978849654732029
+SensorMeasurementAlgorithm.cs: Values received:2,124157284596464;0,8069950727701064
+SensorMeasurementAlgorithm.cs: Values received:4,215754069636433;0,11063429329013341
+SensorMeasurementAlgorithm.cs: Values received:2,953372331325239;0,8745302914152946
+SensorMeasurementAlgorithm.cs: Values received:3,083269631760052;0,19204778904444253
+SensorMeasurementAlgorithm.cs: Values received:3,8374186564881043;0,02385566628924063
+SensorMeasurementAlgorithm.cs: Values received:3,755359340617831;0,27906806364341064
+SensorMeasurementAlgorithm.cs: Values received:1,871966064065933;0,7189304907179134
+SensorMeasurementAlgorithm.cs: Values received:3,7724830793660975;0,3774086409552637
+SensorMeasurementAlgorithm.cs: Values received:1,0997350094051817;0,46542042914160997
+SensorMeasurementAlgorithm.cs: Values received:4,901692952966503;0,9879536307501546
+SensorMeasurementAlgorithm.cs: Values received:4,716285146474504;0,9618637559423936
+SensorMeasurementAlgorithm.cs: Values received:3,7549510732440528;0,08895098293423631
+SensorMeasurementAlgorithm.cs: Values received:1,0700601692710388;0,9394550756796902
+SensorMeasurementAlgorithm.cs: Values received:0,12418539566304176;0,3813742363265592
+SensorMeasurementAlgorithm.cs: Values received:3,8366280979525387;0,5091583222484658
+SensorMeasurementAlgorithm.cs: Values received:0,44798931881053883;0,23441955534749348
+SensorMeasurementAlgorithm.cs: Values received:0,06887628705202209;0,10843186556588624
+SensorMeasurementAlgorithm.cs: Values received:1,9372541468650983;0,7453929718653721
+SensorMeasurementAlgorithm.cs: Values received:4,393955986432576;0,18674644998538925
+SensorMeasurementAlgorithm.cs: Values received:1,4501126881276942;0,054446691375595324
+SensorMeasurementAlgorithm.cs: Values received:1,0785350898315498;0,004489208886374718
+SensorMeasurementAlgorithm.cs: Values received:2,619809894603542;0,8390994820736133
+SensorMeasurementAlgorithm.cs: Values received:4,717506840557228;0,0510599962962085
+SensorMeasurementAlgorithm.cs: Values received:3,9993142455989563;0,6208310004002211
+SensorMeasurementAlgorithm.cs: Values received:0,41385080730323376;0,31866632500049963
+SensorMeasurementAlgorithm.cs: Values received:1,1295257770191642;0,7149356649291195
+SensorMeasurementAlgorithm.cs: Values received:4,403212406165001;0,7344861139604372
+SensorMeasurementAlgorithm.cs: Values received:4,30363242873047;0,17344365909540616
+SensorMeasurementAlgorithm.cs: Values received:3,775636522891629;0,016570777253313462
+SettingsService: Setting up measurement service...
+SettingsService: applicationPath = C:\Users\matth\Documents\GitHub\project_volt\bin\Debug\net7.0\
+SettingsService: Settings path = C:\Users\matth\Documents\GitHub\project_volt\bin\Debug\net7.0\settings
+MeasurementSettingsService: key = SheathFlow; value = 15
+MeasurementSettingsService: key = ScanTimeConstant; value = 17
+MeasurementSettingsService: key = UpscanTime; value = 120
+MeasurementSettingsService: key = DownscanTime; value = 15
+MeasurementSettingsService: key = SMPSMinDiameter; value = 2.4
+MeasurementSettingsService: key = SMPSMaxDiameter; value = 68.6
+MeasurementSettingsService: key = TandemTemperatureMinCurrent; value = 0
+MeasurementSettingsService: key = TandemTemperatureMaxCurrent; value = 30
+MeasurementSettingsService: key = SMPSDMAType; value = 3085
+MeasurementSettingsService: key = TandemTemperatureVector; value = 0;1;2;3;4;5;6;7;8;9;10;11;12;13;14;15;16;17;18;19;20;21;22;23;24;25;26;27;28;29;30
+MeasurementSettingsService: key = TandemDMAVector; value = 
+MeasurementSettingsService: key = TandemDMADMAType; value = 3085
+MeasurementSettingsService: key = SMPSDiameterVector; value = 2.4;68.6
+MeasurementSettingsService: key = CurrentReadingTime; value = 1;2;4;8;10;20;40;80;100;200;400;800;1000
+MeasurementSettingsService.cs: GetSettingByKey(): key (CurrentReadingTime).
+MeasurementSettingsService.cs: GetSettingByKey(): key (CurrentReadingTime).
+SensorMeasurement.cshtml.cs: OnPost(): SensorMeasurement
+DeviceController.cs: Initialize current sensors
+MeasurementController: StartMeasurement(): MeasurementType is CurrentMeasurement
+SettingsService: Setting up measurement service...
+SettingsService: applicationPath = C:\Users\matth\Documents\GitHub\project_volt\bin\Debug\net7.0\
+SettingsService: Settings path = C:\Users\matth\Documents\GitHub\project_volt\bin\Debug\net7.0\settings
+MeasurementSettingsService: key = SheathFlow; value = 15
+MeasurementSettingsService: key = ScanTimeConstant; value = 17
+MeasurementSettingsService: key = UpscanTime; value = 120
+MeasurementSettingsService: key = DownscanTime; value = 15
+MeasurementSettingsService: key = SMPSMinDiameter; value = 2.4
+MeasurementSettingsService: key = SMPSMaxDiameter; value = 68.6
+MeasurementSettingsService: key = TandemTemperatureMinCurrent; value = 0
+MeasurementSettingsService: key = TandemTemperatureMaxCurrent; value = 30
+MeasurementSettingsService: key = SMPSDMAType; value = 3085
+MeasurementSettingsService: key = TandemTemperatureVector; value = 0;1;2;3;4;5;6;7;8;9;10;11;12;13;14;15;16;17;18;19;20;21;22;23;24;25;26;27;28;29;30
+MeasurementSettingsService: key = TandemDMAVector; value = 
+MeasurementSettingsService: key = TandemDMADMAType; value = 3085
+MeasurementSettingsService: key = SMPSDiameterVector; value = 2.4;68.6
+MeasurementSettingsService: key = CurrentReadingTime; value = 1;2;4;8;10;20;40;80;100;200;400;800;1000
+MeasurementSettingsService.cs: GetSettingByKey(): key (CurrentReadingTime).
+MeasurementSettingsService.cs: GetSettingByKey(): key (CurrentReadingTime).
+SensorMeasurement.cshtml.cs: OnPost(): SensorMeasurement

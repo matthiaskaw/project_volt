@@ -29,6 +29,8 @@ public class ParticleCounter : IDevice
     public ParticleCounter(){
 
         DeviceType = EDeviceTypes.ParticleCounter;
+        
+        DeviceID = "70701275";
     }
 
 
@@ -36,7 +38,6 @@ public class ParticleCounter : IDevice
 
     public void Initialize(){
         
-            DeviceID = "70701275";
             Logger.WriteToLog("Particle Counter: Initializing");
        
             Logger.WriteToLog($"Particle Counter: Trying to verify Particle Counter on ports: {SerialPort.GetPortNames().ToString()}.");
@@ -57,7 +58,7 @@ public class ParticleCounter : IDevice
                 try{
                     _serialport.Open();
                 }
-                catch(UnauthorizedAccessException e){
+                catch(Exception e){
 
                     Logger.WriteToLog($"Particle Counter: Tried to open port {portname}. Access denied! Trying next port");
                     continue;
@@ -66,11 +67,14 @@ public class ParticleCounter : IDevice
                 
                 if(!_serialport.IsOpen){
                     
-                    Logger.WriteToLog($"Particle Counter: Answer {_answer} =/= {DeviceID}. Trying next port...");
+                    Logger.WriteToLog($"Particle Counter: Serial port is not open {_serialport.PortName}. Trying next port...");
+                    continue;
                 }
+
                 Logger.WriteToLog($"Particle Counter: Starting verification. Requesting serial number {DeviceID}");
                 _serialport.Write("RSN\r");   
                 _serialport.ReadTimeout = 5000;
+                
                 try{
                     _answer = _serialport.ReadTo("\r");
                 }

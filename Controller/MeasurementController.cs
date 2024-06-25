@@ -31,12 +31,11 @@ namespace Measurement{
 
     
         }
-    
+        
 
         //PUBLIC METHODS
-        public async Task<bool> StartMeasurement(EMeasurementType eMeasurementType){
+        public async Task<bool> StartMeasurement(){
 
-            MeasurementType = eMeasurementType;
             IMeasurementAlgorithm measurementAlgorithm = null;
             switch(MeasurementType){
 
@@ -66,6 +65,11 @@ namespace Measurement{
                 case EMeasurementType.TandemTemperature:
                     Logger.WriteToLog($"MeasurementController: Start Measurement(): MeasurementType is {MeasurementType.ToString()}");
                     measurementAlgorithm = new TandemTemperatureAlgorithm();
+                    break;
+
+                case EMeasurementType.CurrentMeasurement:
+                    Logger.WriteToLog($"MeasurementController: StartMeasurement(): MeasurementType is {MeasurementType.ToString()}");
+                    measurementAlgorithm = new SensorMeasurement();
                     break;
         
 

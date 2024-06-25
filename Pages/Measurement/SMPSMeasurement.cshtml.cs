@@ -98,8 +98,8 @@ public class SMPSMeasurementModel : PageModel
 
         Console.WriteLine($"SMPSMeasurement.cshtml.cs: OnPost(): Starting SMPS Measurement...");
         DeviceController devicecontroller = DeviceController.Instance;
-        
-        //devicecontroller.MeasurementType = EMeasurementType.SMPS;
+
+        MeasurementController.Instance.MeasurementType = EMeasurementType.SMPS;
         //devicecontroller.InitializeDevices();
 
 

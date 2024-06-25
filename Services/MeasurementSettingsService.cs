@@ -19,7 +19,8 @@ namespace Services{
         TandemDMADMAType = 11,
         TandemDMAMinDiameter = 12,
         TandemDMAMaxDiameter = 13,
-        SMPSDiameterVector = 14
+        SMPSDiameterVector = 14,
+        CurrentReadingTime = 15
 
     }
 
@@ -127,7 +128,7 @@ namespace Services{
             tempsettings.Add(EMeasurementSettings.TandemDMAVector, "");
             tempsettings.Add(EMeasurementSettings.TandemDMADMAType, "3085");
             tempsettings.Add(EMeasurementSettings.SMPSDiameterVector, "2.4;68.6");
-    
+            tempsettings.Add(EMeasurementSettings.CurrentReadingTime, "1;2;4;8;10;20;40;80;100;200;400;800;1000");    
             _settings = tempsettings;
             SaveSettings();
         }
