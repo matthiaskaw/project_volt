@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "k0NO3ovDzivEACZXDK8TYyjgls/ksCUHuj3myeZ9TmBNmasSHvKzX/Ktlz27zceU07n/yN4caFXsHx1E8O/Ptg==",
+  "dgSpecHash": "hpczFknRYR36xRu9Xc2/VbYQrSlzA56bxH7UCDxun5UbrxY5ii5q0rERYS/Al0VDXvBkLFwl+5wgcZv/AQbwrg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\matth\\Documents\\GitHub\\project_volt\\volt.csproj",
+  "projectFilePath": "e:\\Dokumente\\GitHub\\project_volt\\volt.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\matth\\.nuget\\packages\\fluentmodbus\\5.0.3\\fluentmodbus.5.0.3.nupkg.sha512",
     "C:\\Users\\matth\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\5.0.0\\microsoft.extensions.logging.abstractions.5.0.0.nupkg.sha512",

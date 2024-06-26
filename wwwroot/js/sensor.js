@@ -1,22 +1,34 @@
 //wwwroot/js/sensor.js
 
-const currentSensorOne = "CurrentSensorOne";
-const currentSensorTwo = "CurrentSensorTwo";
+let socket;
 
+function connectWebSocket() {
+    socket = new WebSocket("ws://localhost:5064/ws");
 
-document.addEventListener("DOMContentLoaded", function(){
-    let currentSensorOneElement = document.getElementById(currentSensorOne);
-    let currenSensorTwoElement = document.getElementById(currentSensorTwo);
-    var socket = new WebSocket("wss://localhost:5096/ws");
-    
+    socket.onopen = function(event) {
+        console.log("WebSocket is open now.");
+    };
+
     socket.onmessage = function(event) {
-        JSON.parse(event.data);
-        currentSensorOneElement.innerText = "Sensor Value: " + data.sensor_value;
-
-
+        console.log("Message from server: ", event.data);
     };
 
     socket.onclose = function(event) {
-        currentSensorOneElement.innerText = "Connection closed";
+        console.log("WebSocket is closed now.");
     };
-});
+
+    socket.onerror = function(error) {
+        console.log("WebSocket error: ", error);
+    };
+}
+
+function sendMessage() {
+    
+    console.log("Hello");
+    if (!socket || socket.readyState !== WebSocket.OPEN) {
+        connectWebSocket();
+
+    }
+    const message = { type: 'message', data: 'Hello, Server!' };
+    socket.send(JSON.stringify(message));
+}

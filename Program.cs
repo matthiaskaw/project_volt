@@ -36,12 +36,12 @@ app.UseAuthorization();
 app.UseWebSockets();
 app.MapRazorPages();
 
-app.Map("/ws", async context => 
+app.Map("/ws", async context =>
 {
-    if(context.WebSockets.IsWebSocketRequest){
+    if (context.WebSockets.IsWebSocketRequest)
+    {
         WebSocket webSocket = await context.WebSockets.AcceptWebSocketAsync();
-        await EchoWebSocket(context, webSocket);
-
+        await HandleWebSocketAsync(webSocket);
     }
     else
     {
@@ -49,20 +49,23 @@ app.Map("/ws", async context =>
     }
 });
 
-async Task EchoWebSocket(HttpContext context, WebSocket webSocket){
+app.Run();
 
-    var buffer = new byte[4096];
-   WebSocketReceiveResult result = await webSocket.ReceiveAsync(new ArraySegment<byte>(buffer), CancellationToken.None);
+static async Task HandleWebSocketAsync(WebSocket webSocket)
+{
+    var buffer = new byte[1024 * 4];
+    WebSocketReceiveResult result = await webSocket.ReceiveAsync(new ArraySegment<byte>(buffer), CancellationToken.None);
 
     while (!result.CloseStatus.HasValue)
     {
-        var serverMsg = Encoding.UTF8.GetBytes($"Server: {DateTime.Now}");
-        await webSocket.SendAsync(new ArraySegment<byte>(serverMsg, 0, serverMsg.Length), result.MessageType, result.EndOfMessage, CancellationToken.None);
+        var receivedMessage = Encoding.UTF8.GetString(buffer, 0, result.Count);
+        Console.WriteLine("Received: " + receivedMessage);
+
+        var responseMessage = Encoding.UTF8.GetBytes("Message received");
+        await webSocket.SendAsync(new ArraySegment<byte>(responseMessage), result.MessageType, result.EndOfMessage, CancellationToken.None);
 
         result = await webSocket.ReceiveAsync(new ArraySegment<byte>(buffer), CancellationToken.None);
     }
 
     await webSocket.CloseAsync(result.CloseStatus.Value, result.CloseStatusDescription, CancellationToken.None);
-
 }
-app.Run();
