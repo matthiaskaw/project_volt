@@ -1,0 +1,14 @@
+@page
+@model SettingsModell
+@{
+    ViewData["Title"] = "Home page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Settings</h1>
+    
+    <form method="post" ><button type="submit" asp-page-handler="GeneralSettingsClicked">General Settings</button></form>
+    
+
+    <form method="post" ><button type="submit" asp-page-handler="DeviceSettingsClicked">Device Settings</button></form>
+</div>

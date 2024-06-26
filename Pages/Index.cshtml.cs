@@ -20,9 +20,9 @@ public class IndexModel : PageModel
 
     public void OnPostStart(){
 
-        Console.WriteLine("Starting SMPS Measurement!");
-        DeviceController devicecontroller = DeviceController.Instance;
-        devicecontroller.MeasurementType = EMeasurementType.SMPS;
-        devicecontroller.InitializeDevices();
+        //Console.WriteLine("Starting SMPS Measurement!");
+       // DeviceController devicecontroller = DeviceController.Instance;
+        //devicecontroller.MeasurementType = EMeasurementType.SMPS;
+        //devicecontroller.InitializeDevices();
     }
 }

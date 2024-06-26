@@ -1,0 +1,61 @@
+@page
+@model TandemTemperatureModel
+
+@{
+    
+    ViewData["Title"] = "TandemTemperature Base";
+}
+
+<div class="text-center">
+    <h1 class="display-4">TandemTemperature Page</h1>
+
+    <form method="post">
+        
+        <label asp-for="Name">Name:</label><input asp-for="Name">
+        <br>
+        <label asp-for="MeasurementSeries">Measurement Series:</label><input asp-for="MeasurementSeries">
+        <br>
+        <label asp-for="SheathFlow">Sheath flow [L/min]:</label><input asp-for="SheathFlow">
+        <br>
+        <label asp-for="UpscanTime">Upscantime [s]:</label><input asp-for="UpscanTime">
+        <br>
+        <label asp-for="DownscanTime">Downscantime [s]:</label><input asp-for="DownscanTime">
+        <br>
+        <label for="MinDiameterDropDown">SMPS Min. diameter [nm]:</label>
+        <select id="MinDiameterDropDown" name="MinDiameterDropDown">
+            @{foreach(string option in TandemTemperatureModel.SMPSDiameterVector){
+                <option value="@option">@option</option>
+
+            }}
+        </select>
+        <br>
+        <label for="MaxDiameterDropDown">SMPS Max. diameter [nm]:</label>
+        <select id="MaxDiameterDropDown" name="MaxDiameterDropDown">
+            @{foreach(string option in TandemTemperatureModel.SMPSDiameterVector){
+                <option value="@option">@option</option>
+            }}
+        </select>
+        <br>
+        <label asp-for="SMPSDMAType">SMPS DMA Type:</label><input asp-for="SMPSDMAType">
+        <br>
+        <label for="MinCurrentDropDown">Min. Current [A]:</label>
+        <select id="MinCurrentDropDown" name="MinCurrentDropDown">
+            @{
+            foreach(string option in TandemTemperatureModel.TandemTemperatureCurrentVector){
+                <option value="@option">@option</option>
+            }}
+        </select>
+        <br>
+        <label for="MaxCurrentDropDown">Max. Current [A]:</label>
+        <select for="MaxCurrentDropDown" name="MaxCurrentDropDown">
+            @{
+            foreach(string option in TandemTemperatureModel.TandemTemperatureCurrentVector){
+                <option value="@option">@option</option>
+            }}
+        </select>
+        <br>
+        <button class="btn btn-default">Start</button>
+        
+    </form>
+    
+</div>

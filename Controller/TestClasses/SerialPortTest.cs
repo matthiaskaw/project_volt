@@ -1,4 +1,6 @@
 using System.IO.Ports;
+using System;
+using System.Collections.Generic;
 namespace Test{
 
 
@@ -83,7 +85,48 @@ namespace Test{
         private string _output;
       
 
+        static public string[] GetPortNamesTest(){
+            string[] s = new string[3];
+
+            s[0] = "COM1";
+            s[1] = "COM2";
+            s[2] = "COM3"; 
+            return s;
+
+        }
+
+        
+
+    }
+
+}
+
+public class ModbusRTUTest{
+
+    public ModbusRTUTest(){ }
+        
+
+    public string PortName {get; set;}
+    public bool IsConnected{get; set;}
+
+
+    public Span<byte> ReadHoldingRegisters(int unitIdentifier, int startingAddress, uint lengths){
+        byte[] arr = new byte[]{0x31, 0x32,0x33,0x34,0x35,0x36,0x37,0x38,0x39};
+        return new Span<byte>(arr);
+
+    }
+
+    public void WriteSingleCoil(int unitIdentifier, int registerAddress, bool value){
+
+        
+    }
+
+    public void Connect(string portname){
 
 
     }
+
+    
+
+  
 }

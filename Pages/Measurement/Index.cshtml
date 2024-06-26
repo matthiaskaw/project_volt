@@ -1,26 +1,33 @@
 @page
 @model IndexModel
 @{
+    
     ViewData["Title"] = "Measurement Base";
+    List<SelectListItem> items = new List<SelectListItem>
+    {
+        new SelectListItem { Text = "Option 1", Value = "1" },
+        new SelectListItem { Text = "Option 2", Value = "2" },
+        new SelectListItem { Text = "Option 3", Value = "3" }
+    };
 }
 
 <div class="text-center">
     <h1 class="display-4">Measurement Page</h1>
-    <h2>Choose one Measurement Type... Currently only SMPS scans are possible.</h2>
+    <h2>Choose a Measurement Type... Currently only SMPS scans are possible.</h2>
 
     <label for="Measurement Type">Choose a measurement:</label>
 
-    <select name="Measurement Type" id="measurementtype">
-        <option value="SMPS">SMPS</option>
-        <option value="Tandem">TANDEM (disabled)</option>
-        <option value="Temperature">Temperature (disbled)</option>
-    </select>
-
-    <a asp-page="./SMPSMeasurement">Start</a>
-
-
-
-
+    <a asp-page="./Index">Start</a>
     
+
  
 </div>
+<form method="post">
+    <Use the asp-items attribute to bind the dropdown to your list of items -->
+    <select asp-for="SelectedValue" asp-items="Model.Items" class="form-control">
+        <<option value="">Select an option</option>
+    </select>
+
+    <!-- Add a submit button if you want to handle the form submission -->
+    <button type="submit">Submit</button>
+    </form>

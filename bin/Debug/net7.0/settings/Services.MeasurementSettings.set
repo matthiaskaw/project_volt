@@ -1,0 +1,14 @@
+SheathFlow	15
+ScanTimeConstant	17
+UpscanTime	120
+DownscanTime	15
+SMPSMinDiameter	2.4
+SMPSMaxDiameter	68.6
+TandemTemperatureMinCurrent	0
+TandemTemperatureMaxCurrent	30
+SMPSDMAType	3085
+TandemTemperatureVector	0;1;2;3;4;5;6;7;8;9;10;11;12;13;14;15;16;17;18;19;20;21;22;23;24;25;26;27;28;29;30
+TandemDMAVector	
+TandemDMADMAType	3085
+SMPSDiameterVector	2.4;68.6
+CurrentReadingTime	1;2;4;8;10;20;40;80;100;200;400;800;1000
