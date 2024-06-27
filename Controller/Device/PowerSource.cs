@@ -169,6 +169,7 @@ namespace Device{
 
         public event EventHandler Initialized;
 
+        public bool IsInitialized {get;}
 
         //PRIVATE METHODS
 
@@ -526,4 +527,6 @@ namespace Device{
             //Mobus-Telegram
             //Header Byte   Function-Code Byte  Register_first_byte register_second_byte    dataword_first_byte     dataword_second_byte CRC
        }
+
+    
 }

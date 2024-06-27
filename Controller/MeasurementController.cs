@@ -84,10 +84,23 @@ namespace Measurement{
             
             }
 
+        public void StartSensorWatching(){
+            
+            IMeasurementAlgorithm algorithm = new SensorMeasurement();
+            algorithm.RunMeasurement();
+            
+
+
+        }
+
+
         //PROPERTIES
         public EMeasurementType MeasurementType {get; set;}
 
 
+
+
     }
 
+    
 }

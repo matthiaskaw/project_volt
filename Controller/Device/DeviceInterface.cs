@@ -24,7 +24,7 @@ public interface IDevice{
 
 
     event EventHandler Initialized;
-    
+    public bool IsInitialized { get; }
     
     public string DeviceID {get; set;}
     public EDeviceTypes DeviceType {get;}

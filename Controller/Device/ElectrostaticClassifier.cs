@@ -57,6 +57,7 @@ namespace Device{
         
         public string DeviceID {get; set;}
         public EDeviceTypes DeviceType {get;}
+        public bool IsInitialized {get;}
 
         private TcpClient _tcpclient = new TcpClient();
 

@@ -24,7 +24,8 @@ public class DeviceController{
         }
     }
 
-    public Dictionary<EDeviceTypes, IDevice> Devices {get;} = new Dictionary<EDeviceTypes, IDevice>();    
+    public Dictionary<EDeviceTypes, IDevice> Devices {get;} = new Dictionary<EDeviceTypes, IDevice>();
+    public Dictionary<EDeviceTypes, IDevice> Sensors {get;} = new Dictionary<EDeviceTypes, IDevice>();    
 
     protected void OnInitialized(){
         Initialized.Invoke(this, new EventArgs());
@@ -107,9 +108,27 @@ public class DeviceController{
             
         }
 
-
-        OnInitialized();
-                //MeasurementController.Instance.StartMeasurement();
     
     }
+
+    public void AreDevicesReady(EMeasurementType measurementType){
+
+
+        
+    }
+
+    public void InitializeSensors(){
+        
+        Sensors.Clear();
+        ElectrospraySensor electrospraySensor = new ElectrospraySensor();
+        Sensors.Add(electrospraySensor.DeviceType, electrospraySensor);
+
+        
+        foreach(KeyValuePair<EDeviceTypes, IDevice> entry in Sensors){
+            entry.Value.Initialize();
+        }
+        
+    }
+
+
 }

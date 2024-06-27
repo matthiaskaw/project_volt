@@ -292,6 +292,7 @@ public class ParticleCounter : IDevice
     public string SerialNumber {get; set;}
     public string DeviceID{get; set;}
     public EDeviceTypes DeviceType {get;}
+    public bool IsInitialized {get;}
 
 
 
