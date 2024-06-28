@@ -97,10 +97,11 @@ public class SMPSMeasurementModel : PageModel
         SettingsService.Instance.MeasurementSetting.SetSettingByKey(EMeasurementSettings.SMPSDMAType, SMPSDMAType);
 
         Console.WriteLine($"SMPSMeasurement.cshtml.cs: OnPost(): Starting SMPS Measurement...");
-        DeviceController devicecontroller = DeviceController.Instance;
+        
 
         MeasurementController.Instance.MeasurementType = EMeasurementType.SMPS;
-        //devicecontroller.InitializeDevices();
+        Task.Run(async () => {await MeasurementController.Instance.StartMeasurement();});
+            
 
 
     }

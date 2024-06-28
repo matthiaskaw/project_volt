@@ -10,4 +10,6 @@
 - Measurement and Sensor polling are different tasks. Maybe call MeasurementController "TaskController"
 - data rate from measurements and from sensor are is not adjusted by MeasurementController; Either the device send 
 - Implement Cancel function
+- Automate diameter calculation based on DMA settings for SMPS and TandemDMA/Temperature measurements
+
 

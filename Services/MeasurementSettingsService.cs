@@ -125,7 +125,7 @@ namespace Services{
             tempsettings.Add(EMeasurementSettings.TandemTemperatureMaxCurrent, "30");
             tempsettings.Add(EMeasurementSettings.SMPSDMAType, "3085");
             tempsettings.Add(EMeasurementSettings.TandemTemperatureVector, "0;1;2;3;4;5;6;7;8;9;10;11;12;13;14;15;16;17;18;19;20;21;22;23;24;25;26;27;28;29;30");
-            tempsettings.Add(EMeasurementSettings.TandemDMAVector, "");
+            tempsettings.Add(EMeasurementSettings.TandemDMAVector, "2.4;2.5;2.6;2.7;2.8;2.9;3.0;3.1");
             tempsettings.Add(EMeasurementSettings.TandemDMADMAType, "3085");
             tempsettings.Add(EMeasurementSettings.SMPSDiameterVector, "2.4;68.6");
             tempsettings.Add(EMeasurementSettings.CurrentReadingTime, "1;2;4;8;10;20;40;80;100;200;400;800;1000");    
