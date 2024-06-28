@@ -37,7 +37,7 @@ public class SMPSMeasurementAlgorithm : IMeasurementAlgorithm {
         particlecounter.SetScanTime();
         particlecounter.Start();
 
-        List<string> data = await particlecounter.CollectDataAsync();
+        List<string> data = await _collectDataAsync(particlecounter);
 
         string s = System.Reflection.Assembly.GetEntryAssembly().Location;
 
@@ -50,6 +50,28 @@ public class SMPSMeasurementAlgorithm : IMeasurementAlgorithm {
         return true;
     }
 
+    public async Task<List<string>> _collectDataAsync(ParticleCounter counter){
+
+        List<string> data = new List<string>();
+
+        while(IsRunning){
+
+            string line = counter.Read();
+            Logger.WriteToLog($"Particle Counter: CollectData: line = {line}");
+            data.Add(line);
+            if(line.Contains("-1")){
+
+                IsRunning  = false;
+
+            }
+        }
+        counter.End();
+
+        return data;
+        
+    }
+
+    public bool IsRunning {get; set;}
     
 }
 }

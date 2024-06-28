@@ -23,7 +23,7 @@ public class ParticleCounter : IDevice
         
         DeviceType = EDeviceTypes.ParticleCounter;
 
-        //_serialport.DataReceived += HandleReceivedData;
+        
     }
 
     public ParticleCounter(){
@@ -44,7 +44,7 @@ public class ParticleCounter : IDevice
 
             if(SerialPort.GetPortNames().Length == 0){
 
-                Logger.WriteToLog("PArticle Counter: No serial port available. Please check connection!");
+                Logger.WriteToLog("Particle Counter: No serial port available. Please check connection!");
             }
      
             foreach(string portname in SerialPort.GetPortNames()){
@@ -72,7 +72,17 @@ public class ParticleCounter : IDevice
                 }
 
                 Logger.WriteToLog($"Particle Counter: Starting verification. Requesting serial number {DeviceID}");
-                _serialport.Write("RSN\r");   
+                _serialport.WriteTimeout= 5000;
+                
+                try{
+                    _serialport.Write("RSN\r");   
+                }
+                catch(TimeoutException e){
+                    Logger.WriteToLog($"Particle Counter: Initialize() write timed out answer = {_answer}");
+                    _serialport.Close();
+                    continue;
+
+                }
                 _serialport.ReadTimeout = 5000;
                 
                 try{
@@ -89,6 +99,7 @@ public class ParticleCounter : IDevice
                 if(_answer.Contains(DeviceID)){
             
                     _serialport.ReadTimeout = -1;
+                    _serialport.WriteTimeout = -1;
                     Initialized?.Invoke(this, new EventArgs());
                     Logger.WriteToLog($"Particle Counter: Particle Counter verified on port {_serialport.PortName}");
                     break;
@@ -106,9 +117,9 @@ public class ParticleCounter : IDevice
 
     public event EventHandler Initialized;
   
+  
     //PRIVATE METHODS
    
-
     public bool SetScanMode(){
 
         Logger.WriteToLog($"Particle Counter: SetScanMode...");
@@ -230,26 +241,13 @@ public class ParticleCounter : IDevice
 
     }
 
-    public async Task<List<string>> CollectDataAsync(){
-
-        List<string> data = new List<string>();
-
-        while(_isMeasuring){
-
-            string line = _serialport.ReadTo("\r");
-            Logger.WriteToLog($"Particle Counter: CollectData: line = {line}");
-            data.Add(line);
-            if(line.Contains("-1")){
-
-                _isMeasuring  = false;
-
-            }
-        }
-        End();
-
-        return data;
+    public string Read(){
+    
+        return _serialport.ReadTo("\r");
         
     }
+
+    
 
 
     public static string CalculateVoltage(string diameter){

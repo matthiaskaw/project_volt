@@ -36,7 +36,7 @@ namespace Measurement{
         //PUBLIC METHODS
         public async Task<bool> StartMeasurement(){
 
-            IMeasurementAlgorithm measurementAlgorithm = null;
+            
             switch(MeasurementType){
 
                 case EMeasurementType.Default:
@@ -52,7 +52,7 @@ namespace Measurement{
 
                     Logger.WriteToLog($"MeasurementController: Start Measurement(): MeasurementType is {MeasurementType.ToString()}");
 
-                    measurementAlgorithm = new SMPSMeasurementAlgorithm();
+                    _measurementAlgorithm = new SMPSMeasurementAlgorithm();
                     break;
 
                 case EMeasurementType.TandemDMA:
@@ -64,41 +64,49 @@ namespace Measurement{
 
                 case EMeasurementType.TandemTemperature:
                     Logger.WriteToLog($"MeasurementController: Start Measurement(): MeasurementType is {MeasurementType.ToString()}");
-                    measurementAlgorithm = new TandemTemperatureAlgorithm();
+                    _measurementAlgorithm = new TandemTemperatureAlgorithm();
                     break;
 
                 case EMeasurementType.CurrentMeasurement:
                     Logger.WriteToLog($"MeasurementController: StartMeasurement(): MeasurementType is {MeasurementType.ToString()}");
-                    measurementAlgorithm = new SensorMeasurement();
+                    _measurementAlgorithm = new SensorMeasurementAlgorithm();
                     break;
         
 
             }
             
-            if(measurementAlgorithm == null){
+            if(_measurementAlgorithm == null){
                 Logger.WriteToLog($"MeasurementController: StartMeasurement(): measurementAlgorithm is null!");
                 return false;
             }
             
-            return await measurementAlgorithm.RunMeasurement();
+            return await _measurementAlgorithm.RunMeasurement();
             
             }
 
-        public void StartSensorWatching(){
-            
-            IMeasurementAlgorithm algorithm = new SensorMeasurement();
-            algorithm.RunMeasurement();
-            
+   
 
+        public void Cancel(){
+
+            _measurementAlgorithm.IsRunning = false;
+            _onCanceled();
 
         }
 
 
         //PROPERTIES
+        public event EventHandler Canceled;
+        
         public EMeasurementType MeasurementType {get; set;}
 
 
+        private void _onCanceled(){
 
+            Canceled?.Invoke(this, new EventArgs());
+        }
+
+
+        private IMeasurementAlgorithm _measurementAlgorithm;
 
     }
 

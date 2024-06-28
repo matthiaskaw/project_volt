@@ -9,12 +9,12 @@ DeviceController deviceController = DeviceController.Instance;
 WebSocketController webSocketController = WebSocketController.Instance;
 
 
+deviceController.InitializeDevices();
 
-deviceController.Initialized += async (sender, data) => {
+SensorController sensorController = SensorController.Instance;
+sensorController.StartSensors();
 
-    
-    await measurementController.StartMeasurement();
-};
+measurementController.Canceled += (sender, e) => {deviceController.Cancel();};
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -52,4 +52,5 @@ app.Map("/ws", async context =>
 });
 
 app.Run();
+
 

@@ -1,3 +1,13 @@
 - implement proper exception handling for devices
 - deserialize measurement settings and set values of devices
-- 
+
+
+
+27.06.2024 Branch: Refactor-Initialize:
+
+- Initialization is a central function. Now every possible device is initialized at the beginning
+- DeviceController and MeasurementController need to be independent
+- Measurement and Sensor polling are different tasks. Maybe call MeasurementController "TaskController"
+- data rate from measurements and from sensor are is not adjusted by MeasurementController; Either the device send 
+- Implement Cancel function
+

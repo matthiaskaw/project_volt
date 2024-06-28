@@ -80,7 +80,7 @@ public class TandemTemperatureAlgorithm : IMeasurementAlgorithm {
             powerSource.SetCurrent(current);
             particleCounter.Start();
 
-            await particleCounter.CollectDataAsync();
+            await _collectDataAsync(particleCounter);
         }
 
         return true;
@@ -90,6 +90,27 @@ public class TandemTemperatureAlgorithm : IMeasurementAlgorithm {
 
 
     //PRIVATE METHODS
+
+    public async Task<List<string>> _collectDataAsync(ParticleCounter counter){
+
+        List<string> data = new List<string>();
+
+        while(IsRunning){
+
+            string line = counter.Read();
+            Logger.WriteToLog($"Particle Counter: CollectData: line = {line}");
+            data.Add(line);
+            if(line.Contains("-1")){
+
+                IsRunning  = false;
+
+            }
+        }
+        counter.End();
+
+        return data;
+        
+    }
 
     void _setCurrentVector(){
 
@@ -115,5 +136,9 @@ public class TandemTemperatureAlgorithm : IMeasurementAlgorithm {
 
         Console.WriteLine("Dummy function end");
     }
+
+    public bool IsRunning { get; set; }
 }
+
+    
 }

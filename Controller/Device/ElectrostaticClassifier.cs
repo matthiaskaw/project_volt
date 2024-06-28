@@ -24,7 +24,6 @@ namespace Device{
             int port = 3602;
             Logger.WriteToLog($"ElectrostaticClassifier: Initilizing Device with IP {ipaddress[0]}.{ipaddress[1]}.{ipaddress[2]}.{ipaddress[3]} and port {port}");
 
-            try{
                 System.Net.IPAddress ipADDRESS = new System.Net.IPAddress(ipaddress);
                 Logger.WriteToLog($"Electrostatic classifier: ipaddress =     {ipADDRESS.ToString()}");
                 _tcpclient.Connect(ipADDRESS, port);
@@ -39,22 +38,10 @@ namespace Device{
 
                     Logger.WriteToLog($"Electrostatic Classifier: Device ({ipaddress}, {port}) not verified! Check connection!");
                 }
-            }
-            catch (ArgumentNullException e)
-            {
-                Logger.WriteToLog("ArgumentNullException: {0}" + e);
-            }
-            catch (SocketException e)
-            {
-                Logger.WriteToLog("S.ocketException: {0}" + e);
-            }
+            
 }
 
-        
-        
-
-        public event EventHandler Initialized;
-        
+        public event EventHandler Initialized;        
         public string DeviceID {get; set;}
         public EDeviceTypes DeviceType {get;}
         public bool IsInitialized {get;}
@@ -82,6 +69,8 @@ namespace Device{
         }
 
         public bool End(){
+
+            Logger.WriteToLog("ElectrostaticClassifier.End(): Ending...");
             return false;
         }
     }

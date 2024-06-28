@@ -31,6 +31,7 @@ namespace Device{
                 }
                 _serialPort.PortName = portname;
                 Logger.WriteToLog($"Power Source: Trying to open to Power Source on {portname}");           
+                
                 try{
                     _serialPort.Open();
                 }
@@ -74,7 +75,7 @@ namespace Device{
             }
 
             Logger.WriteToLog($"Power Source: Initialize(): No device found!");
-            //throw exception;
+            throw new Exception();
 
         }
  
@@ -199,9 +200,12 @@ namespace Device{
             }
             Logger.WriteToLog($"Power Source: _enableDeviceToRemoteControl: _serialPort open! (Port: {_serialPort.PortName}) Trying to enable remote control!"); 
 
+            _serialPort.WriteTimeout = 5000;
             _serialPort.Write(telegram, 0, telegram.Length);
 
             byte[] buffer = new byte[8];
+
+            _serialPort.ReadTimeout = 5000;
             int bufferSize = _serialPort.Read(buffer, 0,8);
 
             
@@ -226,7 +230,8 @@ namespace Device{
                 
             }
             Logger.WriteToLog($"Power Source: _enableDeviceToRemoteContro: Received answer is positive! Remote Control is enabled;!");
-
+            _serialPort.ReadTimeout = -1;
+            _serialPort.WriteTimeout = -1;
             return true;
         }
 
@@ -407,11 +412,12 @@ namespace Device{
             telegram[7] = (byte)CRC_upperbyte;
             Logger.WriteToLog($"Power Source: _getDeviceID: Writing telegram ({BitConverter.ToString(telegram)}) to port ({_serialPort.PortName})");
             
-            
+            _serialPort.WriteTimeout = 5000;
             _serialPort.Write(telegram, 0, telegram.Length);
             
             byte[] buffer = new byte[50];
             System.Threading.Thread.Sleep(500);
+            _serialPort.ReadTimeout = 5000;
             int bufferSize = _serialPort.Read(buffer, 0,50);
             Logger.WriteToLog($"Power Source: _getDeviceID: Buffer is {BitConverter.ToString(buffer)}; Size ({buffer.Length})");
             Logger.WriteToLog($"Power Source: _getDeviceID: Checking buffer size...");
@@ -435,7 +441,8 @@ namespace Device{
 
 
         
-        
+            _serialPort.ReadTimeout = -1;
+            _serialPort.WriteTimeout = -1;        
             return Encoding.ASCII.GetString(data);
         }
 

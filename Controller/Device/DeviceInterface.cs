@@ -19,6 +19,7 @@ public interface IDevice{
 
 
     void Initialize(); //Connect to device and verify by ID attribute (e.g.: serial number)
+    
     bool End();
   
 

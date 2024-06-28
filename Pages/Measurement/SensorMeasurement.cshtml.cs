@@ -24,8 +24,6 @@ public class SensorMeasurementModel : PageModel
     {
         
         
-        DeviceController.Instance.InitializeSensors();
-        MeasurementController.Instance.StartSensorWatching();
         
     }
 
