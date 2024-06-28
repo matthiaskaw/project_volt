@@ -8,6 +8,8 @@ namespace volt.Pages.Measurement;
 public class SensorMeasurementModel : PageModel
 {
     private readonly ILogger<IndexModel> _logger;
+    private readonly WebSocketController _websocketcontroller;
+
 
     public SensorMeasurementModel(ILogger<IndexModel> logger)
     {
@@ -20,6 +22,9 @@ public class SensorMeasurementModel : PageModel
 
     public void OnGet()
     {
+        
+        
+        
     }
 
     public void OnPost(){

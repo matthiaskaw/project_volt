@@ -7,10 +7,12 @@ function connectWebSocket() {
 
     socket.onopen = function(event) {
         console.log("WebSocket is open now.");
+        updateUI(event.data);
     };
 
     socket.onmessage = function(event) {
         console.log("Message from server: ", event.data);
+        updateUI(event.data);
     };
 
     socket.onclose = function(event) {
@@ -22,13 +24,25 @@ function connectWebSocket() {
     };
 }
 
-function sendMessage() {
-    
-    console.log("Hello");
-    if (!socket || socket.readyState !== WebSocket.OPEN) {
-        connectWebSocket();
+function updateUI(newData) {
+    const sensor1value = document.getElementById("sensor1value");
+    const sensor2value = document.getElementById("sensor2value");
 
-    }
-    const message = { type: 'message', data: 'Hello, Server!' };
-    socket.send(JSON.stringify(message));
+    const stringArray = newData.split(";");
+    console.log(stringArray);
+    sensor1value.value=stringArray[0];
+    sensor2value.value=stringArray[1];
+
 }
+
+
+
+
+window.onload = function() {
+    console.log("WebSocket load...")
+    connectWebSocket();
+    
+};
+
+
+

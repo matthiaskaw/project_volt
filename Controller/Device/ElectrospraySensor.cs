@@ -96,8 +96,8 @@ namespace Device{
 
             }*/
             
+            if(IsInitialized == true){return;}
             Initialized?.Invoke(this, new EventArgs());
-
 
         }
 
@@ -123,7 +123,7 @@ namespace Device{
         public string DeviceID {get; set;}
         public event EventHandler Initialized;
         public EDeviceTypes DeviceType {get; set;}
- 
+        public bool IsInitialized {get;}
         private SerialPort _serialport = new SerialPort(){BaudRate = 115200, DataBits = 8, Parity = Parity.None, StopBits = StopBits.One};
 
     }

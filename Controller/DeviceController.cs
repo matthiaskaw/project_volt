@@ -24,7 +24,8 @@ public class DeviceController{
         }
     }
 
-    public Dictionary<EDeviceTypes, IDevice> Devices {get;} = new Dictionary<EDeviceTypes, IDevice>();    
+    public Dictionary<EDeviceTypes, IDevice> Devices {get;} = new Dictionary<EDeviceTypes, IDevice>();
+    public Dictionary<EDeviceTypes, IDevice> Sensors {get;} = new Dictionary<EDeviceTypes, IDevice>();    
 
     protected void OnInitialized(){
         Initialized.Invoke(this, new EventArgs());
@@ -38,7 +39,14 @@ public class DeviceController{
     private void SetupEvents(){
   
     }
-   
+    
+    public void Cancel(){
+
+        Logger.WriteToLog("DeviceController.Cancel(): Trying to End all devices...");
+        foreach(IDevice device in Devices.Values){
+            device.End();
+        }
+    }
     public void InitializeDevices(){
 
         
@@ -47,13 +55,33 @@ public class DeviceController{
         }
         catch(Exception e){
 
-            Logger.WriteToLog($"Particle Counter: Excepton thrown after Device.Clear() {e} ");
+            Logger.WriteToLog($"DeviceController.InitializeDevices(): Excepton thrown after Device.Clear() {e} ");
         }
+
+
+        //Devices.Add(EDeviceTypes.ParticleCounter, new ParticleCounter());
+        //Devices.Add(EDeviceTypes.Classifier, new ElectrostaticClassifier());
+        //Devices.Add(EDeviceTypes.PowerSource, new PowerSource());
+        Devices.Add(EDeviceTypes.ElectrospraySensor, new ElectrospraySensor());
+         
         
-        ParticleCounter particleCounter;
-        PowerSource powerSource;
-        ElectrostaticClassifier electrostaticClassifier;
-        ElectrospraySensor electrospraySensor;
+        foreach(KeyValuePair<EDeviceTypes, IDevice> entry in Devices){
+        
+            try{
+                entry.Value.Initialize();
+            }
+            catch(Exception e){
+                Logger.WriteToLog($"DeviceController.InitialzeDevices: Exception thrown. Removing {entry.Key} from list.");
+                Devices.Remove(entry.Key);
+            }
+            
+        }
+    }
+
+    public void IsDeviceReady(){
+        
+        //Check if all devices that are necessary for a measurement are ready?
+
         
         switch(MeasurementController.Instance.MeasurementType){
             
@@ -63,53 +91,37 @@ public class DeviceController{
                 break;
 
             case EMeasurementType.SMPS:
-
-                Logger.WriteToLog("DeviceController: Initialize SMPS");
-                particleCounter = new ParticleCounter();
-                Devices.Add(particleCounter.DeviceType, particleCounter);
-                break;
+                if(!Devices.ContainsKey(EDeviceTypes.ParticleCounter)){throw new Exception();}
+            break;
 
             case EMeasurementType.TandemDMA:
-                particleCounter = new ParticleCounter();
-                electrostaticClassifier = new ElectrostaticClassifier();
-
-                Logger.WriteToLog("DeviceController: Initialize TandemPyrolysis");
-                Devices.Add(particleCounter.DeviceType, particleCounter);
-                Devices.Add(electrostaticClassifier.DeviceType, electrostaticClassifier);
-                
+                if(!Devices.ContainsKey(EDeviceTypes.ParticleCounter)){throw new Exception();}
+                if(!Devices.ContainsKey(EDeviceTypes.Classifier)){throw new Exception();}                
                 break;
                 
 
             case EMeasurementType.TandemTemperature:
-                
-                Logger.WriteToLog("DeviceController: Initialize Temperature");
-                particleCounter = new ParticleCounter();
-                powerSource = new PowerSource();
-                Devices.Add(particleCounter.DeviceType, particleCounter);
-                Devices.Add(powerSource.DeviceType, powerSource);
-
+                if(!Devices.ContainsKey(EDeviceTypes.ParticleCounter)){throw new Exception();}
                 break;
 
             case EMeasurementType.CurrentMeasurement:
-                Logger.WriteToLog("DeviceController.cs: Initialize current sensors");
-                electrospraySensor = new ElectrospraySensor();
-                Devices.Add(electrospraySensor.DeviceType, electrospraySensor);
+                if(!Devices.ContainsKey(EDeviceTypes.ElectrospraySensor)){throw new Exception();}
                 break;
-
-
-
-        }
-
-
-        foreach(KeyValuePair<EDeviceTypes, IDevice> entry in Devices){
-        
-            entry.Value.Initialize();
-            
-        }
-
-
-        OnInitialized();
-                //MeasurementController.Instance.StartMeasurement();
-    
+        }       
     }
+
+    public void InitializeSensors(){
+        
+        Sensors.Clear();
+        ElectrospraySensor electrospraySensor = new ElectrospraySensor();
+        Sensors.Add(electrospraySensor.DeviceType, electrospraySensor);
+
+        
+        foreach(KeyValuePair<EDeviceTypes, IDevice> entry in Sensors){
+            entry.Value.Initialize();
+        }
+        
+    }
+
+
 }

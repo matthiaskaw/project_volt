@@ -19,12 +19,13 @@ public interface IDevice{
 
 
     void Initialize(); //Connect to device and verify by ID attribute (e.g.: serial number)
+    
     bool End();
   
 
 
     event EventHandler Initialized;
-    
+    public bool IsInitialized { get; }
     
     public string DeviceID {get; set;}
     public EDeviceTypes DeviceType {get;}
