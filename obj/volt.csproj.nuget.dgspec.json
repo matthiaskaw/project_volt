@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "c:\\Users\\matth\\Documents\\GitHub\\project_volt\\volt.csproj": {}
+    "C:\\Users\\matth\\Documents\\GitHub\\project_volt\\volt.csproj": {}
   },
   "projects": {
-    "c:\\Users\\matth\\Documents\\GitHub\\project_volt\\volt.csproj": {
+    "C:\\Users\\matth\\Documents\\GitHub\\project_volt\\volt.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "c:\\Users\\matth\\Documents\\GitHub\\project_volt\\volt.csproj",
+        "projectUniqueName": "C:\\Users\\matth\\Documents\\GitHub\\project_volt\\volt.csproj",
         "projectName": "volt",
-        "projectPath": "c:\\Users\\matth\\Documents\\GitHub\\project_volt\\volt.csproj",
+        "projectPath": "C:\\Users\\matth\\Documents\\GitHub\\project_volt\\volt.csproj",
         "packagesPath": "C:\\Users\\matth\\.nuget\\packages\\",
-        "outputPath": "c:\\Users\\matth\\Documents\\GitHub\\project_volt\\obj\\",
+        "outputPath": "C:\\Users\\matth\\Documents\\GitHub\\project_volt\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

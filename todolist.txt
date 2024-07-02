@@ -13,3 +13,57 @@
 - Automate diameter calculation based on DMA settings for SMPS and TandemDMA/Temperature measurements
 
 
+28.6.2024: Branch: Implement-Data-Controller:
+
+- Define task for data controller:
+        - Store data from sensors and measurements
+        - Make a "database"/simple text file to make CRUD operations on achired data data 
+        - Implement CRUD operations as an interface to implement openBis easier
+
+-----------------------------------------------------------------------------
+|                   |                                                       |
+|APPLICATION LAYER: |       DataController <---> MeasurementController      |
+|                   |              |                                        |
+-----------------------------------|-Interface-------------------------------
+|                   |              |                                        |
+|HARDWARE LAYER:    |       DataBaseController                              |
+|                   |                                                       |
+-----------------------------------------------------------------------------
+
+
+storageDirectory
+    |
+    --->  yyyy-mm-dd
+        |
+        ---> MeasurementType_name_series.exception
+        |
+        ---> MeasurementType_name.ext
+
+
+{
+  "measurements": [
+    {
+      "filename": "2024-06-28/measurement1.txt",
+      "date": "2024-06-28",
+      "fileformat": XY,
+      "measurementtype": "ZetaSizer",
+      "measurementseries": "zetapotential",
+      "units": "Celsius",
+      "description": "Room temperature measurement"
+    },
+    {
+      "filename": "2024-06-28/measurement2.txt",
+      "date": "2024-06-28",
+      "fileformat":XYZ
+      "measurementtype": "SMPS",
+      "measurementseries": "zetapotential",
+      "units": "Pascal",
+      "description": "Atmospheric pressure measurement"
+    }
+  ]
+}
+
+- Make UI for searching data
+                                        
+
+
