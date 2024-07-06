@@ -453,3 +453,22 @@ MeasurementSettingsService.cs: GetSettingByKey(): key (UpscanTime).
 MeasurementSettingsService.cs: GetSettingByKey(): key (DownscanTime).
 MeasurementSettingsService.cs: GetSettingByKey(): key (SMPSDiameterVector).
 MeasurementSettingsService.cs: GetSettingByKey(): key (TandemDMAVector).
+SettingsService: Setting up measurement service...
+SettingsService: applicationPath = E:\Dokumente\GitHub\project_volt\bin\Debug\net7.0\
+SettingsService: Settings path = E:\Dokumente\GitHub\project_volt\bin\Debug\net7.0\settings
+MeasurementSettingsService: key = SheathFlow; value = 15
+MeasurementSettingsService: key = ScanTimeConstant; value = 17
+MeasurementSettingsService: key = UpscanTime; value = 120
+MeasurementSettingsService: key = DownscanTime; value = 15
+MeasurementSettingsService: key = SMPSMinDiameter; value = 2.4
+MeasurementSettingsService: key = SMPSMaxDiameter; value = 68.6
+MeasurementSettingsService: key = TandemTemperatureMinCurrent; value = 0
+MeasurementSettingsService: key = TandemTemperatureMaxCurrent; value = 30
+MeasurementSettingsService: key = SMPSDMAType; value = 3085
+MeasurementSettingsService: key = TandemTemperatureVector; value = 0;1;2;3;4;5;6;7;8;9;10;11;12;13;14;15;16;17;18;19;20;21;22;23;24;25;26;27;28;29;30
+MeasurementSettingsService: key = TandemDMAVector; value = 2.4;2.5;2.6;2.7;2.8;2.9;3.0;3.1
+MeasurementSettingsService: key = TandemDMADMAType; value = 3085
+MeasurementSettingsService: key = SMPSDiameterVector; value = 2.4;68.6
+MeasurementSettingsService: key = CurrentReadingTime; value = 1;2;4;8;10;20;40;80;100;200;400;800;1000
+DataController: applicationPath = E:\Dokumente\GitHub\project_volt\bin\Debug\net7.0\
+DataController: data path = E:\Dokumente\GitHub\project_volt\bin\Debug\net7.0\data
