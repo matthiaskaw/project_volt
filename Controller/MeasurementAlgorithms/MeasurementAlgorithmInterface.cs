@@ -1,8 +1,13 @@
+
+
 namespace MeasurementAlgorithms{
 
     public interface IMeasurementAlgorithm{
 
-        Task<bool> RunMeasurement();
+        Task<List<string>> RunMeasurement();
+
+        //public void StoreData(List<string> data);
+
         public bool IsRunning{get; set;}
     }
 

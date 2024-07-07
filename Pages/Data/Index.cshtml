@@ -2,13 +2,30 @@
 @model IndexModel
 @{
     
-    ViewData["Title"] = "Measurement Base";
+    ViewData["Title"] = "Data Base";
     
 }
 
 <div class="text-center">
-    <h1 class="display-4">Measurement Page</h1>
+    <h1 class="display-4">Data Page</h1>
+
+    <form method="post">
+        <br>
+        <input type="hidden" id="targetPage" name="TargetPage" />
+        <button type="submit" onclick="setTargetPage('./Data/Dataset')">Datasets</button>
+        <br>
+        <button type="submit" onclick="setTargetPage('./Data/Experiment')">Experiments</button>
+        <br>
+        <button type="submit" onclick="setTargetPage('./Data/Sample')">Samples</button>
+    
+    </form>
     
 
  
 </div>
+
+<script>
+    function setTargetPage(page){
+        document.getElementById('targetPage').value = page
+    }
+</script>

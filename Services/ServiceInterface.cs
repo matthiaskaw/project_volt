@@ -8,5 +8,6 @@ namespace Services{
         public void SetSettingByKey(Enum key, string newvalue);
         public string GetSettingByKey(Enum key);
         public string SettingsDirectory {get; set;}
+        
     }
 }

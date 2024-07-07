@@ -1,8 +1,10 @@
 using System.IO;
 using Microsoft.EntityFrameworkCore;
-using Model.DatabaseModel;
+using DatabaseModel;
+using Services;
 
 
+namespace DatabaseModel{
 public enum EDatabaseEntity{
 
     Experiment = 0,
@@ -15,17 +17,13 @@ public enum EDatabaseEntity{
 public class DataController{
 
     private static DataController _instance;
-    private SimpleDbContext _dbContext;
+    public SimpleDbContext DbContext {get;}
     private DataController(){
 
         
-        string applicationPath = AppDomain.CurrentDomain.BaseDirectory;
-        Logger.WriteToLog($"DataController: applicationPath = {applicationPath}");
-        _storageDirectory = System.IO.Path.Combine(applicationPath, "data");
-        Logger.WriteToLog($"DataController: data path = {_storageDirectory}");
-        System.IO.Directory.CreateDirectory(_storageDirectory);
+        
+        DbContext = new SimpleDbContext(SettingsService.Instance.DatabaseDirectory);
 
-        _dbContext = new SimpleDbContext(_storageDirectory);
     }
 
     public static DataController Instance {
@@ -39,34 +37,60 @@ public class DataController{
     }
 
     private string _storageDirectory{get; set;}
-     
-
-    public void TakeDataBaseEntity(Sample sample ){
-
+    
+    public string SaveDataset(List<string> dataset, string name, string measurementType){ 
         
-        _dbContext.Samples.Add(sample);
-        _dbContext.SaveChanges();
+        string fileextension = ".txt";
+        string directory = Path.Combine(SettingsService.Instance.MeasurementDirectory, DateTime.Now.ToString("yyyy-MM-dd"));
+        Directory.CreateDirectory(directory);
 
-    } 
+        string filename = Path.Combine(
+            directory,
+            measurementType+"_"+
+            name+"_"+
+            DateTime.Now.ToString("yyyyMMdd_HHmmss")+
+            fileextension
+            );
 
-    public void TakeDataBaseEntity(Experiment experiment){
-
-        _dbContext.Experiments.Add(experiment);
-        _dbContext.SaveChanges();
+        File.WriteAllLines(filename, dataset);
         
+        return filename;
+    
     }
 
-    public void TakeDataBaseEntity(Dataset dataset){
+    public void SaveDatasetMetaData(List<string> content, string name, string measurementType) {
+
+        string metadatafileextension = ".med";
+        
+        string directory = Path.Combine(SettingsService.Instance.MeasurementDirectory, DateTime.Now.ToString("yyyy-MM-dd"));
+        Directory.CreateDirectory(directory);
+
+        string filename = Path.Combine(
+            directory,
+            measurementType+"_"+
+            name+"_"+
+            DateTime.Now.ToString("yyyyMMdd_HHmmss")+
+            metadatafileextension
+            );
 
 
-        _dbContext.Datasets.Add(dataset);
-        _dbContext.SaveChanges();
+       
+
+        File.WriteAllLines(filename, content);
+
+
+
 
     }
+
+    public Dataset CurrentDataSet {get; set;}
+
+    
 
 
 
 
 
     
+}
 }

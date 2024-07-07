@@ -22,54 +22,39 @@ public class TandemTemperatureAlgorithm : IMeasurementAlgorithm {
         _setCurrentVector();
 
     }
-    public async Task<bool> RunMeasurement(){
+    public async Task<List<string>> RunMeasurement(){
             
-        IDevice ps;
-        IDevice pc;
+        //IDevice ps;
+        //IDevice pc;
 
+        SMPSMeasurementAlgorithm smpsAlgorithm = new SMPSMeasurementAlgorithm();
+        /*
         if(!DeviceController.Instance.Devices.TryGetValue(EDeviceTypes.PowerSource, out ps)){
 
             Logger.WriteToLog($"TandemTemperatureAlgorithm: RunMeasurement: Powersource not found in Devices");
-            return false;
+            return new List<string>();
         };
 
         if(!DeviceController.Instance.Devices.TryGetValue(EDeviceTypes.ParticleCounter, out pc)){
 
             Logger.WriteToLog($"TandemTemperatureAlgorithm: RunMeasurement: Power Source not fount in Devices");
-            return false;
+            return new List<string>();
         }
 
         PowerSource powerSource = (PowerSource)ps;
-        ParticleCounter particleCounter = (ParticleCounter)pc;
+     
 
         if(powerSource == null){
 
             Logger.WriteToLog($"TandemTemperatureAlgorithm: RunMeasurement: powerSource is null. Could not cast IDevice to PowerSource");
-            return false;
+            return new List<string>();
         }
 
-        if(particleCounter == null){
-
-            Logger.WriteToLog($"TandemTemperatureAlgorithm: RunMeasurement: particleCounter is null. Could not cast IDevice to ParticleCounter");
-
-        }
-
-        
-        particleCounter.UpscanTime = SettingsService.Instance.MeasurementSetting.GetSettingByKey(EMeasurementSettings.UpscanTime);
-        particleCounter.DownscanTime = SettingsService.Instance.MeasurementSetting.GetSettingByKey(EMeasurementSettings.DownscanTime);
-        particleCounter.MinVoltage = ParticleCounter.CalculateVoltage(
-            SettingsService.Instance.MeasurementSetting.GetSettingByKey(EMeasurementSettings.SMPSMinDiameter));
-        particleCounter.MaxVoltage = ParticleCounter.CalculateVoltage(
-            SettingsService.Instance.MeasurementSetting.GetSettingByKey(EMeasurementSettings.SMPSMaxDiameter));;
-
-        particleCounter.SetScanMode();
-        particleCounter.SetScanDirection();
-        particleCounter.SetVoltage();
-        particleCounter.SetScanTime();
- 
-
+       
+        */
     
-    
+
+        List<string> masterList = new List<string>();
 
         for(int i = 0; i < CurrentVector.Length; i++){
             
@@ -77,13 +62,12 @@ public class TandemTemperatureAlgorithm : IMeasurementAlgorithm {
 
             double.TryParse(CurrentVector[i], out current);
 
-            powerSource.SetCurrent(current);
-            particleCounter.Start();
+            List<string> measurement = await smpsAlgorithm.RunMeasurement();
+            masterList.Add(string.Join(",", measurement));
 
-            await _collectDataAsync(particleCounter);
         }
 
-        return true;
+        return masterList;
     }
 
     public string[] CurrentVector {get; set;}

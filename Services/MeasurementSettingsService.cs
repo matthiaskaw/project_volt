@@ -20,7 +20,9 @@ namespace Services{
         TandemDMAMinDiameter = 12,
         TandemDMAMaxDiameter = 13,
         SMPSDiameterVector = 14,
-        CurrentReadingTime = 15
+        CurrentReadingTime = 15,
+        FurnaceCurrent = 16,
+        FirstDMADiameter = 17
 
     }
 
@@ -30,9 +32,9 @@ namespace Services{
 
             SettingsDirectory = settingsdirectory;
 
-            _measurementFilename = System.IO.Path.Combine(SettingsDirectory, this.GetType().ToString()+".set");
+            _measurementSettingsFilename = System.IO.Path.Combine(SettingsDirectory, this.GetType().ToString()+".set");
 
-            if(!System.IO.File.Exists(_measurementFilename)){
+            if(!System.IO.File.Exists(_measurementSettingsFilename)){
 
                 _setupSettings();
             }
@@ -47,7 +49,7 @@ namespace Services{
 
             try{
 
-                string[] filecontent = File.ReadAllLines(_measurementFilename);
+                string[] filecontent = File.ReadAllLines(_measurementSettingsFilename);
                 //Create dictionary for settings with blank values
                 string[] enumNames =  Enum.GetNames<EMeasurementSettings>();
             
@@ -86,7 +88,7 @@ namespace Services{
                 Logger.WriteToLog($"MeasurementSettingsService: SaveSettings: line to save: {line}");
                 lines.Add(line);
             }
-            System.IO.File.WriteAllLines(_measurementFilename, lines);
+            System.IO.File.WriteAllLines(_measurementSettingsFilename, lines);
         }
 
         public void SetSettingByKey(Enum key, string newvalue){
@@ -129,6 +131,8 @@ namespace Services{
             tempsettings.Add(EMeasurementSettings.TandemDMADMAType, "3085");
             tempsettings.Add(EMeasurementSettings.SMPSDiameterVector, "2.4;68.6");
             tempsettings.Add(EMeasurementSettings.CurrentReadingTime, "1;2;4;8;10;20;40;80;100;200;400;800;1000");    
+            tempsettings.Add(EMeasurementSettings.FurnaceCurrent, "19");
+            tempsettings.Add(EMeasurementSettings.FirstDMADiameter, "20.0");
             _settings = tempsettings;
             SaveSettings();
         }
@@ -182,12 +186,12 @@ namespace Services{
             return true;
        
         }
-        private string _measurementFilename;
+
+        
+        private string _measurementSettingsFilename;
         private Dictionary<Enum, string> _settings;
         
-
-
-
+        
 
     }
 

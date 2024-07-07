@@ -1,0 +1,55 @@
+@page
+@model SampleModel
+@using DatabaseModel;
+@{
+    
+    ViewData["Title"] = "Sample";
+    
+}
+
+<div class="text-center">
+    <h1 class="display-4">Sample</h1>
+
+    <form method="post">
+
+        <label asp-for="Name">Name:</label><input asp-for="Name">
+        <br>
+        <label asp-for="Date">Date:</label><input asp-for="Date" type="date">
+        <br>
+        <label asp-for="LabID">Lab ID:</label><input asp-for="LabID">
+        <br>
+        <label asp-for="Description">Description:</label><input asp-for="Description">
+        <br>
+        <button type="submit">Add Sample</button>
+    </form>
+
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Date</th>
+                <th>Name</th>
+                <th>Lab ID</th>
+                <th>Description</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach(Sample sample in DataController.Instance.DbContext.Samples){
+                <tr>
+                    <td>@sample.UUID</td>
+                    <td>@sample.Date</td>
+                    <td>@sample.Name</td>
+                    <td>@sample.LabID</td>
+                    <td>@sample.Description</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+
+    
+    
+
+
+ 
+</div>

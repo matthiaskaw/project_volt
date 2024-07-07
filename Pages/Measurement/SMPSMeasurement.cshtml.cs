@@ -2,6 +2,9 @@ using Measurement;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Services;
+using DatabaseModel;
+using Microsoft.AspNetCore.Mvc.Rendering;
+using Microsoft.IdentityModel.Tokens;
 
 namespace volt.Pages.Measurement;
 
@@ -15,22 +18,36 @@ public class SMPSMeasurementModel : PageModel
         _logger = logger;
         
         Name="";
-        MeasurementSeries ="";
         SheathFlow = SettingsService.Instance.MeasurementSetting.GetSettingByKey(EMeasurementSettings.SheathFlow);
         DownscanTime = SettingsService.Instance.MeasurementSetting.GetSettingByKey(EMeasurementSettings.DownscanTime);
         UpscanTime = SettingsService.Instance.MeasurementSetting.GetSettingByKey(EMeasurementSettings.UpscanTime);
-        string temp = SettingsService.Instance.MeasurementSetting.GetSettingByKey(EMeasurementSettings.SMPSDiameterVector);
-        SMPSDiameterVector = temp.Split(";");
-        SMPSMinDiameter = SettingsService.Instance.MeasurementSetting.GetSettingByKey(EMeasurementSettings.SMPSMinDiameter);
-        SMPSMaxDiameter = SettingsService.Instance.MeasurementSetting.GetSettingByKey(EMeasurementSettings.SMPSMaxDiameter);
+        string[] SMPSDiameterVector = SettingsService.Instance.MeasurementSetting.GetSettingByKey(EMeasurementSettings.SMPSDiameterVector).Split(";");
+        SMPSMinDiameter = SMPSDiameterVector.First();
+        SMPSMaxDiameter = SMPSDiameterVector.Last();
+        
+        
         SMPSDMAType = SettingsService.Instance.MeasurementSetting.GetSettingByKey(EMeasurementSettings.SMPSDMAType);
 
         
+
+       
     
     }
 
     public void OnGet()
     {
+
+         ExperimentOptions = DataController.Instance.DbContext.Experiments.Select(exp => new SelectListItem{
+
+            Value = exp.UUID.ToString(),
+            Text = exp.Name
+        }).ToList();
+
+        SampleOptions = DataController.Instance.DbContext.Samples.Select(sample => new SelectListItem{
+
+            Value= sample.UUID.ToString(),
+            Text= sample.Name
+        }).ToList();
         Console.WriteLine("OnGet(): SMPSMeasurement");
     }
 
@@ -42,12 +59,6 @@ public class SMPSMeasurementModel : PageModel
         if(string.IsNullOrEmpty(Name)){
 
             Logger.WriteToLog($"SMPSMeasurement.cshtml.cs: OnPost(): Property 'Name' is empty!");
-            return;
-        }
-
-        if(string.IsNullOrEmpty(MeasurementSeries)){
-
-            Logger.WriteToLog($"SMPSMeasurement.cshtml.cs: OnPost(): Property 'MeasurementSeries' is empty!");
             return;
         }
 
@@ -100,28 +111,36 @@ public class SMPSMeasurementModel : PageModel
         
 
         MeasurementController.Instance.MeasurementType = EMeasurementType.SMPS;
+        MeasurementController.Instance.CurrentDataset = new Dataset();
+        MeasurementController.Instance.CurrentDataset.UUID = Guid.NewGuid();
+        MeasurementController.Instance.CurrentDataset.Name = Name;
+        MeasurementController.Instance.CurrentDataset.Date = DateTime.Now;
+        MeasurementController.Instance.CurrentDataset.Description = Description;
+        MeasurementController.Instance.CurrentDataset.Experiment = DataController.Instance.DbContext.Experiments.FirstOrDefault(e => e.UUID.ToString() == SelectedExperimentID);;
+        MeasurementController.Instance.CurrentDataset.ExperimentID =  MeasurementController.Instance.CurrentDataset.Experiment.UUID;
+        MeasurementController.Instance.CurrentDataset.Sample =  DataController.Instance.DbContext.Samples.FirstOrDefault(s => s.UUID.ToString() == SelectedSampleID);
+        MeasurementController.Instance.CurrentDataset.SampleID = MeasurementController.Instance.CurrentDataset.Sample.UUID;
+        //DeviceController.Instance.CheckNecessaryDevices();
         Task.Run(async () => {await MeasurementController.Instance.StartMeasurement();});
             
 
-
     }
 
-    public void OnPostStart(){
-
-
-       
-    
-    }
 
     public string? Name {get; set;}
-    public string? MeasurementSeries {get; set;}
+    public string? Description {get; set;}
+    public string SelectedExperimentID { get; set; }
+    public string SelectedSampleID { get; set;}
+    public DateTime Date { get; set; }
+    public List<SelectListItem> ExperimentOptions {get; set;}
+    public List<SelectListItem> SampleOptions {get; set;}
     public string? SheathFlow{get; set;}
     public string? DownscanTime {get; set;}
     public string? UpscanTime{get; set;}
     public string? SMPSMinDiameter {get; set;}
     public string? SMPSMaxDiameter {get;set;}
     public string? SMPSDMAType {get; set;}
-    public static string[]? SMPSDiameterVector {get; set;}
+    public SelectList SMPSDiameterOptions {get; set;} = new SelectList(SettingsService.Instance.MeasurementSetting.GetSettingByKey(EMeasurementSettings.SMPSDiameterVector).Split(";")); 
     
 
 

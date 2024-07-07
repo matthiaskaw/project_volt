@@ -1,7 +1,9 @@
 using Measurement;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
+using Microsoft.AspNetCore.Mvc.Rendering;
 using Services;
+using DatabaseModel;
 
 namespace volt.Pages.Measurement;
 
@@ -16,7 +18,6 @@ public class TandemDMAModel : PageModel
 
     
         Name = "";
-        MeasurementSeries= "";
         SheathFlow = SettingsService.Instance.MeasurementSetting.GetSettingByKey(EMeasurementSettings.SheathFlow);
         SMPSDMAType = SettingsService.Instance.MeasurementSetting.GetSettingByKey(EMeasurementSettings.SMPSDMAType);
         UpscanTime = SettingsService.Instance.MeasurementSetting.GetSettingByKey(EMeasurementSettings.UpscanTime);
@@ -32,6 +33,17 @@ public class TandemDMAModel : PageModel
 
     public void OnGet()
     {
+        ExperimentOptions = DataController.Instance.DbContext.Experiments.Select(exp => new SelectListItem{
+
+            Value = exp.UUID.ToString(),
+            Text = exp.Name
+        }).ToList();
+
+        SampleOptions = DataController.Instance.DbContext.Samples.Select(sample => new SelectListItem{
+
+            Value= sample.UUID.ToString(),
+            Text= sample.Name
+        }).ToList();
         Console.WriteLine("OnGet(): TandemDMA Measurement!");
         
     }
@@ -48,11 +60,7 @@ public class TandemDMAModel : PageModel
             return;
         }
 
-        if(string.IsNullOrEmpty(MeasurementSeries)){
-
-            Logger.WriteToLog($"SMPSMeasurement.cshtml.cs: OnPost(): Property 'MeasurementSeries' is empty!");
-            return;
-        }
+        
 
         if(string.IsNullOrEmpty(SheathFlow)){
 
@@ -101,24 +109,26 @@ public class TandemDMAModel : PageModel
 //        SettingsService.Instance.MeasurementSetting.SetSettingByKey(EMeasurementSettings.TandemDMAMinDiameter, )
 
         MeasurementController.Instance.MeasurementType = EMeasurementType.TandemDMA;
+
+        MeasurementController.Instance.CurrentDataset.UUID = Guid.NewGuid();
+        MeasurementController.Instance.CurrentDataset.Name = Name;
+        MeasurementController.Instance.CurrentDataset.Date = DateTime.Now;
+        MeasurementController.Instance.CurrentDataset.Description = Description;
+        MeasurementController.Instance.CurrentDataset.Experiment = DataController.Instance.DbContext.Experiments.FirstOrDefault(e => e.UUID.ToString() == SelectedExperimentID);;
+        MeasurementController.Instance.CurrentDataset.Sample =  DataController.Instance.DbContext.Samples.FirstOrDefault(s => s.UUID.ToString() == SelectedSampleID);
+
         Task.Run(async () => {await MeasurementController.Instance.StartMeasurement();});
 
         Console.WriteLine("OnPost(): TandemDMA Measurementlol!");
     }
 
-    public void OnPostStart(){
-
-        Console.WriteLine("Starting TandemDMA Measurement!");
-        DeviceController devicecontroller = DeviceController.Instance;
-        var test = Request.Form["Measurement Type"];
-        Logger.WriteToLog($"{test}");
-        
-        MeasurementController.Instance.MeasurementType = EMeasurementType.TandemDMA;
-        devicecontroller.InitializeDevices();
-    }
-
     public string? Name {get; set;}
-    public string? MeasurementSeries {get; set;}
+    public string? Description {get; set;}
+    public string SelectedExperimentID { get; set; }
+    public string SelectedSampleID { get; set;}
+    public DateTime Date { get; set; }
+    public List<SelectListItem> ExperimentOptions {get; set;}
+    public List<SelectListItem> SampleOptions {get; set;}
     public string? SheathFlow{get; set;}
     public string? DownscanTime {get; set;}
     public string? UpscanTime{get; set;}

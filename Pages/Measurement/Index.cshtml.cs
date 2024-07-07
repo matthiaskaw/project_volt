@@ -6,7 +6,7 @@ using Measurement;
 namespace volt.Pages.Measurement{
 
 
-
+[BindProperties]
 public class IndexModel : PageModel
 {
 
@@ -20,10 +20,10 @@ public class IndexModel : PageModel
     
 
      // Your property to hold the selected value
-    [BindProperty]
+    
     public EMeasurementType SelectedValue { get; set; }
 
-    
+    public string TargetPage {get; set;}
     // Your list of SelectListItem objects
     public List<SelectListItem> Items { get; set; }
     
@@ -44,48 +44,11 @@ public class IndexModel : PageModel
 
     public IActionResult OnPost()
     {  
-        var selectedValue = Request.Form["SelectedValue"];
+       if(!string.IsNullOrEmpty(TargetPage)){
+            return Redirect(TargetPage);
+        }
 
-    // Convert enum values to SelectListItem objects
-        var items = Enum.GetValues(typeof(EMeasurementType))
-                    .Cast<EMeasurementType>()
-                    .Select(e => new SelectListItem { Value = e.ToString(), Text = e.ToString() })
-                    .ToList();
-
-    // Find the SelectListItem for the selected value
-    var selectedItem = items.FirstOrDefault(item => item.Value == selectedValue);
-
-    if (selectedItem == null)
-    {
-        // Log or handle the case where the selected value is not found in the list
         return Page();
-    }
-
-
-
-        if(selectedValue.ToString() == EMeasurementType.SMPS.ToString()){
-
-            Console.WriteLine($"Index: OnPost: SMPS Measurement ({EMeasurementType.SMPS.ToString()})");
-            return RedirectToPage("./SMPSMeasurement");
-    
-        }
-
-        if(selectedValue.ToString() == EMeasurementType.TandemTemperature.ToString()){
-           
-            Console.WriteLine($"Index: OnPost: TandemTemperature Measurement ({EMeasurementType.TandemTemperature.ToString()})");
-            return RedirectToPage("./TandemTemperature");
-        }
-
-        if(selectedValue.ToString() == EMeasurementType.TandemDMA.ToString()){
-            Console.WriteLine($"Index: OnPost: TandemDMA Measurement ({EMeasurementType.TandemDMA.ToString()})");
-            return RedirectToPage("./TandemDMA");
-        }
-        if(selectedValue.ToString() == EMeasurementType.CurrentMeasurement.ToString()){
-            Console.WriteLine($"Index: OnPost: TandemDMA Measurement ({EMeasurementType.CurrentMeasurement.ToString()})");
-            return RedirectToPage("./SensorMeasurement");
-        }
-        // Redirect or return a different view as needed
-        return RedirectToPage("Error");
     }
     }
 

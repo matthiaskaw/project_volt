@@ -67,3 +67,9 @@ storageDirectory
                                         
 
 
+To Do 07.07.2024:
+
+TandemTemperature Page:
+  - Current Vector preset needs to be set to the proper default values (Min Current: 0A; Max Current: 30A)
+  - First DMA Diameter input has to be implemented
+  - Date input has to be set to current date

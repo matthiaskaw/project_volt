@@ -16,6 +16,22 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = e:\Dokumente\GitHub\project_volt
 build_property._RazorSourceGeneratorDebug = 
 
+[e:/Dokumente/GitHub/project_volt/Pages/Data/Dataset.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRGF0YVxEYXRhc2V0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[e:/Dokumente/GitHub/project_volt/Pages/Data/Experiment.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRGF0YVxFeHBlcmltZW50LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[e:/Dokumente/GitHub/project_volt/Pages/Data/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRGF0YVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[e:/Dokumente/GitHub/project_volt/Pages/Data/Sample.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRGF0YVxTYW1wbGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [e:/Dokumente/GitHub/project_volt/Pages/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRXJyb3IuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 

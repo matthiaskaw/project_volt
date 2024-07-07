@@ -1,0 +1,61 @@
+@page
+@model DatasetModel
+@using DatabaseModel;
+@{
+    
+    ViewData["Title"] = "Data Base";
+    
+}
+
+<div class="text-center">
+    <h1 class="display-4">Data Page</h1>
+
+    <!--
+    <form method="post" enctype="multipart/form-data">
+        <label asp-for="Date">Date:</label><input type="date" asp-for="Date">
+        <br>
+        <label asp-for="Name">Name:</label><input asp-for="Name">
+        <br>
+        <label asp-for="Description">Description:</label><input asp-for="Description">
+        <br>
+        <label for="ExperimentSelect">Experiment:</label><select id="ExperimentSelect" asp-for="SelectedExperimentID" asp-items="Model.ExperimentOptions"></select>
+        HOW TO FILL THE SELECT WITH EXPERIMENT/SAMPLE PROJECTS AND HOW TO RESOLVE THE ID FOR LATER. MAYBE JUST SAVE THE ID AND USE IT TO RESOLVE THE NAME???
+        <br>
+        <label for="SampleSelect">Sample</label><select id="SampleSelect" asp-for="SelectedSampleID" asp-items="Model.SampleOptions"></select>
+        <br>
+        <label for="fileInput">Path:</label><input type="file" for="fileInput" id="fileInput" name="fileInput"/>
+        <br>
+        <button type="submit">Add Dataset</button>
+    </form>
+    <br>!-->
+    <table class="table">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Date</th>
+                <th>Name</th>
+                <th>Experiment</th>
+                <th>Sample</th>
+                <th>Description</th>
+                <th>Path</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach(Dataset data in DataController.Instance.DbContext.Datasets){
+                <tr>
+                    <td>@data.UUID</td>
+                    <td>@data.Date</td>
+                    <td>@data.Name</td>
+                    <td>@data.Experiment.Name</td>
+                    <td>@data.Sample.Name</td>
+                    <td>@data.Description</td>
+                    <td>@data.Path</td>
+                </tr>
+            }
+            
+        </tbody>
+    </table>
+    
+
+ 
+</div>

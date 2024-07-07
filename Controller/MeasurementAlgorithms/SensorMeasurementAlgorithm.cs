@@ -1,5 +1,6 @@
 using System.Net.WebSockets;
 using Device;
+using DatabaseModel;
 
 
 namespace MeasurementAlgorithms{
@@ -12,34 +13,29 @@ namespace MeasurementAlgorithms{
             IsRunning = false;
 
         }
-        public async Task<bool> RunMeasurement(){
+        public async Task<List<string>> RunMeasurement(){
 
             IsRunning = true;
-            
+            List<string> data = new List<string>();
+
             await Task.Run(async () => {
+                
                 while(IsRunning){
                     
-
-                    string data = SensorController.Instance.SensorData;
-            
+                    data.Append(SensorController.Instance.SensorData);
+                
                 }
+            
+            });
 
-            
-            
-            }
-            );
-            
-            return true;
+            return data;
 
-        
         }
-
-        
         public bool IsRunning {get; set;}
     }
     
     
-    }
+}
 
 
 

@@ -11,17 +11,17 @@ public class SMPSMeasurementAlgorithm : IMeasurementAlgorithm {
 
     public SMPSMeasurementAlgorithm(){}
 
-    public async Task<bool> RunMeasurement(){
-
-        Logger.WriteToLog("SMPS Measurement Algorithm: RunMeasurement called!");
+    public async Task<List<string>> RunMeasurement(){
+        IsRunning = true;
+        /*Logger.WriteToLog("SMPS Measurement Algorithm: RunMeasurement called!");
         IDevice pc;
         DeviceController.Instance.Devices.TryGetValue(EDeviceTypes.ParticleCounter, out pc);
         ParticleCounter particlecounter = (ParticleCounter)pc;
         
         if(particlecounter == null){
 
-            return false;
-        }
+            throw new Exception("SMPSMeasurementAlgorithm().RunMeasurement: Particle Counter is null");
+        }*CurrentDataset.Name, MeasurementType.ToString()
 
         string minVoltage = ParticleCounter.CalculateVoltage("2,4");
         string maxVoltage = ParticleCounter.CalculateVoltage("40,5");
@@ -35,22 +35,15 @@ public class SMPSMeasurementAlgorithm : IMeasurementAlgorithm {
         particlecounter.SetScanDirection();
         particlecounter.SetVoltage();
         particlecounter.SetScanTime();
-        particlecounter.Start();
+        particlecounter.Start();*/
 
-        List<string> data = await _collectDataAsync(particlecounter);
+        List<string> data = await _collectDataAsyncDummy();
+    
 
-        string s = System.Reflection.Assembly.GetEntryAssembly().Location;
-
-        string cwd = System.IO.Path.GetDirectoryName(s);
-
-
-        File.WriteAllLines(System.IO.Path.Combine(cwd, "testmeasurement.txt"),data);
-        
-
-        return true;
+        return data;
     }
 
-    public async Task<List<string>> _collectDataAsync(ParticleCounter counter){
+    private async Task<List<string>> _collectDataAsync(ParticleCounter counter){
 
         List<string> data = new List<string>();
 
@@ -66,6 +59,30 @@ public class SMPSMeasurementAlgorithm : IMeasurementAlgorithm {
             }
         }
         counter.End();
+
+        return data;
+        
+    }
+
+    private async Task<List<string>> _collectDataAsyncDummy(){
+
+        List<string> data = new List<string>();
+        int count = 0;
+        while(IsRunning){
+            
+            var  line = $"{ new Random().Next(0, 100)}";
+            Logger.WriteToLog($"Particle Counter: CollectData: line = {line}");
+            data.Add(line);
+
+
+            if(count >= 10){
+
+                IsRunning  = false;
+
+            }
+            count++;;
+        }
+        
 
         return data;
         

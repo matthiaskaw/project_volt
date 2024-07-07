@@ -4,7 +4,7 @@ using Microsoft.EntityFrameworkCore;
 
 using Newtonsoft.Json;
 
-namespace Model.DatabaseModel{
+namespace DatabaseModel{
 
 
     public class SimpleDbContext : DbContext {
@@ -29,6 +29,8 @@ namespace Model.DatabaseModel{
             if(!System.IO.File.Exists(_samplesJSONPath)){ System.IO.File.Create(_samplesJSONPath); }
             if(!System.IO.File.Exists(_datasetsJSONPath)){ System.IO.File.Create(_datasetsJSONPath); }
             if(!System.IO.File.Exists(_experimentsJSONPath)){ System.IO.File.Create(_experimentsJSONPath); }
+
+            LoadData();
             
         }
      

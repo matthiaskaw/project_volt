@@ -13,21 +13,31 @@
 
 <div class="text-center">
     <h1 class="display-4">Measurement Page</h1>
-    <h2>Choose a Measurement Type... Currently only SMPS scans are possible.</h2>
-
     <label for="Measurement Type">Choose a measurement:</label>
 
-    <a asp-page="./Index">Start</a>
-    
-
- 
-</div>
-<form method="post">
-    <Use the asp-items attribute to bind the dropdown to your list of items -->
-    <select asp-for="SelectedValue" asp-items="Model.Items" class="form-control">
-        <<option value="">Select an option</option>
-    </select>
-
-    <!-- Add a submit button if you want to handle the form submission -->
-    <button type="submit">Submit</button>
+    <form method="post">
+        <br>
+        <input type="hidden" id="targetPage" name="TargetPage" />
+        <button type="submit" onclick="setTargetPage('./Measurement/SMPSMeasurement')">SMPS</button>
+        
+        <br>
+        <!--
+        <button type="submit" onclick="setTargetPage('./Measurement/TandemDMA')">Tandem DMA</button>
+        <br>!-->
+        <button type="submit" onclick="setTargetPage('./Measurement/TandemTemperature')">Tandem Temperature</button>
+        <br>
+        <button type="submit" onclick="setTargetPage('./Measurement/SensorMeasurement')">Current Sensor</button>
+        <!--select asp-for="SelectedValue" asp-items="Model.Items" class="form-control">
+            <<option value="">Select an option</option>
+        </select>
+        <button type="submit">Submit</button!-->
     </form>
+
+</div>
+
+<script>
+    function setTargetPage(page){
+        document.getElementById('targetPage').value = page
+    }
+</script>
+

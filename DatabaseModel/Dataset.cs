@@ -5,12 +5,12 @@ using System.ComponentModel.DataAnnotations.Schema;
 using System.Text;
 
 
-namespace Model.DatabaseModel{
+namespace DatabaseModel{
 
     [Table("Dataset")]
     public class Dataset{
         
-        public Guid UUID { get; set;}
+        public Guid UUID { get; set;} = Guid.NewGuid();
         public Guid ExperimentID {get; set;}
         public Guid SampleID { get; set;}
         public string Description { get; set;} ="";
