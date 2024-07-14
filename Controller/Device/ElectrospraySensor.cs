@@ -106,7 +106,9 @@ namespace Device{
         
         public string RequestSensorValues(){
             
-            return $"{new Random().NextDouble()};{new Random().NextDouble()}";
+            string data = $"{new Random().NextDouble()};{new Random().NextDouble()}"; 
+            
+            return data;
 
             /*string requeststringcommand = "ReadSensors";
             _serialport.WriteTimeout = 5000;

@@ -1,5 +1,6 @@
 @page
-@model TandemTemperatureModel
+@using Microsoft.AspNetCore.Mvc.Rendering
+@model TandemTemperatureModel;
 
 @{
     
@@ -13,7 +14,13 @@
         
         <label asp-for="Name">Name:</label><input asp-for="Name">
         <br>
-        <label asp-for="MeasurementSeries">Measurement Series:</label><input asp-for="MeasurementSeries">
+        <label asp-for="Date">Date:</label><input type="date" asp-for="Date">
+        <br>
+        <label asp-for="SelectedExperimentID">Experiment</label><select id="ExperimentSelect" asp-for="SelectedExperimentID" asp-items="Model.ExperimentOptions"></select>
+        <br>
+        <label asp-for="SelectedSampleID">Sample</label><select id="SampleSelect" asp-for="SelectedSampleID" asp-items="Model.SampleOptions"></select>
+        <br>
+        <label asp-for="Description">Description</label><input asp-for="Description">
         <br>
         <label asp-for="SheathFlow">Sheath flow [L/min]:</label><input asp-for="SheathFlow">
         <br>
@@ -21,40 +28,23 @@
         <br>
         <label asp-for="DownscanTime">Downscantime [s]:</label><input asp-for="DownscanTime">
         <br>
-        <label for="MinDiameterDropDown">SMPS Min. diameter [nm]:</label>
-        <select id="MinDiameterDropDown" name="MinDiameterDropDown">
-            @{foreach(string option in TandemTemperatureModel.SMPSDiameterVector){
-                <option value="@option">@option</option>
-
-            }}
-        </select>
+        <label asp-for="MinDiameterSMPS">SMPS Min. diameter [nm]:</label>
+        <select asp-for="MinDiameterSMPS" asp-items="Model.SMPSDiameterOptions" id="MinDiameterSMPS"></select>
         <br>
-        <label for="MaxDiameterDropDown">SMPS Max. diameter [nm]:</label>
-        <select id="MaxDiameterDropDown" name="MaxDiameterDropDown">
-            @{foreach(string option in TandemTemperatureModel.SMPSDiameterVector){
-                <option value="@option">@option</option>
-            }}
-        </select>
+        <label asp-for="MaxDiameterSMPS">SMPS Max. diameter [nm]:</label>
+        <select asp-for="MaxDiameterSMPS" asp-items="Model.SMPSDiameterOptions" id="MaxDiameterSMPS"></select>
         <br>
         <label asp-for="SMPSDMAType">SMPS DMA Type:</label><input asp-for="SMPSDMAType">
         <br>
-        <label for="MinCurrentDropDown">Min. Current [A]:</label>
-        <select id="MinCurrentDropDown" name="MinCurrentDropDown">
-            @{
-            foreach(string option in TandemTemperatureModel.TandemTemperatureCurrentVector){
-                <option value="@option">@option</option>
-            }}
-        </select>
+        <label asp-for="MinCurrent">Minimum Current [A]:</label>
+        <select asp-for="MinCurrent" asp-items="Model.CurrentOptions" id="MinCurrent"></select>
         <br>
-        <label for="MaxCurrentDropDown">Max. Current [A]:</label>
-        <select for="MaxCurrentDropDown" name="MaxCurrentDropDown">
-            @{
-            foreach(string option in TandemTemperatureModel.TandemTemperatureCurrentVector){
-                <option value="@option">@option</option>
-            }}
-        </select>
+        <label asp-for="MaxCurrent">Maximum Current [A]:</label>
+        <select asp-for="MaxCurrent" asp-items="Model.CurrentOptions" id="MaxCurrent"></select>
         <br>
-        <button class="btn btn-default">Start</button>
+        <label asp-for="FirstDMADiameter">First DMA Diameter [nm]:</label><input asp-for="FirstDMADiameter">
+        <br>
+        <button>Start</button>
         
     </form>
     

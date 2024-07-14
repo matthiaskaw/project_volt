@@ -41,36 +41,25 @@ public class SensorController{
 
             while(true){
                 
-                _data = _sensor.RequestSensorValues();
-
-                
+                _data = _sensor.RequestSensorValues();               
                 _onDataAvailable(_data);
                 Thread.Sleep(1000);
-
-            }
-
-        });
-
+            }});
     }
     private void _onDataAvailable(string data){
 
             DataAvailable?.Invoke(this, data);
-
     }
 
     private void _setupEvents() {
 
         DataAvailable += async (sender, e) => { 
             
-            await WebSocketController.Instance.SendMessageToAllAsync(e);
-            
+            await WebSocketController.Instance.SendMessageToAllAsync(e);       
         };
     }
-    
     private ISensor _sensor;
     private string _data;
-    public string SensorData{get;}
-
-    
+    public string SensorData{get{return _data;}}
 
 }

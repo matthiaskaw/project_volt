@@ -1,0 +1,46 @@
+
+@page
+@model ExperimentModel
+@using DatabaseModel;
+@{
+    
+    
+    ViewData["Title"] = "Experiment";
+    
+}
+
+<div class="text-center">
+    <h1 class="display-4">Experiment Page</h1>
+
+    <form method="post">    
+        <label asp-for="Name">Name:</label><input asp-for="Name"/>
+        <br>
+        <label asp-for="Description">Description:</label><input asp-for="Description"/>
+        <br>
+        <button type="submit">Add Experiment</button>
+    </form>
+    
+    <table class="table">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Description</th>
+            </tr>
+        </thead>        
+        <tbody>
+            @foreach(Experiment exp in DataController.Instance.DbContext.Experiments){
+                <tr>
+                    <td>@exp.UUID</td>
+                    <td>@exp.Name</td>
+                    <td>@exp.Description</td>
+                </tr>
+            }        
+        </tbody>
+    </table>
+
+   
+    
+
+ 
+</div>

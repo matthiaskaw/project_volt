@@ -11,7 +11,13 @@
         
         <label asp-for="Name">Name:</label><input asp-for="Name">
         <br>
-        <label asp-for="MeasurementSeries">Measurement Series:</label><input asp-for="MeasurementSeries">
+        <label asp-for="Date">Date:</label><input type="date" asp-for="Date">
+        <br>
+        <label asp-for="SelectedExperimentID">Experiment</label><select id="ExperimentSelect" asp-for="SelectedExperimentID" asp-items="Model.ExperimentOptions"></select>
+        <br>
+        <label asp-for="SelectedSampleID">Sample</label><select id="SampleSelect" asp-for="SelectedSampleID" asp-items="Model.SampleOptions"></select>
+        <br>
+        <label asp-for="Description">Description</label><input asp-for="Description">
         <br>
         <label asp-for="SheathFlow">Sheath flow [L/min]:</label><input asp-for="SheathFlow">
         <br>
@@ -51,6 +57,8 @@
                 <option value="@option">@option</option>
             }}
         </select>
+        <br>
+        <label>Furnace Current [A]:</label><input>
         <br>
         <button class="btn btn-default">Start</button>
         <button type="submit" class="btn-default">Cancel</button>  

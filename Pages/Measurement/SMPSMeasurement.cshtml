@@ -12,37 +12,25 @@
     
         <label asp-for="Name">Name:</label><input asp-for="Name">
         <br>
-        <label asp-for="MeasurementSeries">Measurement Series:</label><input asp-for="MeasurementSeries">
+        <label asp-for="Date">Date:</label><input type="date" asp-for="Date">
+        <br>
+        <label asp-for="SelectedSampleID">Sample</label><select id="SampleSelect" asp-for="SelectedSampleID" asp-items="Model.SampleOptions"></select>
+        <br>
+        <label asp-for="Description">Description</label><input asp-for="Description">
         <br>
         <label asp-for="UpscanTime">Upscantime [s]:</label><input asp-for="UpscanTime">
         <br>
         <label asp-for="DownscanTime">Downscantime [s]:</label><input asp-for="DownscanTime">
         <br>
-        <label for="SMPSMinDiameterDropDown">Min. diameter [nm]:</label>
-        <select id="SMPSMinDiameterDropDown" name="SMPSMinDiameterDropDown">
-            @{
-                foreach(string option in SMPSMeasurementModel.SMPSDiameterVector){
-                    <option value="@option">@option</option>
-                }
-
-            }
-        </select>
+        <label asp-for="SMPSMinDiameter">Min. diameter [nm]:</label>
+        <select asp-for="SMPSMinDiameter" asp-items="Model.SMPSDiameterOptions"></select>
         <br>
-        <label for="SMPSMaxDiameterDropDown">Max. diameter [nm]:</label>
-        <select id="SMPSMaxDiameterDropDown" name="SMPSMaxDiameterDropDown">
-            @{
-
-                foreach(string option in SMPSMeasurementModel.SMPSDiameterVector){
-
-                    <option value="@option">@option</option>
-                }
-            }
-
-        </select>
+        <label asp-for="SMPSMaxDiameter">Max. diameter [nm]:</label>
+        <select asp-for="SMPSMaxDiameter" asp-items="Model.SMPSDiameterOptions"></select>
         <br>
         <label asp-for="SMPSDMAType">DMA Type:</label><input asp-for="SMPSDMAType">
         <br>
-        <button type="submit">Start</button>
-        <button type="submit" onclick="OnAbort">Abort</button>
+        <button type="submit" formaction="/Measurement/SMPSMeasurement?handler=Start">Start</button>
+        <button type="submit" formaction="/Measurement/SMPSMeasurement?handler=Cancel">Cancel</button>
     </form>
 </div>

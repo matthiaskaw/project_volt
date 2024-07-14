@@ -15,12 +15,14 @@ namespace Services{
         private SettingsService(){
 
             Logger.WriteToLog($"SettingsService: Setting up measurement service...");
-
             string applicationPath = AppDomain.CurrentDomain.BaseDirectory;
             Logger.WriteToLog($"SettingsService: applicationPath = {applicationPath}");
             _settingsDirectoryPath = System.IO.Path.Combine(applicationPath, "settings");
             Logger.WriteToLog($"SettingsService: Settings path = {_settingsDirectoryPath}");
 
+            Directory.CreateDirectory(MeasurementDirectory);
+            System.IO.Directory.CreateDirectory(DatabaseDirectory);
+            
             if(!System.IO.Directory.Exists(_settingsDirectoryPath)){
                 
                 Logger.WriteToLog($"SettingsService: Creating directory {_settingsDirectoryPath}");
@@ -28,6 +30,7 @@ namespace Services{
             }
 
             _measurementSetting = new MeasurementSettings(_settingsDirectoryPath);
+       
 
         }
 
@@ -44,5 +47,7 @@ namespace Services{
         private static SettingsService _instance;
         private ISettings _measurementSetting; 
         private string _settingsDirectoryPath;
+        public string MeasurementDirectory {get;} = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments), "Measurements");
+        public string DatabaseDirectory {get;} = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "data");
     }
 }

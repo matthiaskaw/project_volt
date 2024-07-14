@@ -78,7 +78,7 @@ public class DeviceController{
         }
     }
 
-    public void IsDeviceReady(){
+    public void CheckNecessaryDevices(){
         
         //Check if all devices that are necessary for a measurement are ready?
 
@@ -86,7 +86,7 @@ public class DeviceController{
         switch(MeasurementController.Instance.MeasurementType){
             
             case EMeasurementType.Default:
-                //Throw exception "No Measurement Type"
+                throw new Exception();
                 Logger.WriteToLog("Device Controller: No Measurement Type set!");
                 break;
 

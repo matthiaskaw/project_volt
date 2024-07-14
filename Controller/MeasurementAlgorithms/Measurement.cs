@@ -2,8 +2,7 @@ using System;
 
 
 namespace Measurement{
-    public enum EMeasurementType{
-        
+    public enum EMeasurementType{  
         Default = 0,
         SMPS = 1,
         TandemDMA = 2,
@@ -17,7 +16,6 @@ namespace Measurement{
         public static double CunninghamCorrection(double diameter){
             
             double freemeanpath = 66e-9; 
-
             return 1+(freemeanpath/diameter)*(2.514/0.8*Math.Exp(-0.55*diameter/freemeanpath));
         }
 

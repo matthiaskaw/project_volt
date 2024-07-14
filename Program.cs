@@ -2,11 +2,13 @@ using Measurement;
 using Services;
 using System.Net.WebSockets;
 using System.Text;
+using DatabaseModel;
 
 SettingsService settings = SettingsService.Instance;
 MeasurementController measurementController = MeasurementController.Instance;
 DeviceController deviceController = DeviceController.Instance;
 WebSocketController webSocketController = WebSocketController.Instance;
+DataController dataController = DataController.Instance;
 
 
 deviceController.InitializeDevices();
