@@ -122,7 +122,14 @@ public class SMPSMeasurementModel : PageModel
         MeasurementController.Instance.CurrentDataset.ExperimentID =  MeasurementController.Instance.CurrentDataset.Experiment.UUID;
         MeasurementController.Instance.CurrentDataset.Sample =  DataController.Instance.DbContext.Samples.FirstOrDefault(s => s.UUID.ToString() == SelectedSampleID);
         MeasurementController.Instance.CurrentDataset.SampleID = MeasurementController.Instance.CurrentDataset.Sample.UUID;
-        //DeviceController.Instance.CheckNecessaryDevices();
+        
+        try{
+        DeviceController.Instance.CheckNecessaryDevices();
+        }
+        catch(Exception ex){
+            Logger.WriteToLog($"SMPSMeasurement.OnPost(): Necessary devices not initialized. {ex.Message}");
+            return;
+        }
         Task.Run(async () => {await MeasurementController.Instance.StartMeasurement();});
             
 

@@ -61,21 +61,17 @@ namespace Measurement{
                     metadata.Add(EMeasurementSettings.FurnaceCurrent.ToString() + ": " + SettingsService.Instance.MeasurementSetting.GetSettingByKey(EMeasurementSettings.FurnaceCurrent));
 
                     Logger.WriteToLog($"MeasurementController: Start Measurement(): MeasurementType is {MeasurementType.ToString()}");
-                    
                     break;
 
                 case EMeasurementType.TandemTemperature:
-
-                 
+               
                     _setSMPSMetaData(ref metadata);
-                    
                     //PowerSource Metadata:
                     metadata.Add(EMeasurementSettings.TandemTemperatureMinCurrent.ToString() + ": " + SettingsService.Instance.MeasurementSetting.GetSettingByKey(EMeasurementSettings.TandemTemperatureMinCurrent));
                     metadata.Add(EMeasurementSettings.TandemTemperatureMaxCurrent.ToString() + ": " + SettingsService.Instance.MeasurementSetting.GetSettingByKey(EMeasurementSettings.TandemTemperatureMaxCurrent));
                     metadata.Add(EMeasurementSettings.TandemDMADMAType.ToString() + ": " + SettingsService.Instance);
                     metadata.Add(EMeasurementSettings.FirstDMADiameter.ToString() + ": " + SettingsService.Instance.MeasurementSetting.GetSettingByKey(EMeasurementSettings.FirstDMADiameter));
-
-
+                        
                     Logger.WriteToLog($"MeasurementController: Start Measurement(): MeasurementType is {MeasurementType.ToString()}");
                     _measurementAlgorithm = new TandemTemperatureAlgorithm();
                     break;
@@ -119,6 +115,7 @@ namespace Measurement{
             _measurementAlgorithm.IsRunning = false;
         }
 
+        
         //PROPERTIES
         public event EventHandler Canceled;        
         public EMeasurementType MeasurementType {get; set;}

@@ -84,6 +84,8 @@ public class TandemTemperatureModel : PageModel
         if(string.IsNullOrEmpty(MaxCurrent)){
             return;
         }
+        
+        MeasurementController.Instance.MeasurementType = EMeasurementType.TandemTemperature;
 
         SettingsService.Instance.MeasurementSetting.SetSettingByKey(EMeasurementSettings.SheathFlow, SheathFlow);
         SettingsService.Instance.MeasurementSetting.SetSettingByKey(EMeasurementSettings.UpscanTime, UpscanTime);
@@ -102,8 +104,14 @@ public class TandemTemperatureModel : PageModel
         MeasurementController.Instance.CurrentDataset.Sample =  DataController.Instance.DbContext.Samples.FirstOrDefault(s => s.UUID.ToString() == SelectedSampleID);
 
         
-
-        MeasurementController.Instance.MeasurementType = EMeasurementType.TandemTemperature;
+        try{
+            DeviceController.Instance.CheckNecessaryDevices();
+        }
+        catch(Exception ex){
+            Logger.WriteToLog($"SMPSMeasurement.OnPost(): Necessary devices not initialized. {ex.Message}");
+            return;
+        }
+       
         Task.Run(async () => {await MeasurementController.Instance.StartMeasurement();});
     }
 

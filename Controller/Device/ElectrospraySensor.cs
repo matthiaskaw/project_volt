@@ -19,7 +19,7 @@ namespace Device{
 
 
         public void Initialize(){
-            /*
+            
             string answer="";
             Logger.WriteToLog($"ElectrospraySensor: Initializeing Electrospray Sensor");
 
@@ -33,29 +33,22 @@ namespace Device{
             foreach(string portname in SerialPort.GetPortNames()){
 
                 if(_serialport.IsOpen){
-
                     Logger.WriteToLog($"ElectrospraySensor.cs: {portname} is already open. Trying next port...");
                     continue;
                 }
-             _serialport.PortName = portname;
+
+                _serialport.PortName = portname;
                 
                 Logger.WriteToLog($"ElectrospraySensor.cs: Trying to open serial port on port {portname}");
                 try{
                     _serialport.Open();
                 }
                 catch(Exception e){
-
                     Logger.WriteToLog($"ElectrospraySensor.cs: Tried to open port {portname}. Access denied! Trying next port... {e}");
-                    
                     continue;
-
                 }
                 
-                if(!_serialport.IsOpen){
-                    
-                    Logger.WriteToLog($"ElectrospraySensor.cs: Serialport not open on port {_serialport.PortName}. Trying next port...");
-                }
-                Logger.WriteToLog($"ElectrospraySensor.cs: Starting verification. Requesting serial number {DeviceID}");
+                Logger.WriteToLog($"ElectrospraySensor.cs: SerialPort open on port {portname}. Starting verification. Requesting serial number {DeviceID}");
                 _serialport.WriteTimeout = 5000;
                 try{
                     _serialport.Write("DeviceID");   
@@ -67,6 +60,7 @@ namespace Device{
                     continue;
                 }
                 _serialport.ReadTimeout = 5000;
+
                 try{
                     answer = _serialport.ReadTo("\r");
                     Logger.WriteToLog($"ElectrospraySensor.cs: Initialize(): answer = {answer} ");
@@ -91,12 +85,16 @@ namespace Device{
                 if(portname == SerialPort.GetPortNames().Last()){
 
                     Logger.WriteToLog($"ElectrospraySensor.cs: Reached last element with no successfull verification");
-                    throw new InitalizationFailedException("Particle Counter");
+                    throw new InitalizationFailedException("Sensor");
                 }   
 
-            }*/
+            }
             
-            if(IsInitialized == true){return;}
+            if(IsInitialized != true){
+                
+                throw new InitalizationFailedException("Sensor");
+            }
+
             Initialized?.Invoke(this, new EventArgs());
 
         }
@@ -106,21 +104,17 @@ namespace Device{
         
         public string RequestSensorValues(){
             
-            string data = $"{new Random().NextDouble()};{new Random().NextDouble()}"; 
-            
-            return data;
-
-            /*string requeststringcommand = "ReadSensors";
+           
             _serialport.WriteTimeout = 5000;
-            _serialport.Write(requeststringcommand);
+            _serialport.Write(_requeststringcommand);
 
             string requestanswer = _serialport.ReadTo("\r");
             Logger.WriteToLog($"ElectrospraySensor.cs: RequestSensorValue(): Request answer is {requestanswer}");
             return requestanswer;
-            */
+            
         }
 
-        
+        private string _requeststringcommand = "ReadSensors";
 
         public string DeviceID {get; set;}
         public event EventHandler Initialized;

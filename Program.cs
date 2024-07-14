@@ -14,7 +14,7 @@ DataController dataController = DataController.Instance;
 deviceController.InitializeDevices();
 
 SensorController sensorController = SensorController.Instance;
-sensorController.StartSensors();
+MeasurementController.Instance.MeasurementType = EMeasurementType.CurrentMeasurement;
 
 measurementController.Canceled += (sender, e) => {deviceController.Cancel();};
 

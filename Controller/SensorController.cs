@@ -9,9 +9,16 @@ public class SensorController{
 
         _sensor = (ISensor)DeviceController.Instance.Devices.GetValueOrDefault(EDeviceTypes.ElectrospraySensor);
         
-        if(_sensor == null){ throw new Exception("SensorController.SensorController(): _sensor = null"); }
+      
 
         _setupEvents();
+        
+        if(_sensor == null){ 
+            Logger.WriteToLog("SensorController.SensorController(): _sensor = null"); 
+            return;
+        }
+
+        StartSensors();
 
         
 
@@ -30,7 +37,7 @@ public class SensorController{
     }
 
     public void StartSensors(){
-
+        
         _getSensorData();
     }    
     public event EventHandler<string> DataAvailable;
