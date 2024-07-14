@@ -7,10 +7,25 @@
 
 <div class="text-center">
     <h1 class="display-4">Sensor Page</h1>
-    
-       <label>Sensor 1 Value [V]:</label><input type="text" id="sensor1value" value="n.a." readonly> <!-- Container for new data -->
-       <br>
-       <label>Sensor 2 Value [V]:</label><input type="text" id="sensor2value" value="n.a." readonly>
+
+        <form method="post">
+            <label asp-for="Name">Name:</label><input type="text" asp-for="Name">
+            <br>
+            <label asp-for="Date">Date:</label><input type="date" asp-for="Date">
+            <br>
+            <label asp-for="Description">Description:</label><input type="text" asp-for="Description">
+            <br>
+            <label asp-for="@Model.SelectedSampleID">Sample:</label><select asp-for="@Model.SelectedSampleID" asp-items="@Model.SampleOptions"></select>
+            <br>
+            <label>Sensor 1 Value [V]:</label><input type="text" id="sensor1value" value="n.a." readonly> <!-- Container for new data -->
+            <br>
+            <label>Sensor 2 Value [V]:</label><input type="text" id="sensor2value" value="n.a." readonly>
+            <br> 
+            <button type="submit" formaction="/Measurement/SensorMeasurement?handler=Start">Start</button>
+            <button type="submit" formaction="/Measurement/SensorMeasurement?handler=Stop">Stop</button>
+            <button type="submit" formaction="/Measurement/SensorMeasurement?handler=Cancel">Cancel</button>
+        </form>
+
         @section Scripts {
         
         <script src="~/js/sensor.js"></script>

@@ -14,8 +14,6 @@
         <br>
         <label asp-for="Date">Date:</label><input type="date" asp-for="Date">
         <br>
-        <label asp-for="SelectedExperimentID">Experiment</label><select id="ExperimentSelect" asp-for="SelectedExperimentID" asp-items="Model.ExperimentOptions"></select>
-        <br>
         <label asp-for="SelectedSampleID">Sample</label><select id="SampleSelect" asp-for="SelectedSampleID" asp-items="Model.SampleOptions"></select>
         <br>
         <label asp-for="Description">Description</label><input asp-for="Description">
@@ -32,7 +30,7 @@
         <br>
         <label asp-for="SMPSDMAType">DMA Type:</label><input asp-for="SMPSDMAType">
         <br>
-        <button type="submit">Start</button>
-        <button type="submit" onclick="OnAbort">Abort</button>
+        <button type="submit" formaction="/Measurement/SMPSMeasurement?handler=Start">Start</button>
+        <button type="submit" formaction="/Measurement/SMPSMeasurement?handler=Cancel">Cancel</button>
     </form>
 </div>

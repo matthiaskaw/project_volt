@@ -32,7 +32,7 @@ namespace Measurement{
         
 
         //PUBLIC METHODS
-        public async Task<bool> StartMeasurement(){
+        public async Task StartMeasurement(){
 
             List<string> metadata = new List<string>();
             switch(MeasurementType){
@@ -88,25 +88,35 @@ namespace Measurement{
             
             if(_measurementAlgorithm == null){
                 Logger.WriteToLog($"MeasurementController: StartMeasurement(): measurementAlgorithm is null!");
-                return false;
+                return;
             }
             
             List<string> data = await _measurementAlgorithm.RunMeasurement();
 
+            if(_isCanceled){
+                _isCanceled = false;
+                return;
+            }
             CurrentDataset.Path = DataController.Instance.SaveDataset(data, CurrentDataset.Name, MeasurementType.ToString());
             DataController.Instance.SaveDatasetMetaData(metadata, CurrentDataset.Name, MeasurementType.ToString());
            
             DataController.Instance.DbContext.Datasets.Add(CurrentDataset);
             DataController.Instance.DbContext.SaveChanges();
 
-            return true;
+            return;
         }
 
         public void Cancel(){
 
             _measurementAlgorithm.IsRunning = false;
+            _isCanceled = true;
             _onCanceled();
 
+        }
+
+        public void StopMeasurement(){
+
+            _measurementAlgorithm.IsRunning = false;
         }
 
         //PROPERTIES
@@ -114,9 +124,12 @@ namespace Measurement{
         public EMeasurementType MeasurementType {get; set;}
         public Dataset CurrentDataset {get;set;} = null;
 
+        private bool _isCanceled = false;
+
         private void _onCanceled(){
 
             Canceled?.Invoke(this, new EventArgs());
+            
         }
 
         private void _setSMPSMetaData(ref List<string> metadata){

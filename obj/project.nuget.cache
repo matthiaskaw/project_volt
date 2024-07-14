@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "u5OfKY0DfA8EaQQhB/9S5g0BJ1K3Hm15yie9LMlbIJGvpwelDc5evj/B/C2/+P/qj1OorH+G/XudbOLu4JVmJg==",
+  "dgSpecHash": "Bz54/YGJbLmVYXjoDcDOvMnIzsPCnPRoaggSwDG8h4yhklLTENbbLvBNC4wHKxInQgVCidXVOWAfFEiWxsWTMw==",
   "success": true,
-  "projectFilePath": "e:\\Dokumente\\GitHub\\project_volt\\volt.csproj",
+  "projectFilePath": "C:\\Users\\matth\\Documents\\GitHub\\project_volt\\volt.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\matth\\.nuget\\packages\\azure.core\\1.24.0\\azure.core.1.24.0.nupkg.sha512",
     "C:\\Users\\matth\\.nuget\\packages\\azure.identity\\1.6.0\\azure.identity.1.6.0.nupkg.sha512",

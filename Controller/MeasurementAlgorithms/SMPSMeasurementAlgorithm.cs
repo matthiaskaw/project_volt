@@ -55,13 +55,12 @@ public class SMPSMeasurementAlgorithm : IMeasurementAlgorithm {
             if(line.Contains("-1")){
 
                 IsRunning  = false;
-
+                
             }
         }
-        counter.End();
 
-        return data;
-        
+        counter.End();
+        return data;   
     }
 
     private async Task<List<string>> _collectDataAsyncDummy(){

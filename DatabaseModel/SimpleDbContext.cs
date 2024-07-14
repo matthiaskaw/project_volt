@@ -1,5 +1,6 @@
 
 using System.Data;
+using Measurement;
 using Microsoft.EntityFrameworkCore;
 
 using Newtonsoft.Json;
@@ -13,10 +14,12 @@ namespace DatabaseModel{
         public IList<Sample> Samples{ get; set; }
         public IList<Experiment> Experiments{ get; set;}
         public IList<Dataset> Datasets {get; set;}
-
         private string _samplesJSONPath;
         private string _datasetsJSONPath;
         private string _experimentsJSONPath;
+
+        private Dictionary<EMeasurementType, string> _experimentNames = new Dictionary<EMeasurementType, string>();
+        public Dictionary<EMeasurementType, string> ExperimentNames {get{return _experimentNames;}}
 
         public SimpleDbContext(string directory){
 
@@ -25,6 +28,10 @@ namespace DatabaseModel{
             _datasetsJSONPath = Path.Combine(DataDirectory, "datasets.json");
             _experimentsJSONPath = Path.Combine(DataDirectory, "experiments.json");
 
+            _experimentNames.Add(EMeasurementType.SMPS,"SMPS");
+            _experimentNames.Add(EMeasurementType.TandemDMA, "Tandem DMA");
+            _experimentNames.Add(EMeasurementType.TandemTemperature, "Tandem Temperature");
+            _experimentNames.Add(EMeasurementType.CurrentMeasurement, "Current Measurement");
     
             if(!System.IO.File.Exists(_samplesJSONPath)){ System.IO.File.Create(_samplesJSONPath); }
             if(!System.IO.File.Exists(_datasetsJSONPath)){ System.IO.File.Create(_datasetsJSONPath); }
@@ -81,5 +88,11 @@ namespace DatabaseModel{
             Experiments = experiments ?? new List<Experiment>();
 
         }
+    
+    
+        
     }
+
+
+    
 }

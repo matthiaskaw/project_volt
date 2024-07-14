@@ -22,12 +22,13 @@ namespace MeasurementAlgorithms{
                 
                 while(IsRunning){
                     
-                    data.Append(SensorController.Instance.SensorData);
-                
+                    data.Add(SensorController.Instance.SensorData);
+                    Thread.Sleep(500);
+
                 }
             
             });
-
+            Logger.WriteToLog($"SensorMeasurementAlgorithm.RunMeasurement: data = {data.ToString()}"); 
             return data;
 
         }
