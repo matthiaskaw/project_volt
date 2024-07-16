@@ -50,7 +50,7 @@ public class SensorController{
                 
                 _data = _sensor.RequestSensorValues();               
                 _onDataAvailable(_data);
-                Thread.Sleep(1000);
+                Thread.Sleep(50);
             }});
     }
     private void _onDataAvailable(string data){

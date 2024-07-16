@@ -1,4 +1,6 @@
 using System.IO.Ports;
+using System.Globalization;
+
 using System.Net.Sockets;
 using System.Reflection.Metadata;
 using System.Threading;
@@ -253,7 +255,7 @@ public class ParticleCounter : IDevice
     public static string CalculateVoltage(string diameter){
 
         double sheathflow = 15.0/60000;
-        double doublediameter = float.Parse(diameter);
+        double doublediameter = float.Parse(diameter, CultureInfo.InvariantCulture);
         doublediameter = doublediameter*1e-9;
         double cunningham = Aerosol.CunninghamCorrection(doublediameter);
 

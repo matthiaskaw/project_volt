@@ -21,7 +21,7 @@ namespace Device{
 
 
             Logger.WriteToLog("Power Source: Trying to initialize Power Source");
-            Logger.WriteToLog($"Power Source: Possible SerialPorts {SerialPort.GetPortNames().ToString()}");
+            Logger.WriteToLog($"Power Source: Possible SerialPorts {SerialPort.GetPortNames().ToList()}");
             
             foreach(string portname in SerialPort.GetPortNames()){
                 if(_serialPort.IsOpen){
@@ -43,39 +43,48 @@ namespace Device{
                 if(!_serialPort.IsOpen){
 
                     Logger.WriteToLog($"Power Source: Initialize(): _serialPort is not open! (Portname: {_serialPort.PortName})");
+                    _serialPort.Close();
                     continue;
                 }
 
-                if(!_enableDeviceToRemoteControl()){
+                try{
+                    if(!_enableDeviceToRemoteControl()){
 
-                    Logger.WriteToLog($"Power Source: Initialize(): Was not able to enable Remote Control! (Portname: {_serialPort.PortName}))");
+                        Logger.WriteToLog($"Power Source: Initialize(): Was not able to enable Remote Control! (Portname: {_serialPort.PortName}))");
+                        continue;
+                    }
+                }
+                catch(Exception e){
+
+                    Logger.WriteToLog($"PowerSource.Initialize(): Exception during Remote Control enabling. Exception {e.ToString()}. Trying next port");
+                    _serialPort.Close();
                     continue;
                 }
-
                 Logger.WriteToLog($"Power Source: Initialize(): Trying to verify decive on port {_serialPort.PortName}");
 
                 Logger.WriteToLog($"Power Source: Initialize(): Calling _getDeviceID");
                 
                 string receivedDeviceID = _getDeviceID();
                 
-                if(!receivedDeviceID.Contains(DeviceID)){
+                if(receivedDeviceID.Contains(DeviceID)){
 
-                    Logger.WriteToLog($"Power Source: Initialize(): Verification failed! Received DeviceID is {receivedDeviceID}. Saved Device ID is {DeviceID}");
-                    _serialPort.Close();
-                    continue;
+                    Logger.WriteToLog($"Power Source: Initialize(): Verfication successfull! Device verified on port {_serialPort.PortName} with ID {DeviceID}");
+                    _isInitialized = true;
+                    _switchDeviceOn();
+                    Initialized?.Invoke(this, new EventArgs());
+                    return;
                 }
+                _serialPort.Close();
+
+                if(portname == SerialPort.GetPortNames().Last()){
+
+                    Logger.WriteToLog($"Particle Counter: Reached last element with no successfull verification");
+                    throw new InitalizationFailedException("Particle Counter");
+                }   
 
 
-
-                Logger.WriteToLog($"Power Source: Initialize(): Verfication successfull! Device verified on port {_serialPort.PortName} with ID {DeviceID}");
-                _switchDeviceOn();
-                Initialized?.Invoke(this, new EventArgs());
-                return;
-
+                
             }
-
-            Logger.WriteToLog($"Power Source: Initialize(): No device found!");
-            throw new Exception();
 
         }
  
@@ -169,8 +178,8 @@ namespace Device{
 
 
         public event EventHandler Initialized;
-
-        public bool IsInitialized {get;}
+        private bool _isInitialized = false;
+        public bool IsInitialized {get{ return _isInitialized; }}
 
         //PRIVATE METHODS
 

@@ -44,7 +44,7 @@ public class DeviceController{
         }
 
         Devices.Add(EDeviceTypes.ParticleCounter, new ParticleCounter());
-        Devices.Add(EDeviceTypes.Classifier, new ElectrostaticClassifier());
+        //Devices.Add(EDeviceTypes.Classifier, new ElectrostaticClassifier());
         Devices.Add(EDeviceTypes.PowerSource, new PowerSource());
         Devices.Add(EDeviceTypes.ElectrospraySensor, new ElectrospraySensor());
         

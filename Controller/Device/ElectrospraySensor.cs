@@ -76,6 +76,7 @@ namespace Device{
                 if(answer.Contains(DeviceID)){
             
                     _serialport.ReadTimeout = -1;
+                    _isInitialized=true;
                     Initialized?.Invoke(this, new EventArgs());
                     Logger.WriteToLog($"ElectrospraySensor.cs: Electrospray Sensor verified on port {_serialport.PortName}");
                     break;
@@ -108,7 +109,7 @@ namespace Device{
             _serialport.WriteTimeout = 5000;
             _serialport.Write(_requeststringcommand);
 
-            string requestanswer = _serialport.ReadTo("\r");
+            string requestanswer = _serialport.ReadTo("\r").Trim();
             Logger.WriteToLog($"ElectrospraySensor.cs: RequestSensorValue(): Request answer is {requestanswer}");
             return requestanswer;
             
@@ -119,7 +120,9 @@ namespace Device{
         public string DeviceID {get; set;}
         public event EventHandler Initialized;
         public EDeviceTypes DeviceType {get; set;}
-        public bool IsInitialized {get;}
+
+        private bool _isInitialized = false;
+        public bool IsInitialized {get{return _isInitialized;}}
         private SerialPort _serialport = new SerialPort(){BaudRate = 115200, DataBits = 8, Parity = Parity.None, StopBits = StopBits.One};
 
     }

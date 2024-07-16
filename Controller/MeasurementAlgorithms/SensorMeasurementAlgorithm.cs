@@ -23,7 +23,7 @@ namespace MeasurementAlgorithms{
                 while(IsRunning){
                     
                     data.Add(SensorController.Instance.SensorData);
-                    Thread.Sleep(500);
+                    Thread.Sleep(1);
 
                 }
             

@@ -13,7 +13,7 @@ public class SMPSMeasurementAlgorithm : IMeasurementAlgorithm {
 
     public async Task<List<string>> RunMeasurement(){
         IsRunning = true;
-        /*Logger.WriteToLog("SMPS Measurement Algorithm: RunMeasurement called!");
+        Logger.WriteToLog("SMPS Measurement Algorithm: RunMeasurement called!");
         IDevice pc;
         DeviceController.Instance.Devices.TryGetValue(EDeviceTypes.ParticleCounter, out pc);
         ParticleCounter particlecounter = (ParticleCounter)pc;
@@ -21,13 +21,14 @@ public class SMPSMeasurementAlgorithm : IMeasurementAlgorithm {
         if(particlecounter == null){
 
             throw new Exception("SMPSMeasurementAlgorithm().RunMeasurement: Particle Counter is null");
-        }*CurrentDataset.Name, MeasurementType.ToString()
+        }
+        string minVoltage = ParticleCounter.CalculateVoltage(
+            SettingsService.Instance.MeasurementSetting.GetSettingByKey(EMeasurementSettings.SMPSMinDiameter));
+        string maxVoltage = ParticleCounter.CalculateVoltage(
+            SettingsService.Instance.MeasurementSetting.GetSettingByKey(EMeasurementSettings.SMPSMaxDiameter));
 
-        string minVoltage = ParticleCounter.CalculateVoltage("2,4");
-        string maxVoltage = ParticleCounter.CalculateVoltage("40,5");
-
-        particlecounter.UpscanTime = SettingsService.Instance.MeasurementSetting.GetSettingByKey(EMeasurementSettings.UpscanTime);
-        particlecounter.DownscanTime = SettingsService.Instance.MeasurementSetting.GetSettingByKey(EMeasurementSettings.DownscanTime);
+        particlecounter.UpscanTime = SettingsService.Instance.MeasurementSetting.GetSettingByKey(EMeasurementSettings.UpscanTime)+"0";
+        particlecounter.DownscanTime = SettingsService.Instance.MeasurementSetting.GetSettingByKey(EMeasurementSettings.DownscanTime)+"0";
         particlecounter.MinVoltage = minVoltage;
         particlecounter.MaxVoltage = maxVoltage;
 
@@ -35,9 +36,9 @@ public class SMPSMeasurementAlgorithm : IMeasurementAlgorithm {
         particlecounter.SetScanDirection();
         particlecounter.SetVoltage();
         particlecounter.SetScanTime();
-        particlecounter.Start();*/
+        particlecounter.Start();
 
-        List<string> data = await _collectDataAsyncDummy();
+        List<string> data = await _collectDataAsync(particlecounter);
     
 
         return data;
