@@ -14,3 +14,4 @@ SMPSDiameterVector	2.4;68.6
 CurrentReadingTime	1;2;4;8;10;20;40;80;100;200;400;800;1000
 FurnaceCurrent	19
 FirstDMADiameter	20.0
+TandemTemperatureStep	0.3;0.5;1.0;2.0

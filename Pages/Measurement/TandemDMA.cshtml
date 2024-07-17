@@ -26,37 +26,18 @@
         <label asp-for="DownscanTime">Downscantime [s]:</label><input asp-for="DownscanTime">
         <br>
         <label for="MinDiameterDropDown">SMPS Min. diameter [nm]:</label>
-        <select id="MinDiameterDropDown" name="MinDiameterDropDown">
-            @{foreach(string option in TandemDMAModel.SMPSDiameterVector){
-                <option value="@option">@option</option>
-
-            }}
-        </select>
+        <select id="MinDiameterDropDown" asp-for="SMPSMinDiameter" asp-items="Model.SMPSDiameterOptions"></select>
         <br>
         <label for="MaxDiameterDropDown">SMPS Max. diameter [nm]:</label>
-        <select id="MaxDiameterDropDown" name="MaxDiameterDropDown">
-            @{foreach(string option in TandemDMAModel.SMPSDiameterVector){
-                <option value="@option">@option</option>
-            }}
-        </select>
+        <select id="MaxDiameterDropDown" asp-for="SMPSMinDiameter" asp-items="Model.SMPSDiameterOptions"></select>
         <br>
         <label asp-for="SMPSDMAType">SMPS DMA Type:</label><input asp-for="SMPSDMAType">
         <br>
         <label for="MinDiameterDropDown">Min. Current [A]:</label>
-        <select id="MinDiameterDropDown" name="MinDiameterDropDown">
-            @{
-            foreach(string option in TandemDMAModel.TandemDiameterVector){
-                <option value="@option">@option</option>
-            }}
-        </select>
+        <select id="MinDiameterDropDown"  asp-for="TandemMinDiameter" asp-items="Model.SMPSDiameterOptions"></select>
         <br>
         <label for="MaxDiameterDropDown">Max. Current [A]:</label>
-        <select for="MaxDiameterDropDown" name="MaxDiameterDropDown">
-            @{
-            foreach(string option in TandemDMAModel.TandemDiameterVector){
-                <option value="@option">@option</option>
-            }}
-        </select>
+        <select for="MaxDiameterDropDown" asp-for="TandemMinDiameter" asp-items="Model.SMPSDiameterOptions"></select>
         <br>
         <label>Furnace Current [A]:</label><input>
         <br>

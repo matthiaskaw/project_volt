@@ -19,7 +19,7 @@ namespace Device{
 
         public void Initialize(){
 
-
+            
             Logger.WriteToLog("Power Source: Trying to initialize Power Source");
             Logger.WriteToLog($"Power Source: Possible SerialPorts {SerialPort.GetPortNames().ToList()}");
             
@@ -70,7 +70,6 @@ namespace Device{
 
                     Logger.WriteToLog($"Power Source: Initialize(): Verfication successfull! Device verified on port {_serialPort.PortName} with ID {DeviceID}");
                     _isInitialized = true;
-                    _switchDeviceOn();
                     Initialized?.Invoke(this, new EventArgs());
                     return;
                 }
@@ -85,10 +84,20 @@ namespace Device{
 
                 
             }
-
         }
  
+        public void Start(){
 
+            Logger.WriteToLog($"PowerSource.Start(): Trying to switch device on...");
+            if(_switchDeviceOn()){
+
+                Logger.WriteToLog($"PowerSource.Start(): Device is switched on");
+                return;
+            }
+
+            throw new Exception("PowerSource.Start(): Was not able to switch device on!");
+        }
+        
         public bool End(){
             
             if(!_switchDeviceOff()){
@@ -97,11 +106,7 @@ namespace Device{
                 return false;
             }
 
-            if(!_disableDeviceToRemoteControl()){
-
-                Logger.WriteToLog($"Power Source: End(): Cannot switch off disable remote control");
-                return false;
-            }
+            
 
             return true;
 
@@ -123,9 +128,12 @@ namespace Device{
             UInt16 data_lowerbyte = (UInt16)(currentPercentage & 0xff);
             UInt16 data_upperbyte = (UInt16)(currentPercentage >> 8);
 
-            telegram[4] = (byte)data_lowerbyte;
-            telegram[5] = (byte)data_upperbyte;
+            Logger.WriteToLog($"PowerSource.SetCurrent: Data lower byte = {data_lowerbyte}");
+            Logger.WriteToLog($"PowerSource.SetCurrent: data upper byte = {data_upperbyte}");
 
+            telegram[4] = (byte)data_upperbyte;
+            telegram[5] = (byte)data_lowerbyte;
+            
             UInt16 crc = _calculateCRC(new byte[6]{telegram[0],
                             telegram[1],
                             telegram[2],
@@ -136,10 +144,12 @@ namespace Device{
             UInt16 crc_lowerbyte = (UInt16)(crc & 0xff);
             UInt16 crc_upperbyte = (UInt16)(crc >> 8);
 
+
+
             telegram[6] = (byte)crc_lowerbyte;
             telegram[7] = (byte)crc_upperbyte;
 
-
+            Logger.WriteToLog($"Power Source: SetCurrent: Written telegram is answer is {BitConverter.ToString(telegram)}");
             _serialPort.Write(telegram, 0,8);
 
             byte [] buffer=new byte[8];
@@ -154,12 +164,12 @@ namespace Device{
             }
 
             
-            UInt16 bufferdata_lowerbyte = (UInt16)(buffer[4] & 0xff);
-            UInt16 bufferdata_upperbyte = (UInt16)(buffer[5] >> 8); 
+            UInt16 bufferdata_upperbyte = (UInt16)(buffer[4] << 8);
+            UInt16 bufferdata_lowerbyte = (UInt16)(buffer[5] & 0xff); 
             
             UInt16 datapercentage = (UInt16)(bufferdata_lowerbyte+bufferdata_upperbyte);
             
-            if(current != datapercentage){
+            if(currentPercentage != datapercentage){
 
                 Logger.WriteToLog($"Power Source: SetCurrent: Trying to set current to {current} failed. Received data is {datapercentage}");
                 Logger.WriteToLog($"Power Source: SetCurrent: received answer is {BitConverter.ToString(buffer)}");
@@ -172,6 +182,7 @@ namespace Device{
             Logger.WriteToLog($"Power Source: SetCurrent: Current set to {setcurrent}");
             return true;
 
+            
             
        }
 
@@ -311,7 +322,15 @@ namespace Device{
             telegram[4] = 0x00;
             telegram[5] = 0x00;
             
-            ushort CRC = _calculateCRC(new byte [6]{0x00,0x05,0x01,0x92,0x00,0x00});
+            ushort CRC = _calculateCRC(new byte [6]{
+                telegram[0],
+                telegram[1],
+                telegram[2],
+                telegram[3],
+                telegram[4],
+                telegram[5]
+                });
+
             ushort CRC_lowerbyte = (ushort)(CRC & 0xff);
             ushort CRC_upperbyte = (ushort)(CRC >> 8);
 
@@ -324,26 +343,26 @@ namespace Device{
             int bufferSize = _serialPort.Read(buffer, 0,8);
 
             
-            Logger.WriteToLog($"Power Source: switchDeviceOn: Reading Buffer...");
-            Logger.WriteToLog($"Power Source:switchDeviceOn: buffer = {BitConverter.ToString(buffer)}...");
+            Logger.WriteToLog($"PowerSource._switchDeviceOff: Reading Buffer...");
+            Logger.WriteToLog($"PowerSource._switchDeviceOff: buffer = {BitConverter.ToString(buffer)}...");
             
 
-            Logger.WriteToLog($"Power Source: switchDeviceOn: Checking if buffer size is valid...");
+            Logger.WriteToLog($"PowerSource._switchDeviceOff: Checking if buffer size is valid...");
             if(bufferSize < 8){
 
-                Logger.WriteToLog($"Power Source: switchDeviceOn: Length of received answer is to small! (Buffer size = {bufferSize})");
+                Logger.WriteToLog($"PowerSource._switchDeviceOff: Length of received answer is to small! (Buffer size = {bufferSize})");
                 return false;
             }
-            Logger.WriteToLog($"Power Source: switchDeviceOn: Buffer size ({bufferSize}) is valid!");
+            Logger.WriteToLog($"PowerSource._switchDeviceOff: Buffer size ({bufferSize}) is valid!");
 
-            Logger.WriteToLog($"Power Source: switchDeviceOn: Checking if received answer is positive (buffer[4] = {buffer[4]}, buffer[5] = {buffer[5]}) ...");
+            Logger.WriteToLog($"PowerSource._switchDeviceOff: Checking if received answer is positive (buffer[4] = {buffer[4]}, buffer[5] = {buffer[5]}) ...");
 
             if(!(buffer[4] == 0x00) && !(buffer[5] == 0x00)){
 
-                Logger.WriteToLog($"Power Source: switchDeviceOn: Remote Control not enabled! (buffer[4] = {buffer[4]}, buffer[5] = {buffer[5]})");
+                Logger.WriteToLog($"PowerSource._switchDeviceOff: Remote Control not enabled! (buffer[4] = {buffer[4]}, buffer[5] = {buffer[5]})");
                 
             }
-            Logger.WriteToLog($"Power Source: switchDeviceOn: Received answer is positive! Remote Control is enabled;!");
+            Logger.WriteToLog($"PowerSource._switchDeviceOff: Received answer is positive! Remote Control is enabled;!");
 
             return true;
         }
@@ -359,7 +378,7 @@ namespace Device{
             telegram[4] = 0xFF;
             telegram[5] = 0x00;
             
-            ushort CRC = _calculateCRC(new byte [6]{0x00,0x05,0x01,0x92,0xff,0x00});
+            ushort CRC = _calculateCRC(new byte [6]{0x00,0x05,0x01,0x95,0xff,0x00});
             ushort CRC_lowerbyte = (ushort)(CRC & 0xff);
             ushort CRC_upperbyte = (ushort)(CRC >> 8);
 
@@ -463,6 +482,11 @@ namespace Device{
 
         }
 
+        List<string> _DUMMY_initialize(){
+            
+            return new List<string>(){"0","2","3","4","5","6","7","8","9"};
+
+        }
         
 
         UInt16 _calculateCRC(byte[] telegram){
@@ -501,14 +525,6 @@ namespace Device{
 
 
         //PRIVATE MEMBER
-        private ModbusRtuClient _modbusClient = new ModbusRtuClient(){
-
-            BaudRate = 115200,
-            StopBits = StopBits.One,
-            Parity = Parity.None
-            
-        };
-
         private SerialPort _serialPort = new SerialPort(){
 
             BaudRate = 115200,
@@ -532,14 +548,6 @@ namespace Device{
                 WriteMultipleRegisters = 0x10
             } 
 
-
-            public ModbusClient(){}
-            public byte[] WriteSingleCoil(uint address, bool data){
-                return new byte[2];
-                
-
-                
-            } 
             //Mobus-Telegram
             //Header Byte   Function-Code Byte  Register_first_byte register_second_byte    dataword_first_byte     dataword_second_byte CRC
        }

@@ -22,7 +22,8 @@ namespace Services{
         SMPSDiameterVector = 14,
         CurrentReadingTime = 15,
         FurnaceCurrent = 16,
-        FirstDMADiameter = 17
+        FirstDMADiameter = 17,
+        TandemTemperatureStep = 18
 
     }
 
@@ -133,6 +134,7 @@ namespace Services{
             tempsettings.Add(EMeasurementSettings.CurrentReadingTime, "1;2;4;8;10;20;40;80;100;200;400;800;1000");    
             tempsettings.Add(EMeasurementSettings.FurnaceCurrent, "19");
             tempsettings.Add(EMeasurementSettings.FirstDMADiameter, "20.0");
+            tempsettings.Add(EMeasurementSettings.TandemTemperatureStep, "0.3;0.5;1.0;2.0");
             _settings = tempsettings;
             SaveSettings();
         }

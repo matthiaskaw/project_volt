@@ -28,17 +28,37 @@ public class TandemTemperatureModel : PageModel
         SMPSDiameterVector = smpsdmavector.Split(";");
         
         
-        string temperaturevector = SettingsService.Instance.MeasurementSetting.GetSettingByKey(EMeasurementSettings.TandemTemperatureVector);
-        TandemTemperatureCurrentVector = temperaturevector.Split(";");
+        string[] temperaturevector = SettingsService.
+                                        Instance.
+                                        MeasurementSetting.
+                                        GetSettingByKey(EMeasurementSettings.TandemTemperatureVector).Split(";");
 
-        CurrentOptions = new SelectList(TandemTemperatureCurrentVector);
-
-        SMPSDiameterOptions = new SelectList(SMPSDiameterVector);
+        foreach(string s in temperaturevector){
+            CurrentOptions.Add(new SelectListItem(s,s));
+        }
         
-        MaxDiameterSMPS = SMPSDiameterVector.Last();
-        MaxCurrent = TandemTemperatureCurrentVector.Last();
+        string[] smpsdiametervector = SettingsService.
+                                            Instance.
+                                            MeasurementSetting.
+                                            GetSettingByKey(EMeasurementSettings.SMPSDiameterVector).Split(";");
 
-    
+        foreach (string s in smpsdiametervector){
+            SMPSDiameterOptions.Add(new SelectListItem(s,s));
+        }
+
+        string[] currentStepVector = SettingsService.
+                                        Instance.
+                                        MeasurementSetting.
+                                        GetSettingByKey(EMeasurementSettings.TandemTemperatureStep).Split(";");
+        
+        foreach(string s in currentStepVector){
+
+            CurrentStepsOption.Add(new SelectListItem(s,s));
+        }
+
+        MaxDiameterSMPS = SMPSDiameterVector.Last();
+        MaxCurrent = temperaturevector.Last();
+
     }
 
     public void OnGet()
@@ -66,11 +86,7 @@ public class TandemTemperatureModel : PageModel
 
     public void OnPost(){
 
-
-
         Console.WriteLine("OnPost(): TandemTemperature Measurement!");
-
-        
 
         if(string.IsNullOrEmpty(Name)){
             return;
@@ -94,6 +110,7 @@ public class TandemTemperatureModel : PageModel
         SettingsService.Instance.MeasurementSetting.SetSettingByKey(EMeasurementSettings.TandemTemperatureMinCurrent, MinCurrent);
         SettingsService.Instance.MeasurementSetting.SetSettingByKey(EMeasurementSettings.TandemTemperatureMaxCurrent, MaxCurrent);
         SettingsService.Instance.MeasurementSetting.SetSettingByKey(EMeasurementSettings.FirstDMADiameter, FirstDMADiameter);
+        SettingsService.Instance.MeasurementSetting.SetSettingByKey(EMeasurementSettings.TandemTemperatureStep, CurrentStep);
 
         MeasurementController.Instance.CurrentDataset = new Dataset();
         MeasurementController.Instance.CurrentDataset.UUID = Guid.NewGuid();
@@ -115,7 +132,12 @@ public class TandemTemperatureModel : PageModel
         Task.Run(async () => {await MeasurementController.Instance.StartMeasurement();});
     }
 
+    public void OnPostCancel(){
 
+        MeasurementController.Instance.StopMeasurement();
+
+
+    }
 
     //PROPERTIES
     public string? Name {get; set;}
@@ -130,15 +152,16 @@ public class TandemTemperatureModel : PageModel
     public string? DownscanTime {get; set;}
     public static string[]? SMPSDiameterVector {get; set;}
     public static string[]? TandemTemperatureCurrentVector {get; set;}
-    public string? SMPSDMAType {get; set;}
-    
+    public string? SMPSDMAType {get; set;}    
     public string MinDiameterSMPS {get; set;}
     public string MaxDiameterSMPS {get; set;}
     public string MinCurrent {get; set;}
     public string MaxCurrent{get; set;}
+    public string CurrentStep {get; set;}
     public string FirstDMADiameter {get; set;} = "20";
-    public SelectList SMPSDiameterOptions { get; set; }
-    public SelectList CurrentOptions { get; set; }
+    public List<SelectListItem> SMPSDiameterOptions { get; set; } = new List<SelectListItem>();
+    public List<SelectListItem> CurrentOptions { get; set; } = new List<SelectListItem>();
+    public List<SelectListItem> CurrentStepsOption {get; set; } = new List<SelectListItem>();
     //PRIVATE METHODS
 
     //PRIVATE VARIABLES

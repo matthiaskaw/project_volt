@@ -1,3 +1,4 @@
+using System.Globalization;
 using System.Threading.Tasks.Dataflow;
 using Device;
 using MeasurementAlgorithms;
@@ -23,12 +24,13 @@ public class TandemTemperatureAlgorithm : IMeasurementAlgorithm {
 
     }
     public async Task<List<string>> RunMeasurement(){
-            
-        //IDevice ps;
-        //IDevice pc;
+        
+        IsRunning = true;
+        IDevice ps;
+        IDevice pc;
 
         SMPSMeasurementAlgorithm smpsAlgorithm = new SMPSMeasurementAlgorithm();
-        /*
+        
         if(!DeviceController.Instance.Devices.TryGetValue(EDeviceTypes.PowerSource, out ps)){
 
             Logger.WriteToLog($"TandemTemperatureAlgorithm: RunMeasurement: Powersource not found in Devices");
@@ -50,65 +52,94 @@ public class TandemTemperatureAlgorithm : IMeasurementAlgorithm {
             return new List<string>();
         }
 
-       
-        */
-    
+       powerSource.Start();
+        
 
         List<string> masterList = new List<string>();
 
-        for(int i = 0; i < CurrentVector.Length; i++){
+        foreach(string i in CurrentVector){
+            if(!IsRunning){ break;}
             
             double current = 0;
-
-            double.TryParse(CurrentVector[i], out current);
+            double.TryParse(i, System.Globalization.CultureInfo.InvariantCulture, out current);
+            powerSource.SetCurrent(current);
+            
+            Thread.Sleep(10000);
 
             List<string> measurement = await smpsAlgorithm.RunMeasurement();
             masterList.Add(string.Join(",", measurement));
-
+            
         }
+
+        powerSource.End();
 
         return masterList;
     }
 
-    public string[] CurrentVector {get; set;}
+    public List<string> CurrentVector {get; set;}
 
 
     //PRIVATE METHODS
 
-    public async Task<List<string>> _collectDataAsync(ParticleCounter counter){
-
-        List<string> data = new List<string>();
-
-        while(IsRunning){
-
-            string line = counter.Read();
-            Logger.WriteToLog($"Particle Counter: CollectData: line = {line}");
-            data.Add(line);
-            if(line.Contains("-1")){
-
-                IsRunning  = false;
-
-            }
-        }
-        counter.End();
-
-        return data;
-        
-    }
-
+    
     void _setCurrentVector(){
 
-        string temp = SettingsService.Instance.MeasurementSetting.GetSettingByKey(EMeasurementSettings.TandemTemperatureVector);
-        string[] fullCurrentVector = temp.Split(";");
-        long positionMinCurrent = Array.IndexOf(fullCurrentVector,
-                    SettingsService.Instance.MeasurementSetting.GetSettingByKey(EMeasurementSettings.TandemTemperatureMinCurrent));
-        long positionMaxCurrent = Array.IndexOf(fullCurrentVector,
-                    SettingsService.Instance.MeasurementSetting.GetSettingByKey(EMeasurementSettings.TandemTemperatureMaxCurrent));
-
-        long trimmedLength = positionMaxCurrent - positionMinCurrent + 1;
         
-        CurrentVector = new string[trimmedLength];
-        Array.Copy(fullCurrentVector, positionMinCurrent, CurrentVector, 0, trimmedLength);
+        Logger.WriteToLog("TandemAlgorithm._setCurrentVector: Try to parse...");
+
+        string minCurrent = SettingsService.
+                                Instance.
+                                MeasurementSetting.
+                                GetSettingByKey(EMeasurementSettings.TandemTemperatureMinCurrent);
+        string maxCurrent = SettingsService.
+                                Instance.
+                                MeasurementSetting.
+                                GetSettingByKey(EMeasurementSettings.TandemTemperatureMaxCurrent);
+
+        string currentStep = SettingsService.
+                                Instance.
+                                MeasurementSetting.
+                                GetSettingByKey(EMeasurementSettings.TandemTemperatureStep);
+
+
+        double currentMin = 0.0;
+        if(!double.TryParse(minCurrent,System.Globalization.CultureInfo.InvariantCulture,out currentMin)){
+        
+            throw new Exception($"TandemAlgorithm._setCurrentVector: Parsing minCurrent ({minCurrent}) failed");
+        }
+
+        double currentMax = 0.0;
+
+        if(!double.TryParse(maxCurrent,System.Globalization.CultureInfo.InvariantCulture, out currentMax)){
+
+            throw new Exception($"TandemAlgorithm._setCurrentVector: Parsing maxCurrent ({maxCurrent}) failed");
+        }
+
+        double currentStepDouble = 0.0;
+
+        if(!double.TryParse(currentStep,System.Globalization.CultureInfo.InvariantCulture, out currentStepDouble)){
+
+            throw new Exception($"TandemAlgorithm._setCurrentVector: Parsing currentStepDouble ({currentStep}) failed");
+        }
+
+        Logger.WriteToLog("TandemAlgorithm._setCurrentVector: Parsed min Current, max Current, and Current step. Calculating current vector");
+
+        List<double> currents = new List<double>();
+        double currentCurrent = currentMin;
+        while(currentCurrent < currentMax){
+
+            currents.Add(currentCurrent);
+            
+            currentCurrent = currentCurrent + currentStepDouble;
+            
+        }
+        currents.Add(currentCurrent);
+        CurrentVector = new List<string>();
+        foreach(double d in currents){
+            CurrentVector.Add(d.ToString("F", System.Globalization.CultureInfo.InvariantCulture));
+            Logger.WriteToLog($"TandemAlgorithm._setCurrentVector: Current element: {d.ToString("F", System.Globalization.CultureInfo.InvariantCulture)}");
+        }
+
 
     }
     static async Task DummyAsync()

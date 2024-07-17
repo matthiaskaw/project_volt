@@ -40,6 +40,8 @@ public class ParticleCounter : IDevice
 
     public void Initialize(){
         
+
+        
             Logger.WriteToLog("Particle Counter: Initializing");
        
             Logger.WriteToLog($"Particle Counter: Trying to verify Particle Counter on ports: {SerialPort.GetPortNames().ToString()}.");
@@ -237,7 +239,7 @@ public class ParticleCounter : IDevice
         }
         else{
 
-            Logger.WriteToLog($"Particle Counter: End(): Measurement not ended succesfully!");
+            Logger.WriteToLog($"Particle Counter: End(): Measurement not ended succesfully! {_answer}");
             return false;
         }
 

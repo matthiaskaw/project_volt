@@ -23,12 +23,16 @@ public class TandemDMAModel : PageModel
         UpscanTime = SettingsService.Instance.MeasurementSetting.GetSettingByKey(EMeasurementSettings.UpscanTime);
         DownscanTime = SettingsService.Instance.MeasurementSetting.GetSettingByKey(EMeasurementSettings.DownscanTime);
         
-        string smpsdmavector = SettingsService.Instance.MeasurementSetting.GetSettingByKey(EMeasurementSettings.SMPSDiameterVector);
-        SMPSDiameterVector = smpsdmavector.Split(";");
-        
-        
-        string tandemdiameterVector = SettingsService.Instance.MeasurementSetting.GetSettingByKey(EMeasurementSettings.TandemDMAVector);
-        TandemDiameterVector = tandemdiameterVector.Split(";");
+        string[] smpsdmavector = SettingsService.Instance.MeasurementSetting.GetSettingByKey(EMeasurementSettings.SMPSDiameterVector).Split(";");
+        foreach(string s in smpsdmavector){
+            SMPSDiameterOptions.Add(new SelectListItem(){Value = s, Text = s});
+        }
+
+        string[] tandemdiameterVector = SettingsService.Instance.MeasurementSetting.GetSettingByKey(EMeasurementSettings.TandemDMAVector).Split(";");
+        foreach(string s in tandemdiameterVector){
+            TandemDiameterOptions.Add(new SelectListItem(s,s));
+        }
+        ;
     }
 
     public void OnGet()
@@ -134,8 +138,10 @@ public class TandemDMAModel : PageModel
     public string? UpscanTime{get; set;}
     public string? SMPSMinDiameter {get; set;}
     public string? SMPSMaxDiameter {get;set;}
+    public string? TandemMinDiameter {get; set;}
+    public string? TandemMaxDiameter {get; set;}
     public string? SMPSDMAType {get; set;}
-    public static string[]? SMPSDiameterVector {get; set;}
-    public static string []? TandemDiameterVector {get; set;}
+    public List<SelectListItem> SMPSDiameterOptions {get; set;}
+    public List<SelectListItem> TandemDiameterOptions {get; set;}
 
 }

@@ -73,3 +73,9 @@ TandemTemperature Page:
   - Current Vector preset needs to be set to the proper default values (Min Current: 0A; Max Current: 30A)
   - First DMA Diameter input has to be implemented
   - Date input has to be set to current date
+
+17.07.2024:
+
+TandemTemperature Measurement:
+ Sometimes setting the power source send and empty answer (00-00-00-00-00-00-00); Cannot figure the problem out; Measurement runs as expected
+ Cancel Measurement works but the current smps measurement finishes first. Maybe implement event handling.

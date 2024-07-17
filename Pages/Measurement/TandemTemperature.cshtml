@@ -42,9 +42,12 @@
         <label asp-for="MaxCurrent">Maximum Current [A]:</label>
         <select asp-for="MaxCurrent" asp-items="Model.CurrentOptions" id="MaxCurrent"></select>
         <br>
+        <label asp-for="CurrentStep">Current Step [A]:</label><select asp-for="CurrentStep" asp-items="Model.CurrentStepsOption" id="CurrentStep"></select>
+        <br>
         <label asp-for="FirstDMADiameter">First DMA Diameter [nm]:</label><input asp-for="FirstDMADiameter">
         <br>
         <button>Start</button>
+        <button type="submit" formaction="/Measurement/TandemTemperature?handler=Cancel">Cancel</button>
         
     </form>
     
